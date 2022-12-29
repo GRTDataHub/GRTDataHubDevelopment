@@ -694,20 +694,20 @@ const handleIssue22URD = () => {
   })
 }
 
-// const handleIssue22FRA = () => {
-//   // using Java Script method to get PDF file
-//   fetch('Issue22-FRA.pdf').then(response => {
-//       response.blob().then(blob => {
-//           // Creating new object of PDF file
-//           const fileURL = window.URL.createObjectURL(blob);
-//           // Setting various property values
-//           let alink = document.createElement('a');
-//           alink.href = fileURL;
-//           alink.download = 'Issue #22 - FRA Graph Advocates Spotlight.pdf';
-//           alink.click();
-//       })
-//   })
-// }
+const handleIssue22FRA = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue22-FRA.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #22 - FRA Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
 
 // const handleIssue23ENG = () => {
 //   // using Java Script method to get PDF file
@@ -786,8 +786,8 @@ const handleIssue22URD = () => {
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23URD} target="_blank" rel="noreferrer">شمارہ نمبر 23 اردو میں</a></h2> */}
             <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22ENG} target="_blank" rel="noreferrer">Issue #22 - Max Savant Hazelhurst</a></h2>
-            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22ESP} target="_blank" rel="noreferrer">Issue #22 en español</a></h2>
-            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22FRA} target="_blank" rel="noreferrer">Issue #22 en français</a></h2> */}
+            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22ESP} target="_blank" rel="noreferrer">Issue #22 en español</a></h2> */}
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22FRA} target="_blank" rel="noreferrer">Issue #22 en français</a></h2>
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22URD} target="_blank" rel="noreferrer">شمارہ نمبر 22 اردو میں</a></h2>
             <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue21ENG} target="_blank" rel="noreferrer">Issue #21 - Gabriel Nicolas Gonzalez</a></h2>

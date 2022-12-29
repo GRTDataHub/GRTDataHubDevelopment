@@ -22,11 +22,8 @@ const ChatBotPage = () => ({
             <br></br><br></br>    
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/GERchatBot" target="_blank" rel="noreferrer">GRTDataHub Deutsch Chatbot</a></h2>
             <br></br><br></br>
-            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
-            // href="/ESPchatBot" 
-            // target="_blank" rel="noreferrer"
-            onClick={() => alert('COMING SOON! ¡PRÓXIMAMENTE, EN BREVE, PRONTO!')}
-            >GRTDataHub Chatbot en Español</a></h2>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/ESPchatBot" 
+            target="_blank" rel="noreferrer">GRTDataHub Chatbot en Español</a></h2>
             <br></br><br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
             // href="/FRAchatBot" 
@@ -41,7 +38,7 @@ const ChatBotPage = () => ({
             >GRTDataHub Türkçe Chatbot</a></h2>
             <br></br><br></br> 
             <hr className="QB-about-hr"></hr>
-            <h2 className="QB-about-page-subtitle">The English and German Chatbots are built, with 1 for the Spanish community in the last stages of translation and Phase 2 Beta Testing. And 2 more being built for the French and Turkish communities. All being continuously improved with new documentation, news, text and video tutorials along with the <strong>new button feature</strong>!<br></br><br></br>If your community would benefit from a chatbot then please get in touch and I will be happy to build one.</h2>
+            <h2 className="QB-about-page-subtitle">The English,German and the NEW Spanish Chatbots are built, with ones for the French and Turkish communities being built. All being continuously improved with new documentation, news, text and video tutorials along with the <strong>new button feature</strong>!<br></br><br></br>If your community would benefit from a chatbot then please get in touch and I will be happy to build one.<br></br>Psst! There may be 2 more chatbots in the pipelines for 2 other communities.</h2>
             <br></br><br></br>
         
         </div>

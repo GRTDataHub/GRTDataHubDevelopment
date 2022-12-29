@@ -142,12 +142,9 @@ class FRAMessageParser {
     else if (lowercase.includes('the graph foundation') || lowercase.includes('graph foundation')|| lowercase.includes('what is the graph foundation') || lowercase.includes('what is the graph foundation?') || lowercase.includes('what is graph foundation?') || lowercase.includes('what is graph foundation') || lowercase.includes('who are the graph foundation?') || lowercase.includes('who are the graph foundation') || lowercase.includes('who are graph foundation') || lowercase.includes('who are graph foundation?')) {
       this.actionProvider.handleTheGraphFoundation();
     } 
+ 
     else if (lowercase.includes('the graph council') || lowercase.includes('graph council')|| lowercase.includes('what is the graph council') || lowercase.includes('what is the graph council?') || lowercase.includes('what is graph council?') || lowercase.includes('what is graph council') || lowercase.includes('who are the graph council?') || lowercase.includes('who are the graph council') || lowercase.includes('who are graph council') || lowercase.includes('who are graph council?')) {
       this.actionProvider.handleTheGraphCouncil();
-    } 
-
-    else if (lowercase.includes('the graph discord') || lowercase.includes('graph discord')|| lowercase.includes('what is the graph discord') || lowercase.includes('what is the graph discord?') || lowercase.includes('what is graph discord channel?') || lowercase.includes('what is graph discord channel') || lowercase.includes('what is the official discord') || lowercase.includes('what is the official discord?') || lowercase.includes('what is the official discord channel?') || lowercase.includes('what is the official discord channel') || lowercase.includes('what is the graph official discord?') || lowercase.includes('what is the graph official discord')|| lowercase.includes('what is the graph official discord channel?') || lowercase.includes('what is the graph official discord channel') || lowercase.includes('what is the official discord server?') || lowercase.includes('what is the official discord server') || lowercase.includes('what is the official discord server address') || lowercase.includes('what is the official discord server address?') || lowercase.includes('what is the graph official discord server?')|| lowercase.includes('what is the graph official discord server') || lowercase.includes('what is the graph official discord server address?') || lowercase.includes('what is the graph official discord server address')) {
-      this.actionProvider.handleGraphDiscord();
     } 
 
     else if (lowercase.includes('rewards') || lowercase.includes('indexing rewards')|| lowercase.includes('what are rewards') || lowercase.includes('what are rewards?') || lowercase.includes('what are indexing rewards?') || lowercase.includes('what are indexing rewards') || lowercase.includes('delegator rewards') || lowercase.includes('what are delegator rewards?') || lowercase.includes('what are deleagtor rewards') || lowercase.includes('when will i get rewards') || lowercase.includes('when will i get rewards?') || lowercase.includes('when will i recieve rewards')|| lowercase.includes('when will i recieve rewards?') || lowercase.includes('when rewards') || lowercase.includes('when rewards?') || lowercase.includes('how long until i get rewards') || lowercase.includes('how long until i get rewards?')) {
@@ -156,10 +153,6 @@ class FRAMessageParser {
 
     else if (lowercase.includes('query fees') || lowercase.includes('what are query fees')|| lowercase.includes('what are query fees?') || lowercase.includes('what is a query fee') || lowercase.includes('what is a query fee?') || lowercase.includes('explain query fees')) {
       this.actionProvider.handleQueryFees();
-    } 
-
-    else if (lowercase.includes('how are indexing rewards distributed') || lowercase.includes('how are indexing rewards distributed?')|| lowercase.includes('how are query fees distributed') || lowercase.includes('how are query fees distributed?') || lowercase.includes('how are indexing rewards and query fees distributed') || lowercase.includes('how are indexing rewards and query fees distributed?')) {
-      this.actionProvider.handleIndexingRewardsAndQueryFees();
     } 
 
     else if (lowercase.includes('poi') || lowercase.includes('po?')|| lowercase.includes('what is poi') || lowercase.includes('what is poi?') || lowercase.includes('proof of indexing') || lowercase.includes('proof of indexing?') || lowercase.includes('proof of index') || lowercase.includes('proof of index?') || lowercase.includes('what is proof of index') || lowercase.includes('what is proof of index?') || lowercase.includes('what is proof of indexing') || lowercase.includes('what is proof of indexing?')) {
@@ -256,11 +249,6 @@ class FRAMessageParser {
     else if (lowercase.includes('how do i buy') || lowercase.includes('how do i buy?') || lowercase.includes('how can i buy') || lowercase.includes('how can i buy?') || lowercase.includes('where can i buy?') || lowercase.includes('where can i buy') || lowercase.includes('buy grt') || lowercase.includes('when can i buy grt') || lowercase.includes('where can i buy grt?') || lowercase.includes('i want to buy') || lowercase.includes('i want to buy grt') || lowercase.includes('how much is grt') || lowercase.includes('how much is grt?') || lowercase.includes('wher can i pick up grt') || lowercase.includes('where can i pick up grt?') || lowercase.includes('i want more grt') || lowercase.includes('where to buy') || lowercase.includes('buy')) {
       this.actionProvider.handleBuy();
     } 
-
-    else if (lowercase.includes('how many GRT tokens do I need to become an indexer') || lowercase.includes('how many GRT tokens do I need to become an indexer?') || lowercase.includes('how much GRT tokens do I need to become an indexer') || lowercase.includes('how much GRT tokens do I need to become an indexer?') || lowercase.includes('how many GRT do I need to become an indexer') || lowercase.includes('how GRT tokens do I need to become an indexer?') || lowercase.includes('how much GRT do I need to become an indexer') || lowercase.includes('how much GRT do I need to become an indexer?') || lowercase.includes('how many GRT to become an indexer') || lowercase.includes('how many GRT to become an indexer?') || lowercase.includes('how much GRT to become an indexer') || lowercase.includes('how much GRT to become an indexer?') || lowercase.includes('amount of GRT to become an indexer') || lowercase.includes('amount of GRT to become an indexer?') || lowercase.includes('amount of GRT needed to become an indexer') || lowercase.includes('amount of GRT needed to become an indexer?')) {
-      this.actionProvider.handleIndexerQs();
-    } 
-    
     
     else if (lowercase.includes('gas') || lowercase.includes('gas price') || lowercase.includes('what is gas') || lowercase.includes('what is gas?') || lowercase.includes('what is the gas?') || lowercase.includes('what is gas?') || lowercase.includes('why is the gas cost so high') || lowercase.includes('why is the gas cost so high?') || lowercase.includes('why is the gas so high') || lowercase.includes('why is the gas cost so high?') || lowercase.includes('how much for gas') || lowercase.includes('how much for gas?') ) {
       this.actionProvider.handleGas();

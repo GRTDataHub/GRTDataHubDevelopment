@@ -266,6 +266,14 @@ class ESPMessageParser {
       this.actionProvider.handleGas();
     } 
 
+    else if (lowercase.includes('indexer location') || lowercase.includes('indexers location') || lowercase.includes('indexer map') || lowercase.includes('indexer maps')) {
+      this.actionProvider.handleIndexerMap();
+    } 
+
+    else if (lowercase.includes('compare') || lowercase.includes('comparison') || lowercase.includes('comparar')) {
+      this.actionProvider.handleIndexerCompare();
+    } 
+
     else if (lowercase.includes('withdraw') || lowercase.includes('withdrawal') || lowercase.includes('retirar')) {
       this.actionProvider.handleAdvocateGrantWithdraw();
     } 

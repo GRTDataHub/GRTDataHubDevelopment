@@ -15,7 +15,7 @@ const ENGChatBotPage = () => ({
         <NavbarChatbot />
         <div className="chatbot-page-container">
             <div className="chatbot-text-container">
-            <h3  className="chatbot-page-text">To find the full question set for this bot and RECENT UPDATES please see <a  className="chatbot-link" href="./questionBank" target="_blank" rel="noreferrer">here</a>.</h3><h3 className="feedback-text chatbot-page-text">Please support the GRTDataHub English Chatbot by helping with improvements by recommending content, documentation and tutorials.</h3>
+            <h3 className="feedback-text chatbot-page-text">Please support the GRTDataHub English Chatbot by helping with improvements by recommending content, documentation and tutorials.</h3>
 
         <Chatbot
         config={ENGConfig}

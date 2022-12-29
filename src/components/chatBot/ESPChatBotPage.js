@@ -15,7 +15,8 @@ const ESPChatBotPage = () => ({
         <NavbarChatbot />
         <div className="chatbot-page-container">
             <div className="chatbot-text-container">
-            <h3  className="chatbot-page-text">Para encontrar el conjunto completo de preguntas para este bot y las ACTUALIZACIONES RECIENTES, consulte <a  className="chatbot-link" href="./ESPQuestionBank" target="_blank" rel="noreferrer">aquí</a>.</h3><h3 className="feedback-text chatbot-page-text">Apoye el GRTDataHub Chatbot ayudando con las mejoras recomendando contenido, documentación y tutoriales.</h3><h3 className="feedback-text chatbot-page-text"></h3><h3 className="feedback-text chatbot-page-text">Los tutoriales de texto y video ahora están en español, sin embargo, algunos están actualmente en inglés.</h3><h3 className="feedback-text chatbot-page-text">Beta Fase 2</h3>
+            <h3 className="feedback-text chatbot-page-text">Apoye el GRTDataHub Chatbot ayudando con las mejoras recomendando contenido, documentación y tutoriales.</h3><h3 className="feedback-text chatbot-page-text"></h3>
+            <h3 className="feedback-text chatbot-page-text">Con la ayuda de <a className="chatbot-link" href="https://twitter.com/block_latina?s=21&t=cVYEbpPulTa3Uw6fHWaS7Q" target="_blank" rel="noreferrer">Jorgelina</a> y <a className="chatbot-link" href="https://twitter.com/blockya_?s=21&t=cVYEbpPulTa3Uw6fHWaS7Q" target="_blank" rel="noreferrer">Lorena</a>, las traducciones dentro de este chatbot han sido revisadas y modificadas en consecuencia para que la comunidad española las use y aproveche todo su potencial.</h3>
 
         <Chatbot
         config={ESPConfig}

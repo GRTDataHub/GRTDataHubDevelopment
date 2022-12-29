@@ -15,8 +15,9 @@ const GERChatBotPage = () => ({
         <NavbarChatbot />
         <div className="chatbot-page-container">
             <div className="chatbot-text-container">
-            <h3  className="chatbot-page-text">Den vollständigen Fragensatz für diesen Bot und die LETZTEN UPDATES finden Sie <a className="chatbot-link" href="./GERQuestionBank" target="_blank" rel="noreferrer">hier</a>.</h3><h3 className="feedback-text chatbot-page-text">Bitte unterstützen Sie den GRTDataHub Deutsch Chatbot, indem Sie bei Verbesserungen helfen, indem Sie Inhalte, Dokumentationen und Tutorials empfehlen.</h3>
-
+            <h3 className="feedback-text chatbot-page-text">Bitte unterstützen Sie den GRTDataHub Deutsch Chatbot, indem Sie bei Verbesserungen helfen, indem Sie Inhalte, Dokumentationen und Tutorials empfehlen.</h3>
+            <h3 className="feedback-text chatbot-page-text">Mit der Hilfe von <a className="chatbot-link" href="https://twitter.com/german_thegraph?s=21&t=cVYEbpPulTa3Uw6fHWaS7Q" target="_blank" rel="noreferrer">Andy</a> wurden die Übersetzungen in diesem Chatbot Korrektur gelesen und entsprechend geändert, damit die deutsche Community ihr volles Potenzial nutzen und nutzen kann.</h3>
+            
         <Chatbot
         config={GERConfig}
         messageParser={GERMessageParser}
