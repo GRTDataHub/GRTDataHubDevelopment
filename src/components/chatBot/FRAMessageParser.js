@@ -8,7 +8,7 @@ class FRAMessageParser {
   parse(message) {
     const lowercase = message.toLowerCase()
     // data and charts start
-    if (lowercase.includes('active delegator count') || lowercase.includes('delegator count') || lowercase.includes('what is the active delegator count') || lowercase.includes('what is the active delegator count?') || lowercase.includes('active delegatos') || lowercase.includes('how many people are delegating') || lowercase.includes('how many people are delegating?')  || lowercase.includes('how many people are delegating grt?') || lowercase.includes('how many people are delegating grt')  || lowercase.includes('how many delegators')  || lowercase.includes('how many delegators?')  || lowercase.includes('how many delegators are there')  || lowercase.includes('how many delegators are there?'))  {
+    if (lowercase.includes('active delegator count') || lowercase.includes('delegator count') || lowercase.includes('what is the active delegator count') || lowercase.includes('what is the active delegator count?') || lowercase.includes('active delegatos') || lowercase.includes('how many people are delegating') || lowercase.includes('how many people are delegating?')  || lowercase.includes('how many people are delegating grt?') || lowercase.includes('how many people are delegating grt')  || lowercase.includes('how many delegators')  || lowercase.includes('how many delegators?')  || lowercase.includes('how many delegators are there')  || lowercase.includes('how many delegators are there?') || lowercase.includes('délégateurs actifs'))  {
       this.actionProvider.handleActiveDelegatorCount();
     }
 
@@ -45,7 +45,7 @@ class FRAMessageParser {
       this.actionProvider.handleGraphSocial();
     } 
 
-    else if (lowercase.includes('quarterly grt participant update') || lowercase.includes('grt participant update') || lowercase.includes('graph ql api') || lowercase.includes('participant update')) {
+    else if (lowercase.includes('quarterly grt participant update') || lowercase.includes('grt participant update') || lowercase.includes('graph ql api') || lowercase.includes('participant')) {
       this.actionProvider.handleParticipantUpdate();
     }
 
@@ -62,7 +62,7 @@ class FRAMessageParser {
       this.actionProvider.handlePodcast();
     } 
 
-    else if (lowercase.includes('statistics') || lowercase.includes('stats') || lowercase.includes('data') || lowercase.includes('daily data')) {
+    else if (lowercase.includes('statistics') || lowercase.includes('stats') || lowercase.includes('data') || lowercase.includes('daily data') || lowercase.includes('statistiques')) { 
       this.actionProvider.handleStatistics();
     }
 
@@ -70,60 +70,60 @@ class FRAMessageParser {
       this.actionProvider.handleJob();
     }
 
-    else if (lowercase.includes('active delegation count') || lowercase.includes('what is the active delegation count') || lowercase.includes('what is the active delegation count?') || lowercase.includes('active delegations')) {
+    else if (lowercase.includes('active delegation count') || lowercase.includes('what is the active delegation count') || lowercase.includes('what is the active delegation count?') || lowercase.includes('active delegations') || lowercase.includes('délégations actives')) {
       this.actionProvider.handleActiveDelegationCount();
     }
 
-    else if (lowercase.includes('holders count') || lowercase.includes('what is the holders count') || lowercase.includes('what is the holders count?') || lowercase.includes('holders')|| lowercase.includes('what is the holder count') || lowercase.includes('what is the holder count?') || lowercase.includes('holder') || lowercase.includes('holder count')  || lowercase.includes('how many holders') || lowercase.includes('how many holders?') || lowercase.includes('how many grt holders') || lowercase.includes('how many grt holders?'))  {
+    else if (lowercase.includes('holders count') || lowercase.includes('what is the holders count') || lowercase.includes('what is the holders count?') || lowercase.includes('holders')|| lowercase.includes('what is the holder count') || lowercase.includes('what is the holder count?') || lowercase.includes('holder') || lowercase.includes('holder count')  || lowercase.includes('how many holders') || lowercase.includes('how many holders?') || lowercase.includes('how many grt holders') || lowercase.includes('how many grt holders?') || lowercase.includes('détenteurs'))  {
       this.actionProvider.handleHoldersCount();
     }
 
-    else if (lowercase.includes('subgraphs count') ||  lowercase.includes('what is the subgraphs count') || lowercase.includes('what is the subgraphs count?') || lowercase.includes('what is the subgraph count?') || lowercase.includes('subgraph count')|| lowercase.includes('what is the subgraph count?') || lowercase.includes('what is the subgraph count') || lowercase.includes('how many subgraphs') || lowercase.includes('how many subgraphs?'))  {
+    else if (lowercase.includes('subgraphs count') ||  lowercase.includes('what is the subgraphs count') || lowercase.includes('what is the subgraphs count?') || lowercase.includes('what is the subgraph count?') || lowercase.includes('subgraph count')|| lowercase.includes('what is the subgraph count?') || lowercase.includes('what is the subgraph count') || lowercase.includes('how many subgraphs') || lowercase.includes('how many subgraphs?') || lowercase.includes('nombre de subgraphes'))  {
       this.actionProvider.handleSubgraphsCount();
     }
 
-    else if (lowercase.includes('curators count') ||  lowercase.includes('what is the curators count') || lowercase.includes('what is the curators count?') || lowercase.includes('what is the curator count?') || lowercase.includes('curator count')|| lowercase.includes('what is the curator count?') || lowercase.includes('what is the curator count') || lowercase.includes('how many curators') || lowercase.includes('how many curators?'))  {
+    else if (lowercase.includes('curators count') ||  lowercase.includes('what is the curators count') || lowercase.includes('what is the curators count?') || lowercase.includes('what is the curator count?') || lowercase.includes('curator count')|| lowercase.includes('what is the curator count?') || lowercase.includes('what is the curator count') || lowercase.includes('how many curators') || lowercase.includes('how many curators?') || lowercase.includes('nombre des curateurs'))  {
       this.actionProvider.handleCuratorsCount();
     }
 
-    else if (lowercase.includes('active indexers count') ||  lowercase.includes('what is the active indexers count') || lowercase.includes('what is the active indexers count?') || lowercase.includes('what is the active indexers count?') || lowercase.includes('active indexer count')|| lowercase.includes('what is the active indexer count?') || lowercase.includes('what is the active indexer count') || lowercase.includes('how many indexers') || lowercase.includes('how many indexers?'))  {
+    else if (lowercase.includes('active indexers count') ||  lowercase.includes('what is the active indexers count') || lowercase.includes('what is the active indexers count?') || lowercase.includes('what is the active indexers count?') || lowercase.includes('active indexer count')|| lowercase.includes('what is the active indexer count?') || lowercase.includes('what is the active indexer count') || lowercase.includes('how many indexers') || lowercase.includes('indexeurs actifs'))  {
       this.actionProvider.handleActiveIndexerCount();
     }
 
-    else if (lowercase.includes('total grt delegated by delegators') ||  lowercase.includes('what is the total grt delegated by delegators') || lowercase.includes('what is the total grt delegated by delegators?') || lowercase.includes('what is the total amount of grt delegated by delegators?') || lowercase.includes('what is the total amount of grt delegated by delegators'))  {
+    else if (lowercase.includes('total grt delegated by delegators') ||  lowercase.includes('what is the total grt delegated by delegators') || lowercase.includes('what is the total grt delegated by delegators?') || lowercase.includes('what is the total amount of grt delegated by delegators?') || lowercase.includes('total GRT délegateur par les délégateurs'))  {
       this.actionProvider.handleTotalGRTDelegatedByDelegators();
     }
 
-    else if (lowercase.includes('total query fees count') ||  lowercase.includes('what is the total query fees count') || lowercase.includes('what is the total query fees count?') || lowercase.includes('what are the total query fees count?') || lowercase.includes('what are the total query fees count?') || lowercase.includes('what is the total query fees?') || lowercase.includes('what are the total query fees?') || lowercase.includes('what are the total query fees?') ||  lowercase.includes('what is the total query fees') || lowercase.includes('how many query fees') || lowercase.includes('how many query fees?') || lowercase.includes('how many total query fees') || lowercase.includes('how many total query fees?'))  {
+    else if (lowercase.includes('total query fees count') ||  lowercase.includes('what is the total query fees count') || lowercase.includes('what is the total query fees count?') || lowercase.includes('what are the total query fees count?') || lowercase.includes('what are the total query fees count?') || lowercase.includes('what is the total query fees?') || lowercase.includes('what are the total query fees?') || lowercase.includes('what are the total query fees?') ||  lowercase.includes('what is the total query fees') || lowercase.includes('how many query fees') || lowercase.includes('how many query fees?') || lowercase.includes('how many total query fees') || lowercase.includes('frais de requête'))  {
       this.actionProvider.handleTotalQueryFeesCount();
     }
 
-    else if (lowercase.includes('total grt signalled by curators') ||  lowercase.includes('what is the total grt signalled by curators') || lowercase.includes('what is the total grt signalled by curators?') || lowercase.includes('what the total amount of grt signalled by curators?') || lowercase.includes('what the total amount of grt signalled by curators') || lowercase.includes('how many signalled') || lowercase.includes('how many signalled?') || lowercase.includes('how many signalled grt') || lowercase.includes('how many signalled grt?'))  {
+    else if (lowercase.includes('total grt signalled by curators') ||  lowercase.includes('what is the total grt signalled by curators') || lowercase.includes('what is the total grt signalled by curators?') || lowercase.includes('what the total amount of grt signalled by curators?') || lowercase.includes('what the total amount of grt signalled by curators') || lowercase.includes('how many signalled') || lowercase.includes('how many signalled?') || lowercase.includes('how many signalled grt') || lowercase.includes('signalé par les curateurs'))  {
       this.actionProvider.handleTotalGRTSignalledByCurators();
     }
 
-    else if (lowercase.includes('total staked grt') ||  lowercase.includes('what is the total staked grt') || lowercase.includes('what is the total staked grt?') || lowercase.includes('what the total amount of staked grt?') || lowercase.includes('what the total amount of staked grt') ||  lowercase.includes('what is the total grt staked') || lowercase.includes('what is the total grt staked?') || lowercase.includes('what the total amount of grt staked?') || lowercase.includes('what the total amount of grt staked') || lowercase.includes('total grt staked') || lowercase.includes('how many staked') || lowercase.includes('how many staked?') || lowercase.includes('how many total staked') || lowercase.includes('how many total staked?') || lowercase.includes('how many grt staked') || lowercase.includes('how many grt staked') || lowercase.includes('how many total staked') || lowercase.includes('how many total staked?'))  {
+    else if (lowercase.includes('total staked grt') ||  lowercase.includes('what is the total staked grt') || lowercase.includes('what is the total staked grt?') || lowercase.includes('what the total amount of staked grt?') || lowercase.includes('what the total amount of staked grt') ||  lowercase.includes('what is the total grt staked') || lowercase.includes('what is the total grt staked?') || lowercase.includes('what the total amount of grt staked?') || lowercase.includes('what the total amount of grt staked') || lowercase.includes('total grt staked') || lowercase.includes('how many staked') || lowercase.includes('how many staked?') || lowercase.includes('how many total staked') || lowercase.includes('how many total staked?') || lowercase.includes('how many grt staked') || lowercase.includes('how many grt staked') || lowercase.includes('how many total staked') || lowercase.includes('total de GRT enquêtés'))  {
       this.actionProvider.handleTotalStakedGRTCount();
     }
 
-    else if (lowercase.includes('total delegated grt by indexers') ||  lowercase.includes('what is the total delegated grt by indexers') || lowercase.includes('what is the total delegated grt by indexers?') || lowercase.includes('what the amount of grt delegated by indexers?') || lowercase.includes('what the amount of grt delegated by indexers') ||  lowercase.includes('total grt delegated by indexers') || lowercase.includes('what is the total grt delegated by indexers?') || lowercase.includes('total grt delegated by indexers'))  {
+    else if (lowercase.includes('total delegated grt by indexers') ||  lowercase.includes('what is the total delegated grt by indexers') || lowercase.includes('what is the total delegated grt by indexers?') || lowercase.includes('what the amount of grt delegated by indexers?') || lowercase.includes('what the amount of grt delegated by indexers') ||  lowercase.includes('total grt delegated by indexers') || lowercase.includes('délégateur par les indexeurs') || lowercase.includes('total grt delegated by indexers'))  {
       this.actionProvider.handleTotalDelegatedGRTByIndexersCount();
     }
 
-    else if (lowercase.includes('total grt burned') ||  lowercase.includes('what is the total grt burned') || lowercase.includes('what is the total grt burned?') || lowercase.includes('what the amount of total grt burned?') || lowercase.includes('what the amount of total grt burned') ||  lowercase.includes('total burnt burned') || lowercase.includes('what is the total burnt burned?') || lowercase.includes('what is the total burnt burned') || lowercase.includes('how many burned') || lowercase.includes('how many burned?') || lowercase.includes('how many grt burned') || lowercase.includes('how many grt burned?') || lowercase.includes('how much burned') || lowercase.includes('how much burned?')  || lowercase.includes('total burned grt') || lowercase.includes('total burnt grt'))  {
+    else if (lowercase.includes('total grt burned') ||  lowercase.includes('what is the total grt burned') || lowercase.includes('what is the total grt burned?') || lowercase.includes('what the amount of total grt burned?') || lowercase.includes('what the amount of total grt burned') ||  lowercase.includes('total burnt burned') || lowercase.includes('what is the total burnt burned?') || lowercase.includes('what is the total burnt burned') || lowercase.includes('how many burned') || lowercase.includes('how many burned?') || lowercase.includes('how many grt burned') || lowercase.includes('how many grt burned?') || lowercase.includes('how much burned') || lowercase.includes('how much burned?')  || lowercase.includes('total burned grt') || lowercase.includes('GRT brûlés'))  {
       this.actionProvider.handleTotalGRTBurnedCount();
     }
       // data and charts end
 
-      else if (lowercase.includes('undelegating') || lowercase.includes('undelegation') || lowercase.includes('undelegate') || lowercase.includes('unstake') || lowercase.includes('unstaking') || lowercase.includes('what is undelegating') || lowercase.includes('what is undelegating?') || lowercase.includes('what is undelegation?') || lowercase.includes('what is undelegation') || lowercase.includes('how long to undelegate') || lowercase.includes('how long to undelegate?') || lowercase.includes('how long to unstake?') || lowercase.includes('how long to unstake') || lowercase.includes('28 days') || lowercase.includes('why is undelegation period 28 days?') || lowercase.includes('thaw') || lowercase.includes('what is an epoch?') || lowercase.includes('what is an epoch') || lowercase.includes('epoch?') || lowercase.includes('epoch') || lowercase.includes('how long is a epoch') || lowercase.includes('how long is a epoch?') || lowercase.includes('how many days is an epoch') || lowercase.includes('how many days is an epoch?') || lowercase.includes('how many days is a epoch')  || lowercase.includes('how many days is a epoch?')) {
+      else if (lowercase.includes('undelegating') || lowercase.includes('undelegation') || lowercase.includes('undelegate') || lowercase.includes('unstake') || lowercase.includes('unstaking') || lowercase.includes('what is undelegating') || lowercase.includes('what is undelegating?') || lowercase.includes('what is undelegation?') || lowercase.includes('what is undelegation') || lowercase.includes('how long to undelegate') || lowercase.includes('how long to undelegate?') || lowercase.includes('how long to unstake?') || lowercase.includes('how long to unstake') || lowercase.includes('28 days') || lowercase.includes('why is undelegation period 28 days?') || lowercase.includes('thaw') || lowercase.includes('what is an epoch?') || lowercase.includes('what is an epoch') || lowercase.includes('epoch?') || lowercase.includes('epoch') || lowercase.includes('how long is a epoch') || lowercase.includes('how long is a epoch?') || lowercase.includes('how many days is an epoch') || lowercase.includes('how many days is an epoch?') || lowercase.includes('ne pas déléguer')) {
         this.actionProvider.handleUnDelegating();
       } 
 
-      else if (lowercase.includes('choose indexer') || lowercase.includes('choose indexers')|| lowercase.includes('how to choose indexer') || lowercase.includes('how to choose indexer?') || lowercase.includes('how do i choose indexer')|| lowercase.includes('how do i choose indexer?') || lowercase.includes('how do i choose indexers') || lowercase.includes('how do i choose indexers') || lowercase.includes('how to find indexer') || lowercase.includes('how to find indexer?') || lowercase.includes('find indexer')  || lowercase.includes('find good indexer') || lowercase.includes('how to find a good indexer') || lowercase.includes('how to find a good indexer?') || lowercase.includes('how to find a profitable indexer') || lowercase.includes('how to find a profitable indexer?')  || lowercase.includes('how to find a profitable indexers') || lowercase.includes('how to find a profitable indexers?') || lowercase.includes('compare indexer') || lowercase.includes('compare indexers') || lowercase.includes('compare')  || lowercase.includes('how do i compare indexers') || lowercase.includes('how do i compare indexers?') || lowercase.includes('how do i choose an indexer?') || lowercase.includes('how do i choose an indexer') || lowercase.includes('apy')) {
+      else if (lowercase.includes('choose indexer') || lowercase.includes('choose indexers')|| lowercase.includes('how to choose indexer') || lowercase.includes('how to choose indexer?') || lowercase.includes('how do i choose indexer')|| lowercase.includes('how do i choose indexer?') || lowercase.includes('how do i choose indexers') || lowercase.includes('how do i choose indexers') || lowercase.includes('how to find indexer') || lowercase.includes('how to find indexer?') || lowercase.includes('find indexer')  || lowercase.includes('find good indexer') || lowercase.includes('how to find a good indexer') || lowercase.includes('how to find a good indexer?') || lowercase.includes('how to find a profitable indexer') || lowercase.includes('how to find a profitable indexer?')  || lowercase.includes('how to find a profitable indexers') || lowercase.includes('how to find a profitable indexers?') || lowercase.includes('compare indexer') || lowercase.includes('compare indexers') || lowercase.includes('compare')  || lowercase.includes('how do i compare indexers') || lowercase.includes('how do i compare indexers?') || lowercase.includes('choix d’un indexeur') || lowercase.includes('how do i choose an indexer') || lowercase.includes('apy')) {
         this.actionProvider.handleChoosingIndexers();
       } 
 
-      else if (lowercase.includes('effective indexer') || lowercase.includes('good indexer')|| lowercase.includes('be an indexer') || lowercase.includes('be a indexer')) {
+      else if (lowercase.includes('effective indexer') || lowercase.includes('devenir indexeur')|| lowercase.includes('be an indexer') || lowercase.includes('be a indexer')) {
         this.actionProvider.handleBecomeIndexer();
       } 
 
@@ -147,11 +147,11 @@ class FRAMessageParser {
       this.actionProvider.handleTheGraphCouncil();
     } 
 
-    else if (lowercase.includes('rewards') || lowercase.includes('indexing rewards')|| lowercase.includes('what are rewards') || lowercase.includes('what are rewards?') || lowercase.includes('what are indexing rewards?') || lowercase.includes('what are indexing rewards') || lowercase.includes('delegator rewards') || lowercase.includes('what are delegator rewards?') || lowercase.includes('what are deleagtor rewards') || lowercase.includes('when will i get rewards') || lowercase.includes('when will i get rewards?') || lowercase.includes('when will i recieve rewards')|| lowercase.includes('when will i recieve rewards?') || lowercase.includes('when rewards') || lowercase.includes('when rewards?') || lowercase.includes('how long until i get rewards') || lowercase.includes('how long until i get rewards?')) {
+    else if (lowercase.includes('rewards') || lowercase.includes('indexing rewards')|| lowercase.includes('what are rewards') || lowercase.includes('what are rewards?') || lowercase.includes('what are indexing rewards?') || lowercase.includes('what are indexing rewards') || lowercase.includes('delegator rewards') || lowercase.includes('what are delegator rewards?') || lowercase.includes('what are deleagtor rewards') || lowercase.includes('when will i get rewards') || lowercase.includes('when will i get rewards?') || lowercase.includes('when will i recieve rewards')|| lowercase.includes('when will i recieve rewards?') || lowercase.includes('when rewards') || lowercase.includes('when rewards?') || lowercase.includes('récompenses') || lowercase.includes('how long until i get rewards?')) {
       this.actionProvider.handleRewards();
     } 
 
-    else if (lowercase.includes('query fees') || lowercase.includes('what are query fees')|| lowercase.includes('what are query fees?') || lowercase.includes('what is a query fee') || lowercase.includes('what is a query fee?') || lowercase.includes('explain query fees')) {
+    else if (lowercase.includes('query fees') || lowercase.includes('what are query fees')|| lowercase.includes('what are query fees?') || lowercase.includes('what is a query fee') || lowercase.includes('what is a query fee?') || lowercase.includes('frais')) {
       this.actionProvider.handleQueryFees();
     } 
 
@@ -159,7 +159,7 @@ class FRAMessageParser {
       this.actionProvider.handlePOI();
     } 
 
-    else if (lowercase.includes('hardware needed for indexing') || lowercase.includes('hardware required for indexing')|| lowercase.includes('indexing hardware requirements') || lowercase.includes('what are the indexing hardware requirements?') || lowercase.includes('hardware required for indexer')|| lowercase.includes('indexer hardware requirements') || lowercase.includes('what are the indexer hardware requirements?') || lowercase.includes('what are the indexer hardware requirements') || lowercase.includes('what is the indexer hardware requirements?') || lowercase.includes('what is the indexer hardware requirements') || lowercase.includes('what are the hardware requirements?') || lowercase.includes('what is the hardware requirements') || lowercase.includes('what are the hardware requirements?') || lowercase.includes('hardware requirements for indexing') || lowercase.includes('hardware requirements for indexing?') || lowercase.includes('what is the hardware requirements for indexing') || lowercase.includes('what is the hardware requirements for indexing?') || lowercase.includes('what are the hardware requirements for indexing') || lowercase.includes('what are the hardware requirements for indexing?') || lowercase.includes('what is the required indexing hardware?') || lowercase.includes('what is the required indexing hardware') || lowercase.includes('hardware')) {
+    else if (lowercase.includes('hardware needed for indexing') || lowercase.includes('hardware required for indexing')|| lowercase.includes('indexing hardware requirements') || lowercase.includes('what are the indexing hardware requirements?') || lowercase.includes('hardware required for indexer')|| lowercase.includes('indexer hardware requirements') || lowercase.includes('what are the indexer hardware requirements?') || lowercase.includes('what are the indexer hardware requirements') || lowercase.includes('what is the indexer hardware requirements?') || lowercase.includes('what is the indexer hardware requirements') || lowercase.includes('what are the hardware requirements?') || lowercase.includes('what is the hardware requirements') || lowercase.includes('what are the hardware requirements?') || lowercase.includes('hardware requirements for indexing') || lowercase.includes('hardware requirements for indexing?') || lowercase.includes('what is the hardware requirements for indexing') || lowercase.includes('what is the hardware requirements for indexing?') || lowercase.includes('what are the hardware requirements for indexing') || lowercase.includes('what are the hardware requirements for indexing?') || lowercase.includes('what is the required indexing hardware?') || lowercase.includes('matérielle requise pour un indexeur') || lowercase.includes('hardware')) {
       this.actionProvider.handleIndexerHardwareRequirements();
     } 
 
@@ -172,19 +172,19 @@ class FRAMessageParser {
       this.actionProvider.handleIPFS();
     } 
 
-    else if (lowercase.includes('curator tools') || lowercase.includes('tools for curator')|| lowercase.includes('curator tool') || lowercase.includes('tool for curator') || lowercase.includes('tool for curators') || lowercase.includes('tools for curators'))  {
+    else if (lowercase.includes('curator tools') || lowercase.includes('tools for curator')|| lowercase.includes('curator tool') || lowercase.includes('tool for curator') || lowercase.includes('tool for curators') || lowercase.includes('outils du curateur'))  {
       this.actionProvider.handleCuratorTools();
     } 
 
-    else if (lowercase.includes('tools') || lowercase.includes('tools to find indexer')|| lowercase.includes('what tools can i use to find an indexer?') || lowercase.includes('what tools can i use to find an indexer') || lowercase.includes('what tools can i use?')) {
+    else if (lowercase.includes('tools') || lowercase.includes('tools to find indexer')|| lowercase.includes('what tools can i use to find an indexer?') || lowercase.includes('what tools can i use to find an indexer') || lowercase.includes('outils')) {
       this.actionProvider.handleTools();
     } 
 
-    else if (lowercase.includes('curator') || lowercase.includes('what is a curator')|| lowercase.includes('what is a curator?') || lowercase.includes('curators') || lowercase.includes('curation') || lowercase.includes('bonding curve') || lowercase.includes('bonding curves') || lowercase.includes('signal subgraph') || lowercase.includes('signal a subgraph') || lowercase.includes('signalling a subgraph') || lowercase.includes('bonding curves') || lowercase.includes('verify subgraph') || lowercase.includes('verify a subgraph') || lowercase.includes('verifying a subgraph') || lowercase.includes('legit subgraph') || lowercase.includes('real subgraph') || lowercase.includes('check subgraph') || lowercase.includes('legitimate subgraph') || lowercase.includes('subgraph is legitimate'))  {
+    else if (lowercase.includes('curator') || lowercase.includes('what is a curator')|| lowercase.includes('what is a curator?') || lowercase.includes('curators') || lowercase.includes('curation') || lowercase.includes('bonding curve') || lowercase.includes('bonding curves') || lowercase.includes('signal subgraph') || lowercase.includes('signal a subgraph') || lowercase.includes('signalling a subgraph') || lowercase.includes('bonding curves') || lowercase.includes('verify subgraph') || lowercase.includes('verify a subgraph') || lowercase.includes('verifying a subgraph') || lowercase.includes('legit subgraph') || lowercase.includes('real subgraph') || lowercase.includes('check subgraph') || lowercase.includes('legitimate subgraph') || lowercase.includes('curateur'))  {
       this.actionProvider.handleCurator();
     } 
 
-    else if (lowercase.includes('guide') || lowercase.includes('help guide')|| lowercase.includes('guides') || lowercase.includes('help guides') ||  lowercase.includes('how to delegate')|| lowercase.includes('how to delegate?') || lowercase.includes('how do i delegate') || lowercase.includes('how do i delegate?') || lowercase.includes('staking') || lowercase.includes('staking guide') || lowercase.includes('delegator guide') || lowercase.includes('delegator guides') || lowercase.includes('what is staking?') || lowercase.includes('what is staking') || lowercase.includes('what is delegating?') || lowercase.includes('what is delegating') || lowercase.includes('where do i stake') || lowercase.includes('where do i stake?') || lowercase.includes('where do i delegate') || lowercase.includes('where do i delegate?') || lowercase.includes('how do i stake?') || lowercase.includes('how do i stake') || lowercase.includes('how do i delegate') || lowercase.includes('how do i delegate?') || lowercase.includes('delegator') || lowercase.includes('delegation') || lowercase.includes('what is a delegator') || lowercase.includes('what is a delegator?') || lowercase.includes('what indexer to choose') || lowercase.includes('what indexer to choose?') || lowercase.includes('what indexer do i choose?') || lowercase.includes('what indexer do i choose') || lowercase.includes('how to choose indexer') || lowercase.includes('how to choose indexer?') || lowercase.includes('how to choose a indexer')|| lowercase.includes('how to choose a indexer?') || lowercase.includes('how to choose an indexer') || lowercase.includes('how to choose an indexer?') || lowercase.includes('how do i choose an indexer') || lowercase.includes('how do i choose an indexer?') || lowercase.includes('how do i find an indexer') || lowercase.includes('how do i find an indexer?') || lowercase.includes('is it hard to delegate?') || lowercase.includes('is it hard to delegate') || lowercase.includes('how hard is it to delegate?') || lowercase.includes('how hard is it to delegate') || lowercase.includes('is delegating hard') || lowercase.includes('is delegating hard?') || lowercase.includes('is delegating hard') || lowercase.includes('is delegating easy?') || lowercase.includes('is it easy to delegate?')  || lowercase.includes('is it easy to delegate') || lowercase.includes('delegate') || lowercase.includes('how to stake') || lowercase.includes('safe to stake') || lowercase.includes('safe to delegate')) {
+    else if (lowercase.includes('guide') || lowercase.includes('help guide')|| lowercase.includes('guides') || lowercase.includes('help guides') ||  lowercase.includes('how to delegate')|| lowercase.includes('how to delegate?') || lowercase.includes('how do i delegate') || lowercase.includes('how do i delegate?') || lowercase.includes('staking') || lowercase.includes('staking guide') || lowercase.includes('delegator guide') || lowercase.includes('delegator guides') || lowercase.includes('what is staking?') || lowercase.includes('what is staking') || lowercase.includes('what is delegating?') || lowercase.includes('what is delegating') || lowercase.includes('where do i stake') || lowercase.includes('where do i stake?') || lowercase.includes('where do i delegate') || lowercase.includes('where do i delegate?') || lowercase.includes('how do i stake?') || lowercase.includes('how do i stake') || lowercase.includes('how do i delegate') || lowercase.includes('how do i delegate?') || lowercase.includes('delegator') || lowercase.includes('delegation') || lowercase.includes('what is a delegator') || lowercase.includes('what is a delegator?') || lowercase.includes('what indexer to choose') || lowercase.includes('what indexer to choose?') || lowercase.includes('what indexer do i choose?') || lowercase.includes('what indexer do i choose') || lowercase.includes('how to choose indexer') || lowercase.includes('how to choose indexer?') || lowercase.includes('how to choose a indexer')|| lowercase.includes('how to choose a indexer?') || lowercase.includes('how to choose an indexer') || lowercase.includes('how to choose an indexer?') || lowercase.includes('how do i choose an indexer') || lowercase.includes('how do i choose an indexer?') || lowercase.includes('how do i find an indexer') || lowercase.includes('how do i find an indexer?') || lowercase.includes('is it hard to delegate?') || lowercase.includes('is it hard to delegate') || lowercase.includes('how hard is it to delegate?') || lowercase.includes('how hard is it to delegate') || lowercase.includes('is delegating hard') || lowercase.includes('is delegating hard?') || lowercase.includes('is delegating hard') || lowercase.includes('is delegating easy?') || lowercase.includes('is it easy to delegate?')  || lowercase.includes('is it easy to delegate') || lowercase.includes('delegate') || lowercase.includes("manuel d'aide") || lowercase.includes('manuel') || lowercase.includes('safe to delegate')) {
       this.actionProvider.handleDelegateGuides();
     }
 
@@ -200,15 +200,15 @@ class FRAMessageParser {
       this.actionProvider.handleSubgraph();
     } 
 
-    else if (lowercase.includes('what are the roles') || lowercase.includes('what are the roles?')|| lowercase.includes('what are the GRT roles') || lowercase.includes('what are the GRT roles?') || lowercase.includes('roles') || lowercase.includes('GRT roles') || lowercase.includes('what are the indexers in the graph network') || lowercase.includes('what are indexers in the graph network?') || lowercase.includes('what are curators in the graph network') || lowercase.includes('what are curators in the graph network?') || lowercase.includes('what are delegators in the graph network?') || lowercase.includes('what are delegators in the graph network') || lowercase.includes('what are delegators?') || lowercase.includes('what are delegators') || lowercase.includes('what are curators?') || lowercase.includes('what are curators') || lowercase.includes('what are indexers?') || lowercase.includes('curator') || lowercase.includes('curators')|| lowercase.includes('delegators') || lowercase.includes('what is a indexer?') || lowercase.includes('what is a indexer') || lowercase.includes('what is an indexer?') || lowercase.includes('what is an indexer') || lowercase.includes('what is a delegator') || lowercase.includes('what is a delegator?') || lowercase.includes('what is a indexer') || lowercase.includes('what is an indexer') || lowercase.includes('what is a indexer?') || lowercase.includes('what is a indexer?') || lowercase.includes('indexer')  || lowercase.includes('what can i do with grt?') || lowercase.includes('what can i do with grt?')) {
+    else if (lowercase.includes('what are the roles') || lowercase.includes('what are the roles?')|| lowercase.includes('what are the GRT roles') || lowercase.includes('what are the GRT roles?') || lowercase.includes('roles') || lowercase.includes('GRT roles') || lowercase.includes('what are the indexers in the graph network') || lowercase.includes('what are indexers in the graph network?') || lowercase.includes('what are curators in the graph network') || lowercase.includes('what are curators in the graph network?') || lowercase.includes('what are delegators in the graph network?') || lowercase.includes('what are delegators in the graph network') || lowercase.includes('what are delegators?') || lowercase.includes('what are delegators') || lowercase.includes('what are curators?') || lowercase.includes('what are curators') || lowercase.includes('what are indexers?') || lowercase.includes('curator') || lowercase.includes('curators')|| lowercase.includes('delegators') || lowercase.includes('what is a indexer?') || lowercase.includes('what is a indexer') || lowercase.includes('what is an indexer?') || lowercase.includes('what is an indexer') || lowercase.includes('what is a delegator') || lowercase.includes('what is a delegator?') || lowercase.includes('what is a indexer') || lowercase.includes('what is an indexer') || lowercase.includes('what is a indexer?') || lowercase.includes('what is a indexer?') || lowercase.includes('indexer')  || lowercase.includes('what can i do with grt?') || lowercase.includes('rôles')) {
       this.actionProvider.handleRoles();
     } 
 
-    else if (lowercase.includes('fees to delegate') || lowercase.includes('delegation fees')|| lowercase.includes('cost to delegate') | lowercase.includes('delegate cost') ||  lowercase.includes('what are fees to delegate') || lowercase.includes('what are fees to delegate?') || lowercase.includes('what are the fees to delegate') || lowercase.includes('what are the fees to delegate?') || lowercase.includes('what are the delegation fees')  || lowercase.includes('what are the delegation fees') || lowercase.includes('what are the delegation fees?')  || lowercase.includes('delegation fees?') || lowercase.includes('what are the costs to delegate') || lowercase.includes('what are the costs to delegate?') || lowercase.includes('risks to delegating') || lowercase.includes('is it expensive to delegate') || lowercase.includes('is it expensive to delegate?') || lowercase.includes('expensive to delegate') || lowercase.includes('delegator expenses') || lowercase.includes('delegation expenses')) {
+    else if (lowercase.includes('fees to delegate') || lowercase.includes('delegation fees')|| lowercase.includes('cost to delegate') | lowercase.includes('delegate cost') ||  lowercase.includes('what are fees to delegate') || lowercase.includes('what are fees to delegate?') || lowercase.includes('what are the fees to delegate') || lowercase.includes('what are the fees to delegate?') || lowercase.includes('what are the delegation fees')  || lowercase.includes('what are the delegation fees') || lowercase.includes('what are the delegation fees?')  || lowercase.includes('delegation fees?') || lowercase.includes('what are the costs to delegate') || lowercase.includes('what are the costs to delegate?') || lowercase.includes('frais de délégation') || lowercase.includes('is it expensive to delegate') || lowercase.includes('is it expensive to delegate?') || lowercase.includes('expensive to delegate') || lowercase.includes('delegator expenses') || lowercase.includes('delegation expenses')) {
       this.actionProvider.handleFeesToDelegate();
     } 
 
-    else if (lowercase.includes('can i delegate with a wallet') || lowercase.includes('can i delegate with a wallet?')|| lowercase.includes('delegate with wallet') | lowercase.includes('delegate with a wallet') ||  lowercase.includes('wallet to delegate') || lowercase.includes('delegating with wallet') || lowercase.includes('delegating with a wallet') || lowercase.includes('wallet')  || lowercase.includes('metamask') || lowercase.includes('deposit')) {
+    else if (lowercase.includes('can i delegate with a wallet') || lowercase.includes('can i delegate with a wallet?')|| lowercase.includes('delegate with wallet') | lowercase.includes('delegate with a wallet') ||  lowercase.includes('wallet to delegate') || lowercase.includes('delegating with wallet') || lowercase.includes('déléguer avec portefeuille') || lowercase.includes('wallet')  || lowercase.includes('metamask') || lowercase.includes('deposit')) {
       this.actionProvider.handleDelegateWithWallet();
     }  
 
@@ -220,7 +220,7 @@ class FRAMessageParser {
       this.actionProvider.handleFoundingMembers();
     } 
 
-    else if (lowercase.includes('the graph funding') || lowercase.includes('who funds the graph')|| lowercase.includes('who gave the graph funding') || lowercase.includes('who provides funding to the graph') || lowercase.includes('who funds the graph?')|| lowercase.includes('who gave the graph funding?') || lowercase.includes('who provides funding to the graph?')) {
+    else if (lowercase.includes('the graph funding') || lowercase.includes('who funds the graph')|| lowercase.includes('who gave the graph funding') || lowercase.includes('who provides funding to the graph') || lowercase.includes('who funds the graph?')|| lowercase.includes('financement') || lowercase.includes('who provides funding to the graph?')) {
       this.actionProvider.handleGraphFunding();
     } 
     
@@ -236,7 +236,7 @@ class FRAMessageParser {
       this.actionProvider.handleGitHub();
     } 
 
-    else if (lowercase.includes('roadmap') || lowercase.includes('is there a roadmap?') || lowercase.includes('is there a roadmap') || lowercase.includes('is there a road map') || lowercase.includes('is there a road map?') || lowercase.includes('where can i find a roadmap') || lowercase.includes('where can i find a roadmap?') || lowercase.includes('where can i find the road map?') || lowercase.includes('where can i find the road map')  || lowercase.includes('what is the roadmap?')  || lowercase.includes('what is the roadmap')  || lowercase.includes('what is the road map?')  || lowercase.includes('what is the road map')) {
+    else if (lowercase.includes('roadmap') || lowercase.includes('is there a roadmap?') || lowercase.includes('is there a roadmap') || lowercase.includes('is there a road map') || lowercase.includes('is there a road map?') || lowercase.includes('where can i find a roadmap') || lowercase.includes('where can i find a roadmap?') || lowercase.includes('where can i find the road map?') || lowercase.includes('where can i find the road map')  || lowercase.includes('what is the roadmap?')  || lowercase.includes('feuille de route')  || lowercase.includes('what is the road map?')  || lowercase.includes('what is the road map')) {
       this.actionProvider.handleRoadMap();
     } 
 
@@ -250,7 +250,7 @@ class FRAMessageParser {
       this.actionProvider.handleBuy();
     } 
     
-    else if (lowercase.includes('gas') || lowercase.includes('gas price') || lowercase.includes('what is gas') || lowercase.includes('what is gas?') || lowercase.includes('what is the gas?') || lowercase.includes('what is gas?') || lowercase.includes('why is the gas cost so high') || lowercase.includes('why is the gas cost so high?') || lowercase.includes('why is the gas so high') || lowercase.includes('why is the gas cost so high?') || lowercase.includes('how much for gas') || lowercase.includes('how much for gas?') ) {
+    else if (lowercase.includes('gas') || lowercase.includes('gas price') || lowercase.includes('what is gas') || lowercase.includes('what is gas?') || lowercase.includes('what is the gas?') || lowercase.includes('what is gas?') || lowercase.includes('why is the gas cost so high') || lowercase.includes('why is the gas cost so high?') || lowercase.includes('why is the gas so high') || lowercase.includes('why is the gas cost so high?') || lowercase.includes('how much for gas') || lowercase.includes('gaz') ) {
       this.actionProvider.handleGas();
     } 
 
@@ -258,15 +258,15 @@ class FRAMessageParser {
       this.actionProvider.handleIndexerMap();
     } 
 
-    else if (lowercase.includes('compare') || lowercase.includes('comparison')) {
+    else if (lowercase.includes('compare') || lowercase.includes('comparison') || lowercase.includes('comparer')) {
       this.actionProvider.handleIndexerCompare();
     } 
 
-    else if (lowercase.includes('withdraw') || lowercase.includes('withdrawal') || lowercase.includes('withdrawing')) {
+    else if (lowercase.includes('withdraw') || lowercase.includes('withdrawal') || lowercase.includes('withdrawing') || lowercase.includes('retirer')) {
       this.actionProvider.handleAdvocateGrantWithdraw();
     } 
     
-    else if (lowercase.includes('grant') || lowercase.includes('advocatesdao grants') || lowercase.includes('grants')) {
+    else if (lowercase.includes('grant') || lowercase.includes('advocatesdao grants') || lowercase.includes('grants') || lowercase.includes('subvention')) {
       this.actionProvider.handleAdvocateGrant();
     } 
 
@@ -284,11 +284,11 @@ class FRAMessageParser {
       this.actionProvider.handleGRTTokenAddress();
     } 
 
-    else if (lowercase.includes('learn web3') || lowercase.includes('learn web 3') || lowercase.includes('learn web three')) {
+    else if (lowercase.includes('learn web3') || lowercase.includes('learn web 3') || lowercase.includes('apprentissage de web3')) {
       this.actionProvider.handleLearnWeb3();
     } 
 
-    else if (lowercase.includes('course') || lowercase.includes('courses') || lowercase.includes('learn') || lowercase.includes('i want to learn') || lowercase.includes('academy') || lowercase.includes('teach me') || lowercase.includes('what courses are there') || lowercase.includes('what courses are there?') || lowercase.includes('what courses are available?') || lowercase.includes('what courses are available')) {
+    else if (lowercase.includes('course') || lowercase.includes('courses') || lowercase.includes('learn') || lowercase.includes('i want to learn') || lowercase.includes('academy') || lowercase.includes('teach me') || lowercase.includes('what courses are there') || lowercase.includes('what courses are there?') || lowercase.includes('what courses are available?') || lowercase.includes('cours')) {
       this.actionProvider.handleCourses();
     } 
 
@@ -296,7 +296,7 @@ class FRAMessageParser {
       this.actionProvider.handleArbitrum();
     } 
 
-    else if (lowercase.includes('women in web3') || lowercase.includes('women in web 3') || lowercase.includes('wiw3') || lowercase.includes('women') || lowercase.includes('wow3')) {
+    else if (lowercase.includes('women in web3') || lowercase.includes('women in web 3') || lowercase.includes('wiw3') || lowercase.includes('women') || lowercase.includes('femmes dans le web3')) {
       this.actionProvider.handleWomenInWeb3();
     } 
 
@@ -308,11 +308,11 @@ class FRAMessageParser {
       this.actionProvider.handleTelegram();
     } 
 
-    else if (lowercase.includes('sunsetting hosted service') || lowercase.includes('sun setting hosted service') || lowercase.includes('what is sunsetting the hosted service?') || lowercase.includes('what is sunsetting the hosted service') || lowercase.includes('sunsetting the hosted service') || lowercase.includes('sun setting the hosted service') || lowercase.includes('sun set') || lowercase.includes('sunset')) {
+    else if (lowercase.includes('sunsetting hosted service') || lowercase.includes('sun setting hosted service') || lowercase.includes('what is sunsetting the hosted service?') || lowercase.includes('what is sunsetting the hosted service') || lowercase.includes('sunsetting the hosted service') || lowercase.includes('sun setting the hosted service') || lowercase.includes('sunsetting service hébergé') || lowercase.includes('sunset')) {
       this.actionProvider.handleSunsettingHostedService();
     } 
 
-    else if (lowercase.includes('hosted service') || lowercase.includes('what is the hosted service') || lowercase.includes('what is the hosted service?') || lowercase.includes('explain the hosted service') || lowercase.includes('hosted vs mainnet') || lowercase.includes('what is the difference between hosted and mainnet') || lowercase.includes('what is the difference between hosted and mainnet?') || lowercase.includes('what is the difference between the hosted service and mainnet') || lowercase.includes('what is the difference between the hosted service and mainnet?') || lowercase.includes('hosted') || lowercase.includes('how to migrate subgraph from hosted to mainnet') || lowercase.includes('how to migrate subgraph') || lowercase.includes('mainnet') || lowercase.includes('how do i migrate a subgraph from hosted service to mainnet') || lowercase.includes('how do i migrate a subgraph from hosted service to mainnet?')) {
+    else if (lowercase.includes('hosted service') || lowercase.includes('what is the hosted service') || lowercase.includes('what is the hosted service?') || lowercase.includes('explain the hosted service') || lowercase.includes('hosted vs mainnet') || lowercase.includes('what is the difference between hosted and mainnet') || lowercase.includes('what is the difference between hosted and mainnet?') || lowercase.includes('what is the difference between the hosted service and mainnet') || lowercase.includes('what is the difference between the hosted service and mainnet?') || lowercase.includes('hosted') || lowercase.includes('how to migrate subgraph from hosted to mainnet') || lowercase.includes('how to migrate subgraph') || lowercase.includes('mainnet') || lowercase.includes('how do i migrate a subgraph from hosted service to mainnet') || lowercase.includes('service hébergé')) {
       this.actionProvider.handleHostedService();
     } 
 
@@ -320,7 +320,7 @@ class FRAMessageParser {
       this.actionProvider.handleTenderize();
     } 
 
-    else if (lowercase.includes('community') || lowercase.includes('where can i find the graph community?') || lowercase.includes('where can i find the graph community')) {
+    else if (lowercase.includes('community') || lowercase.includes('where can i find the graph community?') || lowercase.includes('communauté')) {
       this.actionProvider.handleCommunity();
     } 
 
@@ -352,7 +352,7 @@ class FRAMessageParser {
       this.actionProvider.handleGraphOps();
     }
 
-    else if (lowercase.includes('core devs') || lowercase.includes('core developers') || lowercase.includes('core teams') || lowercase.includes('core') || lowercase.includes('devs')) {
+    else if (lowercase.includes('core devs') || lowercase.includes('core developers') || lowercase.includes('dév de base') || lowercase.includes('core') || lowercase.includes('devs')) {
       this.actionProvider.handleCoreDevs();
     }
 
@@ -369,7 +369,7 @@ class FRAMessageParser {
       this.actionProvider.handleWhatIsTheGraph();
     } 
 
-    else if (lowercase.includes('token burn') || lowercase.includes('token burning')) {
+    else if (lowercase.includes('token burn') || lowercase.includes('token burning') || lowercase.includes('gravure de jeton')) {
       this.actionProvider.handleTokenBurn();
     } 
 
@@ -377,11 +377,11 @@ class FRAMessageParser {
       this.actionProvider.handleWhatIsTheWeb();
     } 
 
-    else if (lowercase.includes('is blockchain safe?') || lowercase.includes('is blockchain safe') || lowercase.includes('crypto safe') || lowercase.includes('cryptocurrency safe') || lowercase.includes('safe')) {
+    else if (lowercase.includes('is blockchain safe?') || lowercase.includes('is blockchain safe') || lowercase.includes('crypto safe') || lowercase.includes('cryptocurrency safe') || lowercase.includes('fiable')) {
       this.actionProvider.handleSafe();
     } 
 
-    else if (lowercase.includes('what is crypto') || lowercase.includes('what is crypto?')  || lowercase.includes('what is cryptocurrency') || lowercase.includes('what is cryptocurrency?') || lowercase.includes('cryptocurrency') || lowercase.includes('crypto') || lowercase.includes('cryptocurrencies')) {
+    else if (lowercase.includes('what is crypto') || lowercase.includes('what is crypto?')  || lowercase.includes('what is cryptocurrency') || lowercase.includes('crypto-monnaies') || lowercase.includes('cryptocurrency') || lowercase.includes('crypto') || lowercase.includes('cryptocurrencies')) {
       this.actionProvider.handleCryptocurrencies();
     } 
 
@@ -467,13 +467,13 @@ class FRAMessageParser {
       this.actionProvider.handleTMobile();
     }
 
-    else if (lowercase.includes('news') || lowercase.includes('spotlight') || lowercase.includes('blog') || lowercase.includes('graph advocates spotlight')) {
+    else if (lowercase.includes('news') || lowercase.includes('spotlight') || lowercase.includes('blog') || lowercase.includes('graph advocates spotlight') || lowercase.includes('actualités')) {
       this.actionProvider.handleNews();
     }
 
     // help start
 
-    else if (lowercase.includes('help')) {
+    else if (lowercase.includes('help') || lowercase.includes('aider')) {
       this.actionProvider.handleHelp();
     }
 

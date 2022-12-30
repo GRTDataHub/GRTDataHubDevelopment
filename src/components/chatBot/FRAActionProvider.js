@@ -210,7 +210,7 @@ handleTheGraphFoundation() {
 
 handleTheGraphCouncil() {
   const message = this.createChatbotMessage(<a>
-    Le Graph Council a été <a className="cla" href="https://thegraph.com/blog/introducing-the-graph-council" target="_blank" rel="noreferrer">introduit</a>en octobre 2020 dans le cadre des plans de décentralisation du protocole. Les <a className="cla" href="https://thegraph.com/blog/inaugurating-council-and-grants" target="_blank" rel="noreferrer">membres du Graph Council</a> ont été investis en décembre 2020. Le Graph Council régit le réseau de décentralisé The Graph. Un multisig 6 sur 10  équilibre les intérêts de cinq groupes de parties prenantes différents dans l’écosystème: les indexeurs, les détenteurs de jetons, l’équipe initiale, les utilisateurs et les experts techniques du domaine.<br></br><br></br>Le mandat du Graph Council comprend les fonctions de base suivantes :<br></br>Les opérations de la Fondation Graph<br></br>Subventions et financement de l’écosystème<br></br>Mises à niveau du protocole<br></br>Paramétrage du protocole<br></br>Protocole d’urgence<br></br><br></br>À l’avenir, il est prévu de décentraliser davantage la gouvernance de The Graph, par exemple en remplaçant les membres individuels par des multisigs imbriqués ou des DAO.
+    The Graph Council a été <a className="cla" href="https://thegraph.com/blog/introducing-the-graph-council" target="_blank" rel="noreferrer">introduit</a>en octobre 2020 dans le cadre des plans de décentralisation du protocole. Les <a className="cla" href="https://thegraph.com/blog/inaugurating-council-and-grants" target="_blank" rel="noreferrer">membres du Graph Council</a> ont été investis en décembre 2020. The Graph Council régit le réseau de décentralisé The Graph. Un multisig 6 sur 10  équilibre les intérêts de cinq groupes de parties prenantes différents dans l’écosystème: les indexeurs, les détenteurs de jetons, l’équipe initiale, les utilisateurs et les experts techniques du domaine.<br></br><br></br>Le mandat du Graph Council comprend les fonctions de base suivantes :<br></br>Les opérations de la Fondation Graph<br></br>Subventions et financement de l’écosystème<br></br>Mises à niveau du protocole<br></br>Paramétrage du protocole<br></br>Protocole d’urgence<br></br><br></br>À l’avenir, il est prévu de décentraliser davantage la gouvernance de The Graph, par exemple en remplaçant les membres individuels par des multisigs imbriqués ou des DAO.
 </a>
     ,
   );
@@ -435,7 +435,7 @@ handleFoundingMembers() {
 // Founding Members End
 // Graph Funding Start
 handleGraphFunding() {
-  const message = this.createChatbotMessage(<a>Selon <a className="cla" href="https://www.crunchbase.com/organization/the-graph/investor_financials" target="_blank" rel="noreferrer">Crunchbase.com</a>, The Graph a recueilli un total de 69,6 millions de dollars en financement sur 7 cycles. Son dernier financement a été levé le 21 janvier 2022 à partir d’une ronde de financement Venture - Series Unknown.<br></br><br></br>Le Graph est financé par 27 investisseurs. Blockwall Management et FinTech Collective sont les nouveaux investisseurs.<br></br><br></br>The Graph a levé un total de 205 millions de dollars dans un seul fonds de capital-risque, The Graph Ecosystem Fund. Ce fonds a été annoncé le 18 février 2022 et a permis de recueillir un total de 205 millions de dollars.</a>
+  const message = this.createChatbotMessage(<a>Selon <a className="cla" href="https://www.crunchbase.com/organization/the-graph/investor_financials" target="_blank" rel="noreferrer">Crunchbase.com</a>, The Graph a recueilli un total de 69,6 millions de dollars en financement sur 7 cycles. Son dernier financement a été levé le 21 janvier 2022 à partir d’une ronde de financement Venture - Series Unknown.<br></br><br></br>The Graph est financé par 27 investisseurs. Blockwall Management et FinTech Collective sont les nouveaux investisseurs.<br></br><br></br>The Graph a levé un total de 205 millions de dollars dans un seul fonds de capital-risque, The Graph Ecosystem Fund. Ce fonds a été annoncé le 18 février 2022 et a permis de recueillir un total de 205 millions de dollars.</a>
     ,
   );
   this.setState((prev) => ({
@@ -1773,7 +1773,6 @@ handleButtonIndexer() {
   this.handleIndexerHardwareRequirements = this.handleIndexerHardwareRequirements.bind(this);
   this.handleIndexerMap = this.handleIndexerMap.bind(this);
   this.handleIndexerOfficeHours = this.handleIndexerOfficeHours.bind(this);
-  this.handleIndexingRewardsAndQueryFees = this.handleIndexingRewardsAndQueryFees.bind(this);
   this.handleQueryFeesAndIndexingRewardCut = this.handleQueryFeesAndIndexingRewardCut.bind(this);
   this.handleActiveIndexerCount = this.handleActiveIndexerCount.bind(this);
   this.handleTotalDelegatedGRTByIndexersCount = this.handleTotalDelegatedGRTByIndexersCount.bind(this);
@@ -1799,9 +1798,6 @@ handleButtonIndexer() {
     this.handleIndexerOfficeHours();
     this.handleButtonIndexer();
   }}><strong>Heures de bureau de l’indexeur</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
-    this.handleIndexingRewardsAndQueryFees();
-    this.handleButtonIndexer();
-  }}><strong>Revenue d´un indexer</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
     this.handleQueryFeesAndIndexingRewardCut();
     this.handleButtonIndexer();
   }}><strong>Frais de requête et réduction des récompenses d’indexation</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
@@ -1925,10 +1921,10 @@ handleButtonStatistics() {
   }}><strong>Nombre de subgraphes</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
     this.handleTotalGRTDelegatedByDelegators();
     this.handleButtonStatistics();
-  }}><strong>Total GRT délegateurpar les délégateurs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
+  }}><strong>Total GRT délegateur par les délégateurs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
     this.handleTotalDelegatedGRTByIndexersCount();
     this.handleButtonStatistics();
-  }}><strong>Total des GRT délégateurpar les indexeurs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
+  }}><strong>Total des GRT délégateur par les indexeurs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
     this.handleTotalGRTSignalledByCurators();
     this.handleButtonStatistics();
   }}><strong>GRT total signalé par les curateurs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {

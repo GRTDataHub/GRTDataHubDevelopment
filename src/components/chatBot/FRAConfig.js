@@ -3,7 +3,7 @@ import { createChatBotMessage } from 'react-chatbot-kit';
 
 const botName = 'Chatbot Français GRTDataHub';
 
-const message = 'Si vous préférez utiliser des boutons plutôt que des messages dans le chatbot, tapez simplement "aide" ci-dessous et je vous aiderai à trouver les réponses.';
+const message = 'Si vous préférez utiliser des boutons plutôt que des messages dans le chatbot, tapez simplement "aider" ci-dessous et je vous aiderai à trouver les réponses.';
 
 const FRAconfig = {
 
