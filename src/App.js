@@ -7,10 +7,11 @@ import Navbar from "./components/navbars/Navbar";
 import Main from "./components/mainBarCharts/Main";
 import ScrollButton from "./components/scrollButton/ScrollButton";
 import ExportPage from './components/exportPage/ExportPage';
-import ESPQuestionBank from './components/chatBot/ESPQuestionBank';
-import GERQuestionBank from './components/chatBot/GERQuestionBank';
-import FRAQuestionBank from './components/chatBot/FRAQuestionBank';
-import QuestionBank from './components/chatBot/ENGQuestionBank';
+import ESPTranslatorHelp from './components/chatBot/ESPTranslatorHelp';
+import GERTranslatorHelp from './components/chatBot/GERTranslatorHelp';
+import FRATranslatorHelp from './components/chatBot/FRATranslatorHelp';
+import ENGTranslatorHelp from './components/chatBot/ENGTranslatorHelp';
+import TURTranslatorHelp from './components/chatBot/TURTranslatorHelp';
 import PrivacyPolicy from './components/privacyPolicy/privacyPolicy';
 import CookiesPolicy from './components/cookiesPolicy/cookiesPolicy';
 import AboutPage from './components/aboutPage/AboutPage';
@@ -21,6 +22,7 @@ import ESPChatBotPage from './components/chatBot/ESPChatBotPage';
 import GERChatBotPage from './components/chatBot/GERChatBotPage';
 import ENGChatBotPage from './components/chatBot/ENGChatBotPage';
 import FRAChatBotPage from './components/chatBot/FRAChatBotPage';
+import TURChatBotPage from './components/chatBot/TURChatBotPage';
 import ChatBotPage from './components/chatBot/ChatBotPage';
 import ActiveDelegationCount from './components/live-data/ActiveDelegationCount';
 import ActiveDelegationCountChatbotGraph from './components/live-data/ActiveDelegationCountChatbotGraph';
@@ -150,24 +152,28 @@ class App extends Component{
                   element={<TotalGRTBurnedCountChatbotGraph />} />
                     <Route path="/TotalGRTBurnedCount"
                   element={<TotalGRTBurnedCount />} />
-                  <Route path="/QuestionBank"
-                  element={<QuestionBank />} />
+                  <Route path="/ENGTranslatorHelp"
+                  element={<ENGTranslatorHelp />} />
                   <Route path="/chatBot"
                   element={<ChatBotPage />} />
                   <Route path="/ENGchatBot"
                   element={<ENGChatBotPage />} />
                   <Route path="/GERchatBot"
                   element={<GERChatBotPage />} />
-                  <Route path="/GERQuestionBank"
-                  element={<GERQuestionBank />} />
+                  <Route path="/GERTranslatorHelp"
+                  element={<GERTranslatorHelp />} />
                   <Route path="/ESPchatBot"
                   element={<ESPChatBotPage />} />
-                  <Route path="/ESPQuestionBank"
-                  element={<ESPQuestionBank />} />
+                  <Route path="/ESPTranslatorHelp"
+                  element={<ESPTranslatorHelp />} />
                    <Route path="/FRAchatBot"
                   element={<FRAChatBotPage />} />
-                  <Route path="/FRAQuestionBank"
-                  element={<FRAQuestionBank />} />
+                  <Route path="/FRATranslatorHelp"
+                  element={<FRATranslatorHelp />} />
+                  <Route path="/TURchatBot"
+                  element={<TURChatBotPage />} />
+                  <Route path="/TURTranslatorHelp"
+                  element={<TURTranslatorHelp />} />
                   <Route path="/Binance_Staking_GER"
                   element={<BinanceStakingGER/>} />
                     <Route path="/IPhone_GER"

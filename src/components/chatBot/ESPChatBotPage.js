@@ -17,6 +17,7 @@ const ESPChatBotPage = () => ({
             <div className="chatbot-text-container">
             <h3 className="feedback-text chatbot-page-text">Apoye el GRTDataHub Chatbot ayudando con las mejoras recomendando contenido, documentación y tutoriales.</h3><h3 className="feedback-text chatbot-page-text"></h3>
             <h3 className="feedback-text chatbot-page-text">Con la ayuda de <a className="chatbot-link" href="https://twitter.com/block_latina?s=21&t=cVYEbpPulTa3Uw6fHWaS7Q" target="_blank" rel="noreferrer">Jorgelina</a> y <a className="chatbot-link" href="https://twitter.com/blockya_?s=21&t=cVYEbpPulTa3Uw6fHWaS7Q" target="_blank" rel="noreferrer">Lorena</a>, las traducciones dentro de este chatbot han sido revisadas y modificadas en consecuencia para que la comunidad española las use y aproveche todo su potencial.</h3>
+            {/* <h3 className="feedback-text chatbot-page-text">Pour les didacticiels YouTube qui ne sont actuellement qu'en anglais, veuillez activer les sous-titres/CC, cliquez sur le bouton Paramètres, sélectionnez les sous-titres, la traduction automatique et l'espagnol.</h3> */}
 
         <Chatbot
         config={ESPConfig}

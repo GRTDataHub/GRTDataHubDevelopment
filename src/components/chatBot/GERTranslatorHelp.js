@@ -3,7 +3,7 @@ import '../../App.css';
 import PrivacyPolicyNavbar from "../privacyPolicy/privacyPolicyNavbar";
 import GERChatbotFooter from '../footer/GERChatbotFooter';
 
-const GERQuestionBank = () => ({ 
+const GERTranslatorHelp = () => ({ 
   render(){
       return (
         <>
@@ -54,4 +54,4 @@ const GERQuestionBank = () => ({
     );
   }});
 
-export default GERQuestionBank;
+export default GERTranslatorHelp;

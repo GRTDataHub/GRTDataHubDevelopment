@@ -10,13 +10,9 @@ const ChatBotPage = () => ({
         <div className="question-bank-container">
             <div className="QB-text-container">
             <h2 className="QB-about-page-subtitle">Welcome to the GRTDataHub Chatbot Page!</h2>
-            <h2 className="QB-about-page-subtitle">Willkommen auf der Chatbot-Seite von GRTDataHub!</h2>
-            <h2 className="QB-about-page-subtitle">¡Bienvenido a la página de chatbot de GRTDataHub!</h2>
-            <h2 className="QB-about-page-subtitle">Bienvenue sur la page du chatbot GRTDataHub!</h2>
-            <h2 className="QB-about-page-subtitle">GRTDataHub Chatbot Sayfasına Hoş Geldiniz!</h2>
             <br></br><br></br> 
             <hr className="QB-about-hr"></hr>
-            <h2 className="QB-about-page-subtitle"><strong>NEW FEATURE!</strong> Ask for help to see the new button feature available.</h2> 
+            <h2 className="QB-about-page-subtitle"><strong>NEW FEATURE!</strong> Ask for "help" to see the new button feature available.</h2>
             <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/ENGchatBot" target="_blank" rel="noreferrer">GRTDataHub English Chatbot</a></h2>
             <br></br><br></br>    

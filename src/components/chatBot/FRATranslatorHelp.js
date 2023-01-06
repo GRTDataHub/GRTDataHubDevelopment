@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../App.css';
 import PrivacyPolicyNavbar from "../privacyPolicy/privacyPolicyNavbar";
-import ChatbotFooter from '../footer/ChatbotFooter';
+import FRAChatbotFooter from '../footer/FRAChatbotFooter';
 
-const ENGQuestionBank = () => ({ 
+const FRATranslatorHelp = () => ({ 
   render(){
       return (
         <>
@@ -49,9 +49,9 @@ const ENGQuestionBank = () => ({
         <h3 className="QB-about-page-text">Women in web 3<br></br>What courses are available?<br></br>What is Web3?<br></br>What is a blockchain?<br></br>Is blockchain safe?<br></br>What is cryptocurrency?<br></br>What is ethereum?<br></br>What is proof of work?<br></br>What is proof of stake?<br></br>What is a stable coin?<br></br>What is the difference between a coin and a token?<br></br>What is a cex?<br></br>What is a dex?<br></br>What is layer two?<br></br>What is zkproof?<br></br>What is a smart contract?<br></br>What is a nft?<br></br>What is mining?<br></br>What are nodes?<br></br>What is a token burn?<br></br>What is a dao?<br></br>What is zksnark?<br></br>What is zkstark?<br></br>What is the metaverse?</h3>
         </div>
 </div>
-<ChatbotFooter className="chatbot-footer-mobile" />
+<FRAChatbotFooter className="chatbot-footer-mobile" />
        </>
     );
   }});
 
-export default ENGQuestionBank;
+export default FRATranslatorHelp;

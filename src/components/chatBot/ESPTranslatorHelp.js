@@ -3,7 +3,7 @@ import '../../App.css';
 import PrivacyPolicyNavbar from "../privacyPolicy/privacyPolicyNavbar";
 import ESPChatbotFooter from '../footer/ESPChatbotFooter';
 
-const ESPQuestionBank = () => ({ 
+const ESPTranslatorHelp = () => ({ 
   render(){
       return (
         <>
@@ -54,4 +54,4 @@ const ESPQuestionBank = () => ({
     );
   }});
 
-export default ESPQuestionBank;
+export default ESPTranslatorHelp;
