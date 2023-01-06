@@ -664,20 +664,20 @@ const handleIssue22ENG = () => {
   })
 }
 
-// const handleIssue22ESP = () => {
-//   // using Java Script method to get PDF file
-//   fetch('Issue22-ESP.pdf').then(response => {
-//       response.blob().then(blob => {
-//           // Creating new object of PDF file
-//           const fileURL = window.URL.createObjectURL(blob);
-//           // Setting various property values
-//           let alink = document.createElement('a');
-//           alink.href = fileURL;
-//           alink.download = 'Issue #22 - ESP Graph Advocates Spotlight.pdf';
-//           alink.click();
-//       })
-//   })
-// }
+const handleIssue22ESP = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue22-ESP.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #22 - ESP Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
 
 const handleIssue22URD = () => {
   // using Java Script method to get PDF file
@@ -709,61 +709,121 @@ const handleIssue22FRA = () => {
   })
 }
 
-// const handleIssue23ENG = () => {
+const handleIssue23ENG = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue23-ENG.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #23 - Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue23ESP = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue23-ESP.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #23 - ESP Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue23URD = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue23-URD.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #23 - URD Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue23FRA = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue23-FRA.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #23 - FRA Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue24ENG = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue24-ENG.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #24 - Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+// const handleIssue24ESP = () => {
 //   // using Java Script method to get PDF file
-//   fetch('Issue23-ENG.pdf').then(response => {
+//   fetch('Issue24-ESP.pdf').then(response => {
 //       response.blob().then(blob => {
 //           // Creating new object of PDF file
 //           const fileURL = window.URL.createObjectURL(blob);
 //           // Setting various property values
 //           let alink = document.createElement('a');
 //           alink.href = fileURL;
-//           alink.download = 'Issue #23 - Graph Advocates Spotlight.pdf';
+//           alink.download = 'Issue #24 - ESP Graph Advocates Spotlight.pdf';
 //           alink.click();
 //       })
 //   })
 // }
 
-// const handleIssue23ESP = () => {
-//   // using Java Script method to get PDF file
-//   fetch('Issue23-ESP.pdf').then(response => {
-//       response.blob().then(blob => {
-//           // Creating new object of PDF file
-//           const fileURL = window.URL.createObjectURL(blob);
-//           // Setting various property values
-//           let alink = document.createElement('a');
-//           alink.href = fileURL;
-//           alink.download = 'Issue #23 - ESP Graph Advocates Spotlight.pdf';
-//           alink.click();
-//       })
-//   })
-// }
+const handleIssue24URD = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue24-URD.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #24 - URD Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
 
-// const handleIssue23URD = () => {
+// const handleIssue24FRA = () => {
 //   // using Java Script method to get PDF file
-//   fetch('Issue23-URD.pdf').then(response => {
+//   fetch('Issue24-FRA.pdf').then(response => {
 //       response.blob().then(blob => {
 //           // Creating new object of PDF file
 //           const fileURL = window.URL.createObjectURL(blob);
 //           // Setting various property values
 //           let alink = document.createElement('a');
 //           alink.href = fileURL;
-//           alink.download = 'Issue #23 - URD Graph Advocates Spotlight.pdf';
-//           alink.click();
-//       })
-//   })
-// }
-
-// const handleIssue23FRA = () => {
-//   // using Java Script method to get PDF file
-//   fetch('Issue23-FRA.pdf').then(response => {
-//       response.blob().then(blob => {
-//           // Creating new object of PDF file
-//           const fileURL = window.URL.createObjectURL(blob);
-//           // Setting various property values
-//           let alink = document.createElement('a');
-//           alink.href = fileURL;
-//           alink.download = 'Issue #23 - FRA Graph Advocates Spotlight.pdf';
+//           alink.download = 'Issue #24 - FRA Graph Advocates Spotlight.pdf';
 //           alink.click();
 //       })
 //   })
@@ -780,13 +840,23 @@ const handleIssue22FRA = () => {
             
             <hr className="QB-about-hr"></hr>
              {/* <br></br>
-            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23ENG} target="_blank" rel="noreferrer">Issue #23 - ****</a></h2>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25ENG} target="_blank" rel="noreferrer">Issue #25 - ****</a></h2>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25ESP} target="_blank" rel="noreferrer">Issue #25 en español</a></h2>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25FRA} target="_blank" rel="noreferrer">Issue #25 en français</a></h2>
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25URD} target="_blank" rel="noreferrer">شمارہ نمبر 25 اردو میں</a></h2> */}
+             <br></br>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue24ENG} target="_blank" rel="noreferrer">Issue #24 - Premia</a></h2>
+            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23ESP} target="_blank" rel="noreferrer">Issue #24 en español</a></h2> */}
+            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23FRA} target="_blank" rel="noreferrer">Issue #24 en français</a></h2> */}
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue24URD} target="_blank" rel="noreferrer">شمارہ نمبر 24 اردو میں</a></h2>
+             <br></br>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23ENG} target="_blank" rel="noreferrer">Issue #23 - Michael</a></h2>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23ESP} target="_blank" rel="noreferrer">Issue #23 en español</a></h2>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23FRA} target="_blank" rel="noreferrer">Issue #23 en français</a></h2>
-             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23URD} target="_blank" rel="noreferrer">شمارہ نمبر 23 اردو میں</a></h2> */}
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue23URD} target="_blank" rel="noreferrer">شمارہ نمبر 23 اردو میں</a></h2>
             <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22ENG} target="_blank" rel="noreferrer">Issue #22 - Max Savant Hazelhurst</a></h2>
-            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22ESP} target="_blank" rel="noreferrer">Issue #22 en español</a></h2> */}
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22ESP} target="_blank" rel="noreferrer">Issue #22 en español</a></h2>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22FRA} target="_blank" rel="noreferrer">Issue #22 en français</a></h2>
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue22URD} target="_blank" rel="noreferrer">شمارہ نمبر 22 اردو میں</a></h2>
             <br></br>
