@@ -15,20 +15,24 @@ const TURChatBotPage = () => ({
         <NavbarChatbot />
         <div className="chatbot-page-container">
             <div className="chatbot-text-container">
-            <h3 className="feedback-text chatbot-page-text">Lütfen içerik, dokümantasyon ve öğreticiler önererek iyileştirmelere yardımcı olarak GRTDataHub Turkish Chatbot'u destekleyin.</h3>
-            <h3 className="feedback-text chatbot-page-text"><a className="chatbot-link" href="https://twitter.com/onursaraylii" target="_blank" rel="noreferrer">Onur'un</a> yardımıyla, chatbot'un çevirileri gözden geçirildi ve Türk topluluğunun tam potansiyelinden faydalanması için uygun şekilde değiştirildi.</h3><h3 className="feedback-text chatbot-page-text"><strong>Beta Aşama 1</strong></h3>
-            {/* <h3 className="feedback-text chatbot-page-text">Şu anda yalnızca İngilizce olan YouTube eğitimleri için lütfen altyazıları/CC'yi etkinleştirin, ayarlar düğmesini tıklayın, altyazıları, otomatik çeviriyi ve Türkçe'yi seçin.</h3> */}
-           
+            <h3 className="feedback-text chatbot-page-text">Lütfen içerikleri, dökümanları ve öğretici rehberleri başkalarına önererek iyileştirmelere yardımcı olun ve GRTDataHub Turkish Chatbot'u destekleyin.</h3>
+            <h3 className="feedback-text chatbot-page-text"><a className="chatbot-link" href="https://twitter.com/onursaraylii" target="_blank" rel="noreferrer">Onur</a> bu chatbot'ta rehberler oluşturmuş ve Türk topluluğunun potansiyelinden tam olarak yararlanabilmesi için içeriği buna göre gözden geçirmiş ve değiştirmiştir.</h3><h3 className="feedback-text chatbot-page-text"><strong>Beta Aşama 1</strong></h3>
+            <h3 className="feedback-text chatbot-page-text">Şu an da Youtube eğitimleri sadece İngilizce dilindedir. Kendi dilinize çevirmek için lütfen önce Altyazıları/CC'yi etkinleştirin. Daha sonra ayarlar düğmesini tıklayın, Altyazıları seçip otomatik çevirmeden Türkçe'yi seçin.</h3>
+            <h3 className="feedback-text chatbot-page-text">Metin eğitimleri ve bloglar topluluk tarafından aktif olarak çevriliyor, katkıda bulunmak istiyorsanız lütfen iletişime geçin!</h3>
+
         <Chatbot
         config={TURConfig}
         messageParser={TURMessageParser}
         actionProvider={TURActionProvider}
         headerText='GRTDataHub Türkçe Chatbot'
-        placeholderText='Nasıl yetki verebilirim?'
+        placeholderText='Nasıl stake edebilirim?'
         disableScrollToBottom
       /> 
-       <button type="button" className="feedback-button btn btn-outline-dark"><a className="chatbot-link-button" href="https://mb3kald91rd.typeform.com/to/esxDMqut " target="_blank" rel="noreferrer"><h3 className="feedback-button-text">Chatbot Geliştirme Formu
+      <br></br>
+       <button type="button" className="feedback-button btn btn-outline-dark"><a className="chatbot-link-button" href="https://mb3kald91rd.typeform.com/to/s4NyS49n" target="_blank" rel="noreferrer"><h3 className="feedback-button-text">Chatbot Geliştirme Formu
           </h3></a></button>
+          <br></br>
+          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/TURTranslatorHelp" target="_blank" rel="noreferrer">Çevirmen Yardım Sayfası</a></h2>
 </div>
 </div>
 <TURChatbotFooter className="chatbot-footer-mobile" />
