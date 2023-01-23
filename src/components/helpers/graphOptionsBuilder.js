@@ -6,7 +6,7 @@ Highcharts.setOptions({
   }
 });
 
-export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTop, type, title, titleFontSize,subtitleFontSize, categories, data, tickInterval, min, dataLabelFontSize, dataLabelX, seriesName, subtitleX, subtitleY, 
+export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTop, type, title, titleFontSize,subtitleFontSize, categories, data, tickInterval, min, dataLabelFontSize, dataLabelX, seriesName, subtitleX, subtitleY, downloadButton,
   // logoX, logoY, logoWidth, logoHeight, 
   height}){
     const options = {
@@ -150,11 +150,38 @@ export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTo
                 return '<b>' + this.y + ' </b>' + this.series.name + ' on <b>' + Highcharts.dateFormat('%d %b %Y',this.x) + '</b>.';
             }
         },
+        exporting: {
+          className: downloadButton,
+          enabled: true,
+          buttons: {
+            contextButton: {
+              menuItems: null,
+              onclick: function () {
+                  this.exportChart();
+              },
+                  text: 'Download',
+                  theme: {
+                      fill: 'white',
+                      stroke: 'white',
+                      states: {
+                          hover: {
+                              fill: '#5A3DD3',
+                              stroke: 'white'
+                          },
+                          select: {
+                              fill: 'white',
+                              stroke: 'white'
+                          }
+                      }
+                  }
+              }
+          }
+        }
     }
     return options;
 }
 
-export function getLineGraphOptionsBuilder({chartType, title, titleFontSize, xAxisType, data, seriesName, marginLeft, marginRight, marginBottom, marginTop, subtitleFontSize, dataLabelFontSize, subtitleX, subtitleY, tickInterval, min,
+export function getLineGraphOptionsBuilder({chartType, title, titleFontSize, xAxisType, data, seriesName, marginLeft, marginRight, marginBottom, marginTop, subtitleFontSize, dataLabelFontSize, subtitleX, subtitleY, tickInterval, min, downloadButton,
   // logoX, logoY, logoWidth, logoHeight, 
   height}){
   const options = {
@@ -290,6 +317,34 @@ plotOptions: {
     }
   }
 },
+exporting: {
+  className: downloadButton,
+  enabled: true,
+  buttons: {
+    contextButton: {
+      menuItems: null,
+      onclick: function () {
+          this.exportChart();
+      },
+          text: 'Download',
+          theme: {
+              fill: 'white',
+              stroke: 'white',
+              states: {
+                  hover: {
+                      fill: '#5A3DD3',
+                      stroke: 'white'
+                  },
+                  select: {
+                      fill: 'white',
+                      stroke: 'white'
+                  }
+              }
+          }
+      }
+  }
+}
+,
 series: [{
  name : seriesName,
   type: 'area',

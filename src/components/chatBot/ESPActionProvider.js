@@ -512,7 +512,7 @@ handleWhatIsSchema() {
 // Schema End
 // Buy Start
 handleBuy() {
-  const message = this.createChatbotMessage(<a>Puedess ver el precio y todos los mercados abiertos en <a className="cla" href="https://coinmarketcap.com/currencies/the-graph/markets/" target="_blank" rel="noreferrer">CoinMarketCap</a>.</a>
+  const message = this.createChatbotMessage(<a>Puedess ver el precio y todos los mercados abiertos en <a className="cla" href="https://coinmarketcap.com/es/currencies/the-graph/markets/" target="_blank" rel="noreferrer">CoinMarketCap</a>.</a>
     ,
   );
   this.setState((prev) => ({
@@ -564,7 +564,7 @@ handleGas() {
 }
 
 handlePodcast() {
-  const message = this.createChatbotMessage(<a><strong>¿Qué es GRTiQ?</strong><br></br><br></br><a className="cla" href="https://www.grtiq.com/" target="_blank" rel="noreferrer">GRTiQ</a> genera inteligencia de mercado a través de análisis, investigación, optimización y educación.<br></br><br></br><strong>Análisis de mercado</strong> - Proporcionan análisis y rendimiento del mercado para que los Delegadores puedan comprender mejor la dinámica del mercado.<br></br><br></br><strong>Investigación del Indexador</strong> - Realizan investigacion de Indexadores que los Delegadores pueden usar para identificar oportunidades y asociaciones.<br></br><br></br><strong>Optimización de recompensas</strong> - Crean y publican datos, guías y análisis para ayudar a los Delegadores a optimizar sus ganancias de recompensas.<br></br><br></br><strong>Educación del Ecosistema</strong> - Ofrecen recursos educativos continuos e información sobre todos los aspectos del ecosistema The Graph.<hr></hr>Puedess escuchar los podcasts de GRTiQ <a className="cla" href="https://www.grtiq.com/podcast/" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br>Para mantenerte al día con GRTiQ, puedes seguirlos en <a className="cla" href="https://twitter.com/grt_iq" target="_blank" rel="noreferrer">Twitter</a>, <a className="cla" href="https://www.youtube.com/channel/UCxhFN47AlCDx1Qoaw1oSQ5A" target="_blank" rel="noreferrer">YouTube</a> e <a className="cla" href="https://www.instagram.com/thegraphiq/" target="_blank" rel="noreferrer">Instagram</a>.</a>
+  const message = this.createChatbotMessage(<a><strong>¿Qué es GRTiQ?</strong><br></br><br></br><a className="cla" href="https://www.grtiq.com/" target="_blank" rel="noreferrer">GRTiQ</a> genera inteligencia de mercado a través de análisis, investigación, optimización y educación.<br></br><br></br><strong>Análisis de mercado</strong> - Proporcionan análisis y rendimiento del mercado para que los Delegadores puedan comprender mejor la dinámica del mercado.<br></br><br></br><strong>Investigación del Indexador</strong> - Realizan investigacion de Indexadores que los Delegadores pueden usar para identificar oportunidades y asociaciones.<br></br><br></br><strong>Optimización de recompensas</strong> - Crean y publican datos, guías y análisis para ayudar a los Delegadores a optimizar sus ganancias de recompensas.<br></br><br></br><strong>Educación del Ecosistema</strong> - Ofrecen recursos educativos continuos e información sobre todos los aspectos del ecosistema The Graph.<hr></hr>Puedess escuchar los podcasts de GRTiQ <a className="cla" href="https://www.grtiq.com/podcast/" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br>Para mantenerte al día con GRTiQ, puedes seguirlos en <a className="cla" href="https://twitter.com/grt_iq" target="_blank" rel="noreferrer">Twitter</a>, <a className="cla" href="https://www.youtube.com/channel/UCxhFN47AlCDx1Qoaw1oSQ5A" target="_blank" rel="noreferrer">YouTube</a> e <a className="cla" href="https://www.instagram.com/thegraphiq/" target="_blank" rel="noreferrer">Instagram</a>.<br></br><br></br><Embed className="embed" isDark url='https://twitter.com/grt_iq/status/1617269631403831297?s=20&t=C_TtsLrGHQ0b92xQs527lQ'/></a>
    ,
    );
    this.setState((prev) => ({ 
@@ -731,7 +731,9 @@ handleTokenEconomics() {
   <th> Emisión anual - </th>
   <th> Quema anual</th>
 </tr>
-</table><hr></hr><strong>Descripción general de la economía del token GRT</strong><br></br><br></br><table>
+</table>
+{/* <br></br>The <strong>Annual Issuance</strong> formula is as follows:<br></br><br></br>networkGRTIssuance = 1000000011247641700<br></br><br></br>blocksYear = 2628000<br></br><br></br>Inflation = networkGRTIssuance * (10^-18) * blocksYear - 1<br></br><br></br>Inflation = 0,0299999999792... = 3% approx */}
+<hr></hr><strong>Descripción general de la economía del token GRT</strong><br></br><br></br><table>
 <tr className="indexer-table">
   <td><strong>Símbolo del token</strong></td>
   <td>GRT</td>
@@ -884,6 +886,28 @@ handleCurator() {
     messages: [...prev.messages, message],
   }));
 }
+
+// handlePowerDAOS() {
+//   const message = this.createChatbotMessage(<a><strong>Using The Graph to Power DAOs: Snapshot Case Study</strong><br></br><br></br>The Graph is a crucial protocol for enabling DAO members to accurately and easily read that data, while also making it effortless to track votes. Decentralized Autonomous Organizations, or DAOs, are organizations that are run by distributed communities, in contrast to centralized authorities. Because the bulk of decision-making in DAOs relies on on-chain data recorded on blockchains.<br></br><br></br><a className="cla" href="https://snapshot.org/#/" target="_blank" rel="noreferrer">Snapshot</a> is a decentralized governance protocol that enables people to coordinate and make collective decisions about the future of the organizations they participate in. Snapshot makes it possible for people to easily create and vote on proposals without incurring any gas fees. It’s a widely used tool for thousands of people working on protocols, collaborating in DAOs, and building innovative new projects in web3.<br></br><br></br>So far, Snapshot has recorded more than:<br></br>8.5M off-chain votes<br></br>8K protocols integrated<br></br>64.8k proposals.<hr></hr>Read <a className="cla" href="https://thegraph.com/blog/using-the-graph-for-daos-snapshot/" target="_blank" rel="noreferrer">here</a>, to find out how The Graph Powers Snapshot and How to Supercharge your Dapp.</a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
+
+// handleMIPS(){
+//   this.handleButtonMenu = this.handleButtonMenu.bind(this);
+//   const message = this.createChatbotMessage(<a><strong>The Graph’s Multi-Chain Incentivized Program</strong><br></br><br></br>The MIPs program bootstraps Indexers to add support for new chains on the decentralized network, enabling migration of multi-chain subgraphs. This is a critical expansion of support for dapps and subgraph migration ahead of the <a className="cla" onClick={this.handleSunsettingHostedService} target="_blank" rel="noreferrer">sunsetting of the hosted service</a>.<br></br>The MIPs program has allocated 0.75% of the GRT supply (75M GRT), with 0.5% to reward Indexers who contribute to bootstrapping the network and 0.25% allocated to migration grants for subgraph developers using multi-chain subgraphs. By the end of Q1 2023, the hosted service for all network-supported chains will be sunset, so the MIPs program will work in parallel to subgraph migration efforts.<br></br>The first chain to be supported on the decentralized network was the <a className="cla" href='https://twitter.com/gnosischain' target="_blank" rel="noreferrer">Gnosis</a>Chain! New chains will be announced throughout the MIPs program, based on Indexer readiness, demand, and community sentiment. To read more about MIPs Performance & Scoring and Eligibility Requirements, see <a className="cla" href='https://thegraph.com/blog/mips-multi-chain-indexing-incentivized-program/' target="_blank" rel="noreferrer">here</a>.<hr></hr>The announced chains so far can be found below.<br></br><br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1613980493787312128?s=20&t=_FqJsNOl6vvyIYt3B0KCfg' target="_blank" rel="noreferrer"><strong>Gnosis</strong></a> beta integration complete<br></br>
+//   <a className="cla" href='https://twitter.com/graphprotocol/status/1615443632252948480' target="_blank" rel="noreferrer"><strong>Polygon</strong></a> integration underway<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772854838231040?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Arbitrum</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772857211961354?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Avalanche</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772859678457859?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Celo</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772862110900225?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Optimism</strong></a> coming soon!</a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
 
 handleCuratorTools() {
   const message = this.createChatbotMessage(<a><strong>Herramientas útiles para Curadores</strong><br></br><br></br>Aprende cómo funciona la facturación en Subgraph Studio, <a className="cla" href="https://thegraph.com/docs/es/cookbook/migrating-a-subgraph/#querying-a-subgraph-billing-on-the-graph-network" target="_blank" rel="noreferrer">aquí.</a><br></br><br></br>Descubre cómo The Graph utiliza Polygon para su sistema de facturación <a className="cla" href="https://okgraph.xyz/" target="_blank" rel="noreferrer">aquí.</a>.<hr></hr><a className="cla" href="https://okgraph.xyz/" target="_blank" rel="noreferrer">Comprobar</a> el estado de indexación de un subgrafo<br></br><br></br>Puedess ver datos de:<br></br>Tarifas de consulta de Mainnet (diarias)<br></br>Tarifas de consulta de Mainnet (mensual)<br></br>Tarifas de consulta de Mainnet (mensual, promedio móvil de 30 días)<br></br>Nuevos subgrafos (mensual)<br></br>Subgrafos totales<br></br>Tarifas promedio de subgrafos (mensual, promedio móvil de 30 días)<br></br>Tarifas de consulta de subgrafos (30 días)<br></br>Tasa de consulta / Ratio de señal (30 días)<br></br>Tarifas de consulta de subgrafos (30 días) - % <a className="cla" href="http://michael.lesane.net/graphdash/" target="_blank" rel="noreferrer">aquí.</a>.<br></br><br></br>O consulta la Facturación de Subgrafos, <a className="cla" href="http://michael.lesane.net/graphdash/billing" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br>Tablero de facturación de <a className="cla" href="https://dapplooker.com/dapp/graph-network-billing-120192" target="_blank" rel="noreferrer">Graph Network</a><br></br><br></br>Graph Network <a className="cla" href="https://dapplooker.com/dapp/graph-network-user-billing-balance-120204" target="_blank" rel="noreferrer">Saldo de facturación del usuario</a></a>

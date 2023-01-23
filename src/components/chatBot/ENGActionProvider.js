@@ -442,7 +442,7 @@ handleQueryFeesAndIndexingRewardCut() {
 // Query Fees Cut and indexing reward cut End
 // Founding Members Start
 handleFoundingMembers() {
-  const message = this.createChatbotMessage(<a>Graph Protocol, Inc. was founded April 2018 by Jannis Pohlmann, Brandon Ramires and Yaniv Tal<br></br><br></br><strong>Jannis Pohlmann</strong>, Tech Lead & Co-Founder. <a className="cla" href="https://de.linkedin.com/in/jannispohlmann" target="_blank" rel="noreferrer">Linkedin.com</a> | <a className="cla" href="https://twitter.com/jannispohlmann" target="_blank" rel="noreferrer">Twitter</a><br></br><br></br><strong>Brandon Ramirez</strong>,  Research Lead & Co-Founder. <a className="cla" href="https://www.linkedin.com/in/1stramirez" target="_blank" rel="noreferrer">Linkedin.com</a> | <a className="cla" href="https://twitter.com/rezbrandon?lang=en" target="_blank" rel="noreferrer">Twitter</a><br></br><br></br><strong>Yaniv Tal</strong>, Project Lead & Co-Founder. <a className="cla" href="https://www.linkedin.com/in/yanivtal9" target="_blank" rel="noreferrer">Linkedin.com</a> | <a className="cla"  href="https://twitter.com/yanivgraph" target="_blank" rel="noreferrer">Twitter</a></a>
+  const message = this.createChatbotMessage(<a>Graph Protocol, Inc. was founded April 2018 by Jannis Pohlmann, Brandon Ramires and Yaniv Tal<br></br><br></br><strong>Jannis Pohlmann</strong>, Tech Lead & Co-Founder. <a className="cla" href="https://de.linkedin.com/in/jannispohlmann" target="_blank" rel="noreferrer">Linkedin.com</a> | <a className="cla" href="https://twitter.com/jannispohlmann" target="_blank" rel="noreferrer">Twitter</a><br></br><br></br><strong>Brandon Ramirez</strong>,  Research Lead & Co-Founder. <a className="cla" href="https://www.linkedin.com/in/1stramirez" target="_blank" rel="noreferrer">Linkedin.com</a> | <a className="cla" href="https://twitter.com/rezbrandon?lang=en" target="_blank" rel="noreferrer">Twitter</a><br></br><br></br><strong>Yaniv Tal</strong>, Project Lead & Co-Founder. <a className="cla" href="https://www.linkedin.com/in/yanivtal9" target="_blank" rel="noreferrer">Linkedin.com</a> | <a className="cla"  href="https://twitter.com/yanivgraph" target="_blank" rel="noreferrer">Twitter</a> | <a className="cla" href="https://www.grtiq.com/grtiq-podcast-100-Yaniv-Tal/" target="_blank" rel="noreferrer">GRTiQ Podcast</a></a>
     ,
   );
   this.setState((prev) => ({
@@ -630,7 +630,7 @@ handlePodcast() {
   Analytics</strong> - They provide market performance and analytics so Delegators can better understand market dynamics.<br></br><br></br><strong>Indexer
 Research</strong> - They conduct indexer research that Delegators can use to identify opportunities and partnerships.<br></br><br></br><strong>Rewards
 Optimization</strong> - They create and publish data, guides, and analysis to help Delegators optimize their rewards earnings.<br></br><br></br><strong>Ecosystem
-Education</strong> -They offer ongoing educational resources and information about all aspects of The Graph ecosystem.<hr></hr>You can listen to the GRTiQ Podcasts, <a className="cla" href="https://www.grtiq.com/podcast/" target="_blank" rel="noreferrer">here</a>.<br></br><br></br>To keep up to date with GRTiQ you can follow them on <a className="cla" href="https://twitter.com/grt_iq" target="_blank" rel="noreferrer">Twitter</a>, <a className="cla" href="https://www.youtube.com/channel/UCxhFN47AlCDx1Qoaw1oSQ5A" target="_blank" rel="noreferrer">YouTube</a> and <a className="cla" href="https://www.instagram.com/thegraphiq/" target="_blank" rel="noreferrer">Instagram</a>.</a>
+Education</strong> -They offer ongoing educational resources and information about all aspects of The Graph ecosystem.<hr></hr>You can listen to the GRTiQ Podcasts, <a className="cla" href="https://www.grtiq.com/podcast/" target="_blank" rel="noreferrer">here</a>.<br></br><br></br>To keep up to date with GRTiQ you can follow them on <a className="cla" href="https://twitter.com/grt_iq" target="_blank" rel="noreferrer">Twitter</a>, <a className="cla" href="https://www.youtube.com/channel/UCxhFN47AlCDx1Qoaw1oSQ5A" target="_blank" rel="noreferrer">YouTube</a> and <a className="cla" href="https://www.instagram.com/thegraphiq/" target="_blank" rel="noreferrer">Instagram</a>.<br></br><br></br><Embed className="embed" isDark url='https://twitter.com/grt_iq/status/1617269631403831297?s=20&t=C_TtsLrGHQ0b92xQs527lQ'/></a>
    ,
    );
    this.setState((prev) => ({ 
@@ -652,7 +652,8 @@ Education</strong> -They offer ongoing educational resources and information abo
 // Advocates Start
 handleAdvocates() {
   this.handleAdvocateGrant = this.handleAdvocateGrant.bind(this);
-  const message = this.createChatbotMessage(<a>The Graph Advocates is a community-driven initiative serving as a portal into web3 for people all across the world. Advocates have the unique opportunity to learn and contribute to The Graph community and web3 mission. Anyone can become an Advocate and subsequently join the Graph AdvocatesDAO.<hr></hr><strong><underline>Advocate Roles</underline></strong><br></br><br></br><strong>Event Evangelist</strong><br></br>Host local events, attend regional events, and participate in in-person or online community events.<br></br><br></br><strong>Content Creator</strong><br></br>Create content about web3 and The Graph, including articles, videos, infographics, memes or GIFs.<br></br><br></br><strong>Text Translator</strong><br></br>Translate The Graph and other community documentation, material, and social posts into other languages.<br></br><br></br><strong>Community Care</strong><br></br>Post answers to questions or share educational resources in The Graph Forum, Telegram, Discord, or Reddit.<br></br><br></br><strong>Technical Teacher</strong><br></br>Teach others how to actively participate and contribute in web3 and The Graph ecosystem.<br></br><br></br><strong>Web3 Welcomer</strong><br></br>Accelerate greater education and adoption of web3 and The Graph throughout the world.<hr></hr>You can apply to be an Advocate for The Graph <a className="cla" href="https://forms.clickup.com/37437860/f/13pgd4-4007/RXO7DCQPT5XCA8X7R7" target="_blank" rel="noreferrer">here</a>.<br></br><br></br>To learn more about what it takes to be an Advocate see <a className="cla" href="https://thegraph.com/ecosystem/advocacy/" target="_blank" rel="noreferrer">here</a>.<hr></hr>To learn about the AdvocatesDAO Grants, <a className="cla" onClick={this.handleAdvocateGrant}><strong>click me</strong></a>!</a>
+  const message = this.createChatbotMessage(<a><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-15947" target="_blank" rel="noreferrer">The Graph Advocates</a> is a community-driven initiative serving as a portal into web3 for people all across the world. Advocates have the unique opportunity to learn and contribute to The Graph community and web3 mission. Anyone can become an Advocate and subsequently join the Graph AdvocatesDAO.<hr></hr><strong><underline>Advocate Roles</underline></strong><br></br><br></br><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-12947" target="_blank" rel="noreferrer"><strong>Event Evangelist</strong></a><br></br>Host local events, attend regional events, and participate in in-person or online community events.<br></br><br></br><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-12927" target="_blank" rel="noreferrer"><strong>Content Creator</strong></a><br></br>Create content about web3 and The Graph, including articles, videos, infographics, memes or GIFs.<br></br><br></br><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-13207" target="_blank" rel="noreferrer"><strong>Text Translator</strong></a><br></br>Translate The Graph and other community documentation, material, and social posts into other languages.<br></br><br></br><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-12667" target="_blank" rel="noreferrer"><strong>Community Care</strong></a><br></br>Post answers to questions or share educational resources in The Graph Forum, Telegram, Discord, or Reddit.<br></br><br></br><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-13167" target="_blank" rel="noreferrer"><strong>Technical Teacher</strong></a><br></br>Teach others how to actively participate and contribute in web3 and The Graph ecosystem.<br></br><br></br><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-13407" target="_blank" rel="noreferrer"><strong>Web3 Welcomer</strong></a>
+  <br></br>Accelerate greater education and adoption of web3 and The Graph throughout the world.<hr></hr>You can apply to be an Advocate for The Graph <a className="cla" href="https://forms.clickup.com/37437860/f/13pgd4-4007/RXO7DCQPT5XCA8X7R7" target="_blank" rel="noreferrer">here</a>.<br></br><br></br>To learn more about what it takes to be an Advocate see <a className="cla" href="https://thegraph.com/ecosystem/advocacy/" target="_blank" rel="noreferrer">here</a>.<hr></hr>To learn about the AdvocatesDAO Grants, <a className="cla" onClick={this.handleAdvocateGrant}><strong>click me</strong></a>!</a>
     ,
   );
   this.setState((prev) => ({
@@ -663,8 +664,8 @@ handleAdvocates() {
 
 handleAdvocateGrant() {
   this.handleAdvocateGrantWithdraw = this.handleAdvocateGrantWithdraw.bind(this);
-  const message = this.createChatbotMessage(<a><strong>Graph AdvocatesDAO Grant</strong><br></br><br></br>You can apply for an AdvocatesDAO grant <a className="cla" href="http://grants.graphadvocates.com/" target="_blank" rel="noreferrer">here</a>.<hr></hr><strong>The Grant Process</strong><br></br>Initial Review - Your grant will be posted in the Graph AdvocatesDAO Forum <a className="cla" href="https://forum.graphadvocates.com/" target="_blank" rel="noreferrer">here</a>. A DAO member of the Grant Committee will evaluate eligibility of your grant.<br></br>Public Discussions - The broader community is invited to provide feedback on grants and also vote in the Forum on whether they support it. During this process, community members or DAO members may ask questions in the Forum to gather more specifics about the grant to better understand its scope. This is an important phase of the process throughout which opinions are formed.<br></br>Committee Presentation - A successful grant application will also include a live presentation to the Grant Committee of the DAO. These meetings take place in the public-voice-chat of the <a className="cla" href="https://discord.gg/XgT3s9XY" target="_blank" rel="noreferrer">DAO's Discord server</a> and are scheduled at three different time slots (10:00 | 18:00 | 22:00 UTC) every Tuesday to accommodate different time zones across the globe. These are important touch points for Grant Committee members to gain confidence on whether or not to support a grant. Please come prepared to present an overview of your grant and answer questions.<br></br>Grant Decision - You will see a number of different votes and polls emerging throughout the grant process. These are incredibly important signals that inform DAO members in their vote. The official DAO funding decision for successful grants will take place at the very end of the process, where all DAO members will vote on-chain in <a className="cla" href="https://app.daohaus.club/dao/0x64/0x3f0ad15fb1ee96f649499c6198713d11781d93f2" target="_blank" rel="noreferrer">DAOHaus</a>. (note: some smaller grants may be voted off-chain by the Grant Committee)
-  <br></br>Expected Timing - The DAO is committed to appropriately vet all grant applications. The DAO has also established on-chain and off-chain timelines that allow broad engagement from the community living across different time zones with varying degrees of availability to participate.<hr></hr>To learn about withdrawing AdvocatesDAO grants, <a className="cla" onClick={this.handleAdvocateGrantWithdraw}><strong>click me</strong></a>!</a>
+  const message = this.createChatbotMessage(<a><a className="cla" href="https://share-docs.clickup.com/37437860/d/h/13pgd4-12827/ffae7924a657459/13pgd4-12762" target="_blank" rel="noreferrer"><strong>Graph AdvocatesDAO Community Grant</strong></a><br></br><br></br>You can apply for an AdvocatesDAO grant <a className="cla" href="http://grants.graphadvocates.com/" target="_blank" rel="noreferrer">here</a>.<hr></hr><strong>The Grant Process</strong><br></br>Initial Review - Your grant will be posted in the Graph AdvocatesDAO Forum <a className="cla" href="https://forum.graphadvocates.com/" target="_blank" rel="noreferrer">here</a>. A DAO member of the Grant Committee will evaluate eligibility of your grant.<br></br>Public Discussions - The broader community is invited to provide feedback on grants and also vote in the Forum on whether they support it. During this process, community members or DAO members may ask questions in the Forum to gather more specifics about the grant to better understand its scope. This is an important phase of the process throughout which opinions are formed.<br></br>Committee Presentation - A successful grant application will also include a live presentation to the Grant Committee of the DAO. These meetings take place in the public-voice-chat of the <a className="cla" href="https://discord.gg/XgT3s9XY" target="_blank" rel="noreferrer">DAO's Discord server</a> and are scheduled at three different time slots (10:00 | 18:00 | 22:00 UTC) every Tuesday to accommodate different time zones across the globe. These are important touch points for Grant Committee members to gain confidence on whether or not to support a grant. Please come prepared to present an overview of your grant and answer questions.<br></br>Grant Decision - You will see a number of different votes and polls emerging throughout the grant process. These are incredibly important signals that inform DAO members in their vote. The official DAO funding decision for successful grants will take place at the very end of the process, where all DAO members will vote on-chain in <a className="cla" href="https://app.daohaus.club/dao/0x64/0x3f0ad15fb1ee96f649499c6198713d11781d93f2" target="_blank" rel="noreferrer">DAOHaus</a>. (note: some smaller grants may be voted off-chain by the Grant Committee)
+  <br></br>Expected Timing - The DAO is committed to appropriately vet all grant applications. The DAO has also established on-chain and off-chain timelines that allow broad engagement from the community living across different time zones with varying degrees of availability to participate.<br></br><br></br>So you have now submitted your grant via the form, it has been posted into the forum where the community and Advocates are voting and asking questions. What is next?<hr></hr>The DAO is aiming to process a successful grant application within 1-2 months. Below is an overview of key steps that a successful grant application passes through:<br></br>Community Review: ~10 days (varies by community engagement)<br></br>Committee Presentation: ~7 days (includes allowing time for scheduling)<br></br>Committee off-chain voting: ~7 days<hr></hr>The voting period has ended and your grant has been sucessful. If so, Congratulations! What to expect:<br></br><br></br><strong>Email Confirmation</strong> - This is from the Graph AdvocatesDAO, you will be required to complete KYC (Know Your Customer) via the link within the email. You will also be sent a Contract Agreement.<br></br><strong>Forum Post</strong> - An Advocate will also comment on your grant within the forum to confirm you have been successful with your grant.<br></br>KYC & Grant Agreement: ~7 days<br></br>On-chain voting: 14 days<br></br>You will be able to see your on-chain grant proposal, <a className="cla" href="https://app.daohaus.club/dao/0x64/0x3f0ad15fb1ee96f649499c6198713d11781d93f2/proposals" target="_blank" rel="noreferrer">here</a>.<br></br>After the 14 days if you have been succeful with the on-chain voting then you will be able to withdraw your grant.<hr></hr>To learn about withdrawing AdvocatesDAO grants, <a className="cla" onClick={this.handleAdvocateGrantWithdraw}><strong>click me</strong></a>!</a>
     , 
   );
   this.setState((prev) => ({
@@ -674,7 +675,7 @@ handleAdvocateGrant() {
 }
 
 handleAdvocateGrantWithdraw() {
-  const message = this.createChatbotMessage(<a><strong>Further AdvocatesDAO Grant Process</strong><br></br>So you have now submitted your grant via the form, it has been posted into the forum where the community and Advocates are voting and asking questions. What is next?<hr></hr>The DAO is aiming to process a successful grant application within 1-2 months. Below is an overview of key steps that a successful grant application passes through:<br></br>Community Review: ~10 days (varies by community engagement)<br></br>Committee Presentation: ~7 days (includes allowing time for scheduling)<br></br>Committee off-chain voting: ~7 days<hr></hr>The voting period has ended and your grant has been sucessful. If so, Congratulations! What to expect:<br></br><br></br><strong>Email Confirmation</strong> - This is from the Graph AdvocatesDAO, you will be required to complete KYC (Know Your Customer) via the link within the email. You will also be sent a Contract Agreement.<br></br><strong>Forum Post</strong> - An Advocate will also comment on your grant within the forum to confirm you have been successful with your grant.<br></br>KYC & Grant Agreement: ~7 days<br></br>On-chain voting: 14 days<br></br>You will be able to see your on-chain grant proposal, <a className="cla" href="https://app.daohaus.club/dao/0x64/0x3f0ad15fb1ee96f649499c6198713d11781d93f2/proposals" target="_blank" rel="noreferrer">here</a>.<br></br>After the 14 days if you have been succeful with the on-chain voting then you will be able to withdraw your grant.<hr></hr>A guide on withdrawing your GRT from the DAOhaus app can be found <a className="cla" href="https://docs.graphadvocates.com/community-grants/getting-grant-paid" target="_blank" rel="noreferrer">here</a>. Or you can <strong>watch the video tutorial below</strong>.If you need to move your funds from Gnosis Chain to Ethereum, you need to bridge your GRT, we suggest using OmniBridge, that you can access <a className="cla" href="https://omni.gnosischain.com/bridge" target="_blank" rel="noreferrer">here</a>. To watch a video showing how to use the OmniBridge to move your funds, you can watch it <a className="cla" href="https://drive.google.com/file/d/1-YB8JfBu8mkYzc1wAqopGsBIonaLHwq6/view" target="_blank" rel="noreferrer">here</a>.<br></br><br></br><iframe className="embed" isDark src="https://drive.google.com/file/d/1toZih5GIO-h3deJKQz9lr_WBY3_QqX0U/preview" width="100%" height="480" allow="autoplay"></iframe></a>
+  const message = this.createChatbotMessage(<a><strong>Withdrawing from DAOHaus</strong><hr></hr>A guide on withdrawing your GRT from the DAOHaus app can be found <a className="cla" href="https://docs.graphadvocates.com/community-grants/getting-grant-paid" target="_blank" rel="noreferrer">here</a>. Or you can <strong>watch the video tutorial below</strong>.If you need to move your funds from Gnosis Chain to Ethereum, you need to bridge your GRT, we suggest using OmniBridge, that you can access <a className="cla" href="https://omni.gnosischain.com/bridge" target="_blank" rel="noreferrer">here</a>. To watch a video showing how to use the OmniBridge to move your funds, you can watch it <a className="cla" href="https://drive.google.com/file/d/1-YB8JfBu8mkYzc1wAqopGsBIonaLHwq6/view" target="_blank" rel="noreferrer">here</a>.<br></br><br></br><iframe className="embed" isDark src="https://drive.google.com/file/d/1toZih5GIO-h3deJKQz9lr_WBY3_QqX0U/preview" width="100%" height="480" allow="autoplay"></iframe></a>
     ,
   );
   this.setState((prev) => ({
@@ -787,7 +788,8 @@ handleTokenEconomics() {
   <th> Annual Issuance - </th>
   <th> Annual Burn</th>
 </tr>
-</table><hr></hr><strong>GRT Token Economics Overview</strong><br></br><br></br><table>
+</table><br></br>The <strong>Annual Issuance</strong> formula is as follows:<br></br><br></br>networkGRTIssuance = 1000000011247641700<br></br><br></br>blocksYear = 2628000<br></br><br></br>Inflation = networkGRTIssuance * (10^-18) * blocksYear - 1<br></br><br></br>Inflation = 0,0299999999792... = 3% approx
+<hr></hr><strong>GRT Token Economics Overview</strong><br></br><br></br><table>
 <tr className="indexer-table">
   <td><strong>Token Symbol</strong></td>
   <td>GRT</td>
@@ -808,38 +810,7 @@ handleTokenEconomics() {
   <td><strong>Annual Burn</strong></td>
   <td>~1% of query fees & taxes</td>
 </tr>
-</table>
-  <hr></hr><table><tr className="indexer-table-header">
-  <th>Total Token Supply = </th>
-  <th> Initial Token Supply + </th>
-  <th> Annual Issuance - </th>
-  <th> Annual Burn</th>
-</tr>
-</table><hr></hr><strong>Token Unlock Milestones</strong> - Overview of the token unlock progress at specific dates<br></br><br></br><table><tr className="indexer-table-header">
-  <th>Date</th>
-  <th>Increase (%)</th>
-  <th>Cumulative Unlock (%)</th>
-  <th>Cumulative GRT Unlock</th>
-</tr>
-<tr className="indexer-table">
-  <td>18.06.2022</td>
-  <td>12</td>
-  <td>60</td>
-  <td>6B</td>
-</tr>
-<tr className="indexer-table">
-  <td>17.12.2022</td>
-  <td>10</td>
-  <td>70</td>
-  <td>7B</td>
-</tr>
-<tr className="indexer-table">
-  <td>18.06.2023</td>
-  <td>0.6</td>
-  <td>70.6</td>
-  <td>7B</td>
-</tr>
-</table><br></br>You can read all about the token economics of The Graph <a className="cla" href="https://thegraph.academy/ecosystem/graph-token-economics/" target="_blank" rel="noreferrer">here</a>.</a>
+</table><hr></hr>You can read all about the token economics of The Graph <a className="cla" href="https://thegraph.academy/ecosystem/graph-token-economics/" target="_blank" rel="noreferrer">here</a>.</a>
     ,
   );
   this.setState((prev) => ({
@@ -860,6 +831,15 @@ handleSunsettingHostedService() {
   }));
 }
 // Sunsetting Hosted Service  End
+handlePowerDAOS() {
+  const message = this.createChatbotMessage(<a><strong>Using The Graph to Power DAOs: Snapshot Case Study</strong><br></br><br></br>The Graph is a crucial protocol for enabling DAO members to accurately and easily read that data, while also making it effortless to track votes. Decentralized Autonomous Organizations, or DAOs, are organizations that are run by distributed communities, in contrast to centralized authorities. Because the bulk of decision-making in DAOs relies on on-chain data recorded on blockchains.<br></br><br></br><a className="cla" href="https://snapshot.org/#/" target="_blank" rel="noreferrer">Snapshot</a> is a decentralized governance protocol that enables people to coordinate and make collective decisions about the future of the organizations they participate in. Snapshot makes it possible for people to easily create and vote on proposals without incurring any gas fees. It’s a widely used tool for thousands of people working on protocols, collaborating in DAOs, and building innovative new projects in web3.<br></br><br></br>So far, Snapshot has recorded more than:<br></br>8.5M off-chain votes<br></br>8K protocols integrated<br></br>64.8k proposals.<hr></hr>Read <a className="cla" href="https://thegraph.com/blog/using-the-graph-for-daos-snapshot/" target="_blank" rel="noreferrer">here</a>, to find out how The Graph Powers Snapshot and How to Supercharge your Dapp.</a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
 // Tenderize Start
 handleTenderize() {
   const message = this.createChatbotMessage(<a>During Graph Day Tenderize were given a shoutout as the first liquid staking protocol. Users can deposit $GRT for tenderGRT (tGRT), which automatically compounds rewards and swap back and forth at will. $GRT holders can delegate through Tenderize, giving them tGRT. A tokenized version of the staked position that automatically compounds rewards and that can be instantly swapped back to GRT.<br></br><br></br>You can read a guide wrote by the Graphtronauts on How to use Tenderize Tokenized Stake for your GRT, <a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-use-tenderize-tokenized-stake-for-your-grt-cf5fe38a6dc7" target="_blank" rel="noreferrer">here</a>.<br></br><br></br>To get started, visit <a className="cla" href="https://app.tenderize.me/stakers/graph" target="_blank" rel="noreferrer">Tenderize</a>.<br></br><br></br>You can also read the Tenderize blog <a className="cla" href="https://blog.tenderize.me/" target="_blank" rel="noreferrer">here</a>.</a>
@@ -1298,7 +1278,7 @@ handleTokenBurn() {
 }
 
 handleDAO() {
-  const message = this.createChatbotMessage(<a>This acronym stands for Decentralised Autonomous Organization. It exists as a system of predefined rules that determine which actions an organisation will take. This is different from conventional companies and is instead based on open source code and operated entirely by the community. This means that there is no single entity in charge, no directory board, and thus no centralisation of power.<br></br><br></br>The rules are built as smart contracts that govern the collective work of its contributors and community members. So while the concept of a decentralised organisation isn’t particularly new, being able to automate its working mechanisms and functions of it makes a DAO such an interesting concept.<br></br><br></br>Many communities use DAOs for automated fundraising campaigns like an ICO (Initial Coin Offering), the issuance and dispersal of fees collected on a protocol, or as decision-making and voting systems. Additionally, all of this is done without human interaction to ensure a trusted and secure process.</a>
+  const message = this.createChatbotMessage(<a><strong>Using The Graph to Power DAOs</strong> - Read the Snapshot Case Study, <a className="cla" href="https://thegraph.com/blog/using-the-graph-for-daos-snapshot/" target="_blank" rel="noreferrer">here</a>.<hr></hr>This acronym stands for Decentralised Autonomous Organization. It exists as a system of predefined rules that determine which actions an organisation will take. This is different from conventional companies and is instead based on open source code and operated entirely by the community. This means that there is no single entity in charge, no directory board, and thus no centralisation of power.<br></br><br></br>The rules are built as smart contracts that govern the collective work of its contributors and community members. So while the concept of a decentralised organisation isn’t particularly new, being able to automate its working mechanisms and functions of it makes a DAO such an interesting concept.<br></br><br></br>Many communities use DAOs for automated fundraising campaigns like an ICO (Initial Coin Offering), the issuance and dispersal of fees collected on a protocol, or as decision-making and voting systems. Additionally, all of this is done without human interaction to ensure a trusted and secure process.</a>
     ,
   );
   this.setState((prev) => ({
@@ -1567,6 +1547,9 @@ handleButtonTheGraph() {
   this.handleRoles = this.handleRoles.bind(this);
   this.handleDecentralisedData = this.handleDecentralisedData.bind(this);
   this.handleGRTTokenAddress = this.handleGRTTokenAddress.bind(this);
+  this.handleMIPS = this.handleMIPS.bind(this);
+  this.handlePowerDAOS = this.handlePowerDAOS.bind(this);
+
   const message = this.createChatbotMessage(<a><button className="chatbot-button" onClick={() => {
     this.handleTheGraphCouncil();
     this.handleButtonTheGraph();
@@ -1591,6 +1574,9 @@ handleButtonTheGraph() {
     this.handleRoles();
     this.handleButtonTheGraph();
   }}><strong>Ecosystem Roles</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
+    this.handleMIPS();
+    this.handleButtonTheGraph();
+  }}><strong>MIPs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
     this.handleJob();
     this.handleButtonTheGraph();
   }}><strong>Jobs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
@@ -1619,8 +1605,11 @@ handleButtonTheGraph() {
   <button className="chatbot-button" onClick={() => {
     this.handleGRTTokenAddress();
     this.handleButtonTheGraph();
-  }}><strong>GRT Token Address</strong></button>
-  
+  }}><strong>GRT Token Address</strong></button><br class="no-show-monitor"></br>
+  <button className="chatbot-button" onClick={() => {
+    this.handlePowerDAOS();
+    this.handleButtonTheGraph();
+  }}><strong>Snapshot</strong></button>
   <hr></hr><button className="chatbot-button" onClick={this.handleButtonMenu}><strong>Catagories Menu</strong></button></a>
     ,
   );
@@ -1821,7 +1810,7 @@ handleButtonIndexer() {
   this.handleActiveIndexerCount = this.handleActiveIndexerCount.bind(this);
   this.handleTotalDelegatedGRTByIndexersCount = this.handleTotalDelegatedGRTByIndexersCount.bind(this);
   this.handleAllocations = this.handleAllocations.bind(this);
-  this.handle = this.handleAllocations.bind(this);
+  this.handleMIPS = this.handleMIPS.bind(this);
 
   const message = this.createChatbotMessage(<a><button className="chatbot-button" onClick={() => {
     this.handleCurator();
@@ -1839,6 +1828,9 @@ handleButtonIndexer() {
     this.handleIndexerMap();
     this.handleButtonIndexer();
   }}><strong>Indexer Map</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
+    this.handleMIPS();
+    this.handleButtonIndexer();
+  }}><strong>MIPs</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
     this.handleIndexerOfficeHours();
     this.handleButtonIndexer();
   }}><strong>Indexer Office Hours</strong></button><br class="no-show-monitor"></br><button className="chatbot-button" onClick={() => {
@@ -2029,6 +2021,17 @@ handleButtonCommunity() {
     this.handlePodcast();
     this.handleButtonCommunity();
   }}><strong>GRTiQ Podcast</strong></button><hr></hr><button className="chatbot-button" onClick={this.handleButtonMenu}><strong>Catagories Menu</strong></button></a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+handleMIPS(){
+  this.handleButtonMenu = this.handleButtonMenu.bind(this);
+  const message = this.createChatbotMessage(<a><strong>The Graph’s Multi-Chain Incentivized Program</strong><br></br><br></br>The MIPs program bootstraps Indexers to add support for new chains on the decentralized network, enabling migration of multi-chain subgraphs. This is a critical expansion of support for dapps and subgraph migration ahead of the <a className="cla" onClick={this.handleSunsettingHostedService} target="_blank" rel="noreferrer">sunsetting of the hosted service</a>.<br></br><br></br>The MIPs program has allocated 0.75% of the GRT supply (75M GRT), with 0.5% to reward Indexers who contribute to bootstrapping the network and 0.25% allocated to migration grants for subgraph developers using multi-chain subgraphs. By the end of Q1 2023, the hosted service for all network-supported chains will be sunset, so the MIPs program will work in parallel to subgraph migration efforts.<br></br><br></br>The first chain to be supported on the decentralized network was the <a className="cla" href='https://twitter.com/gnosischain' target="_blank" rel="noreferrer">Gnosis</a>Chain! New chains will be announced throughout the MIPs program, based on Indexer readiness, demand, and community sentiment. To read more about MIPs Performance & Scoring and Eligibility Requirements, see <a className="cla" href='https://thegraph.com/blog/mips-multi-chain-indexing-incentivized-program/' target="_blank" rel="noreferrer">here</a>.<hr></hr>The announced chains so far can be found below.<br></br><br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1613980493787312128?s=20&t=_FqJsNOl6vvyIYt3B0KCfg' target="_blank" rel="noreferrer"><strong>Gnosis</strong></a> beta integration complete<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615443632252948480' target="_blank" rel="noreferrer"><strong>Polygon</strong></a> integration underway<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772854838231040?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Arbitrum</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772857211961354?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Avalanche</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772859678457859?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Celo</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772862110900225?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Optimism</strong></a> coming soon!</a>
     ,
   );
   this.setState((prev) => ({

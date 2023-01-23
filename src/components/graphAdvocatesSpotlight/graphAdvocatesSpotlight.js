@@ -934,20 +934,20 @@ const handleIssue26URD = () => {
   })
 }
 
-// const handleIssue26FRA = () => {
-//   // using Java Script method to get PDF file
-//   fetch('Issue26-FRA.pdf').then(response => {
-//       response.blob().then(blob => {
-//           // Creating new object of PDF file
-//           const fileURL = window.URL.createObjectURL(blob);
-//           // Setting various property values
-//           let alink = document.createElement('a');
-//           alink.href = fileURL;
-//           alink.download = 'Issue #26 - FRA Graph Advocates Spotlight.pdf';
-//           alink.click();
-//       })
-//   })
-// }
+const handleIssue26FRA = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue26-FRA.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #26 - FRA Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
       return (
         <>
         <PrivacyPolicyNavbar />
@@ -961,8 +961,8 @@ const handleIssue26URD = () => {
             <hr className="QB-about-hr"></hr>
             <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26ENG} target="_blank" rel="noreferrer">Issue #26 - Livepeer</a></h2>
-            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26ESP} target="_blank" rel="noreferrer">Issue #26 en español</a></h2>
-            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26FRA} target="_blank" rel="noreferrer">Issue #26 en français</a></h2> */}
+            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26ESP} target="_blank" rel="noreferrer">Issue #26 en español</a></h2> */}
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26FRA} target="_blank" rel="noreferrer">Issue #26 en français</a></h2>
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26URD} target="_blank" rel="noreferrer">شمارہ نمبر 26 اردو میں</a></h2>
              <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25ENG} target="_blank" rel="noreferrer">Issue #25 - Freddy Murillo Jr.</a></h2>

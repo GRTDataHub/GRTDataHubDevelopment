@@ -16,6 +16,14 @@ class ENGMessageParser {
       this.actionProvider.handleCoinbase();
     }
 
+    else if (lowercase.includes('mips') || lowercase.includes('MIPS') || lowercase.includes('integration') || lowercase.includes('integrations')) {
+      this.actionProvider.handleMIPS();
+    }
+
+    else if (lowercase.includes('snapshot')) {
+      this.actionProvider.handlePowerDAOS();
+    }
+
     else if (lowercase.includes('soulbound') || lowercase.includes('no code subgraph') || lowercase.includes('soul bound')) {
       this.actionProvider.handleSoulBound();
     }

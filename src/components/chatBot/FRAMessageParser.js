@@ -147,6 +147,14 @@ class FRAMessageParser {
       this.actionProvider.handleTheGraphCouncil();
     } 
 
+    // else if (lowercase.includes('snapshot')) {
+    //   this.actionProvider.handlePowerDAOS();
+    // }
+
+    // else if (lowercase.includes('mips') || lowercase.includes('MIPS') || lowercase.includes('integration') || lowercase.includes('integrations')) {
+    //   this.actionProvider.handleMIPS();
+    // }
+
     else if (lowercase.includes('rewards') || lowercase.includes('indexing rewards')|| lowercase.includes('what are rewards') || lowercase.includes('what are rewards?') || lowercase.includes('what are indexing rewards?') || lowercase.includes('what are indexing rewards') || lowercase.includes('delegator rewards') || lowercase.includes('what are delegator rewards?') || lowercase.includes('what are deleagtor rewards') || lowercase.includes('when will i get rewards') || lowercase.includes('when will i get rewards?') || lowercase.includes('when will i recieve rewards')|| lowercase.includes('when will i recieve rewards?') || lowercase.includes('when rewards') || lowercase.includes('when rewards?') || lowercase.includes('récompenses') || lowercase.includes('how long until i get rewards?')) {
       this.actionProvider.handleRewards();
     } 

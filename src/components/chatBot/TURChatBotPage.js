@@ -16,8 +16,8 @@ const TURChatBotPage = () => ({
         <div className="chatbot-page-container">
             <div className="chatbot-text-container">
             <h3 className="feedback-text chatbot-page-text">Lütfen içerikleri, dökümanları ve öğretici rehberleri başkalarına önererek iyileştirmelere yardımcı olun ve GRTDataHub Turkish Chatbot'u destekleyin.</h3>
-            <h3 className="feedback-text chatbot-page-text"><a className="chatbot-link" href="https://twitter.com/onursaraylii" target="_blank" rel="noreferrer">Onur</a> bu chatbot'ta rehberler oluşturmuş ve Türk topluluğunun potansiyelinden tam olarak yararlanabilmesi için içeriği buna göre gözden geçirmiş ve değiştirmiştir.</h3><h3 className="feedback-text chatbot-page-text"><strong>Beta Aşama 1</strong></h3>
-            <h3 className="feedback-text chatbot-page-text">Şu an da Youtube eğitimleri sadece İngilizce dilindedir. Kendi dilinize çevirmek için lütfen önce Altyazıları/CC'yi etkinleştirin. Daha sonra ayarlar düğmesini tıklayın, Altyazıları seçip otomatik çevirmeden Türkçe'yi seçin.</h3>
+            <h3 className="feedback-text chatbot-page-text"><a className="chatbot-link" href="https://twitter.com/onursaraylii" target="_blank" rel="noreferrer">Onur</a> bu chatbot'ta rehberler oluşturmuş ve Türk topluluğunun potansiyelinden tam olarak yararlanabilmesi için içeriği gözden geçirmiş ve değiştirmiştir.</h3>
+            <h3 className="feedback-text chatbot-page-text">Youtube eğitimlerimiz şu anda sadece İngilizcedir. Kendi dilinize çevirmek için lütfen önce Altyazıları/CC'yi etkinleştirin. Daha sonra ayarlar düğmesini tıklayın, Altyazıları seçip otomatik çevirmeden Türkçe'yi seçin.</h3>
             <h3 className="feedback-text chatbot-page-text">Metin eğitimleri ve bloglar topluluk tarafından aktif olarak çevriliyor, katkıda bulunmak istiyorsanız lütfen iletişime geçin!</h3>
 
         <Chatbot

@@ -211,6 +211,14 @@ class TURMessageParser {
       this.actionProvider.handleRoles();
     } 
 
+    // else if (lowercase.includes('snapshot')) {
+    //   this.actionProvider.handlePowerDAOS();
+    // }
+
+    // else if (lowercase.includes('mips') || lowercase.includes('MIPS') || lowercase.includes('integration') || lowercase.includes('integrations')) {
+    //   this.actionProvider.handleMIPS();
+    // }
+
     else if (lowercase.includes('fees to delegate') || lowercase.includes('delegation fees')|| lowercase.includes('cost to delegate') | lowercase.includes('delegate cost') ||  lowercase.includes('what are fees to delegate') || lowercase.includes('what are fees to delegate?') || lowercase.includes('what are the fees to delegate') || lowercase.includes('what are the fees to delegate?') || lowercase.includes('what are the delegation fees')  || lowercase.includes('what are the delegation fees') || lowercase.includes('what are the delegation fees?')  || lowercase.includes('delegation fees?') || lowercase.includes('what are the costs to delegate') || lowercase.includes('what are the costs to delegate?') || lowercase.includes('risks to delegating') || lowercase.includes('is it expensive to delegate') || lowercase.includes('is it expensive to delegate?') || lowercase.includes('expensive to delegate') || lowercase.includes('delegator expenses') || lowercase.includes('stake ucretleri')) {
       this.actionProvider.handleFeesToDelegate();
     } 
@@ -253,7 +261,7 @@ class TURMessageParser {
       this.actionProvider.handleWhatIsSchema();
     } 
 
-    else if (lowercase.includes('how do i buy') || lowercase.includes('how do i buy?') || lowercase.includes('how can i buy') || lowercase.includes('how can i buy?') || lowercase.includes('where can i buy?') || lowercase.includes('where can i buy') || lowercase.includes('buy grt') || lowercase.includes('when can i buy grt') || lowercase.includes('where can i buy grt?') || lowercase.includes('i want to buy') || lowercase.includes('i want to buy grt') || lowercase.includes('how much is grt') || lowercase.includes('how much is grt?') || lowercase.includes('wher can i pick up grt') || lowercase.includes('where can i pick up grt?') || lowercase.includes('satın almak') || lowercase.includes('where to buy') || lowercase.includes('buy')) {
+    else if (lowercase.includes('how do i buy') || lowercase.includes('how do i buy?') || lowercase.includes('how can i buy') || lowercase.includes('how can i buy?') || lowercase.includes('where can i buy?') || lowercase.includes('where can i buy') || lowercase.includes('buy grt') || lowercase.includes('when can i buy grt') || lowercase.includes('where can i buy grt?') || lowercase.includes('i want to buy') || lowercase.includes('i want to buy grt') || lowercase.includes('how much is grt') || lowercase.includes('how much is grt?') || lowercase.includes('nerede satılır') || lowercase.includes('nereden alabilirim') || lowercase.includes('satın almak') || lowercase.includes('nereden satın alabilirim') || lowercase.includes('buy')) {
       this.actionProvider.handleBuy();
     } 
 

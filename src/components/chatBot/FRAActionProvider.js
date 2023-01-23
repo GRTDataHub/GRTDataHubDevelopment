@@ -243,6 +243,27 @@ handleRewards() {
     messages: [...prev.messages, message],
   }));
 }
+
+// handlePowerDAOS() {
+//   const message = this.createChatbotMessage(<a><strong>Using The Graph to Power DAOs: Snapshot Case Study</strong><br></br><br></br>The Graph is a crucial protocol for enabling DAO members to accurately and easily read that data, while also making it effortless to track votes. Decentralized Autonomous Organizations, or DAOs, are organizations that are run by distributed communities, in contrast to centralized authorities. Because the bulk of decision-making in DAOs relies on on-chain data recorded on blockchains.<br></br><br></br><a className="cla" href="https://snapshot.org/#/" target="_blank" rel="noreferrer">Snapshot</a> is a decentralized governance protocol that enables people to coordinate and make collective decisions about the future of the organizations they participate in. Snapshot makes it possible for people to easily create and vote on proposals without incurring any gas fees. It’s a widely used tool for thousands of people working on protocols, collaborating in DAOs, and building innovative new projects in web3.<br></br><br></br>So far, Snapshot has recorded more than:<br></br>8.5M off-chain votes<br></br>8K protocols integrated<br></br>64.8k proposals.<hr></hr>Read <a className="cla" href="https://thegraph.com/blog/using-the-graph-for-daos-snapshot/" target="_blank" rel="noreferrer">here</a>, to find out how The Graph Powers Snapshot and How to Supercharge your Dapp.</a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
+
+// handleMIPS(){
+//   this.handleButtonMenu = this.handleButtonMenu.bind(this);
+//   const message = this.createChatbotMessage(<a><strong>The Graph’s Multi-Chain Incentivized Program</strong><br></br><br></br>The MIPs program bootstraps Indexers to add support for new chains on the decentralized network, enabling migration of multi-chain subgraphs. This is a critical expansion of support for dapps and subgraph migration ahead of the <a className="cla" onClick={this.handleSunsettingHostedService} target="_blank" rel="noreferrer">sunsetting of the hosted service</a>.<br></br>The MIPs program has allocated 0.75% of the GRT supply (75M GRT), with 0.5% to reward Indexers who contribute to bootstrapping the network and 0.25% allocated to migration grants for subgraph developers using multi-chain subgraphs. By the end of Q1 2023, the hosted service for all network-supported chains will be sunset, so the MIPs program will work in parallel to subgraph migration efforts.<br></br>The first chain to be supported on the decentralized network was the <a className="cla" href='https://twitter.com/gnosischain' target="_blank" rel="noreferrer">Gnosis</a>Chain! New chains will be announced throughout the MIPs program, based on Indexer readiness, demand, and community sentiment. To read more about MIPs Performance & Scoring and Eligibility Requirements, see <a className="cla" href='https://thegraph.com/blog/mips-multi-chain-indexing-incentivized-program/' target="_blank" rel="noreferrer">here</a>.<hr></hr>The announced chains so far can be found below.<br></br><br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1613980493787312128?s=20&t=_FqJsNOl6vvyIYt3B0KCfg' target="_blank" rel="noreferrer"><strong>Gnosis</strong></a> beta integration complete<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615443632252948480' target="_blank" rel="noreferrer"><strong>Polygon</strong></a> integration underway<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772854838231040?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Arbitrum</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772857211961354?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Avalanche</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772859678457859?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Celo</strong></a> coming soon!<br></br><a className="cla" href='https://twitter.com/graphprotocol/status/1615772862110900225?s=20&t=Fz_wzPtpk2ZKpTmWN1xNbA' target="_blank" rel="noreferrer"><strong>Optimism</strong></a> coming soon!</a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
 // Rewards End
 // Indexing Rewards,Query Fees and POI Start 
 handleQueryFees() {
@@ -512,7 +533,7 @@ handleWhatIsSchema() {
 // Schema End
 // Buy Start
 handleBuy() {
-  const message = this.createChatbotMessage(<a>Vous pouvez voir le prix et tous les marchés ouverts sur <a className="cla" href="https://coinmarketcap.com/currencies/the-graph/markets/" target="_blank" rel="noreferrer">CoinMarketCap</a>.</a>
+  const message = this.createChatbotMessage(<a>Vous pouvez voir le prix et tous les marchés ouverts sur <a className="cla" href="https://coinmarketcap.com/fr/currencies/the-graph/markets/" target="_blank" rel="noreferrer">CoinMarketCap</a>.</a>
     ,
   );
   this.setState((prev) => ({
@@ -595,7 +616,7 @@ handleGraphSocial() {
 }
 
 handlePodcast() {
-  const message = this.createChatbotMessage(<a><strong>Qu’est-ce que GRTiQ?</strong><br></br><br></br><a className="cla" href="https://www.grtiq.com/" target="_blank" rel="noreferrer">GRTiQ</a> génère des renseignements sur le marché par l’analyse, la recherche, l’optimisation et l’éducation.<br></br><br></br><strong>Analyse de marché</strong> - Fournir une analyse et une performance du marché afin que les délégateurs puissent mieux comprendre la dynamique du marché.<br></br><br></br><strong>Recherche indexée</strong> - Mener des recherches indexées que les délégateurs peuvent utiliser pour identifier les opportunités et les partenariats.<br></br><br></br><strong>Optimisation des récompenses</strong> - Créez et publiez des données, des guides et des analyses pour aider les délégateurs à optimiser leurs gains de récompenses.<br></br><br></br><strong>Éducation écosystémique</strong> - Offrir des ressources éducatives continues et des informations sur tous les aspects de l’écosystème The Graph.<hr></hr>Vous pouvez écouter les podcasts de GRTiQ <a className="cla" href="https://www.grtiq.com/podcast/" target="_blank" rel="noreferrer">ici</a>.<br></br><br></br>Pour suivre GRTiQ, vous pouvez les suivre sur <a className="cla" href="https://twitter.com/grt_iq" target="_blank" rel="noreferrer">Twitter</a>, <a className="cla" href="https://www.youtube.com/channel/UCxhFN47AlCDx1Qoaw1oSQ5A" target="_blank" rel="noreferrer">YouTube</a> et <a className="cla" href="https://www.instagram.com/thegraphiq/" target="_blank" rel="noreferrer">Instagram</a>.</a>
+  const message = this.createChatbotMessage(<a><strong>Qu’est-ce que GRTiQ?</strong><br></br><br></br><a className="cla" href="https://www.grtiq.com/" target="_blank" rel="noreferrer">GRTiQ</a> génère des renseignements sur le marché par l’analyse, la recherche, l’optimisation et l’éducation.<br></br><br></br><strong>Analyse de marché</strong> - Fournir une analyse et une performance du marché afin que les délégateurs puissent mieux comprendre la dynamique du marché.<br></br><br></br><strong>Recherche indexée</strong> - Mener des recherches indexées que les délégateurs peuvent utiliser pour identifier les opportunités et les partenariats.<br></br><br></br><strong>Optimisation des récompenses</strong> - Créez et publiez des données, des guides et des analyses pour aider les délégateurs à optimiser leurs gains de récompenses.<br></br><br></br><strong>Éducation écosystémique</strong> - Offrir des ressources éducatives continues et des informations sur tous les aspects de l’écosystème The Graph.<hr></hr>Vous pouvez écouter les podcasts de GRTiQ <a className="cla" href="https://www.grtiq.com/podcast/" target="_blank" rel="noreferrer">ici</a>.<br></br><br></br>Pour suivre GRTiQ, vous pouvez les suivre sur <a className="cla" href="https://twitter.com/grt_iq" target="_blank" rel="noreferrer">Twitter</a>, <a className="cla" href="https://www.youtube.com/channel/UCxhFN47AlCDx1Qoaw1oSQ5A" target="_blank" rel="noreferrer">YouTube</a> et <a className="cla" href="https://www.instagram.com/thegraphiq/" target="_blank" rel="noreferrer">Instagram</a>.<br></br><br></br><Embed className="embed" isDark url='https://twitter.com/grt_iq/status/1617269631403831297?s=20&t=C_TtsLrGHQ0b92xQs527lQ'/></a>
    ,
    );
    this.setState((prev) => ({ 
@@ -741,7 +762,9 @@ handleTokenEconomics() {
   <th> Numéro annuel - </th>
   <th> Brûlage annuel</th>
 </tr>
-</table><hr></hr><strong>Vue d’ensemble de l’économie des jetons GRT</strong><br></br><br></br><table>
+</table>
+{/* <br></br>The <strong>Annual Issuance</strong> formula is as follows:<br></br><br></br>networkGRTIssuance = 1000000011247641700<br></br><br></br>blocksYear = 2628000<br></br><br></br>Inflation = networkGRTIssuance * (10^-18) * blocksYear - 1<br></br><br></br>Inflation = 0,0299999999792... = 3% approx */}
+<hr></hr><strong>Vue d’ensemble de l’économie des jetons GRT</strong><br></br><br></br><table>
 <tr className="indexer-table">
   <td><strong>Symbol tab</strong></td>
   <td>GRT</td>
