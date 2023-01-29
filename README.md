@@ -20,11 +20,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
+    <li><a href="#about-the-project">About The Project</a>
         <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing"> Contributing and Translating </a></li>
@@ -134,7 +131,7 @@ I am a Novice Coder who does this as a hobby. However, I strive to be better eac
 
 Guidance on updating the chatbot code can be found here, please see at the bottom on how to contact me if needed.
 
-1. When updating the chatbots please see the respective action provider file. (e.g. ENGMessageParser.js) 
+1. When updating the chatbots please see the respective message parser file. (e.g. ENGMessageParser.js) 
 2. The code will run through and find a match to the input from the user. Therefore the order needs have some thought about it to prevent bad or wrong answers produced by the chatbots.
 3. For example, handleWhatIsTheGraph will need to be below all questions that may include "The Graph", in the event that the user asks. What is the graph? The chatbot will work perfectly. However, if the user was to ask, "How do I stake with the graph?" The user would get the wrong reply if the above messageParser was before handleDelegateGuides.
 4. This will then trigger a response within actionProvider to give an answer. The order does not matter within that file however keeping them in the same order as the messageParser file is appreciated for ease of continuous improvements. 
