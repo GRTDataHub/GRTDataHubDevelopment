@@ -28,6 +28,7 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing"> Contributing and Translating </a></li>
+    <li><a href="#code">Code</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -41,7 +42,8 @@ GRTDataHub is primarily the hub for GRT data, providing visual representation of
 <br />
 The Chatbots will help answer any questions that you may have about The Graph and Web3. It will provide you with a link to the relevant documentation along with text and video tutorials so that you can seek further information, if you wish. There is no such thing as a stupid question, it is here help and educate!
 <br />
-Current Chatbots Built:
+<br />
+Current <a href="https://www.GRTDataHub.com/chatBot">Chatbots</a> Built:
 <br />
 <a href="https://www.GRTDataHub.com/ENGchatBot">English</a>
 <br />
@@ -73,29 +75,31 @@ Urdu
 ## Roadmap
 
 - Homepage 
-- [x] Available whenever, wherever, across all devices
+    - [x] Available whenever, wherever, across all devices
     - [x] Mobile Portrait View Improvements 
     - [ ] Add more charts 
     - [ ] Update logo with new community admins in GRTDataHub community in our telegram chat. 
-- Export Page 
-- [x] GRT Data in Bar Chart and Line Graph Format
+- <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>  
+    - [x] GRT Data in Bar Chart and Line Graph Format
     - [x] <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>
     - [ ] Master Export Button (Export all in 1 click)
-- About Page
+- <a href="https://www.GRTDataHub.com/aboutPage">About Page</a> 
     - [ ] Update with links to new community admins in GRTDataHub community in our telegram chat. 
-- Chatbots (Continuous improvements on all chatbots as necessary)
-    - [x] <a href="https://www.GRTDataHub.com/ENGchatBot">English</a> 
-     - [x] <a href="https://www.GRTDataHub.com/ENGTranslatorHelp">Translator Page</a>  
-    - [x] <a href="https://www.GRTDataHub.com/GERchatBot">German</a>
-     - [x] <a href="https://www.GRTDataHub.com/GERTranslatorHelp">Translator Page</a>  
-    - [x] <a href="https://www.GRTDataHub.com/ESPchatBot">Spanish</a>
-     - [x] <a href="https://www.GRTDataHub.com/ESPTranslatorHelp">Translator Page</a>   
-    - [x] <a href="https://www.GRTDataHub.com/FRAchatBot">French</a>
-     - [x] <a href="https://www.GRTDataHub.com/FRATranslatorHelp">Translator Page</a>   
-    - [x] <a href="https://www.GRTDataHub.com/TURchatBot">Turkish</a>
-     - [x] <a href="https://www.GRTDataHub.com/TURTranslatorHelp">Translator Page</a>  
-    - [ ] Urdu (In Development)
-     - [ ] Translator Help Page 
+- <a href="https://www.GRTDataHub.com/chatBot">Chatbots</a>  (Continuous improvements on all chatbots as necessary)
+- [x] <a href="https://www.GRTDataHub.com/ENGchatBot">English</a> 
+    - [x] <a href="https://www.GRTDataHub.com/ENGTranslatorHelp">Translator Page</a>  
+- [x] <a href="https://www.GRTDataHub.com/GERchatBot">German</a>
+    - [x] <a href="https://www.GRTDataHub.com/GERTranslatorHelp">Translator Page</a>  
+- [x] <a href="https://www.GRTDataHub.com/ESPchatBot">Spanish</a>
+    - [x] <a href="https://www.GRTDataHub.com/ESPTranslatorHelp">Translator Page</a>   
+- [x] <a href="https://www.GRTDataHub.com/FRAchatBot">French</a>
+    - [x] <a href="https://www.GRTDataHub.com/FRATranslatorHelp">Translator Page</a>   
+- [x] <a href="https://www.GRTDataHub.com/TURchatBot">Turkish</a>
+    - [x] <a href="https://www.GRTDataHub.com/TURTranslatorHelp">Translator Page</a>  
+- [ ] Urdu (In Development)
+    - [ ] Translator Help Page 
+- Translator Help Pages
+    - [ ] Add full chatbot script file for translations that can be downloaded by advocates (updated file with each chatbot update)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,6 +127,21 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CODE -->
+## Code
+
+I am a Novice Coder who does this as a hobby. However, I strive to be better each day. If you would like to make improvements then I am here to learn and I will be greatful for constructive critism.
+
+Guidance on updating the chatbot code can be found here, please see at the bottom on how to contact me if needed.
+
+1. When updating the chatbots please see the respective action provider file. (e.g. ENGMessageParser.js) 
+2. The code will run through and find a match to the input from the user. Therefore the order needs have some thought about it to prevent bad or wrong answers produced by the chatbots.
+3. For example, handleWhatIsTheGraph will need to be below all questions that may include "The Graph", in the event that the user asks. What is the graph? The chatbot will work perfectly. However, if the user was to ask, "How do I stake with the graph?" The user would get the wrong reply if the above messageParser was before handleDelegateGuides.
+4. This will then trigger a response within actionProvider to give an answer. The order does not matter within that file however keeping them in the same order as the messageParser file is appreciated for ease of continuous improvements. 
+5. If a new item is added then please also add a button in its respective place at the bottom of the actionProvider file.  
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
