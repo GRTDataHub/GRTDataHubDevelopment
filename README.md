@@ -1,27 +1,11 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/GRTDataHub/GRTDataHubDevelopment">
-    <img src="GRTDataHubLogo.png" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center"><a href="https://https://grtdatahub.com">GRTDataHub</a></h3>
 
   <p align="center">
     We are the hub for GRT data, providing visual representation of data collected from The Graph blockchain. Giving all GRT communities access to the most up to date information whenever, wherever, across all devices. Primarily created to feature in "The Graph News" on the Graphtronauts YouTube channel on a weekly basis, the app has grown into an asset that can be used by the GRT communities and group admins to educate, provide perspective, transparency and factual based data analytics about $GRT.
     <br />
-    GRTDataHub works closely with any group admin or community members with their respective group admin`s permission. The app is used by content creators on a daily basis to bring all GRT communities from around the world the easy to interpet, nice to look at, positively trending GRT data.
+    GRTDataHub works closely with any group admin or community members with their respective group admin`s permission. The app is used by content creators on a daily basis to bring all GRT communities from around the world the easy to interpret, nice to look at, positively trending GRT data.
     <br />
     The Chatbots will help answer any questions that you may have about The Graph and Web3. It will provide you with a link to the relevant documentation along with text and video tutorials so that you can seek further information, if you wish. There is no such thing as a stupid question, it is here help and educate!
     <br />
@@ -67,19 +51,22 @@ GRTDataHub is primarily the hub for GRT data, providing visual representation of
 <br />
 The Chatbots will help answer any questions that you may have about The Graph and Web3. It will provide you with a link to the relevant documentation along with text and video tutorials so that you can seek further information, if you wish. There is no such thing as a stupid question, it is here help and educate!
 <br />
-Current Chatbots Buld:
+Current Chatbots Built:
 <br />
 <a href="https://www.GRTDataHub.com/ENGchatBot">English</a>
- ·
+<br />
 <a href="https://www.GRTDataHub.com/GERchatBot">German</a>
- ·
+<br />
  <a href="https://www.GRTDataHub.com/ESPchatBot">Spanish</a>
- ·
+<br />
 <a href="https://www.GRTDataHub.com/FRAchatBot">French</a>
- ·
+<br />
 <a href="https://www.GRTDataHub.com/TURchatBot">Turkish</a>
 <br />
-More currently in Development.
+<br />
+Current Chatbot in Development:
+<br />
+Urdu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +74,7 @@ More currently in Development.
 
 ### Built With
 
-* [![React][React.js]][React-url]
+* React.js
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,15 +95,15 @@ More currently in Development.
     - [ ] Update with links to new community admins in GRTDataHub community in our telegram chat. 
 - Chatbots (Continuous improvements on all chatbots as necessary)
     - [x] <a href="https://www.GRTDataHub.com/ENGchatBot">English</a> 
-     - [x] Translator Help Page 
+     - [x] <a href="https://www.GRTDataHub.com/ENGTranslatorHelp">Translator Page</a>  
     - [x] <a href="https://www.GRTDataHub.com/GERchatBot">German</a>
-     - [x] Translator Help Page  
+     - [x] <a href="https://www.GRTDataHub.com/GERTranslatorHelp">Translator Page</a>  
     - [x] <a href="https://www.GRTDataHub.com/ESPchatBot">Spanish</a>
-     - [x] Translator Help Page 
+     - [x] <a href="https://www.GRTDataHub.com/ESPTranslatorHelp">Translator Page</a>   
     - [x] <a href="https://www.GRTDataHub.com/FRAchatBot">French</a>
-     - [x] Translator Help Page 
+     - [x] <a href="https://www.GRTDataHub.com/FRATranslatorHelp">Translator Page</a>   
     - [x] <a href="https://www.GRTDataHub.com/TURchatBot">Turkish</a>
-     - [x] Translator Help Page 
+     - [x] <a href="https://www.GRTDataHub.com/TURTranslatorHelp">Translator Page</a>  
     - [ ] Urdu (In Development)
      - [ ] Translator Help Page 
 
@@ -128,11 +115,13 @@ More currently in Development.
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create.
 
-Contributing can be either coding improvements or translating for the current chatbots when improvments are made and new chatbots in development. 
+Contributing can be either coding improvements or translating for the current chatbots when improvements are made and new chatbots in development. 
+
+All translators that contributed are acknowledged at the top of the respective chatbots.
 
 For developers that would like to contribute then please do so via a <a href="https://github.com/GRTDataHub/GRTDataHubDevelopment/pulls">Pull Request</a>. 
 
-For non developers that are not confident with creating a Pull Request then please do so via the <a href="https://github.com/GRTDataHub/GRTDataHubDevelopment/discussions">Discussions</a>. 
+For non-developers that are not confident with creating a Pull Request then please do so via the <a href="https://github.com/GRTDataHub/GRTDataHubDevelopment/discussions">Discussions</a>. 
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
@@ -158,9 +147,9 @@ Distributed under the Apache-2.0 License. See <a href="https://github.com/GRTDat
 
 GRTDataHub Developer - Liam
 
-[@twitter_handle](https://twitter.com/GRTCrypto) 
+Twitter: [@GRTCrypto](https://twitter.com/GRTCrypto) 
 
-[@telegram_handle](@GRTDataHub)  
+Telegram: @GRTDataHub  
 
 Email: admin@GRTDataHub.com
 
