@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<h3 align="center"><a href="https://https://grtdatahub.com">GRTDataHub</a></h3>
+<h3 align="center"><a href="https://https://www.grtdatahub.com">GRTDataHub</a></h3>
 
   <p align="center">
     We are the hub for GRT data, providing visual representation of data collected from The Graph blockchain. Giving all GRT communities access to the most up to date information whenever, wherever, across all devices. Primarily created to feature in "The Graph News" on the Graphtronauts YouTube channel on a weekly basis, the app has grown into an asset that can be used by the GRT communities and group admins to educate, provide perspective, transparency and factual based data analytics about $GRT.
@@ -26,22 +26,12 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributing"> Contributing and Translating </a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -111,7 +101,7 @@ Urdu
 
 
 <!-- CONTRIBUTING -->
-## Contributing and Translating
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create.
 
