@@ -27,11 +27,24 @@ const ENGChatBotPage = () => ({
       /> 
 
       <br></br>
-       <button type="button" className="feedback-button btn btn-outline-dark"><a className="chatbot-link-button" href="https://mb3kald91rd.typeform.com/to/esxDMqut " target="_blank" rel="noreferrer"><h3 className="feedback-button-text">Chatbot Improvements Form
-          </h3></a></button>
-          <br></br>
-          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/ENGTranslatorHelp" target="_blank" rel="noreferrer">Translator Help Page</a></h2>
-
+      <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="https://mb3kald91rd.typeform.com/to/esxDMqut " target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Chatbot Improvements Form
+      </a>
+  </div>
+          <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="/ENGTranslatorHelp" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Translator Help Page
+      </a>
+  </div>
           
 </div>
 </div>

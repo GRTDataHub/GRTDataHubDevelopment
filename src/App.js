@@ -12,6 +12,7 @@ import GERTranslatorHelp from './components/chatBot/GERTranslatorHelp';
 import FRATranslatorHelp from './components/chatBot/FRATranslatorHelp';
 import ENGTranslatorHelp from './components/chatBot/ENGTranslatorHelp';
 import TURTranslatorHelp from './components/chatBot/TURTranslatorHelp';
+import URDTranslatorHelp from './components/chatBot/URDTranslatorHelp';
 import PrivacyPolicy from './components/privacyPolicy/privacyPolicy';
 import CookiesPolicy from './components/cookiesPolicy/cookiesPolicy';
 import AboutPage from './components/aboutPage/AboutPage';
@@ -23,6 +24,7 @@ import GERChatBotPage from './components/chatBot/GERChatBotPage';
 import ENGChatBotPage from './components/chatBot/ENGChatBotPage';
 import FRAChatBotPage from './components/chatBot/FRAChatBotPage';
 import TURChatBotPage from './components/chatBot/TURChatBotPage';
+import URDChatBotPage from './components/chatBot/URDChatBotPage';
 import ChatBotPage from './components/chatBot/ChatBotPage';
 import ActiveDelegationCount from './components/live-data/ActiveDelegationCount';
 import ActiveDelegationCountChatbotGraph from './components/live-data/ActiveDelegationCountChatbotGraph';
@@ -174,6 +176,10 @@ class App extends Component{
                   element={<TURChatBotPage />} />
                   <Route path="/TURTranslatorHelp"
                   element={<TURTranslatorHelp />} />
+                   <Route path="/URDchatBot"
+                  element={<URDChatBotPage />} />
+                  <Route path="/URDTranslatorHelp"
+                  element={<URDTranslatorHelp />} />
                   <Route path="/Binance_Staking_GER"
                   element={<BinanceStakingGER/>} />
                     <Route path="/IPhone_GER"
