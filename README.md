@@ -75,13 +75,13 @@ Urdu
     - [x] Available whenever, wherever, across all devices
     - [x] Mobile Portrait View Improvements 
     - [ ] Add more charts 
-    - [ ] Update logo with new community admins in GRTDataHub community in our telegram chat. 
+    - [ ] Update logo with new community admins in GRTDataHub community in our Telegram chat. 
 - <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>  
     - [x] GRT Data in Bar Chart and Line Graph Format
     - [x] <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>
     - [ ] Master Export Button (Export all in 1 click)
 - <a href="https://www.GRTDataHub.com/aboutPage">About Page</a> 
-    - [ ] Update with links to new community admins in GRTDataHub community in our telegram chat. 
+    - [ ] Update with links to new community admins in GRTDataHub community in our Telegram chat. 
 - <a href="https://www.GRTDataHub.com/chatBot">Chatbots</a>  (Continuous improvements on all chatbots as necessary)
 - [x] <a href="https://www.GRTDataHub.com/ENGchatBot">English</a> 
     - [x] <a href="https://www.GRTDataHub.com/ENGTranslatorHelp">Translator Page</a>  
@@ -96,7 +96,7 @@ Urdu
 - [ ] Urdu (In Development)
     - [ ] Translator Help Page 
 - Translator Help Pages
-    - [ ] Add full chatbot script file for translations that can be downloaded by advocates (updated file with each chatbot update)
+    - [x] Add full chatbot script file for translations that can be downloaded by advocates (updated file with each chatbot update)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,10 +110,11 @@ Contributing can be either coding improvements or translating for the current ch
 
 All translators that contributed are acknowledged at the top of the respective chatbots.
 
+If you visit the <a href="https://grtdatahub.com/ENGTranslatorHelp">Translator Help</a> page via the button at the bottom of any chatbot. At the bottom of the Translator Help Page you will find 2 buttons for downloading all of the chatbot contents, the page contents and any other content that will need to be traslated when building a new chatbot. The file is availble to view or download in both Microsoft Word and Text File format. 
+
 For developers that would like to contribute then please do so via a <a href="https://github.com/GRTDataHub/GRTDataHubDevelopment/pulls">Pull Request</a>. 
 
-For non-developers that are not confident with creating a Pull Request then please do so via the <a href="https://github.com/GRTDataHub/GRTDataHubDevelopment/discussions">Discussions</a>. 
-
+For non-developers that are not confident with creating a Pull Request then please do so via the <a href="https://github.com/GRTDataHub/GRTDataHubDevelopment/discussions">Discussions</a> or feel free to get in contact with me directly. 
 If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
 1. Fork the Project
@@ -127,7 +128,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- CODE -->
 ## Code
 
-I am a Novice Coder who does this as a hobby. However, I strive to be better each day. If you would like to make improvements then I am here to learn and I will be greatful for constructive critism.
+I am a Novice Coder who does this as a hobby. However, I strive to be better each day. If you would like to make improvements then I am here to learn and I will be greatful for constructive criticism.
 
 Guidance on updating the chatbot code can be found here, please see at the bottom on how to contact me if needed.
 
