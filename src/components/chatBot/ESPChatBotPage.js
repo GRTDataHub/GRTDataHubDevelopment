@@ -28,11 +28,25 @@ const ESPChatBotPage = () => ({
         placeholderText='¿Cómo delegar?'
         disableScrollToBottom
       /> 
-      <br></br>
-       <button type="button" className="feedback-button btn btn-outline-dark"><a className="chatbot-link-button" href="https://mb3kald91rd.typeform.com/to/Mr1hatEA" target="_blank" rel="noreferrer"><h3 className="feedback-button-text">Formulario de mejoras de Chatbot
-          </h3></a></button>
-          <br></br>
-          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/ESPTranslatorHelp" target="_blank" rel="noreferrer">Página de ayuda de la traductora</a></h2>
+        <br></br>
+      <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="https://mb3kald91rd.typeform.com/to/Mr1hatEA" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Formulario de mejoras de Chatbot
+      </a>
+  </div>
+          <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="/ESPTranslatorHelp" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Página de ayuda de la traductora
+      </a>
+  </div>
 </div>
 </div>
 <ESPChatbotFooter className="chatbot-footer-mobile" />

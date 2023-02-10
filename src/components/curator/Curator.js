@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import ChatBotLogo from "../../GRTDataHubChatBotLink.png";
 
 const Curator = () => {
   return (
@@ -11,6 +12,9 @@ const Curator = () => {
 <div class="message">
 Please rotate your device to landscape to view the Curators page.
 </div>
+<div className="chatbot-link">
+            <a href="/chatBot"><img className="chatbot-link-export" src={ChatBotLogo}  alt="ChatBot Logo"></img></a>
+            </div>
 </div>
     <h1 className="indexer-title">Curators Page - Here you will find all the data for GRT Curators.</h1>
     <h2 className="indexer-subtitle"><strong>Graph Network Billing brought to you by <a className="cla" href="https://dapplooker.com/dapp/graph-network-billing-120192" target="_blank" rel="noreferrer">DappLooker</a></strong></h2>

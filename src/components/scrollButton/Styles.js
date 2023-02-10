@@ -9,7 +9,7 @@ export const Button = styled.div`
    position: fixed; 
    color: #53466c;
    width: 100%;
-   left: 90%;
+   left: 80%;
    bottom: 4rem;
    height: 0px;
    font-size: 2.5rem;

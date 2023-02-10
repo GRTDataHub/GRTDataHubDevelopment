@@ -28,11 +28,25 @@ const TURChatBotPage = () => ({
         placeholderText='Nasıl stake edebilirim?'
         disableScrollToBottom
       /> 
-      <br></br>
-       <button type="button" className="feedback-button btn btn-outline-dark"><a className="chatbot-link-button" href="https://mb3kald91rd.typeform.com/to/s4NyS49n" target="_blank" rel="noreferrer"><h3 className="feedback-button-text">Chatbot Geliştirme Formu
-          </h3></a></button>
-          <br></br>
-          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/TURTranslatorHelp" target="_blank" rel="noreferrer">Çevirmen Yardım Sayfası</a></h2>
+        <br></br>
+      <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="https://mb3kald91rd.typeform.com/to/s4NyS49n" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Chatbot Geliştirme Formu
+      </a>
+  </div>
+          <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="/TURTranslatorHelp" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Çevirmen Yardım Sayfası
+      </a>
+  </div>
 </div>
 </div>
 <TURChatbotFooter className="chatbot-footer-mobile" />

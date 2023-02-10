@@ -11,6 +11,7 @@ function AdminActiveDelegatorCountBar(){
   require('highcharts/modules/exporting')(Highcharts);
 require('highcharts/modules/export-data')(Highcharts);
 
+
   //this will go off and get our data for us as this is our custom hook to get api data. from here we can access data
   //acces the request status so if it successful or not and if there is an err msg. will automatically get data on refresh for you
   const { data, requestStatus, error } = useBarAPI();
@@ -28,6 +29,7 @@ require('highcharts/modules/export-data')(Highcharts);
     dataLabelX: 15,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barOne'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -69,6 +71,7 @@ export function AdminHoldersCountBar(){
     dataLabelX: 15,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barTwo'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -109,6 +112,7 @@ export function AdminSubgraphCountBar(){
     dataLabelX: 10,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barThree'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -148,6 +152,7 @@ export function AdminCuratorCountBar(){
     dataLabelX: 10,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barFour'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -187,6 +192,7 @@ export function AdminActiveDelegationCountBar(){
     dataLabelX: 15,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barFive'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -226,6 +232,7 @@ export function AdminActiveIndexersCountBar(){
     dataLabelX: 10,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barSix'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -265,6 +272,7 @@ export function AdminTotalDelegatedGRT(){
     dataLabelX: 30,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barSeven'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -304,6 +312,7 @@ export function AdminTotalDelegatedGRTIndexers(){
     dataLabelX: 30,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barEight'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -343,6 +352,7 @@ export function AdminTotalQueryFees(){
     dataLabelX: 20,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barNine'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70,height: '80%'
   });
 
@@ -383,6 +393,7 @@ export function AdminTotalTokensSignalled(){
     dataLabelX: 25,
     subtitleX: 0,
     subtitleY: 25,
+    downloadButton: 'barTen'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -422,6 +433,7 @@ export function AdminTotalStakedGRT(){
     dataLabelX: 30,
     subtitleX: 0,
    subtitleY: 25,
+   downloadButton: 'barEleven'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -461,6 +473,7 @@ export function AdminTotalBurnedGRT(){
     dataLabelX: 20,
     subtitleX: 0,
    subtitleY: 25,
+   downloadButton: 'barTwelve'
     // logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'
   });
 
@@ -511,6 +524,7 @@ export function MobileAdminActiveDelegatorCountBar(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileOne'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
     if(requestStatus === REQUEST_STATUS.LOADING){
@@ -549,6 +563,7 @@ export function MobileAdminHoldersCountBar(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileTwo'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -589,6 +604,7 @@ export function MobileAdminSubgraphCountBar(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileThree'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -628,6 +644,7 @@ export function MobileAdminCuratorCountBar(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileFour'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -667,6 +684,7 @@ export function MobileAdminActiveDelegationCountBar(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileFive'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -706,6 +724,7 @@ export function MobileAdminActiveIndexersCountBar(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileSix'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -745,6 +764,7 @@ export function MobileAdminTotalDelegatedGRT(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileSeven'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -784,6 +804,7 @@ export function MobileAdminTotalDelegatedGRTIndexers(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileEight'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -823,6 +844,7 @@ export function MobileAdminTotalQueryFees(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileNine'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -863,6 +885,7 @@ export function MobileAdminTotalTokensSignalled(){
     dataLabelX: 0,
     subtitleX: 0,
     subtitleY: 20,
+    downloadButton: 'barMobileTen'
     // logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -902,6 +925,7 @@ export function MobileAdminTotalStakedGRT(){
     dataLabelX: 0,
     subtitleX: 0,
    subtitleY: 20,
+   downloadButton: 'barMobileEleven'
   //  logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 
@@ -941,6 +965,7 @@ export function MobileAdminTotalBurnedGRT(){
     dataLabelX: 0,
     subtitleX: 0,
    subtitleY: 20,
+   downloadButton: 'barMobileTwelve'
   //  logoX: 10, logoY: 11, logoWidth: 65, logoHeight: 65, height: '80%'
   });
 

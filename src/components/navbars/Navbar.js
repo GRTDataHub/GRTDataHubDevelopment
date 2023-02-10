@@ -25,11 +25,7 @@ const Navbar = () => {
     <a className="nav-link mobile-nav-link mobile-nav-pages" href="./exportPage">
         Export Page
       </a>
-      <a className="no-monitor nav-link mobile-nav-link mobile-nav-pages" href="./aboutPage">
-            About
-          </a>
-
-          <a className="no-show nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dashboards
       </a>
       <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
@@ -75,13 +71,17 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav links">
       <li className="nav-item dropdown">
-      <a className="nav-link pages new-link" href="./exportPage">
-            Export Page
-          </a>
+      
           <a className="no-monitor nav-link pages new-link" href="./aboutPage">
             About
           </a>
         </li>
+
+          <li className="nav-item">
+          <a className="nav-link export bar" href="./exportPage">
+            Export Page
+          </a>
+          </li>
 
           <li className="nav-item dropdown">
           <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

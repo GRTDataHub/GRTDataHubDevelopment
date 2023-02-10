@@ -54,6 +54,7 @@ import BinanceStakingGER from './components/chatBot/BinanceStakingGER';
 import IPhoneGER from './components/chatBot/IPhoneGER';
 import GraphRoadmapGER from './components/chatBot/GraphRoadmapGER';
 import GraphAdvocatesSpotlight from './components/graphAdvocatesSpotlight/graphAdvocatesSpotlight';
+import GraphCentral from './components/graphCentral/graphCentral';
 import ReduceGasESP from './components/chatBot/ReduceGasESP';
 
 const Home = () => ({
@@ -188,6 +189,8 @@ class App extends Component{
                   element={<GraphRoadmapGER/>} />
                   <Route path="/GraphAdvocatesSpotlight"
                   element={<GraphAdvocatesSpotlight/>} />
+                  <Route path="/GraphCentral"
+                  element={<GraphCentral/>} />
                    <Route path="/ReduceGasESP"
                   element={<ReduceGasESP/>} />
           </Routes>

@@ -3,8 +3,7 @@ import '../../App.css';
 import BarCharts from "../mainBarCharts/BarCharts";
 import LineGraphs from "../mainLineGraphs/LineGraphs";
 import Footer from "../footer/footer";
-// import GRTDataHubAllLogosHorizontal from "../../GRTDataHubAllLogosHorizontal.png";
-import GRTDataHubAllLogosHorizontal2 from "../../GRTDataHubAllLogosHorizontal2.png";
+import GRTDataHubAllLogosHorizontal2 from "../../GRTDataHub-AllLogosHorizontal-2.png";
 // font awesome 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faTwitter, faTelegramPlane, faReddit, faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -34,9 +33,25 @@ class Main extends Component {
           <h1 className="header-sub-text">We work closely with the above communities from around the world to share the GRT data on a daily basis with photo and video content provided.<br></br><br></br>Visit our <a className="home-link" href="/aboutPage">about</a> page to find out more and the links to connect with the above communities.</h1><br></br>
           <h1 className="header-sub-text"><a className="home-link" href="./GraphAdvocatesSpotlight" target="_blank" rel="noreferrer">Graph Advocates Spotlight</a></h1>
           <br></br><br></br>
-          <h1 className="header-sub-text">Charts featured in <a className="home-link" href="https://www.youtube.com/channel/UCPAUeNaRtBV-jdSKY8wmcXg" target="_blank" rel="noreferrer">The Graphtronauts News</a></h1><br></br><br></br><h1 className="header-sub-text"><a className="home-link" href="https://youtu.be/58el3_9oJ6Q" target="_blank" rel="noreferrer">Q3 2022 Participant Update</a></h1><br></br><br></br><h1 className="header-sub-text">Analytics featured in the <a className="home-link" href="https://messari.io/report/state-of-the-graph-q3-2022?utm_source=twitter_mihaigrigore&utm_medium=organic_social&utm_campaign=state_of_graph_q3_2022" target="_blank" rel="noreferrer">Messari Quarterly Reports</a></h1>
+          <h1 className="header-sub-text"><a className="home-link" href="./GraphCentral" target="_blank" rel="noreferrer">Graph Central</a></h1>
+          <br></br><br></br>
+          <h1 className="header-sub-text">Charts featured in <a className="home-link" href="https://www.youtube.com/channel/UCPAUeNaRtBV-jdSKY8wmcXg" target="_blank" rel="noreferrer">The Graphtronauts News</a></h1><br></br><br></br><h1 className="header-sub-text"><a className="home-link" href="https://youtu.be/58el3_9oJ6Q" target="_blank" rel="noreferrer">Q3 2022 Participant Update</a></h1><br></br><br></br><h1 className="header-sub-text">Analytics featured in the <a className="home-link" href="https://messari.io/report/state-of-the-graph-q4-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_the_graph_q4_2022" target="_blank" rel="noreferrer">Messari Q4 2022 Report</a></h1>
           <br></br><br></br>
 
+          <div class="adminSubheader-text2 admin-subtitle-centre">
+              <ActiveDelegatorCountData />
+              <ActiveDelegationCountData />
+              <HoldersCountData />
+              <SubgraphsCountData />
+              <CuratorsCountData />
+              <ActiveIndexerCountData />
+              <TotalGRTDelegatedByDelegatorsData />
+              <TotalQueryFeesCountData />
+              <TotalGRTSignalledByCuratorsData />
+              <TotalStakedGRTCountData />
+              <TotalDelegatedGRTByIndexersCountData />
+              <TotalGRTBurnedCountData />
+     </div>
           
           {/* <img className="dataHub-logos" src={GraphtronautsDataHubLogos}  alt="Graphtronauts Data Hub Logos"></img> */}
           {/* <div className="video">

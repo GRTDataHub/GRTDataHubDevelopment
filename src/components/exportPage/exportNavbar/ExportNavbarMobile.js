@@ -21,16 +21,23 @@ const ExportNavbarMobile = () => {
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
   </div>
   <div class="offcanvas-body links">
-    <div class="dropdown mt-3">
-    <a className="nav-link mobile-nav-link mobile-nav-pages" href="./">
-        Home
+  <div class="dropdown mt-3">
+    <a className="no-monitor nav-link mobile-nav-link mobile-nav-pages" href="./">
+            Home
+          </a>
+          <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dashboards
       </a>
-    <a className="nav-link mobile-nav-link mobile-nav-pages" href="./indexers">
-        Indexers
-      </a>
-      <a className="nav-link mobile-nav-link mobile-nav-pages" href="./delegators">
+      <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./indexers">
+        Indexers</a></li>
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./delegators">
        Delegators
-      </a>
+      </a></li>
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./curators">
+       Curators
+      </a></li>
+          </ul>  
     
     <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdownMobileBar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Mobile Bar Charts

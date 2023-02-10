@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import ChatBotLogo from "../../GRTDataHubChatBotLink.png";
 
 const Delegator = () => {
   return (
@@ -11,12 +12,15 @@ const Delegator = () => {
 <div class="message">
 Please rotate your device to landscape to view the Delegator page.
 </div>
+<div className="chatbot-link">
+            <a href="/chatBot"><img className="chatbot-link-export" src={ChatBotLogo}  alt="ChatBot Logo"></img></a>
+            </div>
 </div>
-    <h1 className="indexer-title">Delegator Page - Here you will find all the data about GRT Delegators.</h1>
-    <h2 className="indexer-subtitle">It may take a minute for all of the data to load.</h2>
-    <h2 className="indexer-subtitle">Please visit the about page to see how to access the data found here.<br></br>If you are using an <strong>android</strong> or <strong>firefox</strong>, this data may not load. But I highly recommend you to visit the link via the about page to view more data.</h2>
-    <div className="indexer"><iframe className="map" title="Total Delegators" src="https://thegraph.stake-machine.com/d-solo/-3BUUtbMz?orgId=1&refresh=5m&from=1649167118609&to=1649253518610&theme=dark&panelId=90" width="900" height="400" frameborder="0"></iframe>
-        <iframe className="map" title="Unrealised Delegators Yield"src="https://thegraph.stake-machine.com/d-solo/-3BUUtbMz?orgId=1&refresh=5m&from=1649167165439&to=1649253565439&theme=dark&panelId=110" width="900" height="400" frameborder="0"></iframe>
+<h1 className="indexer-title">Delegator Page - Here you will find all the data for GRT Delegators.</h1>
+    <h2 className="indexer-subtitle"><strong>Graph Network - Delegator Behavioral Analysis brought to you by <a className="cla" href="https://dapplooker.com/dapp/graph-network-billing-120192" target="_blank" rel="noreferrer">DappLooker</a></strong></h2>
+  
+    <div className="curator">
+        <iframe className="d-map" title="Delegator Behavioral Analysis"src="https://analytics.dapplooker.com/public/dashboard/6c74d5fd-2639-4ed5-baf8-3e4d0b858008" width="1200" height="3000" frameborder="0"></iframe>
         <br></br>
         <br></br>
 </div>

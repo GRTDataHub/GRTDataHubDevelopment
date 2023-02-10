@@ -44,6 +44,21 @@
   max-width: 90%;
 }
 
+.ENG-button a, .GER-button a, .ESP-button a, .FRA-button a, .TUR-button a, .URD-button a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #0C0B23;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .40s;
+  margin-top: 00px;
+  letter-spacing: 4px;
+  max-width: 90%;
+} 
+
 .new-button a:hover {
   background: #22143B;
   color: #fff;
@@ -54,7 +69,14 @@
               0 0 50px #22143B;
 }
 
-.new-button a span {
+.ENG-button a:hover, .GER-button a:hover, .ESP-button a:hover, .FRA-button a:hover, .TUR-button a:hover, .URD-button a:hover {
+  background: transparent;
+  color: #53466C;
+  border-radius: 5px;
+  -webkit-box-reflect:below 0px linear-gradient(transparent, #0005);
+}
+
+.new-button a span, .ENG-button a span, .GER-button a span, .ESP-button a span, .FRA-button a span, .TUR-button a span, .URD-button a span {
   position: absolute;
   display: block;
 }
@@ -134,6 +156,239 @@
   }
 }
 
+.ENG-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0C0B23);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.ENG-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent ,#0C0B23);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.ENG-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #0C0B23);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.ENG-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #0C0B23);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+.GER-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, black);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.GER-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent ,black, red, yellow);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.GER-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, yellow);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.GER-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, yellow, red, black);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+.ESP-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, red);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.ESP-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent , red, yellow, red);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.ESP-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, red);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.ESP-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, red, yellow, red);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+.FRA-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #002551, white, red);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.FRA-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent , red);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.FRA-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, red, white, #002551);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.FRA-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #002551);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+.TUR-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #DC0A16);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.TUR-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent ,  #DC0A16);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.TUR-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,  #DC0A16);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.TUR-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,  #DC0A16);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+.URD-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, white, white, green, green, green);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.URD-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent ,  green);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.URD-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,  green, green, green, white, white);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.URD-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, white);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
 /* Chatbot Bottom Buttons End */
 .home-link {
   letter-spacing: 0.0375rem;
@@ -417,14 +672,14 @@ html {
 .mobile-dropdown {
   margin-left: 1.5rem!important;
 }
-.dropdown-toggle {
+.dropdown-toggle, .export {
   text-align: right;
   margin: auto;
   font-size: 1.5rem!important;
   color: var(--hover-purple)!important;
 }
 
-.dropdown-toggle:hover {
+.dropdown-toggle:hover, .export:hover {
   text-align: right;
   margin: auto;
   font-size: 1.5rem!important;
@@ -741,14 +996,9 @@ transform: scale(1.25);
   position: absolute;
   text-align: center!important;
   top: 50%;
+  margin: auto!important;
 }
 
-.curator {
-  z-index: 999;
-  position: absolute;
-  text-align: center!important;
-  top: 50%;
-}
 .map, .tokens, .rewards, .uncollected-rewards {
   margin-top: 2rem;
   width: 100%;
@@ -762,6 +1012,15 @@ transform: scale(1.25);
   width: 100%;
   height: 30rem;
   margin-left: 5%;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 5%;
+  width: 100%;
+  height: 30rem;
+  text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
@@ -1884,6 +2143,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 5%;
+  width: 100%;
+  height: 30rem;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -2997,6 +3265,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 5%;
+  width: 100%;
+  height: 30rem;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -4091,6 +4368,15 @@ transform: scale(1.25);
     width: 100%;
     height: 30rem;
     margin-left: 5%;
+    box-shadow: #1b102e 4px 5px 10px 3px;
+  }
+
+  .d-map {
+    margin-top: -3rem;
+    margin-left: 5%;
+    width: 100%;
+    height: 30rem;
+    text-align: center!important;
     box-shadow: #1b102e 4px 5px 10px 3px;
   }
 
@@ -5207,6 +5493,15 @@ transform: scale(1.25);
     box-shadow: #1b102e 4px 5px 10px 3px;
   }
 
+  .d-map {
+    margin-top: -3rem;
+    margin-left: 1rem;
+    width: 1240px;
+    height: 3800px;
+    text-align: center!important;
+    box-shadow: #1b102e 4px 5px 10px 3px;
+  }
+
   .rewards-per-hour {
     margin-top: 2rem;
     padding-bottom: 2rem;
@@ -6316,6 +6611,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 1rem;
+  width: 1240px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -7303,6 +7607,15 @@ transform: scale(1.25);
   width: 100%;
   height: 30rem;
   margin-left: 5%;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 1rem;
+  width: 1240px;
+  height: 3800px;
+  text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
@@ -8354,6 +8667,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 1rem;
+  width: 1240px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -9402,6 +9724,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 1rem;
+  width: 1240px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -10223,14 +10554,14 @@ transform: scale(1.25);
 .mobile-dropdown {
   margin-left: 3.5rem!important;
 }
-.dropdown-toggle {
+.dropdown-toggle, .export {
   text-align: right;
   margin: auto;
   font-size: 1.5rem!important;
   color: var(--hover-purple)!important;
 }
 
-.dropdown-toggle:hover {
+.dropdown-toggle:hover, .export:hover {
   text-align: right;
   margin: auto;
   font-size: 1.5rem!important;
@@ -10540,6 +10871,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 800px;
   height: 1600px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 800px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -11568,6 +11908,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 800px;
   height: 1600px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 800px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -12651,6 +13000,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 800px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -13708,6 +14066,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 800px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -14761,6 +15128,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 800px;
   height: 1600px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 800px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -15825,6 +16201,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 800px;
   height: 1600px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 800px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -16916,6 +17301,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 750px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -17999,6 +18393,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 800px;
   height: 1600px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 800px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -19090,6 +19493,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 750px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -20177,6 +20589,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 750px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -21254,6 +21675,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 750px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -22312,6 +22742,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 720px;
   height: 1000px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 720px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -23378,6 +23817,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 750px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -24436,6 +24884,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 750px;
   height: 1000px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 720px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -25502,6 +25959,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 720px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -26560,6 +27026,15 @@ transform: scale(1.25);
   margin-left: 1rem;
   width: 750px;
   height: 1000px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 720px;
+  height: 3800px;
   text-align: center!important;
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
@@ -27626,6 +28101,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 650px;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -28678,6 +29162,15 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 100%;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
+
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -29700,6 +30193,14 @@ transform: scale(1.25);
   box-shadow: #1b102e 4px 5px 10px 3px;
 }
 
+.d-map {
+  margin-top: -3rem;
+  margin-left: 3rem;
+  width: 100%;
+  height: 3800px;
+  text-align: center!important;
+  box-shadow: #1b102e 4px 5px 10px 3px;
+}
 .rewards-per-hour {
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -30790,6 +31291,15 @@ transform: scale(1.25);
     box-shadow: #1b102e 4px 5px 10px 3px;
   }
 
+  .d-map {
+    margin-top: -3rem;
+    margin-left: 3rem;
+    width: 500px;
+    height: 3800px;
+    text-align: center!important;
+    box-shadow: #1b102e 4px 5px 10px 3px;
+  }
+
   .rewards-per-hour {
     margin-top: 2rem;
     padding-bottom: 2rem;
@@ -31861,6 +32371,10 @@ transform: scale(1.25);
    .c-map {
   display: none;
   }
+
+  .d-map {
+    display: none;
+  }
  
    .rewards-per-hour {
      display: none;
@@ -32749,6 +33263,10 @@ transform: scale(1.25);
     display: none;
     }
  
+    .d-map {
+      display: none;
+    }
+
    .rewards-per-hour {
      display: none;
    }
@@ -33682,6 +34200,10 @@ transform: scale(1.25);
     display: none;
     }
 
+    .d-map {
+      display: none;
+    }
+
   .rewards-per-hour {
     display: none;
   }
@@ -34599,6 +35121,11 @@ transform: scale(1.25);
   .c-map {
     display: none;
     }
+
+    .d-map {
+      display: none;
+    }  
+    
 
   .rewards-per-hour {
     display: none;
@@ -35528,6 +36055,10 @@ transform: scale(1.25);
     display: none;
     }
 
+    .d-map {
+      display: none;
+    }
+
   .rewards-per-hour {
     display: none;
   }
@@ -36454,6 +36985,10 @@ transform: scale(1.25);
 
   .c-map {
     display: none;
+    }
+
+    .d-map {
+      display: none;
     }
 
   .rewards-per-hour {

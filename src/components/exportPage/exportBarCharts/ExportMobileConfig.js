@@ -31,6 +31,7 @@ class ExportMobileConfig extends React.Component {
       <div className="container">
         <div className="col-lg-12">
           <h1 className="adminHeader-text admin-mobile-center reveal ten"><u>Mobile Bar Charts</u><br></br><br></br><strong>To view charts configured for monitor, please view on a larger screen size.</strong></h1> 
+          
   {/* MOBILE */}
   <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="mobilebar1"></span>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import ChatBotLogo from "../../GRTDataHubChatBotLink.png";
 
 const Indexer = () => {
   return (
@@ -11,6 +12,9 @@ const Indexer = () => {
 <div class="message">
   Please rotate your device to landscape to view the Indexer page.
 </div>
+<div className="chatbot-link">
+            <a href="/chatBot"><img className="chatbot-link-export" src={ChatBotLogo}  alt="ChatBot Logo"></img></a>
+            </div>
 </div>
         <h1 className="indexer-title">Indexer Page - Here you will find all the data about GRT Indexers.</h1>
         <h2 className="indexer-subtitle">It may take a minute for all of the data to load.</h2>

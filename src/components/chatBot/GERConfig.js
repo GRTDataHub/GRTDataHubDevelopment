@@ -1,7 +1,7 @@
 // in config.js
 import { createChatBotMessage } from 'react-chatbot-kit';
 
-const botName = 'GRTDataHub Deutsch Chatbot';
+const botName = 'GRTDataHub Deutscher Chatbot';
 
 const message = 'Wenn Sie lieber einen Button statt Nachrichten innerhalb des Chatbots verwenden möchten, geben Sie einfach unten "Hilfe" ein und ich helfe Ihnen, die Antworten zu finden.';
 

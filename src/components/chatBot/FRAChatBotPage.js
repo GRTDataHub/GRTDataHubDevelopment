@@ -27,11 +27,25 @@ const FRAChatBotPage = () => ({
         placeholderText='Comment déléguer ?'
         disableScrollToBottom
       /> 
-      <br></br>
-       <button type="button" className="feedback-button btn btn-outline-dark"><a className="chatbot-link-button" href="https://mb3kald91rd.typeform.com/to/PMIvTIT7" target="_blank" rel="noreferrer"><h3 className="feedback-button-text">Formulaire d'amélioration du chatbot
-          </h3></a></button>
-          <br></br>
-          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="/FRATranslatorHelp" target="_blank" rel="noreferrer">Page d'aide du traducteur</a></h2>
+        <br></br>
+      <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="https://mb3kald91rd.typeform.com/to/PMIvTIT7" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Formulaire d'amélioration du chatbot
+      </a>
+  </div>
+          <div className="new-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="/FRATranslatorHelp" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Page d'aide du traducteur
+      </a>
+  </div>
 </div>
 </div>
 <FRAChatbotFooter className="chatbot-footer-mobile" />

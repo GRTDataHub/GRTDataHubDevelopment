@@ -1,5 +1,23 @@
 import Highcharts from 'highcharts';
 
+Highcharts.SVGRenderer.prototype.symbols.download = function (x, y, w, h) {
+  var path = [
+      // Arrow stem
+      'M', x + w * 0.5, y,
+      'L', x + w * 0.5, y + h * 0.7,
+      // Arrow head
+      'M', x + w * 0.3, y + h * 0.5,
+      'L', x + w * 0.5, y + h * 0.7,
+      'L', x + w * 0.7, y + h * 0.5,
+      // Box
+      'M', x, y + h * 0.9,
+      'L', x, y + h,
+      'L', x + w, y + h,
+      'L', x + w, y + h * 0.9
+  ];
+  return path;
+};
+
 Highcharts.setOptions({
   lang: {
     thousandsSep: ','
@@ -155,23 +173,20 @@ export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTo
           enabled: true,
           buttons: {
             contextButton: {
+              text: 'Download',
+              fill: '#22143B',
+              symbol: 'download',
               menuItems: null,
               onclick: function () {
                   this.exportChart();
               },
-                  text: 'Download',
-                  theme: {
-                      fill: 'white',
-                      stroke: 'white',
-                      states: {
-                          hover: {
-                              fill: '#5A3DD3',
-                              stroke: 'white'
-                          },
-                          select: {
-                              fill: 'white',
-                              stroke: 'white'
-                          }
+              theme: {
+                fill: 'white',
+                states: {
+                    hover: {
+                        fill: 'transparent',
+                        stroke: 'white',
+                    },
                       }
                   }
               }
@@ -322,23 +337,20 @@ exporting: {
   enabled: true,
   buttons: {
     contextButton: {
+      text: 'Download',
+      fill: '#22143B',
+      symbol: 'download',
       menuItems: null,
       onclick: function () {
           this.exportChart();
       },
-          text: 'Download',
-          theme: {
-              fill: 'white',
-              stroke: 'white',
-              states: {
-                  hover: {
-                      fill: '#5A3DD3',
-                      stroke: 'white'
-                  },
-                  select: {
-                      fill: 'white',
-                      stroke: 'white'
-                  }
+      theme: {
+        fill: 'white',
+        states: {
+            hover: {
+                fill: 'transparent',
+                stroke: 'white',
+            },
               }
           }
       }

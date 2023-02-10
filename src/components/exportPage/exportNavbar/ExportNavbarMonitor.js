@@ -18,17 +18,25 @@ const ExportNavbarMonitor = () => {
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent2">
       <ul className="navbar-nav links">
-      <li className="nav-item dropdown">
-      <a className="nav-link pages new-link" href="./">
+      <li className="nav-item">
+          <a className="nav-link export bar" href="./">
             Home
           </a>
-          <a className="nav-link pages new-link" href="./indexers">
-            Indexers
+          </li>
+
+          <li className="nav-item dropdown">
+          <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dashboards
           </a>
-          <a className="nav-link pages new-link" href="./delegators">
-            Delegators
-          </a>
-        </li>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item"><a className="dropdown-item" href="./indexers">
+            Indexers</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="./delegators">
+            Delegators</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="./curators">
+            Curators</a></li>
+          </ul>
+          </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle bar" href="#" id="navbarDropdownMonitorBar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Monitor Bar Charts

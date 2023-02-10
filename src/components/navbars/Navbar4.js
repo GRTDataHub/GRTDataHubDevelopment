@@ -22,34 +22,50 @@ const Navbar4 = () => {
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
   </div>
   <div class="offcanvas-body links">
-    <div class="dropdown mt-3">
-    <a className="nav-link mobile-nav-link mobile-nav-pages" href="./">
-        Home
+  <div class="dropdown mt-3">
+    <a className="no-monitor nav-link mobile-nav-link mobile-nav-pages" href="./">
+            Home
+          </a>
+    <a className="nav-link mobile-nav-link mobile-nav-pages" href="./exportPage">
+        Export Page
       </a>
-      <a className="nav-link mobile-nav-link mobile-nav-pages" href="./indexers">
-    Indexers
+          <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dashboards
       </a>
-      <a className="nav-link mobile-nav-link mobile-nav-pages" href="./delegators">
-    Delegators
-      </a>
+      <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./indexers">
+        Indexers</a></li>
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./delegators">
+       Delegators
+      </a></li>
+          </ul>  
     </div>
   </div>
 </div>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav links">
-      <li className="nav-item dropdown">
-          <a className="nav-link pages" href="./">
+    <ul className="navbar-nav links">
+      <li className="nav-item">
+          <a className="nav-link export bar" href="./">
             Home
           </a>
-          <a className="nav-link pages" href="./indexers">
-            Indexers
+          </li>
+          <li className="nav-item">
+          <a className="nav-link export bar" href="./exportPage">
+            Export Page
           </a>
-          <a className="nav-link pages" href="./delegators">
-            Delegators
+          </li>
+          <li className="nav-item dropdown">
+          <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dashboards
           </a>
-        </li>
-
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item"><a className="dropdown-item" href="./indexers">
+            Indexers</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="./delegators">
+            Delegators</a></li>
+          </ul>
+          </li>
       </ul>
     </div>
   </div>

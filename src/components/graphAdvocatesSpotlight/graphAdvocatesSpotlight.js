@@ -889,6 +889,21 @@ const handleIssue25FRA = () => {
   })
 }
 
+const handleIssue25CHI = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue25-CHI.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #25 - CHI Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
 const handleIssue26ENG = () => {
   // using Java Script method to get PDF file
   fetch('Issue26-ENG.pdf').then(response => {
@@ -949,20 +964,35 @@ const handleIssue26FRA = () => {
   })
 }
 
-// const handleIssue27ENG = () => {
-//   // using Java Script method to get PDF file
-//   fetch('Issue27-ENG.pdf').then(response => {
-//       response.blob().then(blob => {
-//           // Creating new object of PDF file
-//           const fileURL = window.URL.createObjectURL(blob);
-//           // Setting various property values
-//           let alink = document.createElement('a');
-//           alink.href = fileURL;
-//           alink.download = 'Issue #27 - Graph Advocates Spotlight.pdf';
-//           alink.click();
-//       })
-//   })
-// }
+const handleIssue26CHI = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue26-CHI.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #26 - CHI Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue27ENG = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue27-ENG.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #27 - Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
 
 // const handleIssue27ESP = () => {
 //   // using Java Script method to get PDF file
@@ -1008,6 +1038,171 @@ const handleIssue27FRA = () => {
       })
   })
 }
+
+const handleIssue27CHI = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue27-CHI.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #27 - CHI Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue28ENG = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue28-ENG.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #28 - Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue28ESP = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue28-ESP.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #28 - ESP Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue28URD = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue28-URD.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #28 - URD Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue28CHI = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue28-CHI.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #28 - CHI Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue28FRA = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue28-FRA.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #28 - FRA Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+// const handleIssue29ENG = () => {
+//   // using Java Script method to get PDF file
+//   fetch('Issue29-ENG.pdf').then(response => {
+//       response.blob().then(blob => {
+//           // Creating new object of PDF file
+//           const fileURL = window.URL.createObjectURL(blob);
+//           // Setting various property values
+//           let alink = document.createElement('a');
+//           alink.href = fileURL;
+//           alink.download = 'Issue #29 - Graph Advocates Spotlight.pdf';
+//           alink.click();
+//       })
+//   })
+// }
+
+const handleIssue29ESP = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue29-ESP.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #29 - ESP Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue29URD = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue29-URD.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #29 - URD Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+const handleIssue29CHI = () => {
+  // using Java Script method to get PDF file
+  fetch('Issue29-CHI.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'Issue #29 - CHI Graph Advocates Spotlight.pdf';
+          alink.click();
+      })
+  })
+}
+
+// const handleIssue29FRA = () => {
+//   // using Java Script method to get PDF file
+//   fetch('Issue29-FRA.pdf').then(response => {
+//       response.blob().then(blob => {
+//           // Creating new object of PDF file
+//           const fileURL = window.URL.createObjectURL(blob);
+//           // Setting various property values
+//           let alink = document.createElement('a');
+//           alink.href = fileURL;
+//           alink.download = 'Issue #29 - FRA Graph Advocates Spotlight.pdf';
+//           alink.click();
+//       })
+//   })
+// }
       return (
         <>
         <PrivacyPolicyNavbar />
@@ -1016,24 +1211,39 @@ const handleIssue27FRA = () => {
             <h2 className="QB-about-page-subtitle">Welcome to the <strong>Graph Advocates Spotlight</strong> Page!</h2>
             <br></br> 
             <h2 className="QB-about-page-subtitle">What is it?</h2>
-            <h3 className="QB-about-page-text">It is to showcase Graph Advocates who choose to participate by highlighting their interests and accomplishments both inside and outside of their role as an Advocate. Showcasing the Advocates publicly provides positive non-financial value by increasing their social network and receiving much deserved recognition for their contributions. I also highlights Advocates skills and interests, connecting them with fellow Advocates who share similar passions.<br></br><br></br>The newsletter also enables anyone to get or remain up to date on all the significant news, events, and data in The Graph Ecoystem each week, just by taking 10-12 minutes to read the <strong>Community Roundup</strong>, <strong>Advocate Events</strong>, and <strong>Data Depot</strong> sections of the newsletter.</h3><br></br><h3 className="QB-about-page-text">Created By <a className="chatbot-link" href='https://twitter.com/kylelarue11?s=21&t=aoe8RCwfwaOZ4FIUavFZrg' target="_blank" rel="noreferrer">Kyle</a> from Graph Advocates<br></br><strong>Note:</strong> All links within the PDFs work!</h3>
+            <h3 className="QB-about-page-text">It is to showcase Graph Advocates who choose to participate by highlighting their interests and accomplishments both inside and outside of their role as an Advocate. Showcasing the Advocates publicly provides positive non-financial value by increasing their social network and receiving much deserved recognition for their contributions. I also highlights Advocates skills and interests, connecting them with fellow Advocates who share similar passions.<br></br><br></br>The newsletter also enables anyone to get or remain up to date on all the significant news, events, and data in The Graph Ecoystem each week, just by taking 10-12 minutes to read the <strong>Community Roundup</strong>, <strong>Advocate Events</strong>, and <strong>Data Depot</strong> sections of the newsletter.</h3><br></br><h3 className="QB-about-page-text">Created By <a className="chatbot-link" href='https://twitter.com/kylelarue11?s=21&t=aoe8RCwfwaOZ4FIUavFZrg' target="_blank" rel="noreferrer">Kyle</a>, GraphAdvocate & DAO Member.<br></br><strong>Note:</strong> All links within the PDFs work!</h3>
             
             <hr className="QB-about-hr"></hr>
             <br></br>
-            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue27ENG} target="_blank" rel="noreferrer">Issue #27 - Livepeer</a></h2> */}
+            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue29ENG} target="_blank" rel="noreferrer">Issue #29 - </a></h2> */}
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue29ESP} target="_blank" rel="noreferrer">Issue #29 en español</a></h2>
+            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue29FRA} target="_blank" rel="noreferrer">Issue #29 en français</a></h2> */}
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue29URD} target="_blank" rel="noreferrer">شمارہ نمبر 29 اردو میں</a></h2>
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue29CHI} target="_blank" rel="noreferrer">第29期中文版</a></h2>
+            <br></br>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue28ENG} target="_blank" rel="noreferrer">Issue #28 - Sablier</a></h2>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue28ESP} target="_blank" rel="noreferrer">Issue #28 en español</a></h2>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue28FRA} target="_blank" rel="noreferrer">Issue #28 en français</a></h2>
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue28URD} target="_blank" rel="noreferrer">شمارہ نمبر 28 اردو میں</a></h2>
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue28CHI} target="_blank" rel="noreferrer">第28期中文版</a></h2>
+             <br></br>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue27ENG} target="_blank" rel="noreferrer">Issue #27 - Thomas Freestone</a></h2>
             {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue27ESP} target="_blank" rel="noreferrer">Issue #27 en español</a></h2> */}
-            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue27FRA} target="_blank" rel="noreferrer">Issue #27 - Thomas Freestone en français</a></h2>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue27FRA} target="_blank" rel="noreferrer">Issue #27 en français</a></h2>
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue27URD} target="_blank" rel="noreferrer">شمارہ نمبر 27 اردو میں</a></h2>
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue27CHI} target="_blank" rel="noreferrer">第27期中文版</a></h2>
              <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26ENG} target="_blank" rel="noreferrer">Issue #26 - Livepeer</a></h2>
             {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26ESP} target="_blank" rel="noreferrer">Issue #26 en español</a></h2> */}
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26FRA} target="_blank" rel="noreferrer">Issue #26 en français</a></h2>
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26URD} target="_blank" rel="noreferrer">شمارہ نمبر 26 اردو میں</a></h2>
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue26CHI} target="_blank" rel="noreferrer">第26期中文版</a></h2>
              <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25ENG} target="_blank" rel="noreferrer">Issue #25 - Freddy Murillo Jr.</a></h2>
             {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25ESP} target="_blank" rel="noreferrer">Issue #25 en español</a></h2> */}
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25FRA} target="_blank" rel="noreferrer">Issue #25 en français</a></h2>
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25URD} target="_blank" rel="noreferrer">شمارہ نمبر 25 اردو میں</a></h2>
+             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue25CHI} target="_blank" rel="noreferrer">第25期中文版</a></h2>
              <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue24ENG} target="_blank" rel="noreferrer">Issue #24 - Premia</a></h2>
             {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" onClick={handleIssue24ESP} target="_blank" rel="noreferrer">Issue #24 en español</a></h2> */}

@@ -18,23 +18,23 @@ const ExportMain = () => {
   Please rotate your device to landscape to view export data.<br></br>
 </div>
 </div>
-        <h1 className="adminHeader-text">Welcome to the Export Page.</h1>
+        <h1 className="adminHeader-text">Welcome to the Export Page!</h1>
 
         <div className="chatbot-link">
             <a href="/chatBot"><img className="chatbot-link-export" src={ChatBotLogo}  alt="ChatBot Logo"></img></a>
             </div>
 
-        <h1 className="adminHeader-text2">These can be used on YouTube, Twitter, Blogs and within Telegram Chats.</h1>
-        <h1 className="adminHeader-text2 move-down mobile-config admin-mobile-center">1. Click Export Button<br></br>2. Download PNG Image<br></br>3. Or Select View<br></br>4. Press and Hold the screen with finger<br></br>5. Select Add to Photos / Save Image</h1>
-        <h2 className="adminSubheader-text admin-subtitle-centre monitor-config">1. Click Export Button</h2>
-        <h2 className="adminSubheader-text admin-subtitle-centre monitor-config">2. Download PNG Image</h2>
-        <h2 className="adminSubheader-text admin-subtitle-centre  monitor-config">3. Or Select View</h2>
-        <h2 className="adminSubheader-text admin-subtitle-centre  monitor-config">4. Press and Hold the screen with finger</h2>
-        <h2 className="adminSubheader-text admin-subtitle-centre monitor-config">5. Select Add to Photos / Save Image</h2>
-        <h3 className="adminSubheader-text2 admin-subtitle-centre monitor-config">To be used for The Graph News, YouTube, Twitter  and within the Telegram chats. Please ensure the subtitle is within the image. I would be greatful if you included www.GRTDataHub.com within all social media posts.</h3>
-        <h3 className="adminHeader-text2 admin-subtitle-centre mobile-config">If you find that the charts do not format correctly on your device, please get in contact and I will be happy to help.</h3>
+        <h1 className="adminHeader-text2">These can be used on YouTube, Twitter, Blogs and within Telegram chats.</h1>
 
-        <h3 className="adminSubheader-text2 admin-subtitle-centre monitor-config">If you find that the graphs are not in the correct format, please get in contact and we will work with you to ensure this is fixed.</h3>
+        <br></br>
+        
+        <h1 className="adminHeader-text2 move-down mobile-config admin-mobile-center">1. Simply Click the Download Button<br></br>2. Press and Hold the screen with your finger<br></br>3. Select Add to Photos / Save Image</h1>
+        <h2 className="adminSubheader-text admin-subtitle-centre monitor-config">Simply Click the Download Button</h2>
+        <h3 className="adminSubheader-text2 admin-subtitle-centre monitor-config">Please ensure the subtitle is within the image. I would be greatful if you included www.GRTDataHub.com within all social media posts.</h3>
+        <h3 className="adminHeader-text2 admin-subtitle-centre mobile-config">Please ensure the subtitle is within the image. I would be greatful if you included www.GRTDataHub.com within all social media posts.</h3>
+        <h3 className="adminSubheader-text2 admin-subtitle-centre monitor-config">If you find that the charts do not format correctly on your device, please get in contact and I will be happy to help.</h3>
+
+        <br></br>
 
         <div class="adminSubheader-text2 admin-subtitle-centre">
               <ActiveDelegatorCountData />
