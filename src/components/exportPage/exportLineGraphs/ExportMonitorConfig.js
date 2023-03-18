@@ -27,7 +27,7 @@ class ExportMonitorConfig extends React.Component {
   return (
       <div className="container">
         <div className="col-lg-12 ">
-        <h1 className="adminHeader-text admin-mobile-center reveal"><u>Monitor Bar Charts</u><br></br><br></br> <strong>To view charts / graphs configured for moble, please view on a smaller screen size.</strong></h1> 
+        <h1 className="adminHeader-text admin-mobile-center reveal"><u>Monitor Bar Charts</u><br></br><br></br> <strong>To view charts / graphs configured for moble, please view on a smaller screen size.</strong></h1>
           <div className="photo-wrap chartImg1 reveal">
           <span class="anchor" id="monitorbar1"></span>
           <div alt="AdminActiveDelegatorCountBar" className="adminChart1 chartImg"><AdminActiveDelegatorCountBar /></div>
@@ -88,7 +88,7 @@ class ExportMonitorConfig extends React.Component {
           <div className="chartImg" alt="AdminTotalBurnedGRT"><AdminTotalBurnedGRT /></div>
           </div>
 
-          <h1 className="adminHeader-text admin-mobile-center-line reveal"><u>Monitor Line Graphs</u><br></br><br></br> Please see top of page for export instructions and video tutorial.</h1> 
+          <h1 className="adminHeader-text admin-mobile-center-line reveal"><u>Monitor Line Graphs</u></h1> 
 
           <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="monitorline1"></span>

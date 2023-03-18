@@ -37,7 +37,7 @@ const ExportNavbarMonitor = () => {
             Curators</a></li>
           </ul>
           </li>
-        <li className="nav-item dropdown">
+        {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle bar" href="#" id="navbarDropdownMonitorBar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Monitor Bar Charts
           </a>
@@ -55,8 +55,8 @@ const ExportNavbarMonitor = () => {
             <li className="dropdown-item"><a className="dropdown-item" href="#monitorbar11">Total Delegated GRT by Indexers</a></li>
             <li className="dropdown-item"><a className="dropdown-item" href="#monitorbar12">Total Burned GRT</a></li>
           </ul>
-        </li>
-        <li className="nav-item dropdown">
+        </li> */}
+        {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMonitorLine" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Monitor Line Graphs
           </a>
@@ -66,7 +66,7 @@ const ExportNavbarMonitor = () => {
             <li className="dropdown-item"><a className="dropdown-item" href="#monitorline3">Staked Indexers</a></li>
             <li className="dropdown-item"><a className="dropdown-item" href="#monitorline4">Subgraphs</a></li>
           </ul>
-        </li>
+        </li> */}
   
       </ul>
     </div>

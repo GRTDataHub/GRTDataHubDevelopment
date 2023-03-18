@@ -19,7 +19,7 @@ require('highcharts/modules/export-data')(Highcharts);
 
   //configure options for the graph, another custom hook returns the obj that we pass to create graph
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100, marginLeft: 90, marginRight: 90,type: 'column', title: 'Active Delegators', titleFontSize: '2.5rem',seriesName: 'Active Delegators', subtitleFontSize: '2vh',
+    {marginTop: 100, marginLeft: 90, marginRight: 90,type: 'column', titleY: 50, title: 'Active Delegators', titleFontSize: '2.5rem',seriesName: 'Active Delegators', subtitleFontSize: '2vh',
     yAxis : 'Tokens', xAxis: 'Date', 
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.activeDelegatorCount?.Amount28D, data?.activeDelegatorCount?.Amount7D, data?.activeDelegatorCount?.AmountNow],
@@ -62,7 +62,7 @@ export function AdminHoldersCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100, marginLeft: 90, marginRight: 80,type: 'column', title: 'Holders', titleFontSize: '2.5rem',seriesName: 'Holders',subtitleFontSize: '2vh',
+    {marginTop: 100, marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Holders', titleFontSize: '2.5rem',seriesName: 'Holders',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.holdersCount?.Amount28D, data?.holdersCount?.Amount7D, data?.holdersCount?.AmountNow],
     tickInterval : ([data?.holdersCount?.Amount28D+data?.holdersCount?.Amount7D+data?.holdersCount?.AmountNow]/80),
@@ -104,7 +104,7 @@ export function AdminSubgraphCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Subgraphs', titleFontSize: '2.5rem',seriesName:'Subgraphs',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Subgraphs', titleFontSize: '2.5rem',seriesName:'Subgraphs',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.subgraphCount?.Amount28D, data?.subgraphCount?.Amount7D, data?.subgraphCount?.AmountNow],tickInterval : ([data?.subgraphCount?.Amount28D+data?.subgraphCount?.Amount7D+data?.subgraphCount?.AmountNow]/80),
     min: [([data?.subgraphCount?.Amount28D+data?.subgraphCount?.Amount7D+data?.subgraphCount?.AmountNow]/3)*0.9],
@@ -143,7 +143,7 @@ export function AdminCuratorCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Curators', titleFontSize: '2.5rem',seriesName: 'Curators',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Curators', titleFontSize: '2.5rem',seriesName: 'Curators',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.curatorCount?.Amount28D, data?.curatorCount?.Amount7D, data?.curatorCount?.AmountNow],
     tickInterval : ([data?.curatorCount?.Amount28D+data?.curatorCount?.Amount7D+data?.curatorCount?.AmountNow]/400),
@@ -183,7 +183,7 @@ export function AdminActiveDelegationCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Active Delegation Count', titleFontSize: '2.5rem',seriesName: 'Active Delegation Count',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Active Delegation Count', titleFontSize: '2.5rem',seriesName: 'Active Delegation Count',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.activeDelegationCount?.Amount28D, data?.activeDelegationCount?.Amount7D, data?.activeDelegationCount?.AmountNow],
     tickInterval : ([data?.activeDelegationCount?.Amount28D+data?.activeDelegationCount?.Amount7D+data?.activeDelegationCount?.AmountNow]/200),
@@ -223,7 +223,7 @@ export function AdminActiveIndexersCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Active Indexers', titleFontSize: '2.5rem',seriesName: 'Active Indexers',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Active Indexers', titleFontSize: '2.5rem',seriesName: 'Active Indexers',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.activeIndexersCount?.Amount28D, data?.activeIndexersCount?.Amount7D, data?.activeIndexersCount?.AmountNow],
     tickInterval : ([data?.activeIndexersCount?.Amount28D+data?.activeIndexersCount?.Amount7D+data?.activeIndexersCount?.AmountNow]/20),
@@ -263,7 +263,7 @@ export function AdminTotalDelegatedGRT(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Delegated GRT by Delegators', titleFontSize: '2.5rem',seriesName: 'Total Delegated GRT by Delegators',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Delegated GRT by Delegators', titleFontSize: '2.5rem',seriesName: 'Total Delegated GRT by Delegators',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalDelegatedTokens?.Amount28D, data?.totalDelegatedTokens?.Amount7D, data?.totalDelegatedTokens?.AmountNow],
     tickInterval : ([data?.totalDelegatedTokens?.Amount28D+data?.totalDelegatedTokens?.Amount7D+data?.totalDelegatedTokens?.AmountNow]/500),
@@ -303,7 +303,7 @@ export function AdminTotalDelegatedGRTIndexers(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Staked GRT by Indexers', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT by Indexers',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Staked GRT by Indexers', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT by Indexers',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalTokensStaked?.Amount28D, data?.totalTokensStaked?.Amount7D, data?.totalTokensStaked?.AmountNow],
     tickInterval : ([data?.totalTokensStaked?.Amount28D+data?.totalTokensStaked?.Amount7D+data?.totalTokensStaked?.AmountNow]/20),
@@ -343,7 +343,7 @@ export function AdminTotalQueryFees(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Query Fees (GRT)', titleFontSize: '2.5rem',seriesName: 'Total Query Fees (GRT)',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Query Fees (GRT)', titleFontSize: '2.5rem',seriesName: 'Total Query Fees (GRT)',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalQueryFees?.Amount28D, data?.totalQueryFees?.Amount7D, data?.totalQueryFees?.AmountNow],
     tickInterval : ([data?.totalQueryFees?.Amount28D+data?.totalQueryFees?.Amount7D+data?.totalQueryFees?.AmountNow]/50),
@@ -384,11 +384,11 @@ export function AdminTotalTokensSignalled(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Signalled GRT by Curators', titleFontSize: '2.5rem',seriesName: 'Total Signalled GRT by Curators',subtitleFontSize: '2vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Signalled GRT by Curators', titleFontSize: '2.5rem',seriesName: 'Total Signalled GRT by Curators',subtitleFontSize: '2vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalTokensSignalled?.Amount28D, data?.totalTokensSignalled?.Amount7D, data?.totalTokensSignalled?.AmountNow],
-    tickInterval : ([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/200),
-    min: [([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/3)*0.97],
+    tickInterval : ([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/50),
+    min: [([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/3)*0.80],
     dataLabelFontSize: '3.5vh',
     dataLabelX: 25,
     subtitleX: 0,
@@ -424,11 +424,11 @@ export function AdminTotalStakedGRT(){
   const [lastMonth, lastWeek, Now] = getDaysInRange();
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', title: 'Total Staked GRT', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT',
+    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', titleY: 50, title: 'Total Staked GRT', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT',
     categories: [lastMonth, lastWeek, Now], subtitleFontSize: '2vh',
     data : [data?.totalTokensAllocated?.Amount28D, data?.totalTokensAllocated?.Amount7D, data?.totalTokensAllocated?.AmountNow],
     tickInterval : ([data?.totalTokensAllocated?.Amount28D+data?.totalTokensAllocated?.Amount7D+data?.totalTokensAllocated?.AmountNow]/100),
-    min: [([data?.totalTokensAllocated?.Amount28D+data?.totalTokensAllocated?.Amount7D+data?.totalTokensAllocated?.AmountNow]/3)*0.94],
+    min: [([data?.totalTokensAllocated?.Amount28D+data?.totalTokensAllocated?.Amount7D+data?.totalTokensAllocated?.AmountNow]/3)*0.90],
     dataLabelFontSize: '2.75vh',
     dataLabelX: 30,
     subtitleX: 0,
@@ -464,7 +464,7 @@ export function AdminTotalBurnedGRT(){
   const [lastMonth, lastWeek, Now] = getDaysInRange();
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', title: 'Total Burned GRT', titleFontSize: '2.5rem',seriesName: 'Total Burned GRT',
+    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', titleY: 50, title: 'Total Burned GRT', titleFontSize: '2.5rem',seriesName: 'Total Burned GRT',
     categories: [lastMonth, lastWeek, Now], subtitleFontSize: '2vh',
     data : [data?.totalGRTBurned?.Amount28D, data?.totalGRTBurned?.Amount7D, data?.totalGRTBurned?.AmountNow],
     tickInterval : ([data?.totalGRTBurned?.Amount28D+data?.totalGRTBurned?.Amount7D+data?.totalGRTBurned?.AmountNow]/200),
@@ -514,7 +514,7 @@ export function MobileAdminActiveDelegatorCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100, marginLeft: 90, marginRight: 90,type: 'column', title: 'Active Delegators', titleFontSize: '2.5rem',seriesName: 'Active Delegators', subtitleFontSize: '4vh',
+    {marginTop: 100, marginLeft: 90, marginRight: 90,type: 'column', titleY: 50, title: 'Active Delegators', titleFontSize: '2.5rem',seriesName: 'Active Delegators', subtitleFontSize: '4vh',
     yAxis : 'Tokens', xAxis: 'Date', 
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.activeDelegatorCount?.Amount28D, data?.activeDelegatorCount?.Amount7D, data?.activeDelegatorCount?.AmountNow],
@@ -554,7 +554,7 @@ export function MobileAdminHoldersCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100, marginLeft: 90, marginRight: 80,type: 'column', title: 'Holders', titleFontSize: '2.5rem',seriesName: 'Holders',subtitleFontSize: '4vh',
+    {marginTop: 100, marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Holders', titleFontSize: '2.5rem',seriesName: 'Holders',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.holdersCount?.Amount28D, data?.holdersCount?.Amount7D, data?.holdersCount?.AmountNow],
     tickInterval : ([data?.holdersCount?.Amount28D+data?.holdersCount?.Amount7D+data?.holdersCount?.AmountNow]/80),
@@ -596,7 +596,7 @@ export function MobileAdminSubgraphCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Subgraphs', titleFontSize: '2.5rem',seriesName:'Subgraphs',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Subgraphs', titleFontSize: '2.5rem',seriesName:'Subgraphs',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.subgraphCount?.Amount28D, data?.subgraphCount?.Amount7D, data?.subgraphCount?.AmountNow],tickInterval : ([data?.subgraphCount?.Amount28D+data?.subgraphCount?.Amount7D+data?.subgraphCount?.AmountNow]/80),
     min: [([data?.subgraphCount?.Amount28D+data?.subgraphCount?.Amount7D+data?.subgraphCount?.AmountNow]/3)*0.9],
@@ -635,7 +635,7 @@ export function MobileAdminCuratorCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Curators', titleFontSize: '2.5rem',seriesName: 'Curators',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Curators', titleFontSize: '2.5rem',seriesName: 'Curators',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.curatorCount?.Amount28D, data?.curatorCount?.Amount7D, data?.curatorCount?.AmountNow],
     tickInterval : ([data?.curatorCount?.Amount28D+data?.curatorCount?.Amount7D+data?.curatorCount?.AmountNow]/400),
@@ -675,7 +675,7 @@ export function MobileAdminActiveDelegationCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Active Delegation Count', titleFontSize: '2.5rem',seriesName: 'Active Delegation Count',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Active Delegation Count', titleFontSize: '2.5rem',seriesName: 'Active Delegation Count',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.activeDelegationCount?.Amount28D, data?.activeDelegationCount?.Amount7D, data?.activeDelegationCount?.AmountNow],
     tickInterval : ([data?.activeDelegationCount?.Amount28D+data?.activeDelegationCount?.Amount7D+data?.activeDelegationCount?.AmountNow]/200),
@@ -715,7 +715,7 @@ export function MobileAdminActiveIndexersCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Active Indexers', titleFontSize: '2.5rem',seriesName: 'Active Indexers',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Active Indexers', titleFontSize: '2.5rem',seriesName: 'Active Indexers',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.activeIndexersCount?.Amount28D, data?.activeIndexersCount?.Amount7D, data?.activeIndexersCount?.AmountNow],
     tickInterval : ([data?.activeIndexersCount?.Amount28D+data?.activeIndexersCount?.Amount7D+data?.activeIndexersCount?.AmountNow]/20),
@@ -755,7 +755,7 @@ export function MobileAdminTotalDelegatedGRT(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Delegated GRT by Delegators', titleFontSize: '2.5rem',seriesName: 'Total Delegated GRT by Delegators',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Delegated GRT by Delegators', titleFontSize: '2.5rem',seriesName: 'Total Delegated GRT by Delegators',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalDelegatedTokens?.Amount28D, data?.totalDelegatedTokens?.Amount7D, data?.totalDelegatedTokens?.AmountNow],
     tickInterval : ([data?.totalDelegatedTokens?.Amount28D+data?.totalDelegatedTokens?.Amount7D+data?.totalDelegatedTokens?.AmountNow]/500),
@@ -795,7 +795,7 @@ export function MobileAdminTotalDelegatedGRTIndexers(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Staked GRT by Indexers', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT by Indexers',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Staked GRT by Indexers', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT by Indexers',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalTokensStaked?.Amount28D, data?.totalTokensStaked?.Amount7D, data?.totalTokensStaked?.AmountNow],
     tickInterval : ([data?.totalTokensStaked?.Amount28D+data?.totalTokensStaked?.Amount7D+data?.totalTokensStaked?.AmountNow]/20),
@@ -835,7 +835,7 @@ export function MobileAdminTotalQueryFees(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Query Fees (GRT)', titleFontSize: '2.5rem',seriesName: 'Total Query Fees (GRT)',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Query Fees (GRT)', titleFontSize: '2.5rem',seriesName: 'Total Query Fees (GRT)',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalQueryFees?.Amount28D, data?.totalQueryFees?.Amount7D, data?.totalQueryFees?.AmountNow],
     tickInterval : ([data?.totalQueryFees?.Amount28D+data?.totalQueryFees?.Amount7D+data?.totalQueryFees?.AmountNow]/50),
@@ -876,11 +876,11 @@ export function MobileAdminTotalTokensSignalled(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', title: 'Total Signalled GRT by Curators', titleFontSize: '2.5rem',seriesName: 'Total Signalled GRT by Curators',subtitleFontSize: '4vh',
+    {marginTop: 100,marginLeft: 90, marginRight: 80,type: 'column', titleY: 50, title: 'Total Signalled GRT by Curators', titleFontSize: '2.5rem',seriesName: 'Total Signalled GRT by Curators',subtitleFontSize: '4vh',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.totalTokensSignalled?.Amount28D, data?.totalTokensSignalled?.Amount7D, data?.totalTokensSignalled?.AmountNow],
-    tickInterval : ([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/200),
-    min: [([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/3)*0.97],
+    tickInterval : ([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/50),
+    min: [([data?.totalTokensSignalled?.Amount28D+data?.totalTokensSignalled?.Amount7D+data?.totalTokensSignalled?.AmountNow]/3)*0.80],
     dataLabelFontSize: '5vh',
     dataLabelX: 0,
     subtitleX: 0,
@@ -916,11 +916,11 @@ export function MobileAdminTotalStakedGRT(){
   const [lastMonth, lastWeek, Now] = getDaysInRange();
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', title: 'Total Staked GRT', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT',
+    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', titleY: 50, title: 'Total Staked GRT', titleFontSize: '2.5rem',seriesName: 'Total Staked GRT',
     categories: [lastMonth, lastWeek, Now], subtitleFontSize: '4vh',
     data : [data?.totalTokensAllocated?.Amount28D, data?.totalTokensAllocated?.Amount7D, data?.totalTokensAllocated?.AmountNow],
     tickInterval : ([data?.totalTokensAllocated?.Amount28D+data?.totalTokensAllocated?.Amount7D+data?.totalTokensAllocated?.AmountNow]/100),
-    min: [([data?.totalTokensAllocated?.Amount28D+data?.totalTokensAllocated?.Amount7D+data?.totalTokensAllocated?.AmountNow]/3)*0.94],
+    min: [([data?.totalTokensAllocated?.Amount28D+data?.totalTokensAllocated?.Amount7D+data?.totalTokensAllocated?.AmountNow]/3)*0.90],
     dataLabelFontSize: '4vh',
     dataLabelX: 0,
     subtitleX: 0,
@@ -956,7 +956,7 @@ export function MobileAdminTotalBurnedGRT(){
   const [lastMonth, lastWeek, Now] = getDaysInRange();
 
   const options = useColumnGraphOptionsBuilder(
-    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', title: 'Total Burned GRT', titleFontSize: '2.5rem',seriesName: 'Total Burned GRT',
+    {marginTop: 100,marginLeft: 110, marginRight: 80,type: 'column', titleY: 50, title: 'Total Burned GRT', titleFontSize: '2.5rem',seriesName: 'Total Burned GRT',
     categories: [lastMonth, lastWeek, Now], subtitleFontSize: '4vh',
     data : [data?.totalGRTBurned?.Amount28D, data?.totalGRTBurned?.Amount7D, data?.totalGRTBurned?.AmountNow],
     tickInterval : ([data?.totalGRTBurned?.Amount28D+data?.totalGRTBurned?.Amount7D+data?.totalGRTBurned?.AmountNow]/200),

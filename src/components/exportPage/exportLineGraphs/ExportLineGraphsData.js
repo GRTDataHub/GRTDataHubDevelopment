@@ -37,7 +37,7 @@ function AdminLineDelegatorCount(){
   subtitleY: 20,
   tickInterval: 2000,
 min: Date.UTC(2020,11,17),
-logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
+logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
   
     return(
       <div>
@@ -79,7 +79,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
     subtitleX: 0,
     subtitleY: 20,
     tickInterval: 50, min: Date.UTC(2020,11,12),
-    logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
+    logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
     
       return(
         <div>
@@ -118,7 +118,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
       subtitleX: 0,
       subtitleY: 20,
       tickInterval: 50, min: Date.UTC(2020,11,15),
-      logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
+      logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
       
         return(
           <div>
@@ -158,7 +158,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
         subtitleX: 0,
         subtitleY: 20,
         tickInterval: 50, min: Date.UTC(2020,11,17),
-        logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
+        logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
         
           return(
             <div>
@@ -197,7 +197,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
           subtitleX: 0,
     subtitleY: 20,
           tickInterval: 50, min: Date.UTC(2020,11,17),
-          logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70, height: '80%'});
+          logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
           
             return(
               <div>

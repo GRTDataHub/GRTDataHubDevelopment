@@ -25,6 +25,22 @@ const Navbar = () => {
     <a className="nav-link mobile-nav-link mobile-nav-pages" href="./exportPage">
         Export Page
       </a>
+      <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    News
+      </a>
+      <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./GraphAdvocatesSpotlight">
+        Graph Advocates Spotlight</a></li>
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./GraphCentral">
+       Graph Central
+      </a></li>
+      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
+      Participant Update
+      </a></li>
+      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q4-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_the_graph_q4_2022" target="_blank" rel="noreferrer">
+       Messari Report
+      </a></li>
+          </ul> 
           <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dashboards
       </a>
@@ -39,7 +55,7 @@ const Navbar = () => {
       </a></li>
           </ul>      
 
-    <a className="no-show nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    {/* <a className="no-show nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Bar Charts
       </a>
       <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
@@ -51,9 +67,9 @@ const Navbar = () => {
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#bar6">Total Staked GRT</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#bar7">Total Delegated GRT by Indexers</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#bar8">Total GRT Burned</a></li>
-          </ul>
+          </ul> */}
 
-          <a className="no-show nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {/* <a className="no-show nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Line Graphs
       </a>
       <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdown">
@@ -63,7 +79,7 @@ const Navbar = () => {
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#line4">Subgraphs</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#line6">GRT Daily Transactions</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#line7">GRT Bought Hourly</a></li>
-          </ul>
+          </ul> */}
     </div>
   </div>
 </div>
@@ -85,6 +101,22 @@ const Navbar = () => {
 
           <li className="nav-item dropdown">
           <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            News
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item"><a className="dropdown-item" href="./GraphAdvocatesSpotlight">
+            Graph Advocates Spotlight</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="./GraphCentral">
+            Graph Central</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
+            Participant Update</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q4-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_the_graph_q4_2022" target="_blank" rel="noreferrer">
+            Messari Report</a></li>
+          </ul>
+          </li>
+
+          <li className="nav-item dropdown">
+          <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dashboards
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
@@ -97,7 +129,7 @@ const Navbar = () => {
           </ul>
           </li>
 
-        <li className="nav-item dropdown">
+        {/* <li className="nav-item dropdown">
           <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Bar Charts
           </a>
@@ -111,8 +143,8 @@ const Navbar = () => {
             <li className="dropdown-item"><a className="dropdown-item" href="#bar7">Total Delegated GRT by Indexers</a></li>
             <li className="dropdown-item"><a className="dropdown-item" href="#bar8">Total GRT Burned</a></li>
           </ul>
-        </li>
-        <li className="nav-item dropdown">
+        </li> */}
+        {/* <li className="nav-item dropdown">
           <a className="no-show nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Line Graphs
           </a>
@@ -124,7 +156,7 @@ const Navbar = () => {
             <li className="dropdown-item"><a className="dropdown-item" href="#line6">GRT Daily Transactions</a></li>
             <li className="dropdown-item"><a className="dropdown-item" href="#line7">GRT Bought Hourly</a></li>
           </ul>
-        </li>
+        </li> */}
 
       </ul>
     </div>

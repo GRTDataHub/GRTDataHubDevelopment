@@ -94,7 +94,7 @@ class ExportMobileConfig extends React.Component {
           </div>
 
 
-          <h1 className="adminHeader-text admin-mobile-center-line reveal"><u>Mobile Line Graphs</u><br></br><br></br> 1. Click Export Button<br></br>2. Download PNG Image<br></br>3. Select View<br></br>4. Press and Hold the screen with finger<br></br>5. Select Add to Photos / Save Image</h1> 
+          <h1 className="adminHeader-text admin-mobile-center-line reveal"><u>Mobile Line Graphs</u></h1> 
 
           <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="mobileline1"></span>

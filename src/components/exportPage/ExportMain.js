@@ -10,7 +10,7 @@ import ActiveDelegatorCountBar, { HoldersCountBar, SubgraphCountBar, CuratorCoun
 const ExportMain = () => {
   return (
       <div className="header-wrapper">
-        <div className="main-info">
+        <div className="export-main">
         <div className="rotate-position">
       <div class="phone">
 </div>
@@ -52,9 +52,9 @@ const ExportMain = () => {
      </div>
         {/* <div className="admin-video monitor-config"><video width="400" height="230" className="video" frameborder="0" title="TGN" src={tutorial} controls></video>
   </div> */}
-        <div className="mobile-config"><ExportMobileConfig /></div>
-        <div className="monitor-config"><ExportMonitorConfig /></div>
-        <Footer />
+        <div className="mobile-config hide-export"><ExportMobileConfig /></div>
+        <div className="monitor-config hide-export"><ExportMonitorConfig /></div>
+        <div className="hide-export"><Footer /></div>
       </div>
     </div>
   )

@@ -39,7 +39,7 @@ const ExportNavbarMobile = () => {
       </a></li>
           </ul>  
     
-    <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdownMobileBar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    {/* <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdownMobileBar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Mobile Bar Charts
       </a>
       <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdownMobileBar" aria-label="Toggle navigation">
@@ -55,9 +55,9 @@ const ExportNavbarMobile = () => {
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#mobilebar10">Total Staked GRT</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#mobilebar11">Total Delegated GRT by Indexers</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#mobilebar12">Total Burned GRT</a></li>
-          </ul>
+          </ul> */}
 
-          <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdownMobileLine" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {/* <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdownMobileLine" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Mobile Line Graphs
       </a>
       <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdownMobileLine">
@@ -65,7 +65,7 @@ const ExportNavbarMobile = () => {
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#mobileline2">Indexers</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#mobileline3">Staked Indexers</a></li>
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="#mobileline4">Subgraphs</a></li>
-          </ul>
+          </ul> */}
     </div>
   </div>
 </div>
