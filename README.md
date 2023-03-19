@@ -55,7 +55,9 @@ Current <a href="https://www.GRTDataHub.com/chatBot">Chatbots</a> Built:
 <br />
 Current Chatbot in Development:
 <br />
-Urdu
+Urdu (85%)
+Ukrainian (10%)
+Hindi (0%)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,14 +74,18 @@ Urdu
 - Homepage
   - [x] Available whenever, wherever, across all devices
   - [x] Mobile Portrait View Improvements
-  - [ ] Add more charts
-  - [ ] Update logo with new community admins in GRTDataHub community in our Telegram chat.
+  - [x] Mobile Portrait View for all moile devices with a new and improved theme for better UI / UX.
+  - [x] Add more charts
+  - [ ] Add even more charts
+  - [x] Update logo with new community admins in GRTDataHub community in our Telegram chat.
 - <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>
   - [x] GRT Data in Bar Chart and Line Graph Format
   - [x] <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>
+  - [x] Download Button (Export the charts in 1 click rather than 4)
   - [ ] Master Export Button (Export all in 1 click)
 - <a href="https://www.GRTDataHub.com/aboutPage">About Page</a>
   - [ ] Update with links to new community admins in GRTDataHub community in our Telegram chat.
+  - [ ] Add links to all communities with their admins and more details.
 - <a href="https://www.GRTDataHub.com/chatBot">Chatbots</a> (Continuous improvements on all chatbots as necessary)
 - [x] <a href="https://www.GRTDataHub.com/ENGchatBot">English</a>
   - [x] <a href="https://www.GRTDataHub.com/ENGTranslatorHelp">Translator Page</a>
@@ -93,8 +99,15 @@ Urdu
   - [x] <a href="https://www.GRTDataHub.com/TURTranslatorHelp">Translator Page</a>
 - [ ] Urdu (In Development)
   - [ ] Translator Help Page
+- [ ] Ukrainian (In Development)
+  - [ ] Translator Help Page
+- [ ] Hindi
+  - [ ] Translator Help Page
 - Translator Help Pages
   - [x] Add full chatbot script file for translations that can be downloaded by advocates (updated file with each chatbot update)
+  - [ ] Update with new and imporoved chatbot script
+- Other Pages
+  - [ ] Add a dedicated GRT ARAB page, so their community can find all current translated guides and tutorials in one place with 1 click of a button within their Telegram welcome message made by GRTDataHub.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
