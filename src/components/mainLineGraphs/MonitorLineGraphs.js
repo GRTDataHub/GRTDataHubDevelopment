@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import MonitorLineGraphsCarousel from './MonitorLineGraphsCarousel';
-import MonitorOtherCharts from '../mainBarCharts/MonitorOtherCharts';
+// import MonitorOtherCharts from '../mainBarCharts/MonitorOtherCharts';
 
 class MonitorLineGraphs extends React.Component {
   
@@ -31,11 +31,11 @@ class MonitorLineGraphs extends React.Component {
           <br></br><br></br>
           <div className="photo-wrap chartImg1 reveal">
           <MonitorLineGraphsCarousel /></div>
-          <br></br>
+          {/* <br></br>
           <hr className="hr reveal"></hr>
           <h1 className="chartsTitle reveal">More Data</h1>
           <br></br><br></br>
-          <div className="photo-wrap chartImg1 monitor-other-charts-position reveal"><MonitorOtherCharts /></div>
+          <div className="photo-wrap chartImg1 monitor-other-charts-position reveal"><MonitorOtherCharts /></div> */}
           <br></br><br></br>
           </div>
         </div>

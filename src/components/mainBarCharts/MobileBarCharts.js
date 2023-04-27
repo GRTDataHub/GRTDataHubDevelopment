@@ -1,8 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import MobileBarChartsCarousel from './MobileBarChartsCarousel';
-import LandscapeMobileBarChartsCarousel from './LandscapeMobileBarChartsCarousel';
-import MobileActiveDelegatorCountBar, { MobileHoldersCountBar, MobileSubgraphCountBar, MobileCuratorCountBar, MobileActiveDelegationCountBar, MobileActiveIndexersCountBar, MobileTotalDelegatedGRT, MobileTotalQueryFees, MobileTotalTokensSignalled, MobileTotalStakedGRT, MobileTotalDelegatedGRTIndexers, MobileTotalBurnedGRT } from "./MobileBarChartsData";
+// import LandscapeMobileBarChartsCarousel from './LandscapeMobileBarChartsCarousel';
 
 class MobileBarCharts extends React.Component {
   render() {
@@ -31,8 +30,8 @@ class MobileBarCharts extends React.Component {
 <br></br><br></br>
           <div className="photo-wrap chartImg1 mobile-portrait reveal">
           <MobileBarChartsCarousel /></div>
-          <div className="photo-wrap chartImg1 mobile-landscape reveal">
-          <LandscapeMobileBarChartsCarousel /></div>
+          {/* <div className="photo-wrap chartImg1 mobile-landscape reveal">
+          <LandscapeMobileBarChartsCarousel /></div> */}
           </div>
           
           <br></br><br></br>

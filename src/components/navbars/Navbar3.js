@@ -25,9 +25,26 @@ const Navbar3 = () => {
     <a className="no-monitor nav-link mobile-nav-link mobile-nav-pages" href="./">
             Home
           </a>
-    <a className="nav-link mobile-nav-link mobile-nav-pages" href="./exportPage">
+    {/* <a className="nav-link mobile-nav-link mobile-nav-pages" href="./exportPage">
         Export Page
+      </a> */}
+       <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    News
       </a>
+      <ul className="dropdown-menu mobile-dropdown" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./GraphAdvocatesSpotlight">
+        Graph Advocates Spotlight</a></li>
+            <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./GraphCentral">
+       Graph Central
+      </a></li>
+      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
+      Participant Update
+      </a></li>
+      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q1-2023?utm_medium=organic_social&utm_source=twitter_mihaigrigore&utm_campaign=state_of_the_graph_q1_2023" target="_blank" rel="noreferrer">
+       Messari Report
+      </a></li>
+          </ul> 
+
           <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dashboards
       </a>
@@ -49,11 +66,27 @@ const Navbar3 = () => {
             Home
           </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
           <a className="nav-link export bar" href="./exportPage">
             Export Page
           </a>
+          </li> */}
+           <li className="nav-item dropdown">
+          <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            News
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown" aria-label="Toggle navigation">
+            <li className="dropdown-item"><a className="dropdown-item" href="./GraphAdvocatesSpotlight">
+            Graph Advocates Spotlight</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="./GraphCentral">
+            Graph Central</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
+            Participant Update</a></li>
+            <li className="dropdown-item"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q1-2023?utm_medium=organic_social&utm_source=twitter_mihaigrigore&utm_campaign=state_of_the_graph_q1_2023" target="_blank" rel="noreferrer">
+            Messari Report</a></li>
+          </ul>
           </li>
+          
           <li className="nav-item dropdown">
           <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dashboards

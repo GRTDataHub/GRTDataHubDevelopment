@@ -25,15 +25,13 @@ const NavbarChatbot = () => {
     <a className="nav-link mobile-nav-link mobile-nav-pages" href="../">
         Home
       </a>
-      <a className="nav-link mobile-nav-link mobile-nav-pages" href="../exportPage">
+      {/* <a className="nav-link mobile-nav-link mobile-nav-pages" href="../exportPage">
         Export Page
+      </a> */}
+      <a className="nav-link mobile-nav-link mobile-nav-pages" href="./chatBot">
+    Chatbot Page
       </a>
-      <a className="nav-link mobile-nav-link mobile-nav-pages" href="../indexers">
-    Indexers
-      </a>
-      <a className="nav-link mobile-nav-link mobile-nav-pages" href="../delegators">
-    Delegators
-      </a>
+    
     </div>
   </div>
 </div>
@@ -44,15 +42,12 @@ const NavbarChatbot = () => {
           <a className="nav-link pages" href="../">
             Home
           </a>
-          <a className="nav-link pages" href="../exportPage">
+          {/* <a className="nav-link pages" href="../exportPage">
             Export Page
-          </a>
-          <a className="nav-link pages" href="../indexers">
-            Indexers
-          </a>
-          <a className="nav-link pages" href="../delegators">
-            Delegators
-          </a>
+          </a> */}
+          <a className="nav-link pages" href="./chatBot">
+            Chatbot Page
+          </a>    
         </li>
         
       </ul>

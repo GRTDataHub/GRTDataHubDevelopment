@@ -7,10 +7,10 @@ return (
 	<footer className="bg-dark text-center text-white">
   <div className="col-auto">
   <p className="pt-auto footer">
-            <strong>More data coming soon!</strong><br></br>
-            Please email <span className="email">admin@GRTDataHub.com</span> to request more data. <br></br>If you have any suggested improvements, find glitches or issues with the app <br></br>then please get in touch via <a className="data-link"  href="https://t.me/GRTDataHub" target="_blank" rel="noreferrer">Telegram</a> or <a className="data-link"  href="https://twitter.com/GRTCrypto" target="_blank" rel="noreferrer">Twitter</a>.<br></br>
-              <p><a className="about" href="/aboutPage">About</a><a className="privacy-policy-link" href="/privacyPolicy">Privacy Policy</a><a className="privacy-policy-link" href="/cookiePolicy">Cookie Policy</a><a className="privacy-policy-link" href="https://app.termly.io/notify/a85a151c-741d-4a15-a8f6-9d2bb64ee205" target="_blank" rel="noreferrer"><strong>
-  Do not sell my info</strong>
+            <strong>مزید ڈیٹا جلد آرہا ہے!</strong><br></br>
+            مزید ڈیٹا کی درخواست کرنے کے لیے براہ کرم <span className="email">admin@GRTDataHub.com</span> پر ای میل کریں۔<br></br> اگر آپ کے پاس کوئی تجویز کردہ بہتری ہے تو ایپ میں خرابیاں یا مسائل تلاش کریں۔<br></br>پھر براہ کرم ٹیلیگرام یا ٹویٹر کے ذریعے رابطہ کریں۔<a className="data-link"  href="https://t.me/GRTDataHub" target="_blank" rel="noreferrer">ٹیلی گرام</a> یا <a className="data-link"  href="https://twitter.com/GRTCrypto" target="_blank" rel="noreferrer">ٹویٹر</a><br></br>
+              <p><a className="about" href="/aboutPage">کے بارے میں</a><a className="privacy-policy-link" href="/privacyPolicy">رازداری کی پالیسی</a><a className="privacy-policy-link" href="/cookiePolicy">کوکی پالیسی</a><a className="privacy-policy-link" href="https://app.termly.io/notify/a85a151c-741d-4a15-a8f6-9d2bb64ee205" target="_blank" rel="noreferrer"><strong>
+              میری معلومات فروخت نہ کریں۔</strong>
 </a><br></br><span className="C">© 2022 - GRTDataHub</span><br></br></p>
             </p>
           </div>

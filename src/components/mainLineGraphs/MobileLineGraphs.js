@@ -2,8 +2,8 @@ import React from 'react';
 import '../../App.css';
 import MobileLineGraphsCarousel from './MobileLineGraphsCarousel';
 import LandscapeMobileLineGraphsCarousel from './LandscapeMobileLineGraphsCarousel';
-import MobileOtherCharts from '../mainBarCharts/MobileOtherCharts';
-import LandscapeMobileOtherCharts from '../mainBarCharts/LandscapeMobileOtherCharts';
+// import MobileOtherCharts from '../mainBarCharts/MobileOtherCharts';
+// import LandscapeMobileOtherCharts from '../mainBarCharts/LandscapeMobileOtherCharts';
 class MobileLineGraphs extends React.Component {
   
     render() {
@@ -35,11 +35,11 @@ class MobileLineGraphs extends React.Component {
           <div className="photo-wrap chartImg1 mobile-line-pos mobile-landscape reveal">
           <LandscapeMobileLineGraphsCarousel /></div>
           <br></br>
-          <hr className="hr more-data-hr reveal"></hr>
+          {/* <hr className="hr more-data-hr reveal"></hr>
           <h1 className="chartsTitle more-data-title reveal">More Data</h1>
           <br></br><br></br>
           <div className="photo-wrap chartImg1 mobile-other-charts-position mobile-portrait reveal"><MobileOtherCharts/></div>
-          <div className="photo-wrap chartImg1 mobile-other-charts-position mobile-landscape reveal"><LandscapeMobileOtherCharts/></div>
+          <div className="photo-wrap chartImg1 mobile-other-charts-position mobile-landscape reveal"><LandscapeMobileOtherCharts/></div> */}
           </div>
         </div>
         

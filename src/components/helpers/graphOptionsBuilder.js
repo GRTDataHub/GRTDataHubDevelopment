@@ -24,8 +24,8 @@ Highcharts.setOptions({
   }
 });
 
-export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTop, type, title, titleFontSize,subtitleFontSize, categories, data, tickInterval, min, dataLabelFontSize, dataLabelX, seriesName, subtitleX, subtitleY, downloadButton,
-  // logoX, logoY, logoWidth, logoHeight, 
+export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTop, marginBottom, titleY, type, title, titleFontSize,subtitleFontSize, categories, data, tickInterval, min, dataLabelFontSize, dataLabelX, seriesName, subtitleX, subtitleY, downloadButton, width,
+  // logoX, logoY, logoWidth, logoHeight, ,
   height}){
     const options = {
         chart: {
@@ -37,9 +37,10 @@ export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTo
           //       .add();
           //   }
           // },
+         
           marginLeft: marginLeft,
               marginRight: marginRight,
-              marginBottom: 60,
+              marginBottom: marginBottom,
               marginTop: marginTop,
               backgroundColor: {
                   radialGradient: {
@@ -61,7 +62,7 @@ export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTo
        },
           text : title,
           align: 'center',
-          y: 40,
+          y: titleY,
         },
         subtitle: {
           style: {
@@ -101,6 +102,7 @@ export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTo
             }
         },
         xAxis: {
+          width: width,
           categories: categories,
           labels: {
             formatter: function() {
@@ -134,11 +136,9 @@ export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTo
               data: [data[0], data[1], data[2]],
           },
         ],
-        credits: {
-          position: {
-              x: 30,
-              y: 50,
-          }
+        credits: { style: {
+          display: 'none',
+       },
       },
       legend: {
         enabled: false,     
@@ -196,7 +196,7 @@ export function useColumnGraphOptionsBuilder({marginLeft, marginRight,  marginTo
     return options;
 }
 
-export function getLineGraphOptionsBuilder({chartType, title, titleFontSize, xAxisType, data, seriesName, marginLeft, marginRight, marginBottom, marginTop, subtitleFontSize, dataLabelFontSize, subtitleX, subtitleY, tickInterval, min, downloadButton,
+export function getLineGraphOptionsBuilder({chartType, title, titleFontSize, xAxisType, data, seriesName, marginLeft, marginRight, marginBottom, marginTop, subtitleFontSize, dataLabelFontSize, subtitleX, subtitleY, titleY, tickInterval, min, downloadButton, width,
   // logoX, logoY, logoWidth, logoHeight, 
   height}){
   const options = {
@@ -246,7 +246,7 @@ export function getLineGraphOptionsBuilder({chartType, title, titleFontSize, xAx
       },
       text: title,
       align: 'center',
-      y: 40
+      y: titleY,
     },
     subtitle: {
       style: {
@@ -265,6 +265,7 @@ export function getLineGraphOptionsBuilder({chartType, title, titleFontSize, xAx
     }
   },
     xAxis: [{
+      width: width,
       type: xAxisType,
       min: min,
       dateTimeLabelFormats: {

@@ -15,25 +15,32 @@ const UKRChatBotPage = () => ({
         <NavbarChatbot />
         <div className="chatbot-page-container">
             <div className="chatbot-text-container">
-            <h3 className="feedback-text chatbot-page-text">Please support the GRTDataHub Ukrainian Chatbot by helping with improvements by recommending content, documentation and tutorials.</h3>
+            <h3 className="feedback-text chatbot-page-text">Будь ласка, підтримайте чат-бота GRTDataHub, допомагаючи з покращенням, рекомендуючи контент, документацію та навчальні матеріали.</h3><h3 className="feedback-text chatbot-page-text">За допомогою <a className="chatbot-link" href="https://twitter.com/doxe01_official" target="_blank" rel="noreferrer">doxe</a> переклади чат-бота були переглянуті та відповідно змінені, щоб українська спільнота могла використовувати його повний потенціал.</h3>
+            <h3 className="feedback-text chatbot-page-text">Для відеоуроків на YouTube, які наразі доступні лише англійською мовою, будь ласка, увімкніть субтитри/CC, натисніть кнопку налаштувань, виберіть субтитри, автопереклад та українську мову.</h3>
+            <h3 className="feedback-text chatbot-page-text">Текстові матеріали та блоги активно перекладаються спільнотою, якщо ви хочете долучитися до перекладу, будь ласка, зв'яжіться з нами або відвідайте сторінку допомоги перекладачеві, натиснувши на кнопку під чат-ботом!</h3>
+
+            <h3 className="feedback-text chatbot-page-text">
+
+
+</h3>
 
         <Chatbot
         config={UKRConfig}
         messageParser={UKRMessageParser}
         actionProvider={UKRActionProvider}
-        headerText='GRTDataHub English Chatbot'
-        placeholderText='How do I delegate?'
+        headerText='український чат-бот GRTDataHub'
+        placeholderText='Як делегувати токени?'
         disableScrollToBottom
       /> 
 
       <br></br>
       <div className="new-button QB-about-page-subtitle">
-        <a className="chatbot-link" href="https://mb3kald91rd.typeform.com/to/esxDMqut " target="_blank" rel="noreferrer">
+        <a className="chatbot-link" href="https://mb3kald91rd.typeform.com/to/p1iMeLwu" target="_blank" rel="noreferrer">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        Chatbot Improvements Form
+        Форма для вдосконалення чат-бота
       </a>
   </div>
           <div className="new-button QB-about-page-subtitle">
@@ -42,7 +49,7 @@ const UKRChatBotPage = () => ({
         <span></span>
         <span></span>
         <span></span>
-        Translator Help Page
+        Довідкова сторінка перекладача
       </a>
   </div>
           

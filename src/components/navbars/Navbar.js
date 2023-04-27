@@ -22,9 +22,9 @@ const Navbar = () => {
   </div>
   <div class="offcanvas-body links">
     <div class="dropdown mt-3">
-    <a className="nav-link mobile-nav-link mobile-nav-pages" href="./exportPage">
+    {/* <a className="nav-link mobile-nav-link mobile-nav-pages" href="./exportPage">
         Export Page
-      </a>
+      </a> */}
       <a className="nav-link dropdown-toggle mobile-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     News
       </a>
@@ -37,7 +37,7 @@ const Navbar = () => {
       <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
       Participant Update
       </a></li>
-      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q4-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_the_graph_q4_2022" target="_blank" rel="noreferrer">
+      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q1-2023?utm_medium=organic_social&utm_source=twitter_mihaigrigore&utm_campaign=state_of_the_graph_q1_2023" target="_blank" rel="noreferrer">
        Messari Report
       </a></li>
           </ul> 
@@ -93,11 +93,11 @@ const Navbar = () => {
           </a>
         </li>
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
           <a className="nav-link export bar" href="./exportPage">
             Export Page
           </a>
-          </li>
+          </li> */}
 
           <li className="nav-item dropdown">
           <a className="no-show nav-link dropdown-toggle bar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -110,7 +110,7 @@ const Navbar = () => {
             Graph Central</a></li>
             <li className="dropdown-item"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
             Participant Update</a></li>
-            <li className="dropdown-item"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q4-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_the_graph_q4_2022" target="_blank" rel="noreferrer">
+            <li className="dropdown-item"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q1-2023?utm_medium=organic_social&utm_source=twitter_mihaigrigore&utm_campaign=state_of_the_graph_q1_2023" target="_blank" rel="noreferrer">
             Messari Report</a></li>
           </ul>
           </li>

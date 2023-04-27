@@ -65,18 +65,38 @@ const ChatBotPage = () => ({
       </a>
   </div>
   <br></br> 
+            <div className="UKR-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="/UKRchatBot" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        український чат-бот GRTDataHub
+      </a>
+  </div>
+  <br></br> 
             <div className="URD-button QB-about-page-subtitle">
-        <a className="chatbot-link" disable>
+        <a className="chatbot-link" href="/URDchatBot" target="_blank" rel="noreferrer">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        GRTDataHub Urdu Chatbot (In Development)
+        GRTDataHub اردو چیٹ بوٹ 
+      </a>
+  </div>
+  <br></br> 
+            <div className="HIN-button QB-about-page-subtitle">
+        <a className="chatbot-link" href="/HINchatBot" target="_blank" rel="noreferrer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        GRTDataHub हिंदी चैटबॉट
       </a>
   </div>
             <br></br><br></br> 
             <hr className="QB-about-hr"></hr>
-            <h2 className="QB-about-page-subtitle">The English, German, Spanish, French and the NEW Turkish Chatbots are built. All being continuously improved with new documentation, news, text and video tutorials along with the <strong>new button feature</strong>!<br></br>Urdu chatbot is currently in development.<br></br>Graph Advocates are actively translating content for 2 other community chatbots. To be announced soon!<br></br><br></br>If your community would benefit from a chatbot then please get in touch and I will be happy to build one.</h2>
+            <h2 className="QB-about-page-subtitle">The English, German, Spanish, French, Turkish, Ukrainian, Urdu and Hindi Chatbots are built. All being continuously improved with new documentation, news, text and video tutorials along with the <strong>new button feature</strong>!<br></br><br></br>If your community would benefit from a chatbot then please get in touch and I will be happy to build one.</h2>
             <br></br><br></br>
         </div>
 </div>

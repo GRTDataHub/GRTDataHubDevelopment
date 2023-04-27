@@ -14,6 +14,7 @@ import ENGTranslatorHelp from './components/chatBot/ENGTranslatorHelp';
 import TURTranslatorHelp from './components/chatBot/TURTranslatorHelp';
 import URDTranslatorHelp from './components/chatBot/URDTranslatorHelp';
 import UKRTranslatorHelp from './components/chatBot/UKRTranslatorHelp';
+import HINTranslatorHelp from './components/chatBot/HINTranslatorHelp';
 import PrivacyPolicy from './components/privacyPolicy/privacyPolicy';
 import CookiesPolicy from './components/cookiesPolicy/cookiesPolicy';
 import AboutPage from './components/aboutPage/AboutPage';
@@ -27,6 +28,7 @@ import FRAChatBotPage from './components/chatBot/FRAChatBotPage';
 import TURChatBotPage from './components/chatBot/TURChatBotPage';
 import URDChatBotPage from './components/chatBot/URDChatBotPage';
 import UKRChatBotPage from './components/chatBot/UKRChatBotPage';
+import HINChatBotPage from './components/chatBot/HINChatBotPage';
 import ChatBotPage from './components/chatBot/ChatBotPage';
 import ActiveDelegationCount from './components/live-data/ActiveDelegationCount';
 import ActiveDelegationCountChatbotGraph from './components/live-data/ActiveDelegationCountChatbotGraph';
@@ -59,38 +61,51 @@ import GraphAdvocatesSpotlight from './components/graphAdvocatesSpotlight/graphA
 import GraphCentral from './components/graphCentral/graphCentral';
 import ReduceGasESP from './components/chatBot/ReduceGasESP';
 
+import Quiz from "./components/quiz/Quiz";
+
 const Home = () => ({
   render() {
-      return (
-        <>
-          <Navbar />
-          <Main />
-	  <ScrollButton />
-       </>
+    return (
+      <>
+        <Navbar />
+        <Main />
+        <ScrollButton />
+      </>
     );
-  }}
-);
+  }
+});
 
-class App extends Component{
+class App extends Component {
   state = {
     loading: true
   };
-  componentDidMount() {
-    demoAsyncCall().then(() => this.setState({ loading: false }));
-  }
-    render(){
-      const { loading } = this.state;
-    
-      if(loading) { 
-        return <div>
-          <div id="app" className="loader"></div>
-                  <div><img className="loaderLogo" src={GRTDataHubLogoLoader}  alt="GRTDataHub Loader Logo"></img></div>
-                  <div className="loadingTitle"><p>GRTDataHub</p></div>
-        </div>;
-      }
 
-      
-        return(
+  handleImageLoad = () => {
+    this.setState({ loading: false });
+  };
+
+  render() {
+    const { loading } = this.state;
+
+    if (loading) {
+      return (
+        <div>
+          <div id="app" className="loader"></div>
+          <div>
+            <img
+              className="loaderLogo"
+              src={GRTDataHubLogoLoader}
+              alt="GRTDataHub Loader Logo"
+              onLoad={this.handleImageLoad}
+            ></img>
+          </div>
+          <div className="loadingTitle">
+            <p>GRTDataHub</p>
+          </div>
+        </div>
+      );
+    } else {
+      return (
           <Router>
           <Routes>
           <Route path="/"
@@ -187,6 +202,10 @@ class App extends Component{
                   element={<UKRChatBotPage />} />
                   <Route path="/UKRTranslatorHelp"
                   element={<UKRTranslatorHelp />} />
+                   <Route path="/HINchatBot"
+                  element={<HINChatBotPage />} />
+                  <Route path="/HINTranslatorHelp"
+                  element={<HINTranslatorHelp />} />
                   <Route path="/Binance_Staking_GER"
                   element={<BinanceStakingGER/>} />
                     <Route path="/IPhone_GER"
@@ -199,15 +218,13 @@ class App extends Component{
                   element={<GraphCentral/>} />
                    <Route path="/ReduceGasESP"
                   element={<ReduceGasESP/>} />
+                    <Route path="/quiz"
+                  element={<Quiz/>} />
           </Routes>
       </Router>
         ) 
      }
-} 
-
-function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 3250));
-}
+}}
 
 export default App;
 

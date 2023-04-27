@@ -3,7 +3,28 @@ import '../../App.css';
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-import MobileActiveDelegatorCountBar, { MobileHoldersCountBar, MobileSubgraphCountBar, MobileCuratorCountBar, MobileActiveDelegationCountBar, MobileActiveIndexersCountBar, MobileTotalDelegatedGRT, MobileTotalQueryFees, MobileTotalTokensSignalled, MobileTotalStakedGRT, MobileTotalDelegatedGRTIndexers, MobileTotalBurnedGRT } from "./MobileBarChartsData";
+
+import NewMobileCuratorBarChartsData from "../helpers/mobileBarCharts/NewMobileCuratorBarChartsData";
+import NewMobileDelegatorBarChartsData from "../helpers/mobileBarCharts/NewMobileDelegatorBarChartsData";
+import NewMobileIndexerBarChartsData from "../helpers/mobileBarCharts/NewMobileIndexerBarChartsData";
+import NewMobileStakedIndexerBarChartsData from "../helpers/mobileBarCharts/NewMobileStakedIndexerBarChartsData";
+import NewMobileSubgraphBarChartsData from "../helpers/mobileBarCharts/NewMobileSubgraphBarChartsData";
+import NewMobileSubgraphDeployedBarChartsData from "../helpers/mobileBarCharts/NewMobileSubgraphDeployedBarChartsData";
+import NewMobileTotalCuratorQueryFeesBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalCuratorQueryFeesBarChartsData";
+import NewMobileTotalDelegatedTokensBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalDelegatedTokensBarChartsData";
+import NewMobileTotalDelegatorQueryFeeRebatesBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalDelegatorQueryFeeRebatesBarChartsData";
+import NewMobileTotalIndexerQueryFeeRebatesBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalIndexerQueryFeeRebatesBarChartsData";
+import NewMobileTotalIndexerQueryFeesCollectedBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalIndexerQueryFeesCollectedBarChartsData";
+import NewMobileTotalIndexingDelegatorRewardsBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalIndexingDelegatorRewardsBarChartsData";
+import NewMobileTotalIndexingIndexerRewardsBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalIndexingIndexerRewardsBarChartsData";
+import NewMobileTotalIndexingRewardsBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalIndexingRewardsBarChartsData";
+import NewMobileTotalQueryFeesBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalQueryFeesBarChartsData";
+import NewMobileTotalTaxedQueryFeesBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalTaxedQueryFeesBarChartsData";
+import NewMobileTotalTokensAllocatedBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalTokensAllocatedBarChartsData";
+import NewMobileTotalTokensSignalledBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalTokensSignalledBarChartsData";
+import NewMobileTotalTokensStakedBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalTokensStakedBarChartsData";
+import NewMobileTotalUnclaimedQueryFeeRebatesBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalUnclaimedQueryFeeRebatesBarChartsData";
+import NewMobileTotalUnstakedTokensLockedBarChartsData from "../helpers/mobileBarCharts/NewMobileTotalUnstakedTokensLockedBarChartsData";
 
 class MobileBarChartsCarousel extends Component {
     state = {
@@ -20,52 +41,88 @@ class MobileBarChartsCarousel extends Component {
     slides = [
       {
         key: uuidv4(),
-        content: <MobileActiveDelegatorCountBar id="bar1" />
+        content: <NewMobileCuratorBarChartsData id="bar1" />
       }
       ,
       {
         key: uuidv4(),
-        content: <MobileHoldersCountBar id="bar1" />
+        content: <NewMobileDelegatorBarChartsData id="bar1" />
       },
       {
         key: uuidv4(),
-        content: <MobileSubgraphCountBar id="bar1" />
+        content: <NewMobileIndexerBarChartsData id="bar1" />
       },
       {
         key: uuidv4(),
-        content: <MobileCuratorCountBar id="bar1" />
+        content: <NewMobileStakedIndexerBarChartsData id="bar1" />
       },
       {
         key: uuidv4(),
-        content: <MobileActiveDelegationCountBar id="bar1" />
+        content: <NewMobileSubgraphBarChartsData id="bar1" />
       },
       {
         key: uuidv4(),
-        content: <MobileActiveIndexersCountBar id="bar2" />
+        content: <NewMobileSubgraphDeployedBarChartsData id="bar2" />
       },
       {
         key: uuidv4(),
-        content: <MobileTotalDelegatedGRT id="bar3" />
+        content: <NewMobileTotalCuratorQueryFeesBarChartsData id="bar3" />
       },
       {
         key: uuidv4(),
-        content: <MobileTotalQueryFees id="bar4" />
+        content: <NewMobileTotalDelegatedTokensBarChartsData id="bar4" />
       },
       {
         key: uuidv4(),
-        content: <MobileTotalTokensSignalled id="bar5" />
+        content: <NewMobileTotalDelegatorQueryFeeRebatesBarChartsData id="bar5" />
       },
       {
         key: uuidv4(),
-        content: <MobileTotalStakedGRT id="bar6" />
+        content: <NewMobileTotalIndexerQueryFeeRebatesBarChartsData id="bar6" />
       },
       {
         key: uuidv4(),
-        content: <MobileTotalDelegatedGRTIndexers id="bar7" />
+        content: <NewMobileTotalIndexerQueryFeesCollectedBarChartsData id="bar7" />
       },
       {
         key: uuidv4(),
-        content: <MobileTotalBurnedGRT id="bar8" />
+        content: <NewMobileTotalIndexingDelegatorRewardsBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalIndexingIndexerRewardsBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalIndexingRewardsBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalQueryFeesBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalTaxedQueryFeesBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalTokensAllocatedBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalTokensSignalledBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalTokensStakedBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalUnclaimedQueryFeeRebatesBarChartsData id="bar8" />
+      },
+      {
+        key: uuidv4(),
+        content: <NewMobileTotalUnstakedTokensLockedBarChartsData id="bar8" />
       }
     ].map((slide, index) => {
       return { ...slide, onClick: () => this.setState({ goToSlide: index }) };

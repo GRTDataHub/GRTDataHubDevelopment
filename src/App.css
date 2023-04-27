@@ -13,10 +13,12 @@
   --background: linear-gradient(90deg, rgba(16,3,75,1) 0%, rgba(33,11,94,1) 50%, rgba(40,16,104,1) 70%, rgba(43,17,108,1) 90%, rgba(43,17,108,1) 100%)!important;
   --hr: #d8d2e4;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
   background: transparent;
 }
+
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px var(--transparent);
 }
@@ -25,6 +27,7 @@
   box-shadow: inset 0 0 5px var(--text-purple);
   border-radius: 20px;
 }
+
 .delegator-dash {
   padding-top: 10rem;
 }
@@ -51,7 +54,7 @@
   max-width: 90%;
 }
 
-.ENG-button a, .GER-button a, .ESP-button a, .FRA-button a, .TUR-button a, .URD-button a {
+.ENG-button a, .GER-button a, .ESP-button a, .FRA-button a, .TUR-button a, .URD-button a, .UKR-button a, .HIN-button a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -76,14 +79,14 @@
               0 0 50px #22143B;
 }
 
-.ENG-button a:hover, .GER-button a:hover, .ESP-button a:hover, .FRA-button a:hover, .TUR-button a:hover, .URD-button a:hover {
+.ENG-button a:hover, .GER-button a:hover, .ESP-button a:hover, .FRA-button a:hover, .TUR-button a:hover, .URD-button a:hover, .UKR-button a:hover, .HIN-button a:hover {
   background: transparent;
   color: #53466C;
   border-radius: 5px;
   -webkit-box-reflect:below 0px linear-gradient(transparent, #0005);
 }
 
-.new-button a span, .ENG-button a span, .GER-button a span, .ESP-button a span, .FRA-button a span, .TUR-button a span, .URD-button a span {
+.new-button a span, .ENG-button a span, .GER-button a span, .ESP-button a span, .FRA-button a span, .TUR-button a span, .URD-button a span, .UKR-button a span, .HIN-button a span {
   position: absolute;
   display: block;
 }
@@ -393,6 +396,84 @@
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, white);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+.UKR-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0054B1);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.UKR-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent ,  #0054B1, #0054B1, #FFD800, #FFD800);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.UKR-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,  #FFD800);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.UKR-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #FFD800, #FFD800, #0054B1, #0054B1);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+.HIN-button a:hover span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #F79431);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.HIN-button a:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent ,  #F79431, #F79431, white, white, #118407, #118407);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.HIN-button a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,  #118407);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.HIN-button a:hover span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #118407, #118407, white, white, #F79431, #F79431);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
@@ -1747,6 +1828,14 @@ transform: scale(1.25);
     left: 60%;
     top: 19%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 7rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -2930,13 +3019,20 @@ transform: scale(1.25);
     left: 60%;
     top: 19%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 7rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
     color: var(--text-purple);
     font-size: 7rem;
     text-align: center;
-  
     position: relative;
   }
   .chartsTitle2 {
@@ -4053,6 +4149,14 @@ transform: scale(1.25);
     position: absolute;
     left: 60%;
     top: 23%;
+  }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
   }
   .chartsTitle {
     letter-spacing: 0.0375rem;
@@ -5278,6 +5382,14 @@ transform: scale(1.25);
     left: 60%;
     top: 23%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -6422,6 +6534,14 @@ transform: scale(1.25);
     left: 60%;
     top: 30%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -7517,11 +7637,30 @@ transform: scale(1.25);
   .g-ytsubscribe {
     display: none;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 7rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
-    display: none;
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+   
+    position: relative;
   }
   .chartsTitle2 {
-    display: none;
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+  
   }
   .newsGraph {
     display: none;
@@ -8452,6 +8591,14 @@ transform: scale(1.25);
     margin: 0;
     left: 78%;
     top: 41%;
+  }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
   }
   .chartsTitle {
     letter-spacing: 0.0375rem;
@@ -9513,6 +9660,14 @@ transform: scale(1.25);
     margin: 0;
     left: 78%;
     top: 41%;
+  }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
   }
   .chartsTitle {
     letter-spacing: 0.0375rem;
@@ -10578,6 +10733,14 @@ transform: scale(1.25);
     left: 78%;
     top: 41%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -10895,7 +11058,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -11809,6 +11979,14 @@ transform: scale(1.25);
     left: 78%;
     top: 41%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -12126,7 +12304,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -14049,6 +14234,14 @@ transform: scale(1.25);
     left: 78%;
     top: 41%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -15121,6 +15314,14 @@ transform: scale(1.25);
     left: 80%;
     top: 41%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -15436,7 +15637,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -16613,7 +16821,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -18503,6 +18718,14 @@ transform: scale(1.25);
     left: 80%;
     top: 41%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -18818,7 +19041,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -20708,6 +20938,14 @@ transform: scale(1.25);
     left: 80%;
     top: 41%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -21016,7 +21254,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -22132,7 +22377,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -24032,6 +24284,14 @@ transform: scale(1.25);
     left: 58%;
     top: 84%;
   }
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -24323,7 +24583,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -25401,7 +25668,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -26546,7 +26820,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -27664,7 +27945,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -28744,7 +29032,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -29855,7 +30150,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -30961,7 +31263,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -32066,7 +32375,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -33254,7 +33570,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -34439,7 +34762,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -35463,7 +35793,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -36493,7 +36830,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -37534,7 +37878,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -38575,7 +38926,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
@@ -39625,7 +39983,14 @@ padding-top: 3rem;
     text-align: center;
     color: var(--text-purple);
   }
-
+  .data-title {
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    color: var(--text-purple);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  }
   .chartsTitle {
     letter-spacing: 0.0375rem;
     font-weight: 400;
