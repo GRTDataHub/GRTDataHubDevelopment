@@ -52,12 +52,12 @@ Current <a href="https://www.GRTDataHub.com/chatBot">Chatbots</a> Built:
 <br />
 <a href="https://www.GRTDataHub.com/TURchatBot">Turkish</a>
 <br />
+<a href="https://www.GRTDataHub.com/URDchatBot">Urdu</a>
 <br />
-Current Chatbot in Development:
+<a href="https://www.GRTDataHub.com/UKRchatBot">Ukrainian</a>
 <br />
-Urdu (85%)
-Ukrainian (10%)
-Hindi (0%)
+<a href="https://www.GRTDataHub.com/HINchatBot">Hindi</a>
+<br />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,16 +76,16 @@ Hindi (0%)
   - [x] Mobile Portrait View Improvements
   - [x] Mobile Portrait View for all moile devices with a new and improved theme for better UI / UX.
   - [x] Add more charts
-  - [ ] Add even more charts
+  - [ ] Add even more charts (on-going)
   - [x] Update logo with new community admins in GRTDataHub community in our Telegram chat.
 - <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>
   - [x] GRT Data in Bar Chart and Line Graph Format
   - [x] <a href="https://www.GRTDataHub.com/exportPage">Export Page</a>
   - [x] Download Button (Export the charts in 1 click rather than 4)
-  - [ ] Master Export Button (Export all in 1 click)
 - <a href="https://www.GRTDataHub.com/aboutPage">About Page</a>
   - [ ] Update with links to new community admins in GRTDataHub community in our Telegram chat.
   - [ ] Add links to all communities with their admins and more details.
+  - [ ] Add GRTiQ Podcast
 - <a href="https://www.GRTDataHub.com/chatBot">Chatbots</a> (Continuous improvements on all chatbots as necessary)
 - [x] <a href="https://www.GRTDataHub.com/ENGchatBot">English</a>
   - [x] <a href="https://www.GRTDataHub.com/ENGTranslatorHelp">Translator Page</a>
@@ -97,17 +97,21 @@ Hindi (0%)
   - [x] <a href="https://www.GRTDataHub.com/FRATranslatorHelp">Translator Page</a>
 - [x] <a href="https://www.GRTDataHub.com/TURchatBot">Turkish</a>
   - [x] <a href="https://www.GRTDataHub.com/TURTranslatorHelp">Translator Page</a>
-- [ ] Urdu (In Development)
-  - [ ] Translator Help Page
-- [ ] Ukrainian (In Development)
-  - [ ] Translator Help Page
-- [ ] Hindi
-  - [ ] Translator Help Page
+- [x] <a href="https://www.GRTDataHub.com/URDchatBot">Urdu</a>
+  - [x] <a href="https://www.GRTDataHub.com/URDTranslatorHelp">Translator Page</a>
+- [x] <a href="https://www.GRTDataHub.com/UKRchatBot">Ukrainian</a>
+  - [x] <a href="https://www.GRTDataHub.com/UKRTranslatorHelp">Translator Page</a>
+- [x] <a href="https://www.GRTDataHub.com/HINchatBot">Hindi</a>
+
+  - [x] <a href="https://www.GRTDataHub.com/HINTranslatorHelp">Translator Page</a>
+
 - Translator Help Pages
+
   - [x] Add full chatbot script file for translations that can be downloaded by advocates (updated file with each chatbot update)
-  - [ ] Update with new and imporoved chatbot script
-- Other Pages
-  - [ ] Add a dedicated GRT ARAB page, so their community can find all current translated guides and tutorials in one place with 1 click of a button within their Telegram welcome message made by GRTDataHub.
+  - [x] Update with new and imporoved chatbot script
+
+- In Development
+  - [ ] 'Are You Advocate Ready?' - Quiz feature / Educational learning aid for budding community members wanting to become Advocates. -[ ] Quiz - Allows the user to learn whilst testing their knowledge and replicate exam conditions if they wish. -[ ] Final Exam - Hidden time and score and no answer helper pop-up, certificate on completion. -[ ] Content Finder - Search bar to help the user easily find content to learn.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
