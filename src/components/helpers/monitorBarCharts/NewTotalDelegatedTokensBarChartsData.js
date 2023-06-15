@@ -153,8 +153,8 @@ function NewTotalDelegatedTokensBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.98],
+      tickInterval: ([dataNow+data7Days+data28Days]/400),
+      min: [([dataNow+data7Days+data28Days]/3)*0.96],
       title: {
         text: false,
     },

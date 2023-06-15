@@ -118,7 +118,7 @@ function NewMobileTotalDelegatedTokensBarChartsData() {
     title: {style: {
       color: '#d8d2e4',
       fontWeight: 'bold',
-      fontSize: '1.5rem'
+      fontSize: '1rem'
    },
       text : 'Total GRT Delegated',
       align: 'center',
@@ -141,8 +141,8 @@ function NewMobileTotalDelegatedTokensBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.98],
+      tickInterval: ([dataNow+data7Days+data28Days]/400),
+      min: [([dataNow+data7Days+data28Days]/3)*0.96],
       title: {
         text: false,
     },
@@ -168,7 +168,7 @@ function NewMobileTotalDelegatedTokensBarChartsData() {
         formatter: function() {
           return Highcharts.dateFormat('%d %b %Y',this.value);
         },
-                  style: {fontSize: '0.9rem',
+                  style: {fontSize: '0.75rem',
                         textAlign: 'center',
                         fontWeight: 'bold',
                         color: '#d8d2e4',

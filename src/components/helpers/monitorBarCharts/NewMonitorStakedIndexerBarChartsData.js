@@ -19,27 +19,6 @@ function NewMonitorStakedIndexerBarChartsData() {
           queryName : 'graphNetworkDailyDatas',
           parameters : 'first: 1, orderBy: dayStart, orderDirection: desc',
           body : 'stakedIndexersCount'
-
-         
-        
-          // subgraphCount
-          // subgraphDeploymentCount
-          // totalCuratorQueryFees
-          // totalDelegatedTokens
-          // totalDelegatorQueryFeeRebates
-          // totalIndexerQueryFeeRebates
-          // totalIndexerQueryFeesCollected
-          // totalIndexingDelegatorRewards
-          // totalIndexingIndexerRewards
-          // totalIndexingRewards
-          // totalQueryFees
-          // totalTaxedQueryFees
-          // totalTokensAllocated
-          // totalTokensSignalled
-          // totalTokensStaked
-          // totalUnclaimedQueryFeeRebates
-          // totalUnstakedTokensLocked
-
         };
 
         const queryBuilder = createQueryFactory(queryParams);
@@ -159,8 +138,8 @@ function NewMonitorStakedIndexerBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.95],
+      tickInterval: ([dataNow+data7Days+data28Days]/50),
+      min: [([dataNow+data7Days+data28Days]/3)*0.75],
       title: {
         text: false,
     },

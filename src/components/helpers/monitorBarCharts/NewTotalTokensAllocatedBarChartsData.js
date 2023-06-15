@@ -152,7 +152,7 @@ function NewTotalTokensAllocatedBarChartsData() {
   },
     yAxis: {
       tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.95],
+      min: [([dataNow+data7Days+data28Days]/3)*0.98],
       title: {
         text: false,
     },

@@ -25,9 +25,9 @@ const NavbarChatbot = () => {
     <a className="nav-link mobile-nav-link mobile-nav-pages" href="../">
         Home
       </a>
-      {/* <a className="nav-link mobile-nav-link mobile-nav-pages" href="../exportPage">
+      <a className="nav-link mobile-nav-link mobile-nav-pages" href="../exportPage">
         Export Page
-      </a> */}
+      </a>
       <a className="nav-link mobile-nav-link mobile-nav-pages" href="./chatBot">
     Chatbot Page
       </a>
@@ -42,9 +42,9 @@ const NavbarChatbot = () => {
           <a className="nav-link pages" href="../">
             Home
           </a>
-          {/* <a className="nav-link pages" href="../exportPage">
+          <a className="nav-link pages" href="../exportPage">
             Export Page
-          </a> */}
+          </a>
           <a className="nav-link pages" href="./chatBot">
             Chatbot Page
           </a>    

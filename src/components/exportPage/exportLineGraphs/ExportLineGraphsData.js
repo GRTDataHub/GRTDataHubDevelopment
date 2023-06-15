@@ -31,7 +31,7 @@ function AdminLineDelegatorCount(){
   //list is a [timestamp : value] so its easy to plot 
   const combinedData = sortToLineGraphDS({data : realData, objectField :'delegatorCount'});
   //options builder like we have done previously
-  const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Delegators',titleFontSize: '2.5rem', xAxisType :'datetime', data: combinedData, seriesName :'Delegator Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
+  const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Delegators',titleFontSize: '2.5rem', xAxisType :'datetime', data: combinedData, seriesName :'Delegator Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
   dataLabelFontSize: '3vh',
   subtitleX: 0,
   subtitleY: 20,
@@ -74,7 +74,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
     //list is a [timestamp : value] so its easy to plot 
     const combinedData = sortToLineGraphDS({data : realData, objectField :'indexerCount'});
     //options builder like we have done previously
-    const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
+    const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
     dataLabelFontSize: '3vh',
     subtitleX: 0,
     subtitleY: 20,
@@ -114,7 +114,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
       //list is a [timestamp : value] so its easy to plot 
       const combinedData = sortToLineGraphDS({data : realData, objectField :'stakedIndexersCount'});
       //options builder like we have done previously
-      const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Staked Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Staked Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
+      const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Staked Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Staked Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
       subtitleX: 0,
       subtitleY: 20,
       tickInterval: 50, min: Date.UTC(2020,11,15),
@@ -153,7 +153,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
         //list is a [timestamp : value] so its easy to plot 
         const combinedData = sortToLineGraphDS({data : realData, objectField :'subgraphCount'});
         //options builder like we have done previously
-        const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Subgraphs', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Subgraph Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
+        const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Subgraphs', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Subgraph Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
         dataLabelFontSize: '3vh',
         subtitleX: 0,
         subtitleY: 20,
@@ -193,7 +193,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
           //list is a [timestamp : value] so its easy to plot 
           const combinedData = sortToLineGraphDS({data : realData, objectField :'subgraphDeploymentCount'});
           //options builder like we have done previously
-          const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Subgraphs Deployed on Mainnet', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Deployed Subgraphs Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
+          const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Subgraphs Deployed on Mainnet', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Deployed Subgraphs Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '2vh',
           subtitleX: 0,
     subtitleY: 20,
           tickInterval: 50, min: Date.UTC(2020,11,17),
@@ -235,7 +235,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
             //list is a [timestamp : value] so its easy to plot 
             const combinedData = sortToLineGraphDS({data : realData, objectField :'delegatorCount'});
             //options builder like we have done previously
-            const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Delegators',titleFontSize: '2.5rem', xAxisType :'datetime', data: combinedData, seriesName :'Delegator Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
+            const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Delegators',titleFontSize: '2.5rem', xAxisType :'datetime', data: combinedData, seriesName :'Delegator Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
             dataLabelFontSize: '3vh',
             subtitleX: 0,
             subtitleY: 20,
@@ -278,7 +278,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
               //list is a [timestamp : value] so its easy to plot 
               const combinedData = sortToLineGraphDS({data : realData, objectField :'indexerCount'});
               //options builder like we have done previously
-              const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
+              const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
               dataLabelFontSize: '3vh',
               subtitleX: 0,
               subtitleY: 20,
@@ -318,7 +318,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
                 //list is a [timestamp : value] so its easy to plot 
                 const combinedData = sortToLineGraphDS({data : realData, objectField :'stakedIndexersCount'});
                 //options builder like we have done previously
-                const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Staked Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Staked Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
+                const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Staked Indexers', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Staked Indexer Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
                 subtitleX: 0,
                 subtitleY: 20,
                 tickInterval: 50, min: Date.UTC(2020,11,15),
@@ -357,7 +357,7 @@ logoX: 1250, logoY: 11, logoWidth: 70, logoHeight: 70});
                   //list is a [timestamp : value] so its easy to plot 
                   const combinedData = sortToLineGraphDS({data : realData, objectField :'subgraphCount'});
                   //options builder like we have done previously
-                  const options = getLineGraphOptionsBuilder({ type: 'spline', title : 'Subgraphs', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Subgraph Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
+                  const options = getLineGraphOptionsBuilder({ titleY: 30, type: 'spline', title : 'Subgraphs', titleFontSize: '2.5rem',xAxisType :'datetime', data: combinedData, seriesName :'Subgraph Count',marginLeft: 100, marginRight: 100, marginBottom: 60, marginTop: 120,subtitleFontSize: '4vh',
                   dataLabelFontSize: '3vh',
                   subtitleX: 0,
                   subtitleY: 20,

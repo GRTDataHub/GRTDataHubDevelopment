@@ -25,12 +25,69 @@ const GraphAdvocatesSpotlight = () => {
             <h2 className="QB-about-page-subtitle">What is it?</h2>
             <h3 className="QB-about-page-text">It is to showcase Graph Advocates who choose to participate by highlighting their interests and accomplishments both inside and outside of their role as an Advocate. Showcasing the Advocates publicly provides positive non-financial value by increasing their social network and receiving much deserved recognition for their contributions. I also highlights Advocates skills and interests, connecting them with fellow Advocates who share similar passions.<br></br><br></br>The newsletter also enables anyone to get or remain up to date on all the significant news, events, and data in The Graph Ecoystem each week, just by taking 10-12 minutes to read the <strong>Community Roundup</strong>, <strong>Advocate Events</strong>, and <strong>Data Depot</strong> sections of the newsletter.</h3><br></br><h3 className="QB-about-page-text">Created By <a className="chatbot-link" href='https://twitter.com/kylelarue11?s=21&t=aoe8RCwfwaOZ4FIUavFZrg' target="_blank" rel="noreferrer">Kyle</a>, GraphAdvocate & DAO Member.<br></br><strong>Note:</strong> All links within the PDFs work!</h3>
     
-
             <hr className="QB-about-hr"></hr>
-            {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
-            onClick={() => handleDownload('Issue38-ENG.pdf', 'Issue #38 - Graph Advocates Spotlight.pdf')} 
-            target="_blank" rel="noreferrer">Issue #38 - </a></h2>
+
+            <h2 className="QB-about-page-subtitle">
+              {/* <a className="chatbot-link" 
+            onClick={() => handleDownload('Issue42-ENG.pdf', 'Issue #42 - Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #42 - Playgrounds Analytics</a> */}
+            <a className="chatbot-link" href="https://twitter.com/KyleLaRue11/status/1667192800490684418?s=20" target="_blank" rel="noreferrer">Issue #42 - Playgrounds Analytics</a></h2>
+          {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue42-URD.pdf', 'Issue #42 - URD Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">شمارہ نمبر 42 اردو میں</a></h2>
+          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue42-CHI.pdf', 'Issue #42 - CHI Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">第42期中文版</a></h2>
+              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue42-ESP.pdf', 'Issue #42 - ESP Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #42 en español</a></h2> */}
+             <br></br> 
+            <h2 className="QB-about-page-subtitle">
+              {/* <a className="chatbot-link" 
+            onClick={() => handleDownload('Issue41-ENG.pdf', 'Issue #41 - Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #41 - Aguboss</a> */}
+            <a className="chatbot-link" href="https://twitter.com/KyleLaRue11/status/1656805320553820162/photo/1" target="_blank" rel="noreferrer">Issue #41 - Aguboss</a></h2>
+          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue41-URD.pdf', 'Issue #41 - URD Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">شمارہ نمبر 41 اردو میں</a></h2>
+          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue41-CHI.pdf', 'Issue #41 - CHI Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">第41期中文版</a></h2>
+              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue41-ESP.pdf', 'Issue #41 - ESP Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #41 en español</a></h2>
+             <br></br> 
+            <h2 className="QB-about-page-subtitle">
+              {/* <a className="chatbot-link" 
+            onClick={() => handleDownload('Issue40-ENG.pdf', 'Issue #40 - Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #40 - Alexey</a> */}
+            <a className="chatbot-link" href="https://twitter.com/KyleLaRue11/status/1654606102842036226" target="_blank" rel="noreferrer">Issue #40 - Alexey</a></h2>
+          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue40-CHI.pdf', 'Issue #40 - CHI Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">第40期中文版</a></h2>
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue40-ESP.pdf', 'Issue #40 - ESP Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #40 en español</a></h2>
+             <br></br> 
+            <h2 className="QB-about-page-subtitle">
+              {/* <a className="chatbot-link" 
+            onClick={() => handleDownload('Issue39-ENG.pdf', 'Issue #39 - Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #39 - Ivan Kwananda</a> */}
+            <a className="chatbot-link" href="https://twitter.com/KyleLaRue11/status/1651813140663861248/photo/1" target="_blank" rel="noreferrer">Issue #39 - Ivan Kwananda</a></h2>
+          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue39-URD.pdf', 'Issue #39 - URD Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">شمارہ نمبر 39 اردو میں</a></h2>
+          <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
+            onClick={() => handleDownload('Issue39-CHI.pdf', 'Issue #39 - CHI Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">第39期中文版</a></h2>
+             <br></br> 
+            <h2 className="QB-about-page-subtitle">
+              {/* <a className="chatbot-link" 
+            onClick={() => handleDownload('Issue38-ENG.pdf', 'Issue #38 - Graph Advocates Spotlight.pdf')} 
+            target="_blank" rel="noreferrer">Issue #38 - Ecosystem News</a> */}
+            <a className="chatbot-link" href="https://twitter.com/KyleLaRue11/status/1650208110399610881/photo/1" target="_blank" rel="noreferrer">Issue #38 - Ecosystem News</a>
+            </h2>
+             {/* <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
             onClick={() => handleDownload('Issue38-ESP.pdf', 'Issue #38 - ESP Graph Advocates Spotlight.pdf')} 
             target="_blank" rel="noreferrer">Issue #38 en español</a></h2>
               <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
@@ -51,6 +108,7 @@ const GraphAdvocatesSpotlight = () => {
              <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
             onClick={() => handleDownload('Issue38-ARA.pdf', 'Issue #38 - ARA Graph Advocates Spotlight.pdf')} 
             target="_blank" rel="noreferrer">العدد 38 باللغة العربية</a></h2> */}
+
              <br></br> 
               <h2 className="QB-about-page-subtitle"><a className="chatbot-link" 
             onClick={() => handleDownload('Issue37-ENG.pdf', 'Issue #37 - Graph Advocates Spotlight.pdf')} 

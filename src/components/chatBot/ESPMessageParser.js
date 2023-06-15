@@ -12,6 +12,42 @@ class ESPMessageParser {
       this.actionProvider.handleActiveDelegatorCount();
     }
 
+    else if (lowercase.includes('coinbase') || lowercase.includes('coinbase wallet')) {
+      this.actionProvider.handleCoinbase();
+    }
+
+    else if (lowercase.includes('gips') || lowercase.includes('improvement')) {
+      this.actionProvider.handleGIPS();
+    }
+
+    else if (lowercase.includes('off-chain') || lowercase.includes('off chain')) {
+      this.actionProvider.handleOffChainData();
+    }
+
+    else if (lowercase.includes('billing')) {
+      this.actionProvider.handleBilling();
+    }
+
+    else if (lowercase.includes('bounties')) {
+      this.actionProvider.handleBounties();
+    }
+
+    else if (lowercase.includes('networks')) {
+      this.actionProvider.handleNetworks();
+    }
+    
+    else if (lowercase.includes('network intergration') || lowercase.includes('intergration')) {
+      this.actionProvider.handleNetworkIntergration();
+    }
+
+    else if (lowercase.includes('mips') || lowercase.includes('MIPS') || lowercase.includes('integration') || lowercase.includes('integrations')) {
+      this.actionProvider.handleMIPS();
+    }
+
+    else if (lowercase.includes('ai') || lowercase.includes('artificial intelligence')) {
+      this.actionProvider.handleAI();
+    }
+
     else if (lowercase.includes('the graph funding') || lowercase.includes('who funds the graph')|| lowercase.includes('who gave the graph funding') || lowercase.includes('who provides funding to the graph') || lowercase.includes('who funds the graph?')|| lowercase.includes('who gave the graph funding?') || lowercase.includes('who provides funding to the graph?') || lowercase.includes('el grafo de financiacion') || lowercase.includes('quien financia el grafo')) {
       this.actionProvider.handleGraphFunding();
     } 

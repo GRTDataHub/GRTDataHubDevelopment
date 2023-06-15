@@ -360,16 +360,6 @@ handleFeesToDelegate() {
     messages: [...prev.messages, message],
   }));
 }
-// Delegate Guides Start
-handleDelegateGuides() {
-  const message = this.createChatbotMessage(<a>Te proporcionaré lo que necesitas para convertirte en Delegador. La siguiente información y recursos te ayudarán.<hr></hr>Ver el <a className="cla" href="https://www.youtube.com/watch?v=oQijzTv7EQQ" target="_blank">tutorial Elegir Indexadores</a> te ayudará a comprender lo que debes buscar. Para asegurarte de tener confianza antes de delegar, ve los tutoriales a continuación para comprender mejor.<br></br><br></br> Puedess realizar stake de tus GRT en <a className="cla" href="https://thegraph.com/explorer/participants/indexers" target="_blank">network.thegraph.com</a> delegándolos a un Indexador de tu elección.<br></br>La cancelación de la delegación lleva 26 días porque esa es la duración máxima de una allocations.<br></br><br></br><hr></hr><a className="cla" href="https://twitter.com/blockya_?s=21&t=_AHHnNQtdCGiQCZd0gn2MA" target="_blank" rel="noreferrer">Lorena Fabris</a> de <a className="cla" href="https://twitter.com/espanolgraph?s=21&t=mAEXMZH5ZSdPi-3W3mSb_Q" target="_blank" rel="noreferrer">The Graph Español</a> ha creado los siguientes tutoriales para la comunidad.<br></br><br></br><a className="cla" href="https://fabris-86569.medium.com/c%C3%B3mo-delegar-28cd43455c0f" target="_blank" rel="noreferrer">¿Cómo Delegar?</a><br></br><br></br><a className="cla" href="https://fabris-86569.medium.com/la-guia-de-delegacion-the-graph-8b5f7f979671" target="_blank">La guía de delegación</a><br></br><br></br><a className="cla" href="https://fabris-86569.medium.com/c%C3%B3mo-ganar-en-the-graph-network-da6f01bf4185" target="_blank">Cómo Ganar en The Graph Network</a><br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s" target="_blank">Staking con billetera Coinbase</a><br></br><br></br>Para conocer el costo promedio de una transacción de delegación, visite <a className="cla" href="https://www.graphtronauts.com/#/indexers" target="_blank">Graphtronauts</a> y seleccione Tarifas.</a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
 
 handleQueryPython() {
   const message = this.createChatbotMessage(<a><strong>Cómo consultar el protocolo The Graph para datos on-chain usando Python</strong><br></br><br></br><a className="cla" href="https://hashnode.com/@townee" target="_blank">Tony Kipkemboi</a> ha escrito una increíble guía paso a paso sobre cómo consultar Subgraphs usando <strong>Python</strong>, GraphQL, y Subgrounds.<br></br><br></br>El blog completo se puede encontrar <a className="cla" href="https://townee.hashnode.dev/how-to-query-the-graph-protocol-for-on-chain-data-using-python" target="_blank">aquí</a>.<br></br><br></br>Puedes seguir a <a className="cla" href="https://twitter.com/ynot_kip" target="_blank">Tony</a> en Twitter para estar actualizado cuando su segundo blog se lance a la comunidad, "¿Cómo uso subgrounds cuando el Servicio Alojado esta limitado?".</a>
@@ -639,17 +629,6 @@ handleAdvocateGrantWithdraw() {
 }
 
 // Advocates End
-// GRT Token Address Start
-handleGRTTokenAddress() {
-  const message = this.createChatbotMessage(<a>A continuación encontrará el contrato GRT y sus detalles, asegúrese de verificar la información para evitar agregar un contrato malicioso.<br></br><br></br>Nombre: The Graph<br></br>Símbolo: GRT<br></br>Red: Ethereum (ERC20)<br></br>Contrato: 0xc944e90c64b2c07662a292be6244bdf05cda44a7<br></br>Decimales: 18<br></br><br></br>Puedes consultarlo en CoinMarketCap, <a className="cla" href="https://coinmarketcap.com/es/currencies/the-graph/" target="_blank" rel="noreferrer">aquí</a>.</a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// GRT Token Address End
 // Undelegating Start
 handleUnDelegating() {
   const message = this.createChatbotMessage(<a>Cada vez que un Delegador quiere cancelar la delegación, sus tokens están sujetos a un período de desbloqueo de 26 días. Esto significa que no pueden transferir sus tokens ni ganar recompensas durante 26 días.<br></br><br></br>El período de lockup/desbloqueo está ahí para evitar que se produzcan ciertos ataques económicos. Tiene que coincidir con la vida útil máxima de allocations de 28 épocas. Dada la forma en que funciona actualmente el sistema de recompensas, un período más corto de desbloqueo de la delegación permitiría potencialmente que la delegación se "contabilice dos veces" en múltiples allocations simultáneas.<hr></hr>Cada vez que el Indexador quiera forzar su cierre (manualmente), o automáticamente cada máximo de 28 épocas: duración máxima de la allocation. Aquí es cuando se distribuyen las recompensas.<br></br><br></br>Una cosa a considerar también es elegir sabiamente un Indexador. Si elige un Indexador que no era confiable o que no estaba haciendo un buen trabajo, querrás cancelar la delegación, lo que significa que perderá muchas oportunidades de obtener recompensas, lo que puede ser tan malo como quemar GRT.<br></br><br></br>Para ver un tutorial sobre la anulación de la delegación de tokens GRT de The Graph, haz clic <a className="cla" href="https://www.youtube.com/watch?v=3GPY5On7vHc" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br>Puedo ayudarte con la documentación y el tutorial sobre cómo elegir un Indexador.</a>
@@ -682,17 +661,6 @@ handleLearnWeb3() {
   }));
 }
 // Courses End
-// Women Of Web 3 Start
-handleWomenInWeb3() {
-  const message = this.createChatbotMessage(<a><a className="cla" href="https://twitter.com/evabeylin?s=21&t=xlTfEQdph_MfbuUlhFrb0Q" target="_blank" rel="noreferrer"><strong>Eva Beylin</strong></a> ha sido directora de The Graph Foundation desde octubre de 2020. Es inversionista y partidaria de la tecnología central de Ethereum a través de eGirl Capital y lidera el crecimiento de The Graph. Ella es una de las más influyentes de 2022 de CoinDesk, lea el blog completo <a className="cla" href="https://www.coindesk.com/consensus-magazine/2022/12/05/eva-beylin-most-influential-2022/" target="_blank" rel="noreferrer">aquí</a>. Ha liderado la distribución de más de $135 millones en subvenciones a los principales desarrolladores de The Graph y el capital de $50 millones de la fundación, dirigido por Tiger Global. Mírala hablar en Graph Day 2022 sobre Our Decenralization Journey, <a className="cla" href="https://m.youtube.com/watch?v=ef5LCku3IqQ" target="_blank" rel="noreferrer">aquí</a>. Hizo Forbes 2023 <a className="cla" href="https://www.forbes.com/profile/eva-beylin/?sh=34d711c95444" target="_blank" rel="noreferrer">30 Under 30</a>. Puedess conocer a Eva viendo una entrevista, <a className="cla" href="https://m.youtube.com/watch?v=IoqI6z5l9y8" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br><a className="cla" href="https://twitter.com/theklineventure?s=21&t=8FTTZesLJJUxAVnVbmLgQg" target="_blank" rel="noreferrer"><strong>Tegan Kline</strong></a> ha sido cofundadora y jefa de negocios de Edge & Node desde 2021. Después de recaudar $22,5 millones para ayudar a The Graph a construir una herramienta de código abierto que permita a los desarrolladores de ethereum entender cómo se usan sus productos, cofundó Edge & Nodo para ayudar a monetizar el proyecto. Edge & Node se financió originalmente con una participación del 8% del token GRT, que ahora vale alrededor de $ 650 millones. Kline también lideró las inversiones de Edge & Node en proyectos adyacentes a The Graph, por un total de $ 3.1 millones en 2021. Hizo Forbes 2022 <a className="cla" href="https://www.forbes.com/profile/tegan-kline/?sh=1465202462f7" target="_blank" rel="noreferrer">30 Under 30</a>. Puedes conocer a Kline visitando su sitio web, <a className="cla" href="https://www.tegankline.com/" target="_blank" rel="noreferrer">aquí</a>. Mira una entrevista con ella, <a className="cla" href="https://youtu.be/yONuFNxJVrc" target="_blank" rel="noreferrer">aquí</a>. O puede escuchar un podcast de GRTiQ <a className="cla" href="https://youtu.be/ZGHwTb92Rrg" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br><a className="cla" href="https://twitter.com/girlcalledreem?s=21&t=h9ZItE1mnaruz2uPiHkrLQ" target="_blank" rel="noreferrer"><strong>Reem Chahrour</strong></a> ha sido Gerente de Ecosistemas en The Graph desde 2021. Cualquiera que haya solicitado una Beca Graph o haya seguido el trabajo de cualquier beneficiario, ya se habrá encontrado con Reem. Es un activo importante para la comunidad de The Graph y su trabajo cubre una variedad de iniciativas importantes. Puedess escucharla en el Podcast de GRTiQ, <a className="cla" href="https://m.youtube.com/watch?v=3xfb0n99AzI" target="_blank" rel="noreferrer"> aquí</a>. Habla sobre su ingreso a las criptomonedas y su trabajo en The Graph Foundation, su consejo para aquellos que buscan solicitar una grant (y dónde a la fundación le gustaría ver más presentaciones), la diferencia entre los programas RFP y Grants, y el pronto -para lanzar el programa Graph Advocates.<br></br><br></br>Cuando alguien menciona a un Indexador, usa los pronombres masculinos. Con el deseo de destacar a las mujeres en Web3 que trabajan en equipos de Indexador o que ejecutan su propio Indexador dentro del ecosistema de The Graph, los Graphtronauts realizaron una serie de entrevistas con mujeres de Web3.<br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=WTdf9wEhSLg" target="_blank" rel="noreferrer">Mujeres de Web3 - Ana de GraphOps</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=0D4_17B6ypY" target="_blank" rel="noreferrer">Mujeres de Web3 - Anna de Citadel.One</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=chvIFfPfOjY" target="_blank" rel="noreferrer">Mujeres de Web3 - IIinca de Chainode Tech</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=Z7UnQotqLVA" target="_blank" rel="noreferrer">Mujeres de Web3 - Gabi de Stake2Earn</a></a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// Women Of Web 3 End
 // Discord Start
 handleDiscord() {
   const message = this.createChatbotMessage(<a>A continuación encontrarás los servidores <strong>Oficiales</strong> de Discord.<br></br><br></br><a className="cla" href="https://discord.com/invite/vtvv7FP" target="_blank" rel="noreferrer">Graph Protocol</a><br></br><br></br><a className="cla" href="https://discord.com/invite/aZtCCKPp34" target="_blank" rel="noreferrer">Graph AdvocatesDAO</a><hr></hr>A continuación encontrará los servidores de Discord <strong>no oficiales</strong>.<br></br><br></br><a className="cla" href="https://discord.com/invite/zqrwSFFW3F" target="_blank" rel="noreferrer">Graphrica</a></a>
@@ -841,29 +809,6 @@ handleGeo() {
   }));
 }
 // Geo  End
-// Fast Streaming Start
-handleSubstreams() {
-  const message = this.createChatbotMessage(<a>StreamingFast es una empresa de infraestructura de protocolo que se destaca en la construcción de una arquitectura cross-chain altamente escalable para la transmisión de datos de blockchain. El grant Core Dev de $ 60 millones es la primera de su tipo, pionera en una nueva frontera de innovación colaborativa donde las comunidades y las empresas se alinean para construir una Internet radicalmente más abierta.<br></br><br></br>The Graph Foundation otorga un grant de $ 60 millones a StreamingFast para unirse a The Graph como un equipo de Core Dev, lee <a className="cla" href="https://thegraph.com/blog/core-dev-grant" target="_blank" rel="noreferrer">aquí</a>.<hr></hr>Substreams es una poderosa tecnología de indexación de blockchain, desarrollada para The Graph Network.<br></br><br></br>Para encontrar documentación sobre SubStreams, consulte <a className="cla" href="https://substreams.streamingfast.io/" target="_blank" rel="noreferrer">aquí</a>.<br></br>Únete al servidor <a href="https://discord.com/invite/jZwqxJAvRs" target="_blank" rel="noreferrer">StreamingFast Discord server</a> o échales un vistazo <a className="cla" href="https://www.streamingfast.io/" target="_blank" rel="noreferrer">aquí</a>.<hr></hr><a className="cla" href="https://twitter.com/blockya_?s=21&t=_AHHnNQtdCGiQCZd0gn2MA" target="_blank" rel="noreferrer">Lorena Fabris</a> de <a className="cla" href="https://twitter.com/espanolgraph?s=21&t=mAEXMZH5ZSdPi-3W3mSb_Q" target="_blank" rel="noreferrer">The Graph Español</a> ha creado los siguientes tutoriales para la comunidad.<br></br><br></br><a href="https://fabris-86569.medium.com/streamingfacts-comprendiendo-los-costos-de-actualizar-un-subgrafo-ad1f1f6c8514" target="_blank" rel="noreferrer">StreamingFacts: Comprendiendo los Costos de Actualizar un Subgrafo</a><br></br><br></br><a href="https://fabris-86569.medium.com/the-graph-foundation-otorga-una-subvenci%C3%B3n-de-60-millones-a-streamingfast-para-unirse-a-the-graph-b981ddd2ee2b" target="_blank" rel="noreferrer">The Graph Foundation otorga un grant de $ 60 millones a StreamingFast para unirse a The Graph como un equipo Core Dev.</a><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=qWxffTKpciU'/></a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// Fast Streaming  End
-// Graphtronauts Start
-handleGraphtronauts() {
-  const message = this.createChatbotMessage(<a><strong>Una comunidad para Delegadores, construida por Delegadores.</strong><br></br>Los Graphtronauts son un grupo dedicado a facilitar el chat para aquellos que desean holder $ GRT y hablar sobre los fundamentos del proyecto The Graph. No solo son la comunidad no oficial más grande de holders de $GRT a largo plazo para el ecosistema The Graph, sino que su objetivo es ayudar a las personas en su viaje para convertirse en Delegadores de The Graph.<br></br><br></br><strong>'Nos levantamos levantando a otros' - Graphtronauts | Fundada el 16 de enero de 2021</strong><br></br><br></br>Obtén más información sobre los Graphtronauts escuchando este <a className="cla" href="https://www.grtiq.com/grtiq-podcast-35-the-graphtronauts/" target="_blank" rel="noreferrer">podcast de GRTiQ</a> con Baghe y Chris Ewing.<br></br>Y este <a className="cla" href="https://www.grtiq.com/grtiq-podcast-90-paolo-diomede/" target="_blank" rel="noreferrer">podcast de GRTiQ</a> con Paolo Diomede.<br></br>Puedess unirte a la comunidad a través de los siguientes enlaces:<br></br><a className="cla" href="https://t.me/graphtronauts" target="_blank" rel="noreferrer">Telegram</a><br></br><a className="cla" href="https://twitter.com/graphtronauts" target="_blank" rel="noreferrer">Twitter</a><br></br><a className="cla" href="https://www.graphtronauts.com/#/" target="_blank" rel="noreferrer">Aplicación Graphtronauts</a><br></br><a className="cla" href="https://old.graphtronauts.com/" target="_blank" rel="noreferrer">Sitio web</a><br></br><a className="cla" href="https://www.youtube.com/channel/UCPAUeNaRtBV-jdSKY8wmcXg" target="_blank" rel="noreferrer">YouTube</a><br></br><a className="cla" href="https://www.reddit.com/r/Graphtronauts/" target="_blank" rel="noreferrer">Reddit</a><hr></hr>¡El Graphtronauts Indexador (<a className="cla" href="https://thegraph.com/explorer/profile/0x0c3aab9f49c01070ec359aae4778fcbb01d2fbef?view=Indexing" target="_blank" rel="noreferrer">graphtronauts-indexer.eth</a>) ya está disponible y listo para las delegaciones! Vea el Tweet a continuación para obtener más información, únase a su <a className="cla" href="https://t.co/dDUb7NHaPY" target="_blank" rel="noreferrer">Discord</a> y síganos en Twitter para obtener actualizaciones.<br></br><Embed className="embed" isDark url='https://twitter.com/graphtronauts_x/status/1593310558798979072?s=20&t=2FCQMWbItkh1MnXmrHBVIA'/>
-  </a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// Graphtronauts End
  // Chit Chat KEEP AT END Start
 
 
@@ -1056,16 +1001,6 @@ handleGraphDay() {
 
 handleWhatIsTheWeb() {
   const message = this.createChatbotMessage(<a>La web ha evolucionado mucho a lo largo de los años, y sus aplicaciones hoy en día son casi irreconocibles desde sus primeros días. La evolución de la web a menudo se divide en tres etapas separadas: Web1, Web2 y Web3.<hr></hr><strong>Web1</strong><br></br>Web 1.0 fue la primera iteración de la web. La mayoría de los participantes eran consumidores de contenido y los creadores solían ser desarrolladores que creaban sitios web que contenían información presentada principalmente en formato de texto o imagen. La web 1.0 duró aproximadamente desde 1991 hasta 2004.<br></br>La Web 1.0 consistía en sitios que ofrecían contenido estático en lugar de HTML dinámico. Los datos y el contenido se servían desde un sistema de archivos estático en lugar de una base de datos, y los sitios no tenían mucha interactividad.<br></br><br></br><strong>Web2</strong><br></br>La mayoría de nosotros hemos experimentado principalmente la web en su forma actual, comúnmente conocida como web2. Puedes pensar en web2 como la web interactiva y social.<br></br>En el mundo web2, no es necesario ser desarrollador para participar en el proceso de creación. Muchas aplicaciones están diseñadas de una manera que permite que cualquier persona sea un creador.<br></br>Si quieres crear un pensamiento y compartirlo con el mundo, puedes hacerlo. Si desea cargar un video y permitir que millones de personas lo vean, interactúen con él y lo comenten, también puede hacerlo.<br></br>Web2 es simple, en realidad, y debido a su simplicidad, cada vez más personas en todo el mundo se están convirtiendo en creadores.<br></br>La web en su forma actual es realmente genial en muchos sentidos, pero hay algunas áreas en las que podemos hacerlo mucho mejor.<br></br><br></br><strong>Web3</strong><br></br>Existen algunas diferencias fundamentales entre web2 y web3, pero la descentralización está en el centro.<br></br>En cambio, las aplicaciones web3 se ejecutan en blockchains, redes descentralizadas de muchos nodos (servidores) peer-to-peer (de par par), o una combinación de los dos que forman un protocolo criptoeconómico. Estas aplicaciones a menudo se denominan dapps (aplicaciones descentralizadas), y verás que ese término se usa con frecuencia en el espacio web3.</a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-
-handleCoinbase() {
-  const message = this.createChatbotMessage(<a>Cómo delegar tus tokens GRT con Coinbase Wallet<br></br><br></br>En este artículo, te enseñará cómo delegar tus tokens GRT dentro del protocolo The Graph, utilizando <a className="cla" href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a>.<br></br><br></br>Para leer la guía realizada por Graphtronauts, ver <a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">aquí</a>. O si prefieres ver un video tutorial, lo encontrarás a continuación.<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
     ,
   );
   this.setState((prev) => ({
@@ -1460,6 +1395,160 @@ handleBirthday() {
       messages: [...prev.messages, message],
     }));
   }
+
+
+   // ------------------------
+  // -Update Start--------
+  // ------------------------
+
+  handleAI() {
+    const message = this.createChatbotMessage(<a><strong></strong>Potenciar The Graph Network utilizando IA<strong></strong><br></br><br></br>En diciembre de 2021, <a className="cla" href="https://semiotic.ai/" target="_blank" rel="noreferrer">Semiotic</a> se convirtió en el cuarto equipo de core devs de The Graph. Han estado operando como un Indexador en la red de The Graph, lo cual requiere habilidades especializadas de DevOps, y han operado un Indexador competitivo, <a className="cla" href="https://thegraph.com/explorer/profile/0xd75c4dbcb215a6cf9097cfbcc70aab2596b96a9c?view=Indexing&chain=mainnet" target="_blank" rel="noreferrer">semiotic-indexer.eth</a>, desde principios de 2021. Además, han utilizado su experiencia en IA para lanzar dos herramientas de software de automatización al ecosistema de The Graph: <a className="cla" href="https://github.com/semiotic-ai/autoagora" target="_blank" rel="noreferrer">AutoAgora</a> y el <a className="cla" href="https://github.com/graphprotocol/allocation-optimizer" target="_blank" rel="noreferrer">Allocation Optimizer</a>.<br></br><br></br>Puedes leer este <a className="cla" href="https://thegraph.com/blog/using-ai-to-enhance-the-graph/" target="_blank" rel="noreferrer">blog</a>, el cual proporciona una visión general de sus esfuerzos pasados y actuales en IA, y describe ideas futuras sobre cómo las capacidades únicas de indexación de datos de The Graph pueden aprovecharse para aplicaciones de IA.<br></br><br></br>Para obtener más información sobre IA, escucha el episodio del <a className="cla" href="https://www.youtube.com/watch?v=7RZU7wbFKwQ" target="_blank" rel="noreferrer">podcast GRTiQ</a> con Ani, Sam y Tomasz, donde exploran qué es la inteligencia artificial, los orígenes de la disciplina y el ascenso épico de ChatGPT y cómo funciona.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleNetworkIntergration() {
+    const message = this.createChatbotMessage(<a>Puedes mantenerte al día sobre el estado de las integraciones en The Graph Network, <a className="cla" href="https://thegraph.com/docs/en/network-transition-faq/#the-graph-network-integration-status-tracker" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br>Encontrarás una tabla que ilustra en qué etapa del proceso de integración se encuentra cada red, las cuales son:<br></br><br></br>Anunciando la integración en The Graph Network.<br></br>
+<br></br>Integración de la red completada.<br></br>Fase 1: deshabilitar nuevos subgrafos en el Servicio Alojado.<br></br>Fase 2: deshabilitar actualizaciones de subgrafos en el Servicio Alojado.<br></br>Fase 3: deshabilitar subgrafos en el Servicio Alojado.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleArbitrum() {
+    const message = this.createChatbotMessage(<a><a className="cla" href="https://developer.arbitrum.io/intro/" target="_blank" rel="noreferrer">Arbitrum</a> es una solución de escalabilidad para Ethereum que reduce drásticamente los costos y la latencia.<br></br><br></br>Gracias a la integración con Arbitrum, los servicios de alojado, indexación y consulta de The Graph ahora están activos en la red. Los desarrolladores en Arbitrum One ahora podrán construir y publicar APIs abiertas (subgrafos) que las aplicaciones pueden consultar utilizando GraphQL.<br></br><br></br>Al agregar Arbitrum a esa lista, los esfuerzos de expansión de The Graph han dado otro paso en la unificación del ecosistema Web3.<hr></hr>Al escalar The Graph en L2, los participantes de la red pueden esperar:<br></br><br></br>Ahorros de hasta 26 veces en las tarifas de gas.<br></br>Mayor velocidad de transacción.<br></br>Asegurado por Ethereum<hr></hr>Puedes transferir tus GRT y ETH utilizando uno de los siguientes métodos:<br></br><br></br><a className="cla" href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" rel="noreferrer">The Graph Bridge en Arbitrum</a><br></br><a className="cla" href="https://jumper.exchange/" target="_blank" rel="noreferrer">TransferTo</a><br></br><a className="cla" href="https://bridge.connext.network/" target="_blank" rel="noreferrer">Connext Bridge</a><br></br><a className="cla" href="https://app.hop.exchange/#/send?token=ETH" target="_blank" rel="noreferrer">Hop Exchange</a><hr></hr>A partir del 10 de abril de 2023, el 5% de todas las recompensas de indexación se están generando en Arbitrum. A medida que aumente la participación en la red y el Council lo apruebe, las recompensas de indexación se desplazarán gradualmente de Ethereum a Arbitrum, hasta que finalmente se trasladen por completo a Arbitrum.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+  
+  handleNetworks() {
+    const message = this.createChatbotMessage(<a>¡Para mantenerte al día sobre las redes en The Graph Network y el Servicio Alojado, consulta <a className="cla" href="https://thegraph.com/docs/en/#supported-networks" target="_blank" rel="noreferrer">aquí</a>!</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleGRTTokenAddress() {
+    const message = this.createChatbotMessage(<a>A continuación encontrarás los contratos y detalles de GRT. Asegúrate de verificar la información dos veces para evitar agregar un contrato malicioso.<br></br><br></br>Nombre: The Graph<br></br>Símbolo: GRT<br></br>Red: Ethereum (ERC20)<br></br>Ethereum: 0xc944E90C64B2c07662A292be6244BDf05Cda44a7<br></br>Arbitrum: 0x9623063377AD1B27544C965cCd7342f7EA7e88C7<br></br>Decimals: 18<hr></hr>Puedes consultar en CoinMarketCap, <a className="cla" href="https://coinmarketcap.com/en/currencies/the-graph/" target="_blank" rel="noreferrer">aquí</a>.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleCoinbase() {
+    const message = this.createChatbotMessage(<a><strong>The Graph colabora con Coinbase para el lanzamiento en Testnet de la nueva L2:<a className="cla" href="https://www.coinbase.com/blog/introducing-base" target="_blank">Base</a></strong><br></br><br></br>The Graph ha brindado soporte a la testnet de Base desde el primer día. El apoyo de The Graph a la testnet de Base también sienta las bases para un soporte completo en Subgraph Studio y en The Graph Network cuando Base mainnet se ponga en marcha. Los desarrolladores pueden familiarizarse construyendo subgrafos de Base en la testnet para prepararse para el lanzamiento de Base mainnet, de modo que puedan seguir utilizando subgrafos para consultar datos de aplicaciones descentralizadas críticas en una forma descentralizada utilizando The Graph Network.<br></br><br></br>¡Los desarrolladores pueden comenzar a construir aplicaciones (dapps) en la testnet de Base con datos organizados por subgrafos a partir de hoy! Comienza a realizar consultas a datos eficientemente organizados en Base mediante subgrafos siguiendo la documentación disponible <a className="cla" href="https://thegraph.com/docs/en/cookbook/base-testnet/" target="_blank">aquí</a>.<hr></hr>Cómo delegar tus tokens GRT con Coinbase Wallet<br></br><br></br>En este artículo se te enseñará cómo delegar tus tokens GRT dentro del protocolo de The Graph, utilizando <a className="cla" href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a>.<br></br><br></br>Para leer la guía elaborada por Graphtronautas, consulta <a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">aquí</a>. O si prefieres ver un tutorial en video, lo encontrarás a continuación.<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleGIPS() { 
+    const message = this.createChatbotMessage(<a><strong>Graph Improvement Proposals (GIPS)</strong><hr></hr>Las GIPs (Graph Improvement Proposals, por sus siglas en inglés) son una parte esencial del proceso de desarrollo de The Graph. Proporcionan una forma para que la comunidad proponga, discuta e implemente cambios que ayuden a mejorar y evolucionar The Graph. Siguiendo un proceso estructurado, las GIPs ayudan a garantizar que se desarrolle de manera abierta, transparente y colaborativa.<hr></hr>Visita el repositorio de <a className="cla" href="https://github.com/graphprotocol/graph-improvement-proposals" target="_blank">GitHub</a> para cualquiera de los siguientes:<br></br><br></br>GIPs - Propuestas para mejorar la lógica del protocolo, interfaces, funcionalidad, estatutos o procesos.<br></br>    GRPs - Solicitudes de propuestas que resuelvan algún problema importante o aborden un caso de uso necesario para The Graph.<br></br>GRCs - Solicitudes de comentarios sobre estándares comunitarios de capa de aplicación para construir en The Graph.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleBounties() { 
+    const message = this.createChatbotMessage(<a><strong>Recompensas de la DAO para  GraphAdvocates</strong><br></br><br></br>Estas recompensas están disponibles para los Advocates que deseen contribuir. Visita <a className="cla" href="https://app.dework.xyz/graph-advocatesdao" target="_blank">dework</a> para participar.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleBilling() { 
+    const message = this.createChatbotMessage(<a><strong>Cómo funciona la facturación en The Graph</strong><br></br><br></br>The Graph opera en Ethereum Mainnet, pero para minimizar los tiempos y costos de las transacciones, el contrato de facturación permanece en la red de <a className="cla" href="https://arbiscan.io/address/0x1b07d3344188908fb6deceac381f3ee63c48477a" target="_blank">Arbitrum</a>.<br></br><br></br>La facturación se basa en las consultas realizadas a la red. Cada consulta tiene un costo en tarifas de consulta, que se pagan en la moneda nativa $GRT. El costo de una consulta se basa en la complejidad de la consulta y el estado de la red. El costo de la consulta se especifica cuando el usuario realiza una consulta, sin embargo, el usuario no perderá $GRT si la cantidad utilizada excede lo que especificaron. También existen límites de cuánto están dispuestos a pagar para evitar pagar de más.<br></br><br></br>Los Indexadores obtienen tarifas por consultas en $GRT al servir consultas GraphQL. Esto beneficia a los usuarios finales al proporcionar datos precisos y oportunos. The Graph permite un mercado competitivo para el acceso eficiente a los datos.<br></br><br></br><strong>Paying for queries on The Graph Network is now as easy as swiping a credit card!</strong>¡Pagar por consultas en The Graph Network ahora es tan fácil como deslizar una tarjeta de crédito! Ahora puedes pagar el saldo de tus tarifas de consulta con tarjeta de débito o crédito, gracias a la nueva integración de <a className="cla" href="https://twitter.com/BanxaOfficial" target="_blank">Banxa</a> fiat.<br></br><Embed className="embed" isDark url='https://twitter.com/graphprotocol/status/1638933843645288449?s=20'/></a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleDelegateGuides() {
+    const message = this.createChatbotMessage(<a>Te proporcionaré lo que necesitas para convertirte en Delegador. La siguiente información y recursos te ayudarán.<hr></hr>Ver el <a className="cla" href="https://www.youtube.com/watch?v=oQijzTv7EQQ" target="_blank">tutorial Elegir Indexadores</a> te ayudará a comprender lo que debes buscar. Para asegurarte de tener confianza antes de delegar, ve los tutoriales a continuación para comprender mejor.<br></br><br></br> Puedess realizar stake de tus GRT en <a className="cla" href="https://thegraph.com/explorer/participants/indexers" target="_blank">network.thegraph.com</a> delegándolos a un Indexador de tu elección.<br></br>La cancelación de la delegación lleva 26 días porque esa es la duración máxima de una allocations.<br></br><br></br><hr></hr><a className="cla" href="https://twitter.com/blockya_?s=21&t=_AHHnNQtdCGiQCZd0gn2MA" target="_blank" rel="noreferrer">Lorena Fabris</a> de <a className="cla" href="https://twitter.com/espanolgraph?s=21&t=mAEXMZH5ZSdPi-3W3mSb_Q" target="_blank" rel="noreferrer">The Graph Español</a> ha creado los siguientes tutoriales para la comunidad.<br></br><br></br><a className="cla" href="https://fabris-86569.medium.com/c%C3%B3mo-delegar-28cd43455c0f" target="_blank" rel="noreferrer">¿Cómo Delegar?</a><br></br><br></br> The Graph está migrando a Arbitrum, lee la guía completa para los Delegadores <a className="cla" href="https://blog.graphtronauts.com/the-graph-is-moving-to-arbitrum-the-complete-guide-for-delegators-a9c536544b58" target="_blank">aquí</a>.<br></br><br></br><a className="cla" href="https://fabris-86569.medium.com/la-guia-de-delegacion-the-graph-8b5f7f979671" target="_blank">La guía de delegación</a><br></br><br></br><a className="cla" href="https://fabris-86569.medium.com/c%C3%B3mo-ganar-en-the-graph-network-da6f01bf4185" target="_blank">Cómo Ganar en The Graph Network</a><br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s" target="_blank">Staking con billetera Coinbase</a><br></br><br></br>Para conocer el costo promedio de una transacción de delegación, visite <a className="cla" href="https://www.graphtronauts.com/#/indexers" target="_blank">Graphtronauts</a> y seleccione Tarifas.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+handleGraphtronauts() { 
+  const message = this.createChatbotMessage(<a><strong>Una comunidad para Delegadores, construida por Delegadores.</strong><br></br>Los Graphtronauts son un grupo dedicado a facilitar el chat para aquellos que desean holder $ GRT y hablar sobre los fundamentos del proyecto The Graph. No solo son la comunidad no oficial más grande de holders de $GRT a largo plazo para el ecosistema The Graph, sino que su objetivo es ayudar a las personas en su viaje para convertirse en Delegadores de The Graph.<br></br><br></br><strong>'Nos levantamos levantando a otros' - Graphtronauts | Fundada el 16 de enero de 2021</strong><br></br><br></br>Obtén más información sobre los Graphtronauts escuchando este <a className="cla" href="https://www.grtiq.com/grtiq-podcast-35-the-graphtronauts/" target="_blank" rel="noreferrer">podcast de GRTiQ</a> con Baghe y Chris Ewing.<br></br>Y este <a className="cla" href="https://www.grtiq.com/grtiq-podcast-90-paolo-diomede/" target="_blank" rel="noreferrer">podcast de GRTiQ</a> con Paolo Diomede.<br></br>Puedess unirte a la comunidad a través de los siguientes enlaces:<br></br><a className="cla" href="https://t.me/graphtronauts" target="_blank" rel="noreferrer">Telegram</a><br></br><a className="cla" href="https://twitter.com/graphtronauts" target="_blank" rel="noreferrer">Twitter</a><br></br><a className="cla" href="https://www.graphtronauts.com/#/" target="_blank" rel="noreferrer">Aplicación Graphtronauts</a><br></br><a className="cla" href="https://old.graphtronauts.com/" target="_blank" rel="noreferrer">Sitio web</a><br></br><a className="cla" href="https://www.youtube.com/channel/UCPAUeNaRtBV-jdSKY8wmcXg" target="_blank" rel="noreferrer">YouTube</a><br></br><a className="cla" href="https://www.reddit.com/r/Graphtronauts/" target="_blank" rel="noreferrer">Reddit</a><hr></hr>A continuación encontrarás los informes de seguimiento de la comunidad de The Graphtronauts:<br></br><br></br><a className="cla" href="https://blog.graphtronauts.com/graphtronauts-community-tracker-report-february-2023-bbf88d567627" target="_blank" rel="noreferrer">Febrero 2023</a><br></br><br></br><a className="cla" href="https://blog.graphtronauts.com/graphtronauts-community-tracker-report-march-2023-1e2c855a5f9a" target="_blank" rel="noreferrer">Marzo 2023</a><hr></hr>¡El Graphtronauts Indexador (<a className="cla" href="https://thegraph.com/explorer/profile/0x0c3aab9f49c01070ec359aae4778fcbb01d2fbef?view=Indexing" target="_blank" rel="noreferrer">graphtronauts-indexer.eth</a>) ya está disponible y listo para las delegaciones! Vea el Tweet a continuación para obtener más información, únase a su <a className="cla" href="https://t.co/dDUb7NHaPY" target="_blank" rel="noreferrer">Discord</a> y síganos en Twitter para obtener actualizaciones.<br></br><Embed className="embed" isDark url='https://twitter.com/graphtronauts_x/status/1593310558798979072?s=20&t=2FCQMWbItkh1MnXmrHBVIA'/>
+  </a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+handleSubstreams() {
+  const message = this.createChatbotMessage(<a>StreamingFast es una empresa de infraestructura de protocolo que se destaca en la construcción de una arquitectura cross-chain altamente escalable para la transmisión de datos de blockchain. El grant Core Dev de $ 60 millones es la primera de su tipo, pionera en una nueva frontera de innovación colaborativa donde las comunidades y las empresas se alinean para construir una Internet radicalmente más abierta.<br></br><br></br>The Graph Foundation otorga un grant de $ 60 millones a StreamingFast para unirse a The Graph como un equipo de Core Dev, lee <a className="cla" href="https://thegraph.com/blog/core-dev-grant" target="_blank" rel="noreferrer">aquí</a>.<hr></hr>Substreams es una poderosa tecnología de indexación de blockchain, desarrollada para The Graph Network.<br></br><br></br>Para encontrar documentación sobre SubStreams, consulte <a className="cla" href="https://substreams.streamingfast.io/" target="_blank" rel="noreferrer">aquí</a>.<br></br>Únete al servidor <a href="https://discord.com/invite/jZwqxJAvRs" target="_blank" rel="noreferrer">StreamingFast Discord server</a> o échales un vistazo <a className="cla" href="https://www.streamingfast.io/" target="_blank" rel="noreferrer">aquí</a>.<hr></hr><a className="cla" href="https://twitter.com/blockya_?s=21&t=_AHHnNQtdCGiQCZd0gn2MA" target="_blank" rel="noreferrer">Lorena Fabris</a> de <a className="cla" href="https://twitter.com/espanolgraph?s=21&t=mAEXMZH5ZSdPi-3W3mSb_Q" target="_blank" rel="noreferrer">The Graph Español</a> ha creado los siguientes tutoriales para la comunidad.<br></br><br></br><a href="https://fabris-86569.medium.com/streamingfacts-comprendiendo-los-costos-de-actualizar-un-subgrafo-ad1f1f6c8514" target="_blank" rel="noreferrer">StreamingFacts: Comprendiendo los Costos de Actualizar un Subgrafo</a><br></br><br></br><a href="https://fabris-86569.medium.com/the-graph-foundation-otorga-una-subvenci%C3%B3n-de-60-millones-a-streamingfast-para-unirse-a-the-graph-b981ddd2ee2b" target="_blank" rel="noreferrer">The Graph Foundation otorga un grant de $ 60 millones a StreamingFast para unirse a The Graph como un equipo Core Dev.</a><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=qWxffTKpciU'/><hr></hr>El motor Substreams de StreamingFast ha alcanzado la Disponibilidad General, lo que significa que está listo para su implementación en producción y ahora será oficialmente compatible, tanto el software como el Servicio Alojado por StreamingFast. Para obtener más información, lee <a className="cla" href="https://streamingfastio.medium.com/substreams-reach-general-availability-48272f6e942e" target="_blank" rel="noreferrer">aquí</a>.</a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+handleWomenInWeb3() {
+  const message = this.createChatbotMessage(<a><a className="cla" href="https://twitter.com/evabeylin?s=21&t=xlTfEQdph_MfbuUlhFrb0Q" target="_blank" rel="noreferrer"><strong>Eva Beylin</strong></a> ha sido directora de The Graph Foundation desde octubre de 2020. Es inversionista y partidaria de la tecnología central de Ethereum a través de eGirl Capital y lidera el crecimiento de The Graph. Ella es una de las más influyentes de 2022 de CoinDesk, lea el blog completo <a className="cla" href="https://www.coindesk.com/consensus-magazine/2022/12/05/eva-beylin-most-influential-2022/" target="_blank" rel="noreferrer">aquí</a>. Ha liderado la distribución de más de $135 millones en subvenciones a los principales desarrolladores de The Graph y el capital de $50 millones de la fundación, dirigido por Tiger Global. Mírala hablar en Graph Day 2022 sobre Our Decenralization Journey, <a className="cla" href="https://m.youtube.com/watch?v=ef5LCku3IqQ" target="_blank" rel="noreferrer">aquí</a>. Hizo Forbes 2023 <a className="cla" href="https://www.forbes.com/profile/eva-beylin/?sh=34d711c95444" target="_blank" rel="noreferrer">30 Under 30</a>. Puedess conocer a Eva viendo una entrevista, <a className="cla" href="https://m.youtube.com/watch?v=IoqI6z5l9y8" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br><a className="cla" href="https://twitter.com/theklineventure?s=21&t=8FTTZesLJJUxAVnVbmLgQg" target="_blank" rel="noreferrer"><strong>Tegan Kline</strong></a> ha sido cofundadora y jefa de negocios de Edge & Node desde 2021. Después de recaudar $22,5 millones para ayudar a The Graph a construir una herramienta de código abierto que permita a los desarrolladores de ethereum entender cómo se usan sus productos, cofundó Edge & Nodo para ayudar a monetizar el proyecto. Edge & Node se financió originalmente con una participación del 8% del token GRT, que ahora vale alrededor de $ 650 millones. Kline también lideró las inversiones de Edge & Node en proyectos adyacentes a The Graph, por un total de $ 3.1 millones en 2021. Hizo Forbes 2022 <a className="cla" href="https://www.forbes.com/profile/tegan-kline/?sh=1465202462f7" target="_blank" rel="noreferrer">30 Under 30</a>. Puedes conocer a Kline visitando su sitio web, <a className="cla" href="https://www.tegankline.com/" target="_blank" rel="noreferrer">aquí</a>. Mira una entrevista con ella, <a className="cla" href="https://youtu.be/yONuFNxJVrc" target="_blank" rel="noreferrer">aquí</a>. O puede escuchar un podcast de GRTiQ <a className="cla" href="https://youtu.be/ZGHwTb92Rrg" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br><a className="cla" href="https://twitter.com/girlcalledreem?s=21&t=h9ZItE1mnaruz2uPiHkrLQ" target="_blank" rel="noreferrer"><strong>Reem Chahrour</strong></a> ha sido Gerente de Ecosistemas en The Graph desde 2021. Cualquiera que haya solicitado una Beca Graph o haya seguido el trabajo de cualquier beneficiario, ya se habrá encontrado con Reem. Es un activo importante para la comunidad de The Graph y su trabajo cubre una variedad de iniciativas importantes. Puedess escucharla en el Podcast de GRTiQ, <a className="cla" href="https://m.youtube.com/watch?v=3xfb0n99AzI" target="_blank" rel="noreferrer"> aquí</a>. Habla sobre su ingreso a las criptomonedas y su trabajo en The Graph Foundation, su consejo para aquellos que buscan solicitar una grant (y dónde a la fundación le gustaría ver más presentaciones), la diferencia entre los programas RFP y Grants, y el pronto -para lanzar el programa Graph Advocates.<br></br><br></br>Cuando alguien menciona a un Indexador, usa los pronombres masculinos. Con el deseo de destacar a las mujeres en Web3 que trabajan en equipos de Indexador o que ejecutan su propio Indexador dentro del ecosistema de The Graph, los Graphtronauts realizaron una serie de entrevistas con mujeres de Web3.<br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=WTdf9wEhSLg" target="_blank" rel="noreferrer">Mujeres de Web3 - Ana de GraphOps</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=0D4_17B6ypY" target="_blank" rel="noreferrer">Mujeres de Web3 - Anna de Citadel.One</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=chvIFfPfOjY" target="_blank" rel="noreferrer">Mujeres de Web3 - IIinca de Chainode Tech</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=Z7UnQotqLVA" target="_blank" rel="noreferrer">Mujeres de Web3 - Gabi de Stake2Earn</a><hr></hr><strong>Graph Advocates</strong><br></br><br></br><a className="cla" href="https://twitter.com/poptones_" target="_blank" rel="noreferrer">Darby</a> es un miembro conocido de la comunidad de The Graph, es muy activa en Discord y ha apoyado a The Graph en varios eventos destacados, incluyendo el Graph Hack del año pasado y, más recientemente, ETHDenver. Puedes escuchar un episodio del podcast GRTiQ con Darby <a className="cla" href="https://www.grtiq.com/grtiq-podcast-108-darby/" target="_blank" rel="noreferrer">aquí</a>.<br></br><br></br><a className="cla" href="https://twitter.com/blockya_" target="_blank" rel="noreferrer">Lorena Fabris</a> está trabajando arduamente construyendo y apoyando la comunidad de habla hispana del ecosistema de The Graph con Graph Español. Puedes escuchar un episodio del podcast GRTiQ con Lorena <a className="cla" href="https://www.grtiq.com/grtiq-podcast-108-darby/" target="_blank" rel="noreferrer">aquí</a>.</a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+handleOffChainData() {
+  const message = this.createChatbotMessage(<a><strong>The Graph desbloquea un nuevo caso de uso de Web3: la organización de datos off-chain.</strong><br></br><br></br>The Graph se puede utilizar para organizar datos off-chain. Cualquiera puede crear un flujo de trabajo en el que los datos tradicionalmente off-chain se publiquen en IPFS y los hash de IPFS se publiquen on-chain. Estos datos pueden luego ser indexados por subgrafos (APIs abiertas) que, a su vez, pueden utilizarse para servir datos organizados off-chain a los frontends de manera eficiente, con bajos costos y esfuerzos.<br></br><br></br>Puedes leer el blog completo <a className="cla" href="https://thegraph.com/blog/the-graph-off-chain-data-web3-data-pipelines/" target="_blank" rel="noreferrer">aquí</a>.
+    </a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+
+  // ------------------------
+  // -Update End--------
+  // ------------------------
+
 
 handleHello() {
   const message = this.createChatbotMessage(

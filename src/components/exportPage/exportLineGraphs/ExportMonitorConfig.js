@@ -1,9 +1,29 @@
 import React from 'react';
 import '../../../App.css';
-import AdminActiveDelegatorCountBar, { AdminActiveDelegationCountBar, AdminActiveIndexersCountBar, AdminTotalDelegatedGRT, AdminTotalQueryFees, AdminTotalTokensSignalled, AdminTotalStakedGRT, AdminCuratorCountBar, AdminSubgraphCountBar, AdminHoldersCountBar, AdminTotalDelegatedGRTIndexers, AdminTotalBurnedGRT } from "../exportBarCharts/ExportBarChartsData";
-import AdminLineDelegatorCount, { AdminLineIndexerCount, AdminLineStakedIndexersCount, AdminLineSubgraphCount
-  // , AdminLineSubgraphDeploymentCount
-} from "./ExportLineGraphsData";
+
+import AdminLineDelegatorCount, {AdminLineIndexerCount, AdminLineStakedIndexersCount, AdminLineSubgraphCount, AdminLineSubgraphDeploymentCount } from '../exportLineGraphs/ExportLineGraphsData';
+
+import NewExportTotalTokensStakedBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalTokensStakedBarChartsData";
+import NewExportMonitorCuratorBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportMonitorCuratorBarChartsData";
+import NewExportMonitorDelegatorBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportMonitorDelegatorBarChartsData";
+import NewExportMonitorIndexerBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportMonitorIndexerBarChartsData";
+import NewExportMonitorStakedIndexerBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportMonitorStakedIndexerBarChartsData";
+import NewExportMonitorSubgraphBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportMonitorSubgraphBarChartsData";
+import NewExportMonitorSubgraphDeployedBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportMonitorSubgraphDeployedBarChartsData";
+import NewExportTotalCuratorQueryFeesBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalCuratorQueryFeesBarChartsData";
+import NewExportTotalDelegatedTokensBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalDelegatedTokensBarChartsData";
+import NewExportTotalDelegatorQueryFeeRebatesBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalDelegatorQueryFeeRebatesBarChartsData";
+import NewExportTotalIndexerQueryFeeRebatesBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalIndexerQueryFeeRebatesBarChartsData";
+import NewExportTotalIndexerQueryFeesCollectedBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalIndexerQueryFeesCollectedBarChartsData";
+import NewExportMonitorTotalIndexingDelegatorRewardsBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalIndexingDelegatorRewardsBarChartsData";
+import NewExportTotalIndexingIndexerRewardsBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalIndexingIndexerRewardsBarChartsData";
+import NewExportTotalIndexingRewardsBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalIndexingRewardsBarChartsData";
+import NewExportTotalQueryFeesBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalQueryFeesBarChartsData";
+import NewExportTotalTaxedQueryFeesBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalTaxedQueryFeesBarChartsData";
+import NewExportTotalTokensAllocatedBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalTokensAllocatedBarChartsData";
+import NewExportTotalTokensSignalledBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalTokensSignalledBarChartsData";
+import NewExportTotalUnclaimedQueryFeeRebatesBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalUnclaimedQueryFeeRebatesBarChartsData";
+import NewExportMonitorTotalUnstakedTokensLockedBarChartsData from "../exportBarCharts/exportMonitorBarCharts/NewExportTotalUnstakedTokensLockedBarChartsData";
 
 class ExportMonitorConfig extends React.Component {
     render() {
@@ -30,62 +50,110 @@ class ExportMonitorConfig extends React.Component {
         <h1 className="adminHeader-text admin-mobile-center reveal"><u>Monitor Bar Charts</u><br></br><br></br> <strong>To view charts / graphs configured for moble, please view on a smaller screen size.</strong></h1>
           <div className="photo-wrap chartImg1 reveal">
           <span class="anchor" id="monitorbar1"></span>
-          <div alt="AdminActiveDelegatorCountBar" className="adminChart1 chartImg"><AdminActiveDelegatorCountBar /></div>
+          <div alt="AdminActiveDelegatorCountBar" className="adminChart1 chartImg"><NewExportMonitorCuratorBarChartsData /></div>
           </div>
          
           <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="monitorbar2"></span>
-          <div alt="AdminHoldersCountBar" className="chartImg"><AdminHoldersCountBar /></div>
+          <div alt="AdminHoldersCountBar" className="chartImg"><NewExportMonitorDelegatorBarChartsData /></div>
           </div>
 
           <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="monitorbar3"></span>
-          <div alt="AdminSubgraphCountBar " className="chartImg"><AdminSubgraphCountBar  /></div>
+          <div alt="AdminSubgraphCountBar " className="chartImg"><NewExportMonitorIndexerBarChartsData  /></div>
           </div>
 
           <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="monitorbar4"></span>
-          <div alt="AdminCuratorCountBar" className="chartImg"><AdminCuratorCountBar  /></div>
+          <div alt="AdminCuratorCountBar" className="chartImg"><NewExportMonitorStakedIndexerBarChartsData  /></div>
           </div>
   
           <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="monitorbar5"></span>
-          <div className="chartImg" alt="AdminActiveDelegationCountBar "><AdminActiveDelegationCountBar  /></div>
+          <div className="chartImg" alt="AdminActiveDelegationCountBar "><NewExportMonitorSubgraphBarChartsData  /></div>
           </div>
 
           <div className="photo-wrap chartImg2 reveal">
           <span class="anchor" id="monitorbar6"></span>
-          <div className="chartImg" alt="AdminActiveIndexersCountBar"><AdminActiveIndexersCountBar /></div>
+          <div className="chartImg" alt="AdminActiveIndexersCountBar"><NewExportMonitorSubgraphDeployedBarChartsData /></div>
           </div>
 
           <div className="photo-wrap chartImg3 reveal">
           <span class="anchor" id="monitorbar7"></span>
-          <div className="chartImg" alt="AdminTotalDelegatedGRTDelegator"><AdminTotalDelegatedGRT  /></div>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTDelegator"><NewExportTotalCuratorQueryFeesBarChartsData  /></div>
           </div>
 
           <div className="photo-wrap chartImg4 reveal">
           <span class="anchor" id="monitorbar8"></span>
-          <div className="chartImg" alt="AdminTotalQueryFees"><AdminTotalQueryFees  /></div>
+          <div className="chartImg" alt="AdminTotalQueryFees"><NewExportTotalDelegatedTokensBarChartsData  /></div>
           </div>
 
           <div className="photo-wrap chartImg5 reveal">
           <span class="anchor" id="monitorbar9"></span>
-          <div className="chartImg" alt="AdminTotalTokensSignalled"><AdminTotalTokensSignalled /></div>
+          <div className="chartImg" alt="AdminTotalTokensSignalled"><NewExportTotalDelegatorQueryFeeRebatesBarChartsData /></div>
           </div>
 
           <div className="photo-wrap chartImg4 reveal">
           <span class="anchor" id="monitorbar10"></span>
-          <div className="chartImg" alt="AdminTotalStakedGRT"><AdminTotalStakedGRT /></div>
+          <div className="chartImg" alt="AdminTotalStakedGRT"><NewExportTotalIndexerQueryFeeRebatesBarChartsData /></div>
           </div>
 
           <div className="photo-wrap chartImg4 reveal">
           <span class="anchor" id="monitorbar11"></span>
-          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><AdminTotalDelegatedGRTIndexers /></div>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalIndexerQueryFeesCollectedBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalIndexingIndexerRewardsBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalIndexingRewardsBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalQueryFeesBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalTaxedQueryFeesBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalTokensAllocatedBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalTokensSignalledBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalTokensStakedBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportTotalUnclaimedQueryFeeRebatesBarChartsData /></div>
+          </div>
+
+          <div className="photo-wrap chartImg4 reveal">
+          <span class="anchor" id="monitorbar11"></span>
+          <div className="chartImg" alt="AdminTotalDelegatedGRTIndexer"><NewExportMonitorTotalUnstakedTokensLockedBarChartsData /></div>
           </div>
           
           <div className="photo-wrap chartImg5 reveal">
           <span class="anchor" id="monitorbar12"></span>
-          <div className="chartImg" alt="AdminTotalBurnedGRT"><AdminTotalBurnedGRT /></div>
+          <div className="chartImg" alt="AdminTotalBurnedGRT"><NewExportMonitorTotalIndexingDelegatorRewardsBarChartsData /></div>
+
+
+          
           </div>
 
           <h1 className="adminHeader-text admin-mobile-center-line reveal"><u>Monitor Line Graphs</u></h1> 
@@ -110,10 +178,10 @@ class ExportMonitorConfig extends React.Component {
           <div className="chartImg" alt="AdminLineSubgraphCount"><AdminLineSubgraphCount /></div>
           </div>
 
-          {/* <div className="photo-wrap chartImg6 reveal">
+          <div className="photo-wrap chartImg6 reveal">
           <span class="anchor" id="monitorline5"></span>
           <div className="chartImg" alt="AdminLineSubgraphDeploymentCount"><AdminLineSubgraphDeploymentCount /></div>
-          </div> */}
+          </div>
         </div>
         </div>
   )

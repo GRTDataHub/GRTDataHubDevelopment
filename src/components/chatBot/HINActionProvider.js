@@ -686,17 +686,6 @@ handleAdvocateGrantWithdraw() {
 }
 
 // Advocates End
-// GRT Token Address Start
-handleGRTTokenAddress() {
-  const message = this.createChatbotMessage(<a>नीचे आपको जीआरटी अनुबंध और उसका विवरण मिलेगा, दुर्भावनापूर्ण अनुबंध जोड़ने से बचने के लिए जानकारी की दोबारा जांच करना सुनिश्चित करें।<br></br><br></br>नाम: ग्राफ<br></br>प्रतीक: जीआरटी<br></br>नेटवर्क: एथेरियम (ERC20)<br></br>अनुबंध: 0xc944e90c64b2c07662a292be6244bdf05cda44a7<br></br>दशमलव: 18<br></br><br></br>आप इसे <a className="cla" href="https://coinmarketcap.com/en/currencies/the-graph/" target="_blank" rel="noreferrer">यहां</a> कॉइनमार्केटकैप पर देख सकते हैं।</a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// GRT Token Address End
 // Undelegating Start
 handleUnDelegating() {
   const message = this.createChatbotMessage(<a>जब भी एक प्रतिनिधि अनाधिकृत करना चाहता है, तो उनके टोकन 26-दिन की अनबॉन्डिंग अवधि के अधीन होते हैं। इसका मतलब है कि वे अपने टोकन स्थानांतरित नहीं कर सकते हैं, या 28 दिनों के लिए कोई पुरस्कार अर्जित नहीं कर सकते हैं। <br></br><br></br>कुछ आर्थिक हमलों को होने से रोकने के लिए अविभाजित/विगलन अवधि है। इसे 28 युगों के अधिकतम आवंटन जीवनकाल के साथ मेल खाना है। यह देखते हुए कि पुरस्कार प्रणाली वर्तमान में कैसे काम करती है, एक छोटी अनडेलीगेटिंग अवधि संभावित रूप से प्रतिनिधिमंडल को एक साथ कई आवंटनों में "डबल-गिनती" होने की अनुमति देगी। अधिकतम 28 युग - अधिकतम आवंटन जीवनकाल। यह तब है जब पुरस्कार वितरित किए जाते हैं।<hr></hr>एक बात पर भी विचार करना चाहिए कि एक इंडेक्सर को बुद्धिमानी से चुनना है। यदि आप एक ऐसे इंडेक्सर को चुनते हैं जो भरोसेमंद नहीं था, या अच्छा काम नहीं कर रहा था, तो आप अनाधिकृत करना चाहेंगे, जिसका अर्थ है कि आप पुरस्कार अर्जित करने के बहुत सारे अवसर खो देंगे, जो जीआरटी जलाने जितना ही बुरा हो सकता है। <br></br><br></br>ग्राफ से जीआरटी टोकनों को हटाना रद्द करने पर ट्यूटोरियल देखने के लिए <a className="cla" href="https://www.youtube.com/watch?v=3GPY5On7vHc" target="_blank" rel="noreferrer">यहां</a> क्लिक करें।<br></br><br></br>इंडेक्सर कैसे चुनें, इस पर मैं प्रलेखन और ट्यूटोरियल के साथ आपकी मदद कर सकता हूं।</a>
@@ -1076,16 +1065,6 @@ handleWhatIsTheWeb() {
   }));
 }
 
-handleCoinbase() {
-  const message = this.createChatbotMessage(<a><a className="cla" href="https://www.coinbase.com/wallet" target="_blank">कॉइनबेस वॉलेट</a> के साथ अपने जीआरटी टोकन कैसे सौंपें<br></br><br></br>इस लेख में यह आपको सिखाएगा कि कॉइनबेस वॉलेट का उपयोग करके, ग्राफ़ प्रोटोकॉल के भीतर अपने GRT टोकन को कैसे प्रत्यायोजित किया जाए।<br></br><br></br>ग्राफट्रोनॉट्स द्वारा बनाई गई गाइड को पढ़ने के लिए, <a className="cla" href="https://medium.com/@OG-ग्राफट्रोनॉट्स/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">यहां</a> देखें। या यदि आप एक वीडियो ट्यूटोरियल देखना पसंद करते हैं, तो वह आपको नीचे मिलेगा।<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-
 handleCryptocurrencies() {
   const message = this.createChatbotMessage(<a>नाम क्रिप्टोग्राफी और मुद्रा का एक संयोजन या पोर्टमैंटो है। पारंपरिक मुद्राओं (आमतौर पर "फिएट मुद्राओं" के रूप में संदर्भित) के विपरीत, जो भौतिक बिलों और सिक्कों का उपयोग करते हैं, क्रिप्टोकरेंसी पूरी तरह से डिजिटल हैं। किसी भी अन्य मुद्रा की तरह, आप सामान और सेवाओं को खरीदने के लिए क्रिप्टोकरेंसी का उपयोग कर सकते हैं और आप इसे दुनिया भर में मित्रों और परिवार के बीच स्थानांतरित कर सकते हैं। हालाँकि, क्रिप्टोक्यूरेंसी में कुछ अतिरिक्त विशेषताएं हैं जो इसे पारंपरिक मुद्राओं से अलग करती हैं।<br></br><br></br>जब आप फिएट करेंसी को बैंक में जमा करते हैं, तो आप अनिवार्य रूप से उस बैंक को अपना पैसा उधार दे रहे होते हैं और जब आप उससे मांगते हैं तो उसे वापस देने के लिए उन पर भरोसा करते हैं। जबकि यह आम तौर पर दोनों पक्षों के लिए अच्छा काम करता है, बैंक आपके पैसे को दूसरों को उधार देकर और इन ऋणों पर ब्याज वसूल कर लाभ कमाते हैं। इसके अलावा, बैंक अतिरिक्त शुल्क लेते हैं, जैसे निकासी शुल्क या मासिक खाता शुल्क, और न्यूनतम शेष राशि की आवश्यकता भी हो सकती है।<br></br><br></br>एक पारंपरिक बैंक को केंद्रीकृत माना जाएगा, क्रिप्टोक्यूरेंसी विकेन्द्रीकृत है जिसका अर्थ है कि इसमें एक अकेला व्यक्ति सब कुछ नियंत्रित नहीं करता है - वास्तव में, ऐसे हजारों लोग हैं जो ब्लॉकचेन पर होने वाले सभी लेनदेन को मान्य करने में मदद करते हैं - और इसका मतलब है कि आपके पास एक भरोसेमंद वातावरण, बेहतर डेटा सामंजस्य और कमजोरी के कम बिंदु। यह कहने का एक शब्दशः तरीका है कि आप अपनी संपत्ति को नियंत्रित करते हैं।<br></br><br></br>क्रिप्टोक्यूरेंसी की बढ़ी हुई गोपनीयता, सुरक्षा, पोर्टेबिलिटी और पारदर्शिता का मतलब है कि लेन-देन में हेरफेर करने, पैसे की आपूर्ति बदलने या खेल के बीच में नियमों को समायोजित करने के लिए कोई जगह नहीं है। क्रिप्टोकरेंसी कोई संगठन नहीं है, वे आपके फंड को नियंत्रित नहीं करते हैं; आप अपने खुद के बैंक हो सकते हैं।</a>
     ,
@@ -1315,16 +1294,6 @@ handleMetaverse() {
   }));
 }
 
-handleArbitrum() {
-  const message = this.createChatbotMessage(<a>आर्बिट्रम एथेरियम के लिए एक स्केलिंग समाधान है जो लागत और विलंबता को काफी कम करता है। आर्बिट्रम ने एथेरियम मेननेट पर आर्बिट्रम वन लॉन्च किया है, और टीम जनता के लिए आगामी रिलीज के लिए तैयार हो रही है।<br></br><br></br>आर्बिट्रम के साथ एकीकरण के लिए धन्यवाद, ग्राफ की होस्टिंग इंडेक्सिंग और पूछताछ सेवाएं अब नेटवर्क पर लाइव हैं। आर्बिट्रम वन पर डेवलपर्स अब ओपन एपीआई (सबग्राफ) बनाने और प्रकाशित करने में सक्षम होंगे, जो एप्लिकेशन ग्राफक्लाइन का उपयोग करके क्वेरी कर सकते हैं।<br></br><br></br>ग्राफ पहले से ही एथेरियम, आईपीएफएस, सेलो, हिमस्खलन, फैंटम और मूनबीम के लिए इंडेक्सिंग डेटा का समर्थन करता है। इसके अलावा, हजारों डेवलपर्स ने पहले से ही DODO, MCDEX, Uniswap, Synthetic, Gnosis, Decentraland, आदि जैसे अनुप्रयोगों के लिए 10,000 से अधिक सबग्राफ बनाए हैं। उस सूची में आर्बिट्रम को जोड़कर, ग्राफ़ के विस्तार के प्रयासों ने Web3 पारिस्थितिकी तंत्र को एकजुट करने में एक और कदम उठाया है।</a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-
 handleStatistics() {
   const message = this.createChatbotMessage(<a>यदि आप लाइव डेटा/आँकड़ों की तलाश कर रहे हैं। तो कृपया अधिक विशिष्ट बनें। आप मुझसे किस बारे में पूछ सकते हैं, इसकी सूची यहां दी गई है:<br></br><br></br>सक्रिय प्रतिनिधि गणना<br></br>सक्रिय प्रतिनिधिमंडल की संख्या<br></br>धारकों की संख्या<br></br>सबग्राफ की गिनती<br></br>क्यूरेटर काउंट<br></br>सक्रिय अनुक्रमणिका गणना<br></br>कुल प्रश्न शुल्क गणना<br></br>कुल स्टेक्ड जीआरटी<br></br>प्रतिनिधियों द्वारा प्रत्यायोजित कुल GRT<br></br>क्यूरेटर द्वारा हस्ताक्षरित कुल जीआरटी<br></br>इंडेक्सर्स द्वारा कुल प्रत्यायोजित जीआरटी<br></br>कुल जला जीआरटी</a>
     ,
@@ -1471,6 +1440,136 @@ handleBirthday() {
       messages: [...prev.messages, message],
     }));
   }
+
+    // ------------------------
+  // -Update V1 Start--------
+  // ------------------------
+
+  // handleAI() {
+  //   const message = this.createChatbotMessage(<a><strong></strong>Using AI To Enhance The Graph Network<strong></strong><br></br><br></br>In December 2021, <a className="cla" href="https://semiotic.ai/" target="_blank" rel="noreferrer">Semiotic</a> became The Graph’s fourth core developer team. They have been operating as an Indexer on The Graph Network, which requires specialized DevOps skills, and have operated a competitive Indexer, <a className="cla" href="https://thegraph.com/explorer/profile/0xd75c4dbcb215a6cf9097cfbcc70aab2596b96a9c?view=Indexing&chain=mainnet" target="_blank" rel="noreferrer">semiotic-indexer.eth</a>, since early 2021. Additionally, they have used thier AI expertise to release two automation software tools to The Graph ecosystem: <a className="cla" href="https://github.com/semiotic-ai/autoagora" target="_blank" rel="noreferrer">AutoAgora</a> and the <a className="cla" href="https://github.com/graphprotocol/allocation-optimizer" target="_blank" rel="noreferrer">Allocation Optimizer</a>.<br></br><br></br>You can read this <a className="cla" href="https://thegraph.com/blog/using-ai-to-enhance-the-graph/" target="_blank" rel="noreferrer">blog</a>, it provides an overview of their past and current AI efforts, and it outlines future ideas for how The Graph’s unique data indexing capabilities can be leveraged for AI applications.<br></br><br></br>To learn more about AI, listen to the <a className="cla" href="https://www.youtube.com/watch?v=7RZU7wbFKwQ" target="_blank" rel="noreferrer">GRTiQ Podcast</a> episode with Ani, Sam, and Tomasz explore what artificial intelligence is, the origins of the discipline, and the epic rise of ChatGPT and how it works.</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+//   handleNetworkIntergration() {
+//     const message = this.createChatbotMessage(<a>You can keep up to date on the status of the Graph Network Integrations, <a className="cla" href="https://thegraph.com/docs/en/network-transition-faq/#the-graph-network-integration-status-tracker" target="_blank" rel="noreferrer">here</a>.<br></br><br></br>You will find a table which illustrates where each network is in the network integration process which are:<br></br><br></br>Network	Announcing integration on The Graph Network<br></br>
+// <br></br>Network Integration complete<br></br>Phase 1: disable new subgraphs on hosted service<br></br>Phase 2: disable subgraph upgrades on hosted service<br></br>Phase 3: disable subgraphs on hosted service</a>
+//       ,
+//     );
+//     this.setState((prev) => ({
+//       ...prev,
+//       messages: [...prev.messages, message],
+//     }));
+//   }
+
+  // handleArbitrum() {
+  //   const message = this.createChatbotMessage(<a><a className="cla" href="https://developer.arbitrum.io/intro/" target="_blank" rel="noreferrer">Arbitrum</a> is a scaling solution for Ethereum that drastically reduces costs and latency.<br></br><br></br>Thanks to the integration with Arbitrum, The Graph’s hosting indexing and querying services are now live on the network. Developers on Arbitrum One will now be able to build and publish open APIs (subgraphs) that applications can query using GraphQL.<br></br><br></br>By adding Arbitrum to that list, The Graph’s expansion efforts have taken another step in uniting the Web3 ecosystem.<hr></hr>By scaling The Graph on L2, network participants can expect:<br></br><br></br>26x savings on gas fees<br></br>Faster transaction speed<br></br>Secured by Ethereum<hr></hr>You can bridge your GRT and ETH using one of the following methods:<br></br><br></br><a className="cla" href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" rel="noreferrer">The Graph Bridge on Arbitrum</a><br></br><a className="cla" href="https://jumper.exchange/" target="_blank" rel="noreferrer">TransferTo</a><br></br><a className="cla" href="https://bridge.connext.network/" target="_blank" rel="noreferrer">Connext Bridge</a><br></br><a className="cla" href="https://app.hop.exchange/#/send?token=ETH" target="_blank" rel="noreferrer">Hop Exchange</a><hr></hr>As of April 10th, 2023, 5% of all indexing rewards are being minted on Arbitrum. As network participation increases, and as the Council approves it, indexing rewards will gradually shift from Ethereum to Arbitrum, eventually moving entirely to Arbitrum.</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  handleArbitrum() {
+    const message = this.createChatbotMessage(<a>आर्बिट्रम एथेरियम के लिए एक स्केलिंग समाधान है जो लागत और विलंबता को काफी कम करता है। आर्बिट्रम ने एथेरियम मेननेट पर आर्बिट्रम वन लॉन्च किया है, और टीम जनता के लिए आगामी रिलीज के लिए तैयार हो रही है।<br></br><br></br>आर्बिट्रम के साथ एकीकरण के लिए धन्यवाद, ग्राफ की होस्टिंग इंडेक्सिंग और पूछताछ सेवाएं अब नेटवर्क पर लाइव हैं। आर्बिट्रम वन पर डेवलपर्स अब ओपन एपीआई (सबग्राफ) बनाने और प्रकाशित करने में सक्षम होंगे, जो एप्लिकेशन ग्राफक्लाइन का उपयोग करके क्वेरी कर सकते हैं।<br></br><br></br>ग्राफ पहले से ही एथेरियम, आईपीएफएस, सेलो, हिमस्खलन, फैंटम और मूनबीम के लिए इंडेक्सिंग डेटा का समर्थन करता है। इसके अलावा, हजारों डेवलपर्स ने पहले से ही DODO, MCDEX, Uniswap, Synthetic, Gnosis, Decentraland, आदि जैसे अनुप्रयोगों के लिए 10,000 से अधिक सबग्राफ बनाए हैं। उस सूची में आर्बिट्रम को जोड़कर, ग्राफ़ के विस्तार के प्रयासों ने Web3 पारिस्थितिकी तंत्र को एकजुट करने में एक और कदम उठाया है।</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+  
+  // handleNetworks() {
+  //   const message = this.createChatbotMessage(<a>To keep up to date on the networks on The Graph Network and the Hosted Service, see <a className="cla" href="https://thegraph.com/docs/en/#supported-networks" target="_blank" rel="noreferrer">here</a>!</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  // handleGRTTokenAddress() {
+  //   const message = this.createChatbotMessage(<a>Below you will find the GRT contracts and details, make sure to double check the information in order to avoid adding a malicious contract.<br></br><br></br>Name: The Graph<br></br>Symbol: GRT<br></br>Network: Ethereum (ERC20)<br></br>Ethereum: 0xc944E90C64B2c07662A292be6244BDf05Cda44a7<br></br>Arbitrum: 0x9623063377AD1B27544C965cCd7342f7EA7e88C7<br></br>Decimals: 18<hr></hr>You can check it out on CoinMarketCap, <a className="cla" href="https://coinmarketcap.com/en/currencies/the-graph/" target="_blank" rel="noreferrer">here</a>.</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  handleGRTTokenAddress() {
+    const message = this.createChatbotMessage(<a>नीचे आपको जीआरटी अनुबंध और उसका विवरण मिलेगा, दुर्भावनापूर्ण अनुबंध जोड़ने से बचने के लिए जानकारी की दोबारा जांच करना सुनिश्चित करें।<br></br><br></br>नाम: ग्राफ<br></br>प्रतीक: जीआरटी<br></br>नेटवर्क: एथेरियम (ERC20)<br></br>अनुबंध: 0xc944e90c64b2c07662a292be6244bdf05cda44a7<br></br>दशमलव: 18<br></br><br></br>आप इसे <a className="cla" href="https://coinmarketcap.com/en/currencies/the-graph/" target="_blank" rel="noreferrer">यहां</a> कॉइनमार्केटकैप पर देख सकते हैं।</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  // handleCoinbase() {
+  //   const message = this.createChatbotMessage(<a><strong>The Graph Collaborates with Coinbase for Testnet Launch of New L2: <a className="cla" href="https://www.coinbase.com/blog/introducing-base" target="_blank">Base</a></strong><br></br><br></br>The Graph has supported Base’s testnet starting from day one. The Graph’s support of Base testnet also lays the foundation for full support across Subgraph Studio and The Graph Network when Base mainnet goes live. Developers can familiarize themselves by building Base subgraphs on testnet now to prepare for the launch of Base mainnet, so they can continue using subgraphs to query mission-critical dapp data in a decentralized way using The Graph Network.<br></br><br></br>Developers can begin building Base testnet dapps with data organized by subgraphs starting today! Start querying efficiently organized Base data with subgraphs by following along in the documentation, <a className="cla" href="https://thegraph.com/docs/en/cookbook/base-testnet/" target="_blank">here</a>.<hr></hr>How to Delegate your GRT tokens with Coinbase Wallet<br></br><br></br>In this article it will teach you how to delegate your GRT tokens within The Graph protocol, using <a className="cla" href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a>.<br></br><br></br>To read the guide made by the Graphtronauts, see <a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">here</a>. Or if you prefer to watch a video tutorial, you will find that below.<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  handleCoinbase() {
+  const message = this.createChatbotMessage(<a><a className="cla" href="https://www.coinbase.com/wallet" target="_blank">कॉइनबेस वॉलेट</a> के साथ अपने जीआरटी टोकन कैसे सौंपें<br></br><br></br>इस लेख में यह आपको सिखाएगा कि कॉइनबेस वॉलेट का उपयोग करके, ग्राफ़ प्रोटोकॉल के भीतर अपने GRT टोकन को कैसे प्रत्यायोजित किया जाए।<br></br><br></br>ग्राफट्रोनॉट्स द्वारा बनाई गई गाइड को पढ़ने के लिए, <a className="cla" href="https://medium.com/@OG-ग्राफट्रोनॉट्स/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">यहां</a> देखें। या यदि आप एक वीडियो ट्यूटोरियल देखना पसंद करते हैं, तो वह आपको नीचे मिलेगा।<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+  // handleGIPS() { 
+  //   const message = this.createChatbotMessage(<a><strong>Graph Improvement Proposals (GIPS)</strong><hr></hr>GIPs are an essential part of the development process for The Graph. They provide a way for the community to propose, discuss, and implement changes that help to improve and evolve The Graph. By following a structured process, GIPs help to ensure that it is developed in an open, transparent, and collaborative manner.<hr></hr>Visit the <a className="cla" href="https://github.com/graphprotocol/graph-improvement-proposals" target="_blank">GitHub repo</a> for any of the follow:<br></br><br></br>GIPs - Proposals for improving protocol logic, interfaces, functionality, charters, or processes<br></br>GRPs - Requests for proposals that solve some important problem or address a needed use case for The Graph<br></br>GRCs - Requests for comments on application-layer community standards for building on The Graph.</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  // handleBounties() { 
+  //   const message = this.createChatbotMessage(<a><strong>GraphAdvocates DAO Bounties</strong><br></br><br></br>These bounties are available for Advocates who want to contribute, visit <a className="cla" href="https://app.dework.xyz/graph-advocatesdao" target="_blank">dework</a> to get involved.</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  // handleBilling() { 
+  //   const message = this.createChatbotMessage(<a><strong>How does The Graph billing work?</strong><br></br><br></br>The Graph operates on Ethereum Mainnet, but to minimize transaction times and costs, billing contract lives on the <a className="cla" href="https://arbiscan.io/address/0x1b07d3344188908fb6deceac381f3ee63c48477a" target="_blank">Arbitrum</a> network.<br></br><br></br>Billing is based on the queries made to the network. Every query costs query fees, paid in the native $GRT. The cost of a query is based on the query complexity and network state. The query cost is specified when the user makes a query, however the user will not lose $GRT if the amount used exceeds what they specified. There are also limit how much they are willing to pay to avoid overpaying.<br></br><br></br>Indexers earn query fees in $GRT by serving GraphQL queries. This benefits end-users by providing accurate and timely data. The Graph allows for a competitive marketplace for efficient data access.<br></br><br></br><strong>Paying for queries on The Graph Network is now as easy as swiping a credit card!</strong>Now you can pay your query fee balance via debit or credit card, thanks to the new <a className="cla" href="https://twitter.com/BanxaOfficial" target="_blank">Banxa</a> vfiat onramp.<br></br><Embed className="embed" isDark url='https://twitter.com/graphprotocol/status/1638933843645288449?s=20'/></a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  
+  // ------------------------
+  // -Update V1 End--------
+  // ------------------------
 
 handleHello() {
   const message = this.createChatbotMessage(<a>नमस्ते, मैं आज आपकी सहायता कैसे करूं?</a>

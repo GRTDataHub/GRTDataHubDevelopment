@@ -20,6 +20,10 @@ class ENGMessageParser {
       this.actionProvider.handleGIPS();
     }
 
+    else if (lowercase.includes('off-chain') || lowercase.includes('off chain')) {
+      this.actionProvider.handleOffChainData();
+    }
+
     else if (lowercase.includes('billing')) {
       this.actionProvider.handleBilling();
     }

@@ -141,8 +141,8 @@ function NewMobileTotalDelegatorQueryFeeRebatesBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.85],
+      tickInterval: ([dataNow+data7Days+data28Days]/400),
+      min: [([dataNow+data7Days+data28Days]/3)*0.96],
       title: {
         text: false,
     },
@@ -168,7 +168,7 @@ function NewMobileTotalDelegatorQueryFeeRebatesBarChartsData() {
         formatter: function() {
           return Highcharts.dateFormat('%d %b %Y',this.value);
         },
-                  style: {fontSize: '0.9rem',
+                  style: {fontSize: '0.75rem',
                         textAlign: 'center',
                         fontWeight: 'bold',
                         color: '#d8d2e4',

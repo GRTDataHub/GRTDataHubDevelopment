@@ -96,7 +96,7 @@ export function MobileSubgraphCountBar(){
   const [lastMonth, lastWeek, Now] = getDaysInRange(28,7);
 
   const options = useColumnGraphOptionsBuilder(
-    {marginLeft: 150, marginRight: 0, marginBottom: 60, titleY: 20, type: 'column', title: 'Subgraphs',titleFontSize: '1.5rem', seriesName:'Subgraphs', subtitleFontSize: '0.8rem',
+    {marginLeft: 150, marginRight: 0, marginBottom: 60, titleY: 20, type: 'column', title: 'Subgraphs',titleFontSize: '1rem', seriesName:'Subgraphs', subtitleFontSize: '0.8rem',
     categories: [lastMonth, lastWeek, Now], 
     data : [data?.subgraphCount?.Amount28D, data?.subgraphCount?.Amount7D, data?.subgraphCount?.AmountNow],tickInterval : ([data?.subgraphCount?.Amount28D+data?.subgraphCount?.Amount7D+data?.subgraphCount?.AmountNow]/80),
     min: [([data?.subgraphCount?.Amount28D+data?.subgraphCount?.Amount7D+data?.subgraphCount?.AmountNow]/3)*0.9],

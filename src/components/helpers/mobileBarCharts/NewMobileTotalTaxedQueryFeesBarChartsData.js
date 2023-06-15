@@ -141,8 +141,8 @@ function NewMobileTotalTaxedQueryFeesBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.95],
+      tickInterval: ([dataNow+data7Days+data28Days]/250),
+      min: [([dataNow+data7Days+data28Days]/3)*0.96],
       title: {
         text: false,
     },
@@ -168,7 +168,7 @@ function NewMobileTotalTaxedQueryFeesBarChartsData() {
         formatter: function() {
           return Highcharts.dateFormat('%d %b %Y',this.value);
         },
-                  style: {fontSize: '0.9rem',
+                  style: {fontSize: '0.75rem',
                         textAlign: 'center',
                         fontWeight: 'bold',
                         color: '#d8d2e4',

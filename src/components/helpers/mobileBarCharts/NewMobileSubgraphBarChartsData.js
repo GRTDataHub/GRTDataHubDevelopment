@@ -118,7 +118,7 @@ function NewMobileSubgraphBarChartsData() {
     title: {style: {
       color: '#d8d2e4',
       fontWeight: 'bold',
-      fontSize: '1.5rem'
+      fontSize: '1.25rem'
    },
       text : 'Subgraphs',
       align: 'center',
@@ -127,12 +127,12 @@ function NewMobileSubgraphBarChartsData() {
     subtitle: {
       style: {
           color: '#8a8098',
-          fontSize: '0.8rem',
+          fontSize: '0.75rem',
        },
        text: 'www.GRTDataHub.com',
       align: 'center',
       subtitleX: 0,
-      subtitleY: 30,
+      subtitleY: 35,
       verticalAlign: 'bottom',
       },
     accessibility: {
@@ -168,7 +168,7 @@ function NewMobileSubgraphBarChartsData() {
         formatter: function() {
           return Highcharts.dateFormat('%d %b %Y',this.value);
         },
-                  style: {fontSize: '0.9rem',
+                  style: {fontSize: '0.75rem',
                         textAlign: 'center',
                         fontWeight: 'bold',
                         color: '#d8d2e4',

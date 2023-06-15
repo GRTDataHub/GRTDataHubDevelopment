@@ -119,7 +119,7 @@ function NewMobileTotalUnstakedTokensLockedBarChartsData() {
     title: {style: {
       color: '#d8d2e4',
       fontWeight: 'bold',
-      fontSize: '1rem'
+      fontSize: '0.8rem'
    },
       text : 'Total Unstaked Tokens Locked',
       align: 'center',
@@ -169,7 +169,7 @@ function NewMobileTotalUnstakedTokensLockedBarChartsData() {
         formatter: function() {
           return Highcharts.dateFormat('%d %b %Y',this.value);
         },
-                  style: {fontSize: '0.9rem',
+                  style: {fontSize: '0.75rem',
                         textAlign: 'center',
                         fontWeight: 'bold',
                         color: '#d8d2e4',

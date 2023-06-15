@@ -62,8 +62,8 @@ const ExportMain = () => {
         <br></br>
         <br></br>
 
-        <div class="header-sub-text">
-          <h1 className="data-title"><strong>Overview</strong></h1>
+        {/* <div class="header-sub-text"> */}
+          {/* <h1 className="data-title"><strong>Overview</strong></h1>
           <hr></hr>
           <h1 className="data-title">Delegators</h1>
           <br></br>
@@ -104,20 +104,19 @@ const ExportMain = () => {
           <h2 className="data-title">More data</h2>
           <br></br>
           {/* <NewHoldersCount /> */}
-          <NewTotalQueryFees />
+          {/* <NewTotalQueryFees />
           <NewCurrentEpoch />
           <NewTotalGRTWithdrawn />
           <NewTotalGRTDeposited />
-          <br></br>
-        <h3 className="adminSubheader-text2 admin-subtitle-centre monitor-config">The export charts are having a revamp and therefore are temporarily unavailable for export. Please come back soon to find more charts available.</h3>
-     </div>
+          <br></br>  */}
+     {/* </div> */}
               
    
         {/* <div className="admin-video monitor-config"><video width="400" height="230" className="video" frameborder="0" title="TGN" src={tutorial} controls></video>
   </div> */}
 
-        {/* <div className="mobile-config hide-export"><ExportMobileConfig /></div>
-        <div className="monitor-config hide-export"><ExportMonitorConfig /></div> */}
+        <div className="mobile-config hide-export"><ExportMobileConfig /></div>
+        <div className="monitor-config hide-export"><ExportMonitorConfig /></div>
         <div className="hide-export"><Footer /></div>
       </div>
     </div>

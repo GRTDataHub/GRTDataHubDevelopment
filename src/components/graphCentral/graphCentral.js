@@ -15,6 +15,10 @@ const GraphCentral = () => ({
             <h3 className="QB-about-page-text"><a className="chatbot-link" href='https://graphcentral.substack.com/' target="_blank" rel="noreferrer">Graph Central</a> curates information and serves <a className="chatbot-link" href='https://twitter.com/graphcentral' target="_blank" rel="noreferrer">real-time updates</a> on happenings in The Graph’s ecosystem and web3.<br></br><br></br>A newsletter covering Community Grants, Hackathons, Improvement Proposals (GIPs), and much more happening in The Graph ecosystem.</h3><br></br><h3 className="QB-about-page-text">Created By <a className="chatbot-link" href='https://twitter.com/chidubem_w3' target="_blank" rel="noreferrer">Chidubem</a>, GraphAdvocate & DAO Member.</h3><br></br><br></br>You can find all translated newsletters, <a className="chatbot-link" href='https://linktr.ee/graphcentral' target="_blank" rel="noreferrer">here</a>. 
 
             <hr className="QB-about-hr"></hr>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="https://graphcentral.substack.com/p/15-new-multi-chain-milestone-fantom" target="_blank" rel="noreferrer">Issue #15 - New Multi-Chain Milestone: Fantom & Polygon joins The Graph.</a></h2>
+            <br></br>
+            <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="https://graphcentral.substack.com/p/14-over-37-billion-queries-in-march" target="_blank" rel="noreferrer">Issue #14 - Over 37 Billion Queries in March Alone!</a></h2>
+            <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="https://graphcentral.substack.com/p/support-for-sepolia-testnet-live" target="_blank" rel="noreferrer">Issue #13 - Support for Sepolia Testnet live in Subgraph Studio</a></h2>
             <br></br>
             <h2 className="QB-about-page-subtitle"><a className="chatbot-link" href="https://graphcentral.substack.com/p/12-indexing-rewards-now-available" target="_blank" rel="noreferrer">Issue #12 - Indexing Rewards Now Available on Arbitrum One</a></h2>

@@ -62,6 +62,9 @@ import GraphCentral from './components/graphCentral/graphCentral';
 import ReduceGasESP from './components/chatBot/ReduceGasESP';
 
 import Quiz from "./components/quiz/Quiz";
+import FinalExam from './components/finalExam/FinalExam';
+import FlashCards from './components/flashcards/Flashcards';
+import DocumentationFinderHome from './components/documentationFinder/DocumentationFinderHome';
 
 const Home = () => ({
   render() {
@@ -218,8 +221,14 @@ class App extends Component {
                   element={<GraphCentral/>} />
                    <Route path="/ReduceGasESP"
                   element={<ReduceGasESP/>} />
-                    <Route path="/quiz"
+                    <Route path="/Quiz"
                   element={<Quiz/>} />
+                   <Route path="/FinalExam"
+                  element={<FinalExam/>} />
+                    <Route path="/flashCards"
+                  element={<FlashCards/>} />
+                    <Route path="/DocumentationFinderHome"
+                  element={<DocumentationFinderHome/>} />
           </Routes>
       </Router>
         ) 

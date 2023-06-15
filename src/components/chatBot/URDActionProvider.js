@@ -458,28 +458,6 @@ handleFeesToDelegate() {
     messages: [...prev.messages, message],
   }));
 }
-// Delegate Guides Start
-handleDelegateGuides() {
-  const message = this.createChatbotMessage(<a>میں آپ کو وہ فراہم کروں گا جو آپ کو ڈیلیگیٹر بننے کی ضرورت ہے۔ مندرجہ ذیل معلومات اور وسائل آپ کی مدد کریں گے.
-    <br></br><br></br>
-    انڈیکسرز ٹیوٹوریل کا انتخاب دیکھنے سے  آپ کو یہ سمجھنے میں مدد ملے گی کہ آپ کو کیا تلاش کرنے کی ضرورت ہے۔ اس بات کو یقینی بنانے کے لئے کہ آپ تفویض کرنے سے پہلے پراعتماد ہیں ، مزید تفہیم حاصل کرنے کے لئے نیچے دیئے گئے سبق دیکھیں۔
-    <br></br><br></br>
-    آپ اپنے جی آر ٹی ٹوکنز کو اپنی پسند کے انڈیکسر کو تفویض کرکے <a className="cla" href="https://thegraph.com/explorer/participants/indexers" target="_blank">network.thegraph.com</a> پر سٹیک پر لگا سکتے ہیں۔ 
-    <br></br><br></br>
-    ایک 0.5٪ ڈیلیگیشن ٹیکس ہے جو ڈیلیگیشن کے وقت خرچ کیا جاتا ہے تاکہ ڈیلیگیٹرز کو انڈیکسر سے وابستہ کرنے کی حوصلہ افزائی کی جاسکے۔
-    <br></br><br></br>
-    غیر تفویض کرنے میں 28 دن لگتے ہیں کیونکہ یہ مختص کی زیادہ سے زیادہ مدت ہے۔
-    <br></br><br></br>
-    ایک ڈیلیگیشن ٹرانزیکشن کی اوسط لاگت کے لئے ، گرافٹرونوٹس کا دورہ  کریں اور فیس منتخب کریں۔
-    <br></br>
-    <a className="cla" href="https://www.graphtronauts.com/#/indexers" target="_blank">گرافٹرونوٹس</a><br></br><br></br>آپ <a className="cla" href="https://docs.thegraph.academy/network/delegators/general-documentation-1/choosing-indexers/guides" target="_blank">یہاں</a> اپنے جی آر ٹی کو تفویض کرنے یا اس میں حصہ لینے کے بارے میں رہنما تلاش کر سکتے ہیں۔ <br></br><br></br>گرافٹرونوٹس نے اپنے گائیڈ بھی بنائے ہیں:<br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-stake-your-tokens-with-the-graph-the-complete-guide-to-become-a-delegator-3f723e6420b1" target="_blank">ڈیلیگیٹر بننے کے لیے مکمل گائیڈ</a><br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s" target="_blank">Coinbase والیٹ Staking</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/binance-staking-vs-delegating-with-the-graph-network-b4ba7e259b73" target="_blank">بائننس اسٹیکنگ بمقابلہ گراف نیٹ ورک کے ساتھ ڈیلیگیٹنگ</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/faq-for-the-graph-delegators-2b4a03a830f2" target="_blank">گراف ڈیلیگیٹرز کے لیے اکثر پوچھے گئے سوالات</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-reduce-the-cost-of-gas-for-delegating-your-grt-tokens-8b2edb3697c5" target="_blank">اپنے جی آر ٹی ٹوکن ڈیلیگ کرنے کے لیے گیس کی قیمت کو کیسے کم کیا جائے۔</a></a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
 
 handleWeb3DApp() {
   const message = this.createChatbotMessage(<a>
@@ -867,27 +845,7 @@ handleLearnWeb3() {
   }));
 }
 // Courses End
-// Women Of Web 3 Start
-handleWomenInWeb3() {
-  const message = this.createChatbotMessage(<a>
-    
-    <a className="cla" href="https://twitter.com/evabeylin?s=21&t=xlTfEQdph_MfbuUlhFrb0Q" target="_blank" rel="noreferrer"><strong>ایوا بیلن</strong></a> اکتوبر 2020 سے گراف فاؤنڈیشن کی ڈائریکٹر ہیں۔ وہ ای گرل کیپٹل کے ذریعے بنیادی ایتھیریم ٹیکنالوجی میں سرمایہ کار اور حامی  ہیں اور گراف کی ترقی کی  قیادت کر رہی  ہیں۔ وہ کوائن ڈیسک کے سب سے زیادہ بااثر 2022 میں سے ایک ہے، یہاں مکمل بلاگ پڑھیں. انہوں نے گراف کے بنیادی ڈویلپرز کو گرانٹس میں 135 ملین ڈالر سے زیادہ کی تقسیم اور ٹائیگر گلوبل کی سربراہی میں فاؤنڈیشن کے 50 ملین ڈالر کے سرمائے کی قیادت کی ہے۔ گراف ڈے 2022 میں ہمارے ڈیسینٹرلائزیشن سفر  کے بارے میں ان کی گفتگو دیکھیں ، <a className="cla" href="https://www.coindesk.com/consensus-magazine/2022/12/05/eva-beylin-most-influential-2022/" target="_blank" rel="noreferrer">یہاں</a>۔ انہوں نے فوربس 2023 انڈر <a className="cla" href="https://www.forbes.com/profile/eva-beylin/?sh=34d711c95444" target="_blank" rel="noreferrer">30</a> بنایا۔ آپ یہاں ایک انٹرویو دیکھ کر ایوا کو جان سکتے ہیں۔
-    <br></br><br></br>
-    <a className="cla" href="https://twitter.com/theklineventure?s=21&t=8FTTZesLJJUxAVnVbmLgQg" target="_blank" rel="noreferrer"><strong>ٹیگن کلائن</strong></a>بنانے میں مدد کے لئے 22.5 ملین جمع کرنے کے بعد جو ایتھیریم ڈویلپرز کو یہ سمجھنے دیتا ہے کہ  ان کی مصنوعات کو کس طرح استعمال کیا جارہا ہے ، اس نے اس منصوبے کو منیٹائز کرنے میں مدد کے لئے ایج اینڈ نوڈ کی مشترکہ بنیاد رکھی۔ ایج اینڈ نوڈ کو اصل میں جی آر ٹی ٹوکن کے 8٪ حصص کے ساتھ مالی اعانت فراہم کی گئی تھی ، جس کی قیمت اب تقریبا 650 ملین ڈالر ہے۔ کلائن نے دی گراف سے ملحقہ منصوبوں میں ایج اینڈ نوڈ کی سرمایہ کاری کی بھی قیادت کی ہے ، جو  2021 میں مجموعی طور پر 3.1 ملین ڈالر ہے۔ انہوں نے فوربز 2022 انڈر <a className="cla" href="https://www.forbes.com/profile/tegan-kline/?sh=1465202462f7" target="_blank" rel="noreferrer">30</a> بنایا۔ آپ یہاں اس کی ویب سائٹ پر جاکر کلائن کو جان سکتے <a className="cla" href="https://www.tegankline.com/" target="_blank" rel="noreferrer">ہیں</a>۔ اس کے ساتھ ایک انٹرویو دیکھیں، <a className="cla" href="https://youtu.be/yONuFNxJVrc" target="_blank" rel="noreferrer">یہاں</a>. یا <a className="cla" href="https://youtu.be/ZGHwTb92Rrg" target="_blank" rel="noreferrer">یہاں</a>یہاں (جی آر ٹی کیو) پوڈ کاسٹ سن سکتے  ہیں۔
-     <br></br><br></br>
-     <a className="cla" href="https://twitter.com/girlcalledreem?s=21&t=h9ZItE1mnaruz2uPiHkrLQ" target="_blank" rel="noreferrer"><strong>ریم چہارور</strong></a>گرانٹس کے کام کی پیروی کی ہے ، پھر وہ پہلے ہی ریم کا سامنا کرچکے ہیں۔ وہ  گراف کمیونٹی کے لئے ایک اہم اثاثہ ہے اور اس کا کام مختلف قسم کے اہم اقدامات کا احاطہ کرتا ہے. آپ اسے (جی آر ٹی کیو) پوڈ کاسٹ پر سن سکتے ہیں ، یہاں۔ وہ کرپٹو میں اپنے داخلے اور گراف فاؤنڈیشن میں اپنے کام کے بارے میں بات کرتی ہے ، گرانٹ کے لئے درخواست دینے کے خواہاں افراد کے لئے اس کا مشورہ (اور جہاں فاؤنڈیشن مزید گذارشات دیکھنا چاہتی ہے) ، آر ایف پی اور گرانٹس پروگراموں کے مابین فرق ، اور جلد ہی لانچ گراف ایڈوکیٹس پروگرام۔
-     <br></br><br></br>
-     جب کوئی انڈیکسر کا ذکر کرتا ہے تو وہ مرد کے نام استعمال کرتے ہیں۔ "وہ اپنا الاٹمنٹ بند کر دیتا ہے"۔ انڈیکسر ٹیموں پر کام کرنے والی ویب 3 میں خواتین کو اجاگر کرنے یا گراف ایکو سسٹم کے اندر اپنا انڈیکسر چلانے  کے خواہاں گرافٹرونوٹس نے ویب 3 کی خواتین کے ساتھ انٹرویوز کا ایک سلسلہ منعقد کیا۔
-     <br></br><br></br>
-     <a className="cla" href="https://www.youtube.com/watch?v=WTdf9wEhSLg" target="_blank" rel="noreferrer">ویب 3 کی خواتین - گراف اوپس سے انا</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=0D4_17B6ypY" target="_blank" rel="noreferrer">ویب 3 کی خواتین - سیٹیڈیل.ون سے انا</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=chvIFfPfOjY" target="_blank" rel="noreferrer">ویب 3 کی خواتین - چینوڈ ٹیک سے  (آئی آئی این سی اے)</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=Z7UnQotqLVA" target="_blank" rel="noreferrer">ویب 3 کی خواتین   -  اسٹیک 2 ارن سے گیبی</a></a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// Women Of Web 3 End
+
 // Discord Start
 handleDiscord() {
   const message = this.createChatbotMessage(<a>
@@ -1029,39 +987,7 @@ handleGeo() {
   }));
 }
 // Geo  End
-// Fast Streaming Start
-handleSubstreams() {
-  const message = this.createChatbotMessage(<a>اسٹریمنگ فاسٹ ایک پروٹوکول انفراسٹرکچر کمپنی ہے جو بلاکچین ڈیٹا ٹرانسمیشن کے لئے انتہائی اسکیل ایبل کراس چین فن تعمیر کی تعمیر میں مہارت رکھتی ہے۔ 60 ملین ڈالر کی کور ڈویلپر گرانٹ اپنی نوعیت کی پہلی گرانٹ ہے ، جو باہمی تعاون سے جدت طرازی کی ایک نئی سرحد کا آغاز کرتی ہے جہاں کمیونٹیز اور کاروباری ادارے بنیادی طور پر زیادہ کھلے انٹرنیٹ کی تعمیر کے لئے سیدھ میں آتے ہیں۔<br></br><br></br>اسٹریمنگ فاسٹ ایک پروٹوکول انفراسٹرکچر کمپنی ہے جو بلاکچین ڈیٹا ٹرانسمیشن کے لئے انتہائی اسکیل ایبل کراس چین فن تعمیر کی تعمیر میں مہارت رکھتی ہے۔ 60 ملین ڈالر کی کور دیو گرانٹ اپنی نوعیت کی پہلی گرانٹ ہے ، جو باہمی تعاون سے جدت طرازی کی ایک نئی سرحد کا آغاز کرتی ہے جہاں کمیونٹیز اور کاروباری ادارے بنیادی طور پر زیادہ کھلے انٹرنیٹ کی تعمیر کے لئے سیدھ میں آتے ہیں۔<br></br><br></br>
-  سب اسٹریمز کے بارے میں دستاویزات تلاش کرنے کے لئے، <a className="cla" href="https://thegraph.com/blog/core-dev-grant" target="_blank" rel="noreferrer">یہاں</a>
-   <hr></hr>اسٹریمنگ فاسٹ ڈسکورڈ سرور میں شامل ہوں یا انہیں یہاں چیک کریں۔<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=qWxffTKpciU'/></a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// Fast Streaming  End
-// Graphtronauts Start
-handleGraphtronauts() {
-  const message = this.createChatbotMessage(<a>ڈیلیگیٹرز کے لئے ایک کمیونٹی ، ڈیلیگیٹرز کے ذریعہ تعمیر کی گئی۔<br></br>گرافٹرونوٹس ایک ایسا گروپ ہے جو ان لوگوں کے لئے چیٹ کو آسان بنانے کے لئے وقف ہے جو جی آر ٹی رکھنا چاہتے ہیں اور گراف پروجیکٹ کے بنیادی اصولوں کے بارے میں بات کرتے ہیں۔ نہ صرف وہ  گراف ایکو سسٹم کے لئے طویل مدتی جی آر ٹی ہولڈرز کی سب سے بڑی غیر سرکاری کمیونٹی ہیں، ان کا مقصد گراف کے لئے ایک ڈیلیگیٹر بننے کے لئے ان کے سفر میں لوگوں کی مدد کرنا ہے.<br></br><br></br>'ہم دوسروں کو اٹھا کر اٹھتے ہیں' - گرافٹرونوٹ | 16 جنوری 2021 کو قائم کیا گیا<br></br><br></br>
-   باغے اور کرس ایونگ کے ساتھ  اس <a className="cla" href="https://www.grtiq.com/grtiq-podcast-35-the-graphtronauts/" target="_blank" rel="noreferrer">جی آر ٹی آئی کیو پوڈ کاسٹ</a> کو سن کر گرافٹرونوٹس کے
-بارے میں مزید جانیں۔
-<br></br>
-اور یہ جی آر ٹی آئی کیو <a className="cla" href="https://www.grtiq.com/grtiq-podcast-90-paolo-diomede/" target="_blank" rel="noreferrer">پوڈ کاسٹ</a> پاؤلو ڈائومڈ کے ساتھ۔
-<br></br>
-آپ مندرجہ ذیل لنکس کے ذریعے کمیونٹی میں شامل ہوسکتے ہیں:<br></br><a className="cla" href="https://t.me/graphtronauts" target="_blank" rel="noreferrer">ٹیلیگرام</a><br></br><a className="cla" href="https://twitter.com/graphtronauts" target="_blank" rel="noreferrer">ٹویٹر</a><br></br><a className="cla" href="https://www.graphtronauts.com/#/" target="_blank" rel="noreferrer">گرافٹرونوٹس ایپ</a><br></br><a className="cla" href="https://old.graphtronauts.com/" target="_blank" rel="noreferrer">ویب سائٹ</a><br></br><a className="cla" href="https://www.youtube.com/channel/UCPAUeNaRtBV-jdSKY8wmcXg" target="_blank" rel="noreferrer">یوٹیوب</a><br></br><a className="cla" href="https://www.reddit.com/r/Graphtronauts/" target="_blank" rel="noreferrer">ریڈٹ</a><hr></hr>
-گرافٹرونوٹس انڈیکسر (<a className="cla" href="https://thegraph.com/explorer/profile/0x0c3aab9f49c01070ec359aae4778fcbb01d2fbef?view=Indexing" target="_blank" rel="noreferrer">graphtronauts-indexer.eth</a>) اب براہ راست ہے اور وفود کے لئے تیار ہے! مزید معلومات کے لئے نیچے دیئے گئے ٹویٹ کو دیکھیں ، ان کے <a className="cla" href="https://t.co/dDUb7NHaPY" target="_blank" rel="noreferrer">ڈسکورڈ</a>  میں شامل ہوں  اور اپ ڈیٹس کے لئے ٹویٹر پر پیروی کریں۔
-<br></br><Embed className="embed" isDark url='https://twitter.com/graphtronauts_x/status/1593310558798979072?s=20&t=2FCQMWbItkh1MnXmrHBVIA'/>
-    </a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// Graphtronauts End
+
  // Chit Chat KEEP AT END Start
 
 
@@ -1302,17 +1228,6 @@ handleGraphDay() {
 handleWhatIsTheWeb() {
   const message = this.createChatbotMessage(<a>ویب نے سالوں میں بہت کچھ تیار کیا ہے ، اور آج اس کی ایپلیکیشنز اپنے ابتدائی دنوں سے ہی تقریبا ناقابل شناخت ہیں۔ ویب کے ارتقاء کو اکثر تین الگ الگ مراحل میں تقسیم کیا جاتا ہے: ویب 1 ، ویب 2 ، اور ویب 3۔<hr></hr><strong>ویب 1</strong><br></br>ویب 1.0 ویب کا پہلا تکرار تھا۔ زیادہ تر شرکاء مواد کے صارفین تھے اور تخلیق کار ڈویلپرز تھے جنہوں نے ایسی ویب سائٹس تیار کیں جن میں بنیادی طور پر متن یا تصویر کی شکل میں پیش کردہ معلومات شامل تھیں۔ ویب 1.0 تقریبا 1991 سے 2004 تک جاری رہا.<br></br>ویب 1.0 ایسی سائٹس پر مشتمل تھا جو متحرک ایچ ٹی ایم ایل کے بجائے جامد مواد پیش کرتے تھے۔ ڈیٹا اور مواد کو ڈیٹا بیس کے بجائے جامد فائل سسٹم سے پیش کیا گیا تھا ، اور سائٹس زیادہ تعامل نہیں تھی۔<strong>ویب 2</strong><br></br>ہم میں سے بیشتر نے بنیادی طور پر ویب کو اس کی موجودہ شکل میں تجربہ کیا ہے ، جسے عام طور پر ویب 2 کے نام سے جانا جاتا ہے۔ آپ ویب 2 کو تعامل اور سوشل ویب کے طور پر سوچ سکتے ہیں۔<br></br>ویب 2 کی دنیا میں ، آپ کو تخلیق کے عمل میں حصہ لینے کے لئے ڈویلپر بننے کی ضرورت نہیں ہے۔ بہت ساری ایپس کو اس طرح سے ڈیزائن کیا گیا ہے جو کسی کو بھی تخلیق کار بننے کی اجازت دیتا ہے۔<br></br>اگر آپ ایک خیال پیدا کرنا چاہتے ہیں اور اسے دنیا کے ساتھ اشتراک کرنا چاہتے ہیں تو، آپ اسے کر سکتے ہیں. اگر آپ کوئی ویڈیو اپ لوڈ کرنا چاہتے ہیں اور لاکھوں لوگوں کو اسے دیکھنے ، اس کے ساتھ بات چیت کرنے اور اس پر تبصرہ کرنے کی اجازت دینا چاہتے ہیں تو ، آپ ایسا بھی کرسکتے ہیں۔<br></br>ویب 2 آسان ہے، اصل میں، اور اس کی سادگی کی وجہ سے، دنیا بھر میں زیادہ سے زیادہ لوگ تخلیق کار بن رہے ہیں.<br></br>اس کی موجودہ شکل میں ویب بہت سے طریقوں سے واقعی بہت اچھا ہے، لیکن کچھ علاقے ایسے ہیں جہاں ہم بہت بہتر کر سکتے ہیں.<br></br><br></br><strong>ویب 3</strong><br></br>ویب 2 اور ویب 3 کے مابین کچھ بنیادی اختلافات ہیں ، لیکن غیر مرکزیت بنیادی طور پر ہے۔<br></br>اس کے بجائے ، ویب 3 ایپلیکیشنز بلاکچینز پر چلتی ہیں ، بہت سے نوڈس (سرورز) پیئر ٹو پیر کے ڈیسنٹرلائزڈ نیٹ ورکس ، یا ان دونوں کا ایک مجموعہ جو کرپٹو اکنامک پروٹوکول تشکیل دیتے ہیں۔ ان ایپس کو اکثر ڈیپس (ڈیسنٹرلائزڈ ایپس) کہا جاتا ہے ، اور آپ اس اصطلاح کو اکثر ویب اسپیس 3 میں استعمال ہوتے ہوئے دیکھیں گے۔
   </a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-
-handleCoinbase() {
-  const message = this.createChatbotMessage(<a>کوائن بیس والیٹ کے ساتھ اپنے جی آر ٹی ٹوکن کو کیسے تفویض کریں۔<br></br><br></br>اس مضمون میں ، وہ آپ کو سکھائے گا کہ <a className="cla" href="https://www.coinbase.com/wallet" target="_blank">کوائن بیس والیٹ</a> کا استعمال کرتے ہوئے ، گراف پروٹوکول کے اندر اپنے جی آر ٹی ٹوکن کو کس طرح تفویض کیا جائے۔<br></br><br></br>گرافٹرونوٹس کے ذریعہ بنائے گئے گائیڈ کو پڑھنے کے لئے ، <a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">یہاں</a> دیکھیں۔ یا اگر آپ ویڈیو ٹیوٹوریل دیکھنے کو ترجیح دیتے ہیں تو ، آپ اسے نیچے پائیں گے۔
-   <br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
     ,
   );
   this.setState((prev) => ({
@@ -1719,6 +1634,186 @@ handleBirthday() {
     }));
   }
 
+// ------------------------
+  // -Update V1 Start--------
+  // ------------------------
+
+  handleAI() {
+    const message = this.createChatbotMessage(<a><strong></strong>گراف نیٹ ورک کو بہتر کرنے کے لیے آرٹیفیشل انٹیلیجینس کا استعمال<strong></strong><br></br><br></br>دسمبر 2021، <a className="cla" href="https://semiotic.ai/" target="_blank" rel="noreferrer">سیمیٹک</a> سیمیٹک گراف کی چوتھی کور ڈویلپر ٹیم بن گئی۔ وہ گراف نیٹ ورک پر انڈیکسر کے طور پر کام کر رہے ہیں، جس کے لیے ڈیو اوپس کی خصوصی مہارتوں کی ضرورت ہے، اور 2021 کے اوائل سے ایک مسابقتی انڈیکسر، سیمیٹک-انڈیکسر۔ایتھ چلا رہا ہے۔ مزید، انہوں نے اپنی آٹیفیشل انٹیلیجینس مہارت کا استعمال کرتے ہوئے گراف ایکو سسٹم میں دو آٹومیشن سافٹ ویئر ٹولز جاری کیے ہیں: آٹو اگورا اور ایلوکیشن آپٹیمائزر. <a className="cla" href="https://thegraph.com/explorer/profile/0xd75c4dbcb215a6cf9097cfbcc70aab2596b96a9c?view=Indexing&chain=mainnet" target="_blank" rel="noreferrer">semiotic-indexer.eth</a><br></br><br></br>آپ یہ <a className="cla" href="https://thegraph.com/blog/using-ai-to-enhance-the-graph/" target="_blank" rel="noreferrer">بلاگ</a> پرھ سکتے ہیں، یہ ان کی ماضی اور موجودہ آرٹیفیشل انٹیلیجینس کوششوں کا ایک جائزہ فراہم کرتی ہے، اور یہ مستقبل کے خیالات کا خاکہ پیش کرتا ہے کے کیسے گراف کی منفرد ڈیٹا انڈیکسنگ کی صلاحیتوں کو آرٹیفیشل انٹیلیجینس ایپلیکیشنز کے لیے فائدہ اٹھایا جا سکتا ہے۔
+    آرٹیفیشل انٹیلیجینس کے بارے میں مزید جاننے کے لیے جی آر ٹی آئ کیو پوڈکاسٹ سنیں اینی، سیم، اورٹوماسز کے ساتھ دریافت کریں کے آٹیفیشل انٹیلیجینس کیا ہے، نظم و ضبط کی ابتدا، اور چیٹ جی پی ٹی کا مہاکاوی عروج اور وہ کیسے کام کرتا ہے۔<br></br><br></br>آرٹیفیشل انٹیلیجینس کے بارے میں مزید جاننے کے لیے جی آر ٹی آئ کیو <a className="cla" href="https://www.youtube.com/watch?v=7RZU7wbFKwQ" target="_blank" rel="noreferrer">پوڈکاسٹ</a> سنیں اینی، سیم، اورٹوماسز کے ساتھ دریافت کریں کے آٹیفیشل انٹیلیجینس کیا ہے، نظم و ضبط کی ابتدا، اور چیٹ جی پی ٹی کا مہاکاوی عروج اور وہ کیسے کام کرتا ہے۔</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleNetworkIntergration() {
+    const message = this.createChatbotMessage(<a>آپ <a className="cla" href="https://thegraph.com/docs/en/network-transition-faq/#the-graph-network-integration-status-tracker" target="_blank" rel="noreferrer">یہاں</a>، گراف نیٹ ورک کی انٹیگریشنز کی صورتحال پر اپ ڈیٹ رہ سکتے ہیں۔<br></br><br></br>آپ کو ایک ٹیبل ملے گا جو یہ بتاتا ہے کہ نیٹ ورک انٹیگریشن کے عمل میں ہر نیٹ ورک کہاں ہیں جو یہ ہیں:<br></br><br></br>گراف نیٹ ورک پر نیٹ ورک انٹیگریشن کا اعلان کر رہا ہے۔
+    <br></br>
+<br></br>نیٹ ورک انٹیگریشن مکمل
+<br></br>پہلا مرحلہ: ہوسٹڈ سروس پر نئے سب گرافس بند کرنا
+<br></br>دوسرا مرحلہ: ہوسٹڈ سروس پر سب گرافس اپ گریڈس بند کرنا
+<br></br>تیسرا مرحلہ: ہوسٹڈ سروس پر سب گرافس بند کرنا
+</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleArbitrum() {
+    const message = this.createChatbotMessage(<a><a className="cla" href="https://developer.arbitrum.io/intro/" target="_blank" rel="noreferrer">آربٹرم</a> ایتھیریم کے لیے ایک سکیلنگ حل ہے جو لاگت اور تاخیر کو کافی حد تک کرتا ہے۔<br></br><br></br>آربٹرم کے ساتھ انٹیگریشن کی بدولت، گراف کی انڈیکسنگ اور کیورنگ سروسز اب نیٹ ورک پر فعال ہیں۔ آربٹرم ون پر ڈویلپرز اب اوپن اے پی آئیز (سب گرافس) بنا اور شائع کر سکیں جو ایپلیکیشنز گراف کیو ایل کا استعمال کرتے ہوئے کیوری کر سکیں گی۔<br></br><br></br>اس فہرست میں آربٹرم کو شامل کر کے، گراف کی توسیعی کوششوں نے ویب 3 ایکو سسٹم کو متحد کرنے میں ایک اور قدپ اٹھایا ہے۔<hr></hr>ایل 2 پر گراف کو سکیل کرنے سے، نیٹ ورک کے شرکاء توقع کر سکتے ہیں:<br></br><br></br>گیس فیس میں 26 فیسد بچت<br></br>تیز ٹرانزیکشن رفتار<br></br>ایتھیریم کی طرف سے محفوظ<hr></hr>آپ اپنے جی آر ٹی اور ایتھ کو مندرجہ ذیل طریقوں سے بریج کر سکتے ہیں:<br></br><br></br><a className="cla" href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" rel="noreferrer">آربٹرم پر گراف بریج</a><br></br><a className="cla" href="https://jumper.exchange/" target="_blank" rel="noreferrer">کی طرف بھیجنا</a><br></br><a className="cla" href="https://bridge.connext.network/" target="_blank" rel="noreferrer">کونیکسٹ بریج</a><br></br><a className="cla" href="https://app.hop.exchange/#/send?token=ETH" target="_blank" rel="noreferrer">ہوپ ایکسچینج</a><hr></hr>10 اپریل 2023 تمام انڈیکسنگ کے انعامات کے 5 فیسد آربٹرم پر دیے جا رہے ہیں۔ جیسے جیسے نیٹ ورک کی شرکت میں اضافہ ہوتا ہے، اور جیسے کونسل اسے منظور کرتی ہے، انڈیکسنگ کے انعامات آہستہ آہستہ ایتھیریم سے آربٹرم منتقل ہو جاتے ہیں، بالآخر مکمل طور پر آربٹرم پر منتقل ہو جائیں گے۔</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+  
+  handleNetworks() {
+    const message = this.createChatbotMessage(<a>گراف نیٹ ورک اور ہوسٹڈ سروس پر نیٹ ورکس پر اپ ڈیٹ رہنے کے لیے، <a className="cla" href="https://thegraph.com/docs/en/#supported-networks" target="_blank" rel="noreferrer">یہاں</a> دیکھیں!</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleGRTTokenAddress() {
+    const message = this.createChatbotMessage(<a>نیچے آپ کو جی آر ٹی کے کنٹریکٹس اور تفصیلات ملیں گی، نقصان دہ کنٹریکٹ شامل کرنے سے بچنے کے لیے معلومات کو دو بار چیک کرنا یقینی بنائیں۔<br></br><br></br>نام: گراف
+<br></br>علامت: جی آر ٹی
+<br></br>نیٹ ورک: ایتھیریم (ای آر سی 20)
+<br></br>Ethereum: 0xc944E90C64B2c07662A292be6244BDf05Cda44a7<br></br>Arbitrum: 0x9623063377AD1B27544C965cCd7342f7EA7e88C7<br></br>اعشاریہ: 18
+<hr></hr>آپ یہ کوائن مارکیٹ کیپ پر چیک کر سکتے ہیں، <a className="cla" href="https://coinmarketcap.com/en/currencies/the-graph/" target="_blank" rel="noreferrer">یہاں</a></a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+handleCoinbase() {
+    const message = this.createChatbotMessage(<a><strong>گراف نئی ایل 2:  کے ٹیسٹ نیٹ <a className="cla" href="https://www.coinbase.com/blog/introducing-base" target="_blank">لانچ</a> کے لیے کوائن بیس کے ساتھ تعاون کر رہا ہے۔</strong><br></br><br></br>گراف نے بیس ٹیسٹ نیٹ کو پہلے دن سے ہی سپورٹ کیا ہے۔ بیس ٹیسٹ نیٹ کی گراف سے ہمایت سب گراف سٹوڈیو اور گراف نیٹ ورک میں مکمل تعاون کی بنیاد بھی رکھتی ہے جب بیس مین نیٹ لائیو ہوتا ہے۔ ڈویپلرز بیس مین نیٹ کے آغاز کی تیاری کے لیے ابھی ٹیسٹ نیٹ پر بیس سب گراف بنا کر خود کو واقف کر سکتے ہیں، اس لیے وہ گراف نیٹ ورک کا استعمال کرتے ہوئے ڈیسینٹرالائزڈ انداز میں مشن کے لیے اہم ڈیپ ڈیٹا کو کیوری کرنے کے لیے سب گراف کا استعمال جاری رکھ سکتے ہیں۔<br></br><br></br>ڈویلپرز آج ہی سے <a className="cla" href="https://thegraph.com/docs/en/cookbook/base-testnet/" target="_blank">یہاں</a>یہاں دستاویزات کو فالو کرتے ہوئے سب گراف کے ساتھ موئثر طریقے سے منظم بیس ڈیٹا سے کیوری کرنا شروع کریں۔ <hr></hr>اپنے کوائن بیس والیٹ کے ساتھ جی آر ٹی ٹوکنز کیسے ڈیلیگیٹ کریں<br></br><br></br>اس آرٹکل میں یہ آپ کو سکھائے گا کے گراف پروٹوکول میں کیسے اپنے جی آر ٹی ٹوکنز ڈیلیگیٹ کیے جائیں، کوائن بیس والیٹ کا استعمال کرتے ہوئے۔ <br></br><br></br>گرافٹرونوٹس کی بنائی گئی گائڈ پرھنے کے لیے، <a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">یہاں</a> دیکھیں۔ اور اگر آپ وڈیو ٹیوٹوریل دیکھنا پسند کریں گے،  تو آپ کو وہ نیچے مل جائے گا۔<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleGIPS() { 
+    const message = this.createChatbotMessage(<a><strong>گراف میں بہتری کی تجاویز</strong><hr></hr>جی آی پیز گراف کے تعمیری مرحلے کا ضروری جز ہے۔ وہ کمیونٹی کو ایسی تبدیلیاں تجویز کرنے، بحث کرنے اور لاگو کرنے کا ایک طریقہ فراہم کرتے ہیں جو گراف کو بہتر بنانے اور تیار کرنے میں مدد کرتے ہیں۔ ایک منظم عمل کی پیروی کرتے ہوئے، جی آی پیز اس بات کو یقینی بنانے میں مدد کرتے ہیں کہ اسے کھلے، شفاف اور باہمی تعاون کے ساتھ تیار کیا گیا ہے۔<hr></hr>مندرجہ ذیل میں سے کسی کے لیے <a className="cla" href="https://github.com/graphprotocol/graph-improvement-proposals" target="_blank">گٹ ہب ریپو</a> کا ملاحظہ کریں:<br></br><br></br>جی آی پیز - پروٹوکول لاجک، انٹرفیس، فعالیت، چارٹر، اور تجاویز۔<br></br>جی آر پیز - تجاویز کے لیے درخواستیں جو کسی اہم مسئلے کو حل کرتی ہیں یا گراف کے لیے ضروری استعمال کے معاملے کو حل کرتی ہیں۔<br></br>جی آر سیز - گراف پر تعمیر کے لیے ایپلیکیشن لیئر کمیونٹی کے معیارات پر تبصرے کی درخواستیں۔</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleBounties() { 
+    const message = this.createChatbotMessage(<a><strong>گراف ایڈوکیٹس ڈاو باؤنٹیز</strong><br></br><br></br>یہ باؤنٹیز ان ایڈوکیٹس کے لیے ہیں جو تعاون کرنا چاہتے ہیں، شامل ہونے کے لیے <a className="cla" href="https://app.dework.xyz/graph-advocatesdao" target="_blank">ڈی ورک</a> پر جائیں۔</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleBilling() { 
+    const message = this.createChatbotMessage(<a><strong>گراف بلنگ کیسے کام کرتی ہے</strong><br></br><br></br>گراف ایتھیریم مین نیٹ پر کام کرتا ہے، لیکن ٹرانزیکشن کے وقت اور خرچے کم کرنے کے لیے، بلنگ کنٹریکٹ <a className="cla" href="https://arbiscan.io/address/0x1b07d3344188908fb6deceac381f3ee63c48477a" target="_blank">آربٹرم</a> نیٹ ورک پر رہتا ہے۔<br></br><br></br>بلنگ نیٹ ورک پر کی گئی کیوریز پر مبنی ہے۔ ہر کیوری کے اخراجات، کیوری کی فیس، مقامی جی آر ٹی میں ادا کی جاتی ہے۔ کیوری کے اخراجات کیوری کی پیچیدگی اور نیٹ ورک کی حالت پر مبنی ہے۔ کیوری کی رقم تب بتائ جاتی ہے جب صارف کیوری پیش کرتا ہے، تاہم صارف جی آر ٹی سے محروم نہیں ہو گا اگر اگر استعمال شدہ رقم اس کے بیان کردہ سے زیادہ ہو۔ حد سے زیادہ ادائیگی سے بچنے کے لیے وہ کتنی رقم ادا کرنے کو تیار ہیں۔<br></br><br></br>انڈیکسرز گراف کیو ایل کیوریز پیش کر کے جی آر ٹی میں کیوری فیس کماتے ہیں۔ یہ درست اور بر وقت ڈیٹا فراہم کر کے اختتامی صارفین کو فائدہ پہنچاتا ہے۔ گراف ڈیٹا تک موئثر رسائ کے کے لیے مسابقی بازار کی اجازت دیتا ہے۔<br></br><br></br><strong>گراف نیٹ ورک پر کیوریز کے لیے ادائیگی کرنا اب اتنا ہی آسان ہے جتنا کریڈٹ کارڈ سوائپ کرنا! اب آپ ڈیبٹ یا کریڈٹ کارڈ کے ذریعے اپنے کیوری کی فیس بیلنس ادا کر سکتے ہیں، نئے <a className="cla" href="https://twitter.com/BanxaOfficial" target="_blank">بنکسا</a> وی فیاٹ اون ریمپ کی بدولت۔</strong><br></br><Embed className="embed" isDark url='https://twitter.com/graphprotocol/status/1638933843645288449?s=20'/></a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+handleDelegateGuides() {
+  const message = this.createChatbotMessage(<a>میں آپ کو وہ فراہم کروں گا جو آپ کو ڈیلیگیٹر بننے کی ضرورت ہے۔ مندرجہ ذیل معلومات اور وسائل آپ کی مدد کریں گے.
+    <br></br><br></br>
+    انڈیکسرز ٹیوٹوریل کا انتخاب دیکھنے سے  آپ کو یہ سمجھنے میں مدد ملے گی کہ آپ کو کیا تلاش کرنے کی ضرورت ہے۔ اس بات کو یقینی بنانے کے لئے کہ آپ تفویض کرنے سے پہلے پراعتماد ہیں ، مزید تفہیم حاصل کرنے کے لئے نیچے دیئے گئے سبق دیکھیں۔
+    <br></br><br></br>
+    آپ اپنے جی آر ٹی ٹوکنز کو اپنی پسند کے انڈیکسر کو تفویض کرکے <a className="cla" href="https://thegraph.com/explorer/participants/indexers" target="_blank">network.thegraph.com</a> پر سٹیک پر لگا سکتے ہیں۔ 
+    <br></br><br></br>
+    ایک 0.5٪ ڈیلیگیشن ٹیکس ہے جو ڈیلیگیشن کے وقت خرچ کیا جاتا ہے تاکہ ڈیلیگیٹرز کو انڈیکسر سے وابستہ کرنے کی حوصلہ افزائی کی جاسکے۔
+    <br></br><br></br>
+    غیر تفویض کرنے میں 28 دن لگتے ہیں کیونکہ یہ مختص کی زیادہ سے زیادہ مدت ہے۔
+    <br></br><br></br>
+    ایک ڈیلیگیشن ٹرانزیکشن کی اوسط لاگت کے لئے ، گرافٹرونوٹس کا دورہ  کریں اور فیس منتخب کریں۔
+    <br></br>
+    <a className="cla" href="https://www.graphtronauts.com/#/indexers" target="_blank">گرافٹرونوٹس</a><br></br><br></br>آپ <a className="cla" href="https://docs.thegraph.academy/network/delegators/general-documentation-1/choosing-indexers/guides" target="_blank">یہاں</a> اپنے جی آر ٹی کو تفویض کرنے یا اس میں حصہ لینے کے بارے میں رہنما تلاش کر سکتے ہیں۔ <br></br><br></br>گرافٹرونوٹس نے اپنے گائیڈ بھی بنائے ہیں:<br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-stake-your-tokens-with-the-graph-the-complete-guide-to-become-a-delegator-3f723e6420b1" target="_blank">ڈیلیگیٹر بننے کے لیے مکمل گائیڈ</a><br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s" target="_blank">Coinbase والیٹ Staking</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/binance-staking-vs-delegating-with-the-graph-network-b4ba7e259b73" target="_blank">بائننس اسٹیکنگ بمقابلہ گراف نیٹ ورک کے ساتھ ڈیلیگیٹنگ</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/faq-for-the-graph-delegators-2b4a03a830f2" target="_blank">گراف ڈیلیگیٹرز کے لیے اکثر پوچھے گئے سوالات</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-reduce-the-cost-of-gas-for-delegating-your-grt-tokens-8b2edb3697c5" target="_blank">اپنے جی آر ٹی ٹوکن ڈیلیگ کرنے کے لیے گیس کی قیمت کو کیسے کم کیا جائے۔</a></a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+handleGraphtronauts() {
+  const message = this.createChatbotMessage(<a>ڈیلیگیٹرز کے لئے ایک کمیونٹی ، ڈیلیگیٹرز کے ذریعہ تعمیر کی گئی۔<br></br>گرافٹرونوٹس ایک ایسا گروپ ہے جو ان لوگوں کے لئے چیٹ کو آسان بنانے کے لئے وقف ہے جو جی آر ٹی رکھنا چاہتے ہیں اور گراف پروجیکٹ کے بنیادی اصولوں کے بارے میں بات کرتے ہیں۔ نہ صرف وہ  گراف ایکو سسٹم کے لئے طویل مدتی جی آر ٹی ہولڈرز کی سب سے بڑی غیر سرکاری کمیونٹی ہیں، ان کا مقصد گراف کے لئے ایک ڈیلیگیٹر بننے کے لئے ان کے سفر میں لوگوں کی مدد کرنا ہے.<br></br><br></br>'ہم دوسروں کو اٹھا کر اٹھتے ہیں' - گرافٹرونوٹ | 16 جنوری 2021 کو قائم کیا گیا<br></br><br></br>
+   باغے اور کرس ایونگ کے ساتھ  اس <a className="cla" href="https://www.grtiq.com/grtiq-podcast-35-the-graphtronauts/" target="_blank" rel="noreferrer">جی آر ٹی آئی کیو پوڈ کاسٹ</a> کو سن کر گرافٹرونوٹس کے
+بارے میں مزید جانیں۔
+<br></br>
+اور یہ جی آر ٹی آئی کیو <a className="cla" href="https://www.grtiq.com/grtiq-podcast-90-paolo-diomede/" target="_blank" rel="noreferrer">پوڈ کاسٹ</a> پاؤلو ڈائومڈ کے ساتھ۔
+<br></br>
+آپ مندرجہ ذیل لنکس کے ذریعے کمیونٹی میں شامل ہوسکتے ہیں:<br></br><a className="cla" href="https://t.me/graphtronauts" target="_blank" rel="noreferrer">ٹیلیگرام</a><br></br><a className="cla" href="https://twitter.com/graphtronauts" target="_blank" rel="noreferrer">ٹویٹر</a><br></br><a className="cla" href="https://www.graphtronauts.com/#/" target="_blank" rel="noreferrer">گرافٹرونوٹس ایپ</a><br></br><a className="cla" href="https://old.graphtronauts.com/" target="_blank" rel="noreferrer">ویب سائٹ</a><br></br><a className="cla" href="https://www.youtube.com/channel/UCPAUeNaRtBV-jdSKY8wmcXg" target="_blank" rel="noreferrer">یوٹیوب</a><br></br><a className="cla" href="https://www.reddit.com/r/Graphtronauts/" target="_blank" rel="noreferrer">ریڈٹ</a><hr></hr>
+گرافٹرونوٹس انڈیکسر (<a className="cla" href="https://thegraph.com/explorer/profile/0x0c3aab9f49c01070ec359aae4778fcbb01d2fbef?view=Indexing" target="_blank" rel="noreferrer">graphtronauts-indexer.eth</a>) اب براہ راست ہے اور وفود کے لئے تیار ہے! مزید معلومات کے لئے نیچے دیئے گئے ٹویٹ کو دیکھیں ، ان کے <a className="cla" href="https://t.co/dDUb7NHaPY" target="_blank" rel="noreferrer">ڈسکورڈ</a>  میں شامل ہوں  اور اپ ڈیٹس کے لئے ٹویٹر پر پیروی کریں۔
+<br></br><Embed className="embed" isDark url='https://twitter.com/graphtronauts_x/status/1593310558798979072?s=20&t=2FCQMWbItkh1MnXmrHBVIA'/>
+    </a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+handleSubstreams() {
+  const message = this.createChatbotMessage(<a>اسٹریمنگ فاسٹ ایک پروٹوکول انفراسٹرکچر کمپنی ہے جو بلاکچین ڈیٹا ٹرانسمیشن کے لئے انتہائی اسکیل ایبل کراس چین فن تعمیر کی تعمیر میں مہارت رکھتی ہے۔ 60 ملین ڈالر کی کور ڈویلپر گرانٹ اپنی نوعیت کی پہلی گرانٹ ہے ، جو باہمی تعاون سے جدت طرازی کی ایک نئی سرحد کا آغاز کرتی ہے جہاں کمیونٹیز اور کاروباری ادارے بنیادی طور پر زیادہ کھلے انٹرنیٹ کی تعمیر کے لئے سیدھ میں آتے ہیں۔<br></br><br></br>اسٹریمنگ فاسٹ ایک پروٹوکول انفراسٹرکچر کمپنی ہے جو بلاکچین ڈیٹا ٹرانسمیشن کے لئے انتہائی اسکیل ایبل کراس چین فن تعمیر کی تعمیر میں مہارت رکھتی ہے۔ 60 ملین ڈالر کی کور دیو گرانٹ اپنی نوعیت کی پہلی گرانٹ ہے ، جو باہمی تعاون سے جدت طرازی کی ایک نئی سرحد کا آغاز کرتی ہے جہاں کمیونٹیز اور کاروباری ادارے بنیادی طور پر زیادہ کھلے انٹرنیٹ کی تعمیر کے لئے سیدھ میں آتے ہیں۔<br></br><br></br>
+  سب اسٹریمز کے بارے میں دستاویزات تلاش کرنے کے لئے، <a className="cla" href="https://thegraph.com/blog/core-dev-grant" target="_blank" rel="noreferrer">یہاں</a>
+   <hr></hr>اسٹریمنگ فاسٹ ڈسکورڈ سرور میں شامل ہوں یا انہیں یہاں چیک کریں۔<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=qWxffTKpciU'/></a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+handleWomenInWeb3() {
+  const message = this.createChatbotMessage(<a>
+    
+    <a className="cla" href="https://twitter.com/evabeylin?s=21&t=xlTfEQdph_MfbuUlhFrb0Q" target="_blank" rel="noreferrer"><strong>ایوا بیلن</strong></a> اکتوبر 2020 سے گراف فاؤنڈیشن کی ڈائریکٹر ہیں۔ وہ ای گرل کیپٹل کے ذریعے بنیادی ایتھیریم ٹیکنالوجی میں سرمایہ کار اور حامی  ہیں اور گراف کی ترقی کی  قیادت کر رہی  ہیں۔ وہ کوائن ڈیسک کے سب سے زیادہ بااثر 2022 میں سے ایک ہے، یہاں مکمل بلاگ پڑھیں. انہوں نے گراف کے بنیادی ڈویلپرز کو گرانٹس میں 135 ملین ڈالر سے زیادہ کی تقسیم اور ٹائیگر گلوبل کی سربراہی میں فاؤنڈیشن کے 50 ملین ڈالر کے سرمائے کی قیادت کی ہے۔ گراف ڈے 2022 میں ہمارے ڈیسینٹرلائزیشن سفر  کے بارے میں ان کی گفتگو دیکھیں ، <a className="cla" href="https://www.coindesk.com/consensus-magazine/2022/12/05/eva-beylin-most-influential-2022/" target="_blank" rel="noreferrer">یہاں</a>۔ انہوں نے فوربس 2023 انڈر <a className="cla" href="https://www.forbes.com/profile/eva-beylin/?sh=34d711c95444" target="_blank" rel="noreferrer">30</a> بنایا۔ آپ یہاں ایک انٹرویو دیکھ کر ایوا کو جان سکتے ہیں۔
+    <br></br><br></br>
+    <a className="cla" href="https://twitter.com/theklineventure?s=21&t=8FTTZesLJJUxAVnVbmLgQg" target="_blank" rel="noreferrer"><strong>ٹیگن کلائن</strong></a>بنانے میں مدد کے لئے 22.5 ملین جمع کرنے کے بعد جو ایتھیریم ڈویلپرز کو یہ سمجھنے دیتا ہے کہ  ان کی مصنوعات کو کس طرح استعمال کیا جارہا ہے ، اس نے اس منصوبے کو منیٹائز کرنے میں مدد کے لئے ایج اینڈ نوڈ کی مشترکہ بنیاد رکھی۔ ایج اینڈ نوڈ کو اصل میں جی آر ٹی ٹوکن کے 8٪ حصص کے ساتھ مالی اعانت فراہم کی گئی تھی ، جس کی قیمت اب تقریبا 650 ملین ڈالر ہے۔ کلائن نے دی گراف سے ملحقہ منصوبوں میں ایج اینڈ نوڈ کی سرمایہ کاری کی بھی قیادت کی ہے ، جو  2021 میں مجموعی طور پر 3.1 ملین ڈالر ہے۔ انہوں نے فوربز 2022 انڈر <a className="cla" href="https://www.forbes.com/profile/tegan-kline/?sh=1465202462f7" target="_blank" rel="noreferrer">30</a> بنایا۔ آپ یہاں اس کی ویب سائٹ پر جاکر کلائن کو جان سکتے <a className="cla" href="https://www.tegankline.com/" target="_blank" rel="noreferrer">ہیں</a>۔ اس کے ساتھ ایک انٹرویو دیکھیں، <a className="cla" href="https://youtu.be/yONuFNxJVrc" target="_blank" rel="noreferrer">یہاں</a>. یا <a className="cla" href="https://youtu.be/ZGHwTb92Rrg" target="_blank" rel="noreferrer">یہاں</a>یہاں (جی آر ٹی کیو) پوڈ کاسٹ سن سکتے  ہیں۔
+     <br></br><br></br>
+     <a className="cla" href="https://twitter.com/girlcalledreem?s=21&t=h9ZItE1mnaruz2uPiHkrLQ" target="_blank" rel="noreferrer"><strong>ریم چہارور</strong></a>گرانٹس کے کام کی پیروی کی ہے ، پھر وہ پہلے ہی ریم کا سامنا کرچکے ہیں۔ وہ  گراف کمیونٹی کے لئے ایک اہم اثاثہ ہے اور اس کا کام مختلف قسم کے اہم اقدامات کا احاطہ کرتا ہے. آپ اسے (جی آر ٹی کیو) پوڈ کاسٹ پر سن سکتے ہیں ، یہاں۔ وہ کرپٹو میں اپنے داخلے اور گراف فاؤنڈیشن میں اپنے کام کے بارے میں بات کرتی ہے ، گرانٹ کے لئے درخواست دینے کے خواہاں افراد کے لئے اس کا مشورہ (اور جہاں فاؤنڈیشن مزید گذارشات دیکھنا چاہتی ہے) ، آر ایف پی اور گرانٹس پروگراموں کے مابین فرق ، اور جلد ہی لانچ گراف ایڈوکیٹس پروگرام۔
+     <br></br><br></br>
+     جب کوئی انڈیکسر کا ذکر کرتا ہے تو وہ مرد کے نام استعمال کرتے ہیں۔ "وہ اپنا الاٹمنٹ بند کر دیتا ہے"۔ انڈیکسر ٹیموں پر کام کرنے والی ویب 3 میں خواتین کو اجاگر کرنے یا گراف ایکو سسٹم کے اندر اپنا انڈیکسر چلانے  کے خواہاں گرافٹرونوٹس نے ویب 3 کی خواتین کے ساتھ انٹرویوز کا ایک سلسلہ منعقد کیا۔
+     <br></br><br></br>
+     <a className="cla" href="https://www.youtube.com/watch?v=WTdf9wEhSLg" target="_blank" rel="noreferrer">ویب 3 کی خواتین - گراف اوپس سے انا</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=0D4_17B6ypY" target="_blank" rel="noreferrer">ویب 3 کی خواتین - سیٹیڈیل.ون سے انا</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=chvIFfPfOjY" target="_blank" rel="noreferrer">ویب 3 کی خواتین - چینوڈ ٹیک سے  (آئی آئی این سی اے)</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=Z7UnQotqLVA" target="_blank" rel="noreferrer">ویب 3 کی خواتین   -  اسٹیک 2 ارن سے گیبی</a></a>
+    ,
+  );
+  this.setState((prev) => ({
+    ...prev,
+    messages: [...prev.messages, message],
+  }));
+}
+
+// end v1
+  
 handleHello() {
   const message = this.createChatbotMessage(<a>ہیلو، میں آج آپ کی مدد کیسے کر سکتا ہوں؟</a>
   ,

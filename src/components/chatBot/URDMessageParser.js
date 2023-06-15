@@ -20,6 +20,34 @@ class URDMessageParser {
       this.actionProvider.handleMIPS();
     }
 
+    else if (lowercase.includes('coinbase') || lowercase.includes('coinbase wallet')) {
+      this.actionProvider.handleCoinbase();
+    }
+
+    else if (lowercase.includes('gips') || lowercase.includes('improvement')) {
+      this.actionProvider.handleGIPS();
+    }
+
+    else if (lowercase.includes('billing')) {
+      this.actionProvider.handleBilling();
+    }
+
+    else if (lowercase.includes('bounties')) {
+      this.actionProvider.handleBounties();
+    }
+
+    else if (lowercase.includes('networks')) {
+      this.actionProvider.handleNetworks();
+    }
+    
+    else if (lowercase.includes('network intergration') || lowercase.includes('intergration')) {
+      this.actionProvider.handleNetworkIntergration();
+    }
+
+    else if (lowercase.includes('ai') || lowercase.includes('artificial intelligence')) {
+      this.actionProvider.handleAI();
+    }
+
     else if (lowercase.includes('سنیپ شاٹ')) {
       this.actionProvider.handlePowerDAOS();
     }

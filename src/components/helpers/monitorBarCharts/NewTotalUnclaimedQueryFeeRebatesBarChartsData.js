@@ -140,8 +140,8 @@ function NewTotalUnclaimedQueryFeeRebatesBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.85],
+      tickInterval: ([dataNow+data7Days+data28Days]/200),
+      min: [([dataNow+data7Days+data28Days]/3)*0.95],
       title: {
         text: false,
     },

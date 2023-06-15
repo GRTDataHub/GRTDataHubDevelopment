@@ -138,8 +138,8 @@ function NewTotalTokensSignalledBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/500),
-      min: [([dataNow+data7Days+data28Days]/3)*0.98],
+      tickInterval: ([dataNow+data7Days+data28Days]/100),
+      min: [([dataNow+data7Days+data28Days]/3)*0.97],
       title: {
         text: false,
     },

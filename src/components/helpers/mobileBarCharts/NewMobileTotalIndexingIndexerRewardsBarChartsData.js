@@ -118,7 +118,7 @@ function NewMobileTotalIndexingIndexerRewardsBarChartsData() {
     title: {style: {
       color: '#d8d2e4',
       fontWeight: 'bold',
-      fontSize: '1rem'
+      fontSize: '0.8rem'
    },
       text : 'Total Indexing Indexer Rewards',
       align: 'center',
@@ -141,7 +141,7 @@ function NewMobileTotalIndexingIndexerRewardsBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/200),
+      tickInterval: ([dataNow+data7Days+data28Days]/100),
       min: [([dataNow+data7Days+data28Days]/3)*0.96],
       title: {
         text: false,
@@ -168,7 +168,7 @@ function NewMobileTotalIndexingIndexerRewardsBarChartsData() {
         formatter: function() {
           return Highcharts.dateFormat('%d %b %Y',this.value);
         },
-                  style: {fontSize: '0.9rem',
+                  style: {fontSize: '0.75rem',
                         textAlign: 'center',
                         fontWeight: 'bold',
                         color: '#d8d2e4',

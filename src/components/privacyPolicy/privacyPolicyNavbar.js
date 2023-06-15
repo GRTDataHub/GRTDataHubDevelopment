@@ -38,10 +38,10 @@ const PrivacyPolicyNavbar = () => {
             <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="./GraphCentral">
        Graph Central
       </a></li>
-      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
+      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://www.youtube.com/watch?v=QO9RgwF79sI&list=PLTqyKgxaGF3SerCqOuIT-FdaXZASg3U-C&index=3" target="_blank" rel="noreferrer">
       Participant Update
       </a></li>
-      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q4-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_the_graph_q4_2022" target="_blank" rel="noreferrer">
+      <li className="dropdown-item-start" data-bs-target="#offcanvasExample" data-bs-dismiss="offcanvas"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q1-2023?referrer=all-research" target="_blank" rel="noreferrer">
        Messari Report
       </a></li>
           </ul> 
@@ -84,9 +84,9 @@ const PrivacyPolicyNavbar = () => {
             Graph Advocates Spotlight</a></li>
             <li className="dropdown-item"><a className="dropdown-item" href="./GraphCentral">
             Graph Central</a></li>
-            <li className="dropdown-item"><a className="dropdown-item" href="https://www.youtube.com/watch?v=58el3_9oJ6Q&feature=youtu.be" target="_blank" rel="noreferrer">
+            <li className="dropdown-item"><a className="dropdown-item" href="https://www.youtube.com/watch?v=QO9RgwF79sI&list=PLTqyKgxaGF3SerCqOuIT-FdaXZASg3U-C&index=3" target="_blank" rel="noreferrer">
             Participant Update</a></li>
-            <li className="dropdown-item"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q4-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_the_graph_q4_2022" target="_blank" rel="noreferrer">
+            <li className="dropdown-item"><a className="dropdown-item" href="https://messari.io/report/state-of-the-graph-q1-2023?referrer=all-research" target="_blank" rel="noreferrer">
             Messari Report</a></li>
           </ul>
           </li>

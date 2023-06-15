@@ -635,17 +635,6 @@ On-Chain-Abstimmung: 14 Tage<br></br><a className="cla" href="https://app.daohau
   }));
 }
 // Advocates End
-// GRT Token Address Start
-handleGRTTokenAddress() {
-  const message = this.createChatbotMessage(<a>Nachfolgend finden Sie den GRT-Vertrag und seine Details. Überprüfen Sie die Informationen sorgfältig, um das Hinzufügen eines böswilligen Vertrags zu vermeiden.<br></br><br></br>Name: The Graph<br></br>Symbol: GRT<br></br>Netzwerk: Ethereum (ERC20)<br></br>Vertrag: 0xc944e90c64b2c07662a292be6244bdf05cda44a7<br></br>Dezimalstellen: 18<br></br><br></br>Sie können es sich <a className="cla" href="https://coinmarketcap.com/de/currencies/the-graph/" target="_blank" rel="noreferrer">hier</a> auf CoinMarketCap ansehen.</a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-// GRT Token Address End
 // Undelegating Start
 handleUnDelegating() {
   const message = this.createChatbotMessage(<a>Wann immer ein Delegator die Delegierung aufheben möchte, unterliegen seine Token einer 26-tägigen Entbindungsfrist. Das bedeutet, dass sie 26 Tage lang weder ihre Token übertragen noch Belohnungen verdienen können.<br></br><br></br>Die Undelegierungs-/Auftauperiode dient dazu, bestimmte wirtschaftliche Angriffe zu vermeiden. Sie muss mit der maximalen Zuweisungslebensdauer von 28 Epochen übereinstimmen. In Anbetracht dessen, wie das Belohnungssystem derzeit funktioniert, würde ein kürzerer Zeitraum des Nichtdelegierens möglicherweise dazu führen, dass Delegieren über mehrere gleichzeitige Zuweisungen hinweg „doppelt gezählt“ wird.<hr></hr>Wann auch immer Indexer möchte sie erzwingen (manuell) oder automatisch alle maximal 28 Epochen - maximale Lebensdauer der Zuweisung. Dies ist, wenn Belohnungen verteilt werden. <br></br><br></br>Eine Sache, die Sie ebenfalls berücksichtigen sollten, ist die kluge Auswahl eines Indexers. Wenn Sie sich für einen Indexer entscheiden, der nicht vertrauenswürdig war oder keine gute Arbeit leistet, werden Sie die Delegation aufheben wollen, was bedeutet, dass Sie viele Gelegenheiten verpassen, Belohnungen zu verdienen, was genauso schlimm sein kann wie das Verbrennen von GRT.<br></br><br></br>Um ein Tutorial zum Undelegating von GRT-Tokens von The Graph anzusehen, klicken Sie <a className="cla" href="https://www.youtube.com/watch?v=3GPY5On7vHc" target="_blank" rel="noreferrer">hier</a>.<br></br><br></br><a className="cla" href="https://blog.graphtronauts.com/wie-sie-ihre-grt-tokens-in-the-graph-wieder-freigeben-e9b8ebbba145" target="_blank" rel="noreferrer">Wie Sie Ihre GRT-Tokens in The Graph wieder freigeben</a><br></br><br></br>
@@ -1177,16 +1166,6 @@ handleWhatIsTheWeb() {
   }));
 }
 
-handleCoinbase() {
-  const message = this.createChatbotMessage(<a>So delegieren Sie Ihre GRT-Token mit Coinbase Wallet<br></br><br></br>In diesem Artikel erfahren Sie, wie Sie Ihre GRT-Token innerhalb des The Graph-Protokolls mit <a className="cla" href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet </a>delegieren.<br></br><br></br>Um die von den Graphtronauten erstellte Anleitung zu lesen, siehe <a className="cla" href="https://blog.graphtronauts.com/wie-sie-ihre-grt-token-mit-coinbase-wallet-delegieren-d1bf5aaa80fd" target="_blank">hier</a>. Deutsche Guides folgen in Kürze! Oder wenn Sie sich lieber ein Video-Tutorial ansehen möchten, finden Sie das unten. Deutsches Video folgt in Kürze, bitte verwenden Sie bei Bedarf Untertitel.<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-
 handleCryptocurrencies() {
   const message = this.createChatbotMessage(<a>Der Name ist eine Kombination oder ein Portmanteau aus Kryptografie und Währung. Im Gegensatz zu herkömmlichen Währungen (normalerweise als „Fiat-Währungen“ bezeichnet), die physische Scheine und Münzen verwenden, sind Kryptowährungen vollständig digital. Wie jede andere Währung können Sie mit Kryptowährung Waren und Dienstleistungen kaufen und sie zwischen Freunden und Familie weltweit übertragen. Kryptowährung hat jedoch einige zusätzliche Merkmale, die sie von traditionellen Währungen unterscheiden.<br></br><br></br>Wenn Sie Fiat-Währung bei einer Bank einzahlen, leihen Sie Ihr Geld im Wesentlichen dieser Bank und vertrauen darauf dass sie es Ihnen zurückgeben, wenn Sie danach fragen. Während dies im Allgemeinen für beide Parteien gut funktioniert, profitieren die Banken von Ihrem Geld, indem sie es dann an andere verleihen und Zinsen für diese Kredite kassieren. Darüber hinaus erheben Banken zusätzliche Gebühren, wie z. B. Abhebungsgebühren oder monatliche Kontogebühren, und können auch Mindestguthabenanforderungen haben.<br></br><br></br>Eine traditionelle Bank würde als zentralisiert gelten, Kryptowährung ist dezentralisiert Es hat nicht eine einzige Person, die alles kontrolliert – tatsächlich gibt es Tausende von Menschen, die helfen, alle Transaktionen zu validieren, die auf einer Blockchain stattfinden – und das bedeutet, dass Sie eine vertrauenswürdige Umgebung, einen verbesserten Datenabgleich und weniger Schwachstellen haben . Das ist eine wortreiche Art zu sagen, dass Sie Ihr eigenes Vermögen kontrollieren.<br></br><br></br>Die erhöhte Privatsphäre, Sicherheit, Übertragbarkeit und Transparenz der Kryptowährung bedeutet, dass es keinen Raum gibt, Transaktionen zu manipulieren und das Geld zu wechseln liefern oder die Regeln während des Spiels anpassen. Kryptowährungen sind keine Organisation, sie kontrollieren Ihre Gelder nicht; Sie können Ihre eigene Bank sein.</a>
     ,
@@ -1416,16 +1395,6 @@ handleMetaverse() {
   }));
 }
 
-handleArbitrum() {
-  const message = this.createChatbotMessage(<a>Arbitrum ist eine Skalierungslösung für Ethereum, die Kosten und Latenz drastisch reduziert. Arbitrum hat Arbitrum One im Ethereum-Mainnet gestartet, und das Team bereitet sich auf die bevorstehende Veröffentlichung für die Öffentlichkeit vor.<br></br><br></br>Dank der Integration mit Arbitrum sind die Indizierungs- und Abfragedienste von The Graph jetzt live im Netzwerk verfügbar. Entwickler auf Arbitrum One können jetzt offene APIs (Subgraphen) erstellen und veröffentlichen, die Anwendungen mit GraphQL abfragen können.<br></br><br></br>Der Graph unterstützt bereits die Indizierung von Daten für Ethereum, IPFS, Celo, Avalanche, Fantom und Moonbeam. Darüber hinaus haben Tausende von Entwicklern bereits über 10.000 Subgraphen für Anwendungen wie DODO, MCDEX, Uniswap, Synthetic, Gnosis, Decentraland usw. erstellt. Durch die Aufnahme von Arbitrum in diese Liste haben die Expansionsbemühungen von The Graph einen weiteren Schritt zur Vereinigung des Web3-Ökosystems getan.</a>
-    ,
-  );
-  this.setState((prev) => ({
-    ...prev,
-    messages: [...prev.messages, message],
-  }));
-}
-
 handleStatistics() {
   const message = this.createChatbotMessage(<a>Wenn Sie nach den Live-Daten / Statistiken suchen. Dann bitte konkreter werden. Hier ist eine Liste dessen, was Sie mich fragen können:<br></br><br></br>Active Delegator Zahlen<br></br>Active Delegation Zahlen<br></br>Halter Zahlen<br></br>Anzahl der Subgraphen<br></br>Curators Zahlen<br></br>Active Indexers Zahlen<br></br>Total Query Fees Zahlen<br></br>Total Staked GRT<br></br>Total GRT Delegated by Delegators<br></br>Total GRT Signalled by Curators<br></br>Total Delegated GRT by Indexers<br></br>Total GRT Burned</a>
     ,
@@ -1466,6 +1435,162 @@ handleNews() {
     messages: [...prev.messages, message],
   }));
 }
+
+ // ------------------------
+  // -Update Start--------
+  // ------------------------
+
+  handleAI() {
+    const message = this.createChatbotMessage(<a><strong></strong>Verwendung von AI zur Verbesserung des Graphennetzwerks<strong></strong><br></br><br></br>Im Dezember 2021 wurde <a className="cla" href="https://semiotic.ai/" target="_blank" rel="noreferrer">Semiotic</a> das vierte Kernentwicklerteam von The Graph. Sie arbeiten als Indexer im The Graph Network, was spezielle DevOps-Fähigkeiten erfordert, und betreiben seit Anfang 2021 einen konkurrenzfähigen Indexer, <a className="cla" href="https://thegraph.com/explorer/profile/0xd75c4dbcb215a6cf9097cfbcc70aab2596b96a9c?view=Indexing&chain=mainnet" target="_blank" rel="noreferrer">semiotic-indexer.eth</a>. Darüber hinaus haben sie ihre KI-Expertise genutzt, um zwei Automatisierungssoftware-Tools für das The Graph-Ökosystem zu veröffentlichen: <a className="cla" href="https://github.com/semiotic-ai/autoagora" target="_blank" rel="noreferrer">AutoAgora</a> und den <a className="cla" href="https://github.com/graphprotocol/allocation-optimizer" target="_blank" rel="noreferrer">Allocation Optimizer</a>.<br></br><br></br>Lesen Sie diesen <a className="cla" href="https://thegraph.com/blog/using-ai-to-enhance-the-graph/" target="_blank" rel="noreferrer">Blog</a>, der einen Überblick über die bisherigen und aktuellen KI-Bemühungen des Unternehmens gibt und zukünftige Ideen skizziert, wie die einzigartigen Datenindizierungsfunktionen von The Graph für KI-Anwendungen genutzt werden können.<br></br><br></br>Wenn Sie mehr über KI erfahren möchten, hören Sie sich die <a className="cla" href="https://www.youtube.com/watch?v=7RZU7wbFKwQ" target="_blank" rel="noreferrer">GRTiQ Podcast</a> mit Ani, Sam und Tomasz an, in der sie erklären, was künstliche Intelligenz ist, die Ursprünge der Disziplin und den epischen Aufstieg von ChatGPT und wie es funktioniert.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleNetworkIntergration() {
+    const message = this.createChatbotMessage(<a>Sie können sich <a className="cla" href="https://thegraph.com/docs/en/network-transition-faq/#the-graph-network-integration-status-tracker" target="_blank" rel="noreferrer">hier</a> über den Status der Graph Network Integrations auf dem Laufenden halten.<br></br><br></br>Sie werden eine Tabelle finden, die veranschaulicht, wo sich jedes Netzwerk im Prozess der Netzwerkintegration befindet:<br></br><br></br>Ankündigung der Integration in The Graph Network<br></br>
+<br></br>Netzwerk-Integration abgeschlossen<br></br>Phase 1: Deaktivierung neuer Teilgraphen im gehosteten Dienst<br></br>Phase 2: Deaktivieren von Subgraphen-Upgrades auf dem gehosteten Dienst<br></br>Phase 3: Deaktivieren von Subgraphen auf dem gehosteten Dienst</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleArbitrum() {
+    const message = this.createChatbotMessage(<a><a className="cla" href="https://developer.arbitrum.io/intro/" target="_blank" rel="noreferrer">Arbitrum</a> ist eine Skalierungslösung für Ethereum, die Kosten und Latenzzeiten drastisch reduziert.<br></br><br></br>Dank der Integration mit Arbitrum sind die Hosting-Indizierungs- und Abfragedienste von The Graph nun live im Netzwerk. Entwickler auf Arbitrum One werden nun in der Lage sein, offene APIs (Subgraphen) zu erstellen und zu veröffentlichen, die Anwendungen mit GraphQL abfragen können.<br></br><br></br>Durch das Hinzufügen von Arbitrum zu dieser Liste haben die Expansionsbemühungen von The Graph einen weiteren Schritt zur Vereinheitlichung des Web3-Ökosystems gemacht.<hr></hr>Durch die Skalierung von The Graph auf L2 können die Netzwerkteilnehmer erwarten:<br></br><br></br>fache Einsparungen bei den Gasgebühren<br></br>Schnellere Transaktionsgeschwindigkeit<br></br>Gesichert durch Ethereum<hr></hr>Sie können Ihr GRT und ETH mit einer der folgenden Methoden überbrücken:<br></br><br></br><a className="cla" href="https://bridge.arbitrum.io/?l2ChainId=42161" target="_blank" rel="noreferrer">The Graph Bridge auf Arbitrum</a><br></br><a className="cla" href="https://jumper.exchange/" target="_blank" rel="noreferrer">TransferTo</a><br></br><a className="cla" href="https://bridge.connext.network/" target="_blank" rel="noreferrer">Connext Bridge</a><br></br><a className="cla" href="https://app.hop.exchange/#/send?token=ETH" target="_blank" rel="noreferrer">Hop Exchange</a><hr></hr>Ab dem 10. April 2023 werden 5% aller Indexierungs-Rewards auf Arbitrum geprägt. Mit zunehmender Beteiligung des Netzwerks und der Zustimmung des Rates werden die Indexierungsprämien allmählich von Ethereum auf Arbitrum und schließlich vollständig auf Arbitrum umgestellt.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+  
+  handleNetworks() {
+    const message = this.createChatbotMessage(<a>Um über die Netzwerke im The Graph Network und den Hosted Service auf dem Laufenden zu bleiben, siehe <a className="cla" href="https://thegraph.com/docs/en/#supported-networks" target="_blank" rel="noreferrer">hier</a>!</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleGRTTokenAddress() {
+    const message = this.createChatbotMessage(<a>Nachfolgend finden Sie die GRT-Verträge und Details. Überprüfen Sie die Informationen, um das Hinzufügen eines bösartigen Vertrags zu vermeiden.<br></br><br></br>Name: The Graph<br></br>Symbol: GRT<br></br>Netzwerk: Ethereum (ERC20)<br></br>Ethereum: 0xc944E90C64B2c07662A292be6244BDf05Cda44a7<br></br>Arbitrum: 0x9623063377AD1B27544C965cCd7342f7EA7e88C7<br></br>Nachkommastellen: 18<hr></hr>Sie können es auf CoinMarketCap überprüfen, <a className="cla" href="https://coinmarketcap.com/en/currencies/the-graph/" target="_blank" rel="noreferrer">hier</a>.</a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleCoinbase() {
+    const message = this.createChatbotMessage(<a><strong>The Graph arbeitet mit Coinbase für den Testnet-Start der neuen L2: <a className="cla" href="https://www.coinbase.com/blog/introducing-base" target="_blank">Base</a></strong><br></br><br></br>The Graph hat das Testnet von Base vom ersten Tag an unterstützt. Die Unterstützung des Testnetzes von Base durch The Graph legt auch den Grundstein für die vollständige Unterstützung durch Subgraph Studio und The Graph Network, wenn das Hauptnetz von Base live geht. Entwickler können sich bereits jetzt mit der Erstellung von Base-Subgraphen im Testnet vertraut machen, um sich auf den Start des Base Mainnet vorzubereiten, damit sie weiterhin Subgraphen verwenden können, um geschäftskritische Dapp-Daten dezentral über The Graph Network abzufragen.<br></br><br></br>Entwickler können ab heute Base-Testnet-Dapps mit durch Subgraphen organisierten Daten erstellen! Beginnen Sie mit der Abfrage von effizient organisierten Base-Daten mit Subgraphen, indem Sie der Dokumentation folgen, <a className="cla" href="https://thegraph.com/docs/en/cookbook/base-testnet/" target="_blank">hier</a>.<hr></hr>Wie Sie Ihre GRT-Tokens mit Coinbase Wallet delegieren<br></br><br></br>In diesem Artikel erfahren Sie, wie Sie Ihre GRT-Token innerhalb des The Graph-Protokolls mit <a className="cla" href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a> delegieren können.<br></br><br></br>Um den Leitfaden von den Graphtronauts zu lesen, sehen Sie <a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-delegate-your-grt-tokens-with-coinbase-wallet-85168f84e95e" target="_blank">hier</a>. Oder wenn Sie es vorziehen, ein Video-Tutorial zu sehen, finden Sie das unten.<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s'/></a>
+      ,
+    );
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  // handleGIPS() { 
+  //   const message = this.createChatbotMessage(<a><strong>Graph Improvement Proposals (GIPS)</strong><hr></hr>GIPs are an essential part of the development process for The Graph. They provide a way for the community to propose, discuss, and implement changes that help to improve and evolve The Graph. By following a structured process, GIPs help to ensure that it is developed in an open, transparent, and collaborative manner.<hr></hr>Visit the <a className="cla" href="https://github.com/graphprotocol/graph-improvement-proposals" target="_blank">GitHub repo</a> for any of the follow:<br></br><br></br>GIPs - Proposals for improving protocol logic, interfaces, functionality, charters, or processes<br></br>GRPs - Requests for proposals that solve some important problem or address a needed use case for The Graph<br></br>GRCs - Requests for comments on application-layer community standards for building on The Graph.</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  // handleBounties() { 
+  //   const message = this.createChatbotMessage(<a><strong>GraphAdvocates DAO Bounties</strong><br></br><br></br>These bounties are available for Advocates who want to contribute, visit <a className="cla" href="https://app.dework.xyz/graph-advocatesdao" target="_blank">dework</a> to get involved.</a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+  // handleBilling() { 
+  //   const message = this.createChatbotMessage(<a><strong>How does The Graph billing work?</strong><br></br><br></br>The Graph operates on Ethereum Mainnet, but to minimize transaction times and costs, billing contract lives on the <a className="cla" href="https://arbiscan.io/address/0x1b07d3344188908fb6deceac381f3ee63c48477a" target="_blank">Arbitrum</a> network.<br></br><br></br>Billing is based on the queries made to the network. Every query costs query fees, paid in the native $GRT. The cost of a query is based on the query complexity and network state. The query cost is specified when the user makes a query, however the user will not lose $GRT if the amount used exceeds what they specified. There are also limit how much they are willing to pay to avoid overpaying.<br></br><br></br>Indexers earn query fees in $GRT by serving GraphQL queries. This benefits end-users by providing accurate and timely data. The Graph allows for a competitive marketplace for efficient data access.<br></br><br></br><strong>Paying for queries on The Graph Network is now as easy as swiping a credit card!</strong>Now you can pay your query fee balance via debit or credit card, thanks to the new <a className="cla" href="https://twitter.com/BanxaOfficial" target="_blank">Banxa</a> vfiat onramp.<br></br><Embed className="embed" isDark url='https://twitter.com/graphprotocol/status/1638933843645288449?s=20'/></a>
+  //     ,
+  //   );
+  //   this.setState((prev) => ({
+  //     ...prev,
+  //     messages: [...prev.messages, message],
+  //   }));
+  // }
+
+//   handleDelegateGuides() {
+//   const message = this.createChatbotMessage(<a>I will provide you with what you need to become a Delegator. The following information and resources will help you.<hr></hr>Watching the <a className="cla" href="https://www.youtube.com/watch?v=oQijzTv7EQQ" target="_blank">Choosing Indexers</a> tutorial will help you understand what you need to be looking for. To ensure you are confident before delegating, watch the tutorials below to get more of an understanding.<br></br><br></br>You can stake your GRT tokens at <a className="cla" href="https://thegraph.com/explorer/participants/indexers" target="_blank">network.thegraph.com</a> by delegating them to an indexer of your choice.<br></br>There is a 0.5% delegation tax that is incurred at the time of delegation to incentivize delegators to commit to an indexer.<br></br><br></br>You can find guides on how to delegate or stake your GRT <a className="cla" href="https://docs.thegraph.academy/network/delegators/general-documentation-1/choosing-indexers/guides" target="_blank">here</a>.<br></br><br></br>The Graph is Moving to Arbitrum, read the complete guide for Delegators, <a className="cla" href="https://blog.graphtronauts.com/the-graph-is-moving-to-arbitrum-the-complete-guide-for-delegators-a9c536544b58" target="_blank">here</a>.<br></br><br></br>Undelegating takes 26 days because that is the maximum duration of an allocation.<br></br><br></br>The Graphtronauts have also made their own guides:<br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-stake-your-tokens-with-the-graph-the-complete-guide-to-become-a-delegator-3f723e6420b1" target="_blank">The Complete Guide to become a Delegator</a><br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=1KU_mVDStIk&t=2s" target="_blank">Coinbase Wallet Staking</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/binance-staking-vs-delegating-with-the-graph-network-b4ba7e259b73" target="_blank">Binance Staking vs. Delegating with The Graph network</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/faq-for-the-graph-delegators-2b4a03a830f2" target="_blank">FAQ for The Graph Delegators</a><br></br><br></br><a className="cla" href="https://medium.com/@OG-Graphtronauts/how-to-reduce-the-cost-of-gas-for-delegating-your-grt-tokens-8b2edb3697c5" target="_blank">How to reduce the cost of gas for delegating your GRT tokens</a><br></br><br></br>For the average cost of a delegation transaction, visit <a className="cla" href="https://www.graphtronauts.com/#/indexers" target="_blank">Graphtronauts</a> and select Fees.</a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
+
+// handleGraphtronauts() { 
+//   const message = this.createChatbotMessage(<a><strong>A community for Delegators, Built by Delegators.</strong><br></br>The <a className="cla" href="https://forum.thegraph.com/t/know-your-indexer-24-graphtronauts/4088" target="_blank" rel="noreferrer">Graphtronauts</a> are a group dedicated to facilitating the chat for those who wish to HOLD $GRT and talk about the fundamentals of The Graph project. Not only are they the largest non official community of long term $GRT holders for The Graph ecosystem, their goal is to help people in their journey to become a delegator for The Graph.<br></br><br></br><strong>'We rise by lifting others' - Graphtronauts | Founded 16th January 2021</strong><br></br><br></br>Learn more about the Graphtronauts by listening to this <a className="cla" href="https://www.grtiq.com/grtiq-podcast-35-the-graphtronauts/" target="_blank" rel="noreferrer">GRTiQ Podcast</a> with Baghe and Chris Ewing.<br></br>And this <a className="cla" href="https://www.grtiq.com/grtiq-podcast-90-paolo-diomede/" target="_blank" rel="noreferrer">GRTiQ Podcast</a> with Paolo Diomede.<br></br>You can join the community via the following links:<br></br><a className="cla" href="https://t.me/graphtronauts" target="_blank" rel="noreferrer">Telegram</a><br></br><a className="cla" href="https://twitter.com/graphtronauts" target="_blank" rel="noreferrer">Twitter</a><br></br><a className="cla" href="https://www.graphtronauts.com/#/" target="_blank" rel="noreferrer">Graphtronauts App</a><br></br><a className="cla" href="https://old.graphtronauts.com/" target="_blank" rel="noreferrer">Website</a><br></br><a className="cla" href="https://www.youtube.com/channel/UCPAUeNaRtBV-jdSKY8wmcXg" target="_blank" rel="noreferrer">YouTube</a><br></br><a className="cla" href="https://www.reddit.com/r/Graphtronauts/" target="_blank" rel="noreferrer">Reddit</a><hr></hr>The Graphtronauts community tracker reports can be found below:<br></br><br></br>
+//   <a className="cla" href="https://blog.graphtronauts.com/graphtronauts-community-tracker-report-february-2023-bbf88d567627" target="_blank" rel="noreferrer">February 2023</a><br></br><br></br><a className="cla" href="https://blog.graphtronauts.com/graphtronauts-community-tracker-report-march-2023-1e2c855a5f9a" target="_blank" rel="noreferrer">March 2023</a><hr></hr>The Graphtronauts Indexer (<a className="cla" href="https://thegraph.com/explorer/profile/0x0c3aab9f49c01070ec359aae4778fcbb01d2fbef?view=Indexing" target="_blank" rel="noreferrer">graphtronauts-indexer.eth</a>) is now live and ready for delegations! See the Tweet below for more information, join their <a className="cla" href="https://t.co/dDUb7NHaPY" target="_blank" rel="noreferrer">Discord</a> and follow on Twitter for updates.<br></br><Embed className="embed" isDark url='https://twitter.com/graphtronauts_x/status/1593310558798979072?s=20&t=2FCQMWbItkh1MnXmrHBVIA'/>
+//     </a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
+  
+// handleSubstreams() {
+//   const message = this.createChatbotMessage(<a>StreamingFast is a protocol infrastructure company that excels at building highly scalable, cross-chain architecture for streaming blockchain data. The $60M Core Dev Grant is the first of its kind, pioneering a new frontier of collaborative innovation where communities and companies are aligned to build a radically more open Internet.<br></br><br></br> StreamingFast will contribute its technology, developer talent, and resources to advance The Graph as a protocol and ecosystem. Relevant IP and products will be open-sourced under The Graph Protocol Github repo and API products will migrate to The Graph Network for backend indexing and querying support.<br></br><br></br>The Graph Foundation Awards $60 Million Grant to StreamingFast to join The Graph as a Core Developer Team, read <a className="cla" href="https://thegraph.com/blog/core-dev-grant" target="_blank" rel="noreferrer">here</a>.<hr></hr>Substreams is a powerful blockchain indexing technology, developed for The Graph Network. It enables you to write Rust modules, composing data streams alongside the community, and provides extremely high performance indexing by virtue of parallelization, in a streaming-first fashion. It has all the benefits of the Firehose, like low-cost caching and archiving of blockchain data, high throughput processing, and cursor-based reorgs handling.<br></br><br></br>To find documentation on SubStreams see <a className="cla" href="https://substreams.streamingfast.io/" target="_blank" rel="noreferrer">here</a>.<br></br>Or you can read the blog from The Graph about <a className="cla" href="https://thegraph.com/blog/substreams-parallel-processing" target="_blank" rel="noreferrer">Substreams: Massively Faster Indexing Performance for Subgraphs</a>.<br></br><br></br><Embed className="embed" isDark url='https://www.youtube.com/watch?v=qWxffTKpciU'/><br></br>Join the <a href="https://discord.com/invite/jZwqxJAvRs" target="_blank" rel="noreferrer">StreamingFast Discord server</a> or check them out <a className="cla" href="https://www.streamingfast.io/" target="_blank" rel="noreferrer">here</a>.<hr></hr>StreamingFast Substreams engine has reached General Availability, deeming it ready for production and it will now be officially supported, both the software and the service hosted by StreamingFast. To learn more, read <a className="cla" href="https://streamingfastio.medium.com/substreams-reach-general-availability-48272f6e942e" target="_blank" rel="noreferrer">here</a>.</a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
+
+// handleWomenInWeb3() {
+//   const message = this.createChatbotMessage(<a><a className="cla" href="https://twitter.com/evabeylin?s=21&t=xlTfEQdph_MfbuUlhFrb0Q" target="_blank" rel="noreferrer"><strong>Eva Beylin</strong></a> has been the director of The Graph Foundation since Oct 2020. She is an investor in, and supporter of, core Ethereum technology through eGirl Capital and is leading the grwoth of The Graph. She is one of CoinDesk’s Most Influential 2022, read the full blog <a className="cla" href="https://www.coindesk.com/consensus-magazine/2022/12/05/eva-beylin-most-influential-2022/" target="_blank" rel="noreferrer">here</a>. She has led the distribution of over $135 million in grants to The Graph's core developers and the foundation's $50 million capital, led by Tiger Global. Watch her talk at Graph Day 2022 about Our Decenralization Journey, <a className="cla" href="https://m.youtube.com/watch?v=ef5LCku3IqQ" target="_blank" rel="noreferrer">here</a>. She made Forbes 2023 <a className="cla" href="https://www.forbes.com/profile/eva-beylin/?sh=34d711c95444" target="_blank" rel="noreferrer">30 Under 30</a>. You can get to know Eva by watch an interview, <a className="cla" href="https://m.youtube.com/watch?v=IoqI6z5l9y8" target="_blank" rel="noreferrer">here</a>.<br></br><br></br><a className="cla" href="https://twitter.com/theklineventure?s=21&t=8FTTZesLJJUxAVnVbmLgQg" target="_blank" rel="noreferrer"><strong>Tegan Kline</strong></a> has been the Co-Founder and Head of Business at Edge & Node since 2021. After raising $22.5 million to help The Graph build an open source tool that lets ethereum developers understand how their products are being used, she co-founded Edge & Node to help monetize the project. Edge & Node was originally funded with an 8% stake of the GRT token, which is now worth about $650 million. Kline has also led Edge & Node's investments into projects adjacent to The Graph, totaling $3.1 million in 2021. She made Forbes 2022 <a className="cla" href="https://www.forbes.com/profile/tegan-kline/?sh=1465202462f7" target="_blank" rel="noreferrer">30 Under 30</a>. You can get to know Kline by visiting her website, <a className="cla" href="https://www.tegankline.com/" target="_blank" rel="noreferrer">here</a>. Watch an interview with her, <a className="cla" href="https://youtu.be/yONuFNxJVrc" target="_blank" rel="noreferrer">here</a>. Or you can listen to a GRTiQ Podcast, <a className="cla" href="https://youtu.be/ZGHwTb92Rrg" target="_blank" rel="noreferrer">here</a>.<br></br><br></br><a className="cla" href="https://twitter.com/girlcalledreem?s=21&t=h9ZItE1mnaruz2uPiHkrLQ" target="_blank" rel="noreferrer"><strong>Reem Chahrour</strong></a> has been the Ecosystem Manager at The Graph since 2021. For anyone who has applied for a Graph Grant, or followed the work of any grantees, then they have already encountered Reem. She's an important asset to The Graph community and her work covers a variety of important initiatives. You can listen to her on the GRTiQ Podcast, <a className="cla" href="https://m.youtube.com/watch?v=3xfb0n99AzI" target="_blank" rel="noreferrer">here</a>. She talks about her entry into crypto and her work at The Graph Foundation, her advice for those seeking to apply for a grant (and where the foundation would like to see more submissions), the difference between the RFP and Grants programs, and the soon-to-launch Graph Advocates program.<br></br><br></br>When anyone mentions an Indexer they use the male pronouns. “He closes his allocation”. Wanting to highlight Women in Web3 working on Indexer Teams or running their own Indexer within The Graph ecosystem the Graphtronauts conducted a series of interviews with Women of Web3.<br></br><br></br><a className="cla" href="https://www.youtube.com/watch?v=WTdf9wEhSLg" target="_blank" rel="noreferrer">Women of Web3 - Ana from GraphOps</a><br></br>
+//   <a className="cla" href="https://www.youtube.com/watch?v=0D4_17B6ypY" target="_blank" rel="noreferrer">Women of Web3 - Anna from Citadel.One</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=chvIFfPfOjY" target="_blank" rel="noreferrer">Women of Web3 - IIinca from Chainode Tech</a><br></br><a className="cla" href="https://www.youtube.com/watch?v=Z7UnQotqLVA" target="_blank" rel="noreferrer">Women of Web3 - Gabi from Stake2Earn</a><hr></hr><strong>Women Graph Advocates</strong><br></br><br></br><a className="cla" href="https://twitter.com/poptones_" target="_blank" rel="noreferrer">Darby</a> is a well-known member of The Graph community, she is very active on Discord and she supported The Graph at several notable events, including last year’s Graph Hack and, more recently, ETHDevner. You can listen to a GRTiQ Podcast with Darby, <a className="cla" href="https://www.grtiq.com/grtiq-podcast-108-darby/" target="_blank" rel="noreferrer">here</a>.
+//   <br></br><br></br><a className="cla" href="https://twitter.com/blockya_" target="_blank" rel="noreferrer">Lorena Fabris</a> is hard at work building and supporting the Spanish-speaking community of The Graph ecosystem with Graph Espanol. You can listen to a GRTiQ Podcast with Lorena, <a className="cla" href="https://www.grtiq.com/grtiq-podcast-108-darby/" target="_blank" rel="noreferrer">here</a>.
+//   </a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
+
+// handleOffChainData() {
+//   const message = this.createChatbotMessage(<a><strong>The Graph Unlocks a New Web3 Use Case: Organizing Off-chain Data</strong><br></br><br></br>The Graph can be used to organize off-chain data. Anyone can create a workflow where traditionally off-chain data is posted to IPFS and IPFS hashes are posted on-chain. This data can then be indexed by subgraphs (open APIs) – which in turn can be used to serve organized off-chain data to front ends in a performant way with low cost and effort.<br></br><br></br>You can read the full blog, <a className="cla" href="https://thegraph.com/blog/the-graph-off-chain-data-web3-data-pipelines/" target="_blank" rel="noreferrer">here</a>.
+//     </a>
+//     ,
+//   );
+//   this.setState((prev) => ({
+//     ...prev,
+//     messages: [...prev.messages, message],
+//   }));
+// }
+
+
+  // ------------------------
+  // -Update End--------
+  // ------------------------
 
 handleHello() {
   const message = this.createChatbotMessage(

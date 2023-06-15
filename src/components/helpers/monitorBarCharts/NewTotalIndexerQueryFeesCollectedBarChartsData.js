@@ -147,8 +147,8 @@ function NewTotalIndexerQueryFeesCollectedBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/100),
-      min: [([dataNow+data7Days+data28Days]/3)*0.95],
+      tickInterval: ([dataNow+data7Days+data28Days]/400),
+      min: [([dataNow+data7Days+data28Days]/3)*0.96],
       title: {
         text: false,
     },

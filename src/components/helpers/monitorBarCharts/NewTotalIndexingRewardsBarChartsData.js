@@ -19,15 +19,6 @@ function NewTotalIndexingRewardsBarChartsData() {
           queryName : 'graphNetworkDailyDatas',
           parameters : 'first: 1, orderBy: dayStart, orderDirection: desc',
           body : 'totalIndexingRewards'
-
-          // totalDelegatorQueryFeeRebates
-          // totalIndexingDelegatorRewards
-      
-      
-      
-          // totalUnclaimedQueryFeeRebates
-          // totalUnstakedTokensLocked
-
         };
 
         const queryBuilder = createQueryFactory(queryParams);
@@ -147,8 +138,8 @@ function NewTotalIndexingRewardsBarChartsData() {
       }
   },
     yAxis: {
-      tickInterval: ([dataNow+data7Days+data28Days]/200),
-      min: [([dataNow+data7Days+data28Days]/3)*0.95],
+      tickInterval: ([dataNow+data7Days+data28Days]/400),
+      min: [([dataNow+data7Days+data28Days]/3)*0.96],
       title: {
         text: false,
     },
